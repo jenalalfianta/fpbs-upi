@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+import { getPageTitle } from "../scripts/title.ts";
+const title = getPageTitle(Astro.url.pathname);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <section class="px-4">
+      <div class="max-w-screen-sm text-center">
+        <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#422367] dark:text-purple-400">404</h1>
+        <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">Halaman tidak ditemukan</p>
+        <p class="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
+          Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.
+        </p>
+        <a href="/" class="inline-flex text-white bg-[#422367] hover:bg-[#341b54] focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900 my-4">
+          Kembali ke Beranda
+        </a>
+      </div>
+    </section>
+
+    <script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
