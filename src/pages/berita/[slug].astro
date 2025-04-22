@@ -1,0 +1,80 @@
+---
+import SinglePostLayout from '../../layouts/SinglePostLayout.astro';
+import { getCollection } from 'astro:content';
+import slugify from 'slugify';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('berita');
+  return posts.map((post) => ({
+    params: {
+      slug: slugify(post.data.title, { lower: true, strict: true }),
+    },
+  }));
+}
+
+const { slug } = Astro.params;
+const posts = await getCollection('berita');
+const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
+if (!post) throw new Error(`Post not found for slug: ${slug}`);
+const { title, pubDate, image, description, tags } = post.data;
+const { Content } = await post.render();
+
+const related = posts.filter(p => p.slug !== post.slug).slice(0, 6);
+const fixHtml = (url) => `${url}.html`;
+---
+
+<SinglePostLayout pageTitle={title}>
+  <main class="pt-28 pb-24 bg-white dark:bg-gray-900 antialiased">
+    <div class="px-4 mx-auto max-w-screen-xl">
+      <article class="prose mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:prose-invert">
+        <header class="mb-6">
+          <h1 class="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:text-4xl dark:text-white">
+            {title}
+          </h1>
+          <p class="text-sm text-gray-500 dark:text-gray-400">{pubDate}</p>
+        </header>
+
+        {image && (
+          <figure class="mb-6">
+            <img src={image.url} alt={image.alt} class="rounded-lg" />
+            {image.alt && (
+              <figcaption class="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">
+                {image.alt}
+              </figcaption>
+            )}
+          </figure>
+        )}
+
+        <Content />
+      </article>
+    </div>
+  </main>
+
+  <aside aria-label="Related articles" class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="px-4 mx-auto max-w-screen-xl">
+      <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Berita Lainnya</h2>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        {related.map(item => {
+          const relatedUrl = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
+          return (
+            <article class="bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-600 shadow-md overflow-hidden">
+              {item.data.image && (
+                <a href={relatedUrl}>
+                  <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-32 object-cover" />
+                </a>
+              )}
+              <div class="p-4">
+                <h3 class="text-sm font-semibold mb-1 text-gray-900 dark:text-white leading-snug line-clamp-2">
+                  <a href={relatedUrl}>{item.data.title}</a>
+                </h3>
+                <p class="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
+                  {item.data.description ?? ''}
+                </p>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </aside>
+</SinglePostLayout>

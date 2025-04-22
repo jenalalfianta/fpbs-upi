@@ -1,8 +1,10 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
-  <div class="w-full flex flex-wrap items-center justify-between px-[30px] py-4 gap-6"> <!-- ✅ ubah flex-nowrap → flex-wrap -->
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
+  <div class="w-full flex flex-wrap items-center justify-between px-4 py-3 md:px-[30px] md:py-4 gap-4 md:gap-6">
+
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-4 rtl:space-x-reverse">
-      <img src="../../logofpbs.png" class="h-12 w-auto" alt="FPBS Logo" />
+    <a href="/" class="flex items-center gap-3">
+      <img src="../../logofpbs.png" class="h-9 w-auto md:h-12" alt="FPBS Logo" />
     </a>
 
     <!-- Tombol Kanan: Bahasa, Dark mode, Hamburger -->
@@ -16,14 +18,14 @@
               <path fill="#fff" d="M0 240h640v240H0z" />
             </g>
           </svg>
-          Indonesia
+          ID
         </button>
 
         <!-- Dropdown Bahasa -->
         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
           <ul class="py-2 font-medium" role="none">
             <li>
-              <a href="/en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
                 <div class="inline-flex items-center">
                   <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
                     <path fill="#b22234" d="M0 0h512v512H0z" />
@@ -36,7 +38,7 @@
                     <circle cx="85.7" cy="85.7" r="14.3" fill="#fff" />
                     <circle cx="142.9" cy="85.7" r="14.3" fill="#fff" />
                   </svg>
-                  English (US)
+                  EN
                 </div>
               </a>
             </li>
@@ -67,7 +69,7 @@
           <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             
             <li>
-              <a href="#" class="block py-2 px-3 text-white bg-purple-700 rounded-sm md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-500" aria-current="page">Beranda</a>
+              <a href="/" class="block py-2 px-3 text-white bg-purple-700 rounded-sm md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-500" aria-current="page">Beranda</a>
             </li>
             
             <li class="relative">
@@ -110,3 +112,5 @@
         </div>
       </div>
     </nav>
+
+

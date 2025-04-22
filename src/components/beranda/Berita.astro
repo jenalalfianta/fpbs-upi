@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import slugify from 'slugify';
+
+const fixHtml = (url) => `${url}.html`;
+
+const berita = (await getCollection('berita'))
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 6);
+---
+
+<section class="bg-gray-50 dark:bg-gray-800 pt-24 pb-24 px-4 md:px-8">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold text-purple-700 dark:text-purple-400 mb-8 uppercase">Berita Terbaru</h2>
+
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      {berita.map(item => {
+        const url = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
+        return (
+          <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+            {item.data.image && (
+              <a href={url}>
+                <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-56 object-cover" />
+              </a>
+            )}
+            <div class="px-5 pt-6 pb-8 flex flex-col flex-1">
+              <div class="flex justify-between items-center mb-4">
+                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-200">
+                  {item.data.tags?.[0] ?? 'Berita'}
+                </span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">{item.data.pubDate}</span>
+              </div>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-tight mb-4">
+                <a href={url}>{item.data.title}</a>
+              </h3>
+              <div class="mt-auto text-right">
+                <a href={url} class="text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya →</a>
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <div class="text-center mt-8">
+      <a href={fixHtml("/berita/page/1")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Lihat Semua Berita »</a>
+    </div>
+  </div>
+</section>

@@ -3,3 +3,10 @@
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
 @custom-variant dark (&:where(.dark, .dark *));
+@plugin "@tailwindcss/typography";
+
+/* Buat prose bold text terang saat dark mode */
+.dark .prose strong,
+.dark .prose b {
+  color: #e5e7eb; /* atau bisa #e5e7eb (text-gray-200) kalau mau lebih lembut */
+}
