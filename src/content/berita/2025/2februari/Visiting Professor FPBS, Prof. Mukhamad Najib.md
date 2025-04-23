@@ -3,7 +3,7 @@ title: "Visiting Professor FPBS: Prof. Mukhamad Najib Berbagi Wawasan tentang Pr
 pubDate: "20 Februari 2025"
 author: "Admin"
 image:
-  url: "/images/berita/2025/2februari/Visiting-Professor-FPBS-Prof.-Mukhamad-Najib-Berbagi-Wawasan-tentang-Program-Guru-Bantu-BIPA-di-Australia (1).jpg"
+  url: "/images/berita/2025/2februari/Visiting-Professor-FPBS-Prof.-Mukhamad-Najib-Berbagi-Wawasan-tentang-Program-Guru-Bantu-BIPA-di-Australia (1).webp"
   alt: ""
 tags: ["berita"]
 ---

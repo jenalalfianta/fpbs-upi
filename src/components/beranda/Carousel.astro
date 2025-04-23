@@ -1,44 +1,50 @@
 ---
 const fixHtml = (url) => `${url}.html`;
 ---
-<!-- Carousel Flowbite - full tinggi + gambar utuh di mobile -->
-<div id="default-carousel" class="relative mt-14" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="overflow-hidden relative h-[600px] sm:h-[700px] md:h-[750px] lg:h-[800px] xl:h-[850px] 2xl:h-[900px] bg-gray-50 dark:bg-gray-800">
-    
-    <!-- Slide 1 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/images/slider/fpbs-zi.jpg"
-        alt="Slide 1"
-        class="w-full h-full object-contain sm:object-cover object-center"
-      />
+
+<!-- Carousel Section -->
+<section class="bg-white dark:bg-gray-900 py-0 px-0">
+  <div id="default-carousel" class="relative mt-0" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div
+  class="overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center"
+  style="height: calc(100vh - 64px);"
+>
+
+      <!-- Slide 1 -->
+      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
+        <img
+          src="/images/beranda/fpbs-zi.webp"
+          alt="Slide 1"
+          class="max-h-full max-w-full object-contain"
+        />
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
+        <img
+          src="/images/beranda/fpbs-wbk.webp"
+          alt="Slide 2"
+          class="max-h-full max-w-full object-contain"
+        />
+      </div>
     </div>
 
-    <!-- Slide 2 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/images/slider/fpbs-wbk.jpg"
-        alt="Slide 2"
-        class="w-full h-full object-contain sm:object-cover object-center"
-      />
-    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </span>
+    </button>
+
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+        </svg>
+      </span>
+    </button>
   </div>
-
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
-      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </span>
-  </button>
-
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
-      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
-      </svg>
-    </span>
-  </button>
-</div>
+</section>

@@ -3,7 +3,7 @@ title: "FPBS Resmikan Gedung A, Lab Penjurubahasaan, dan Ruang Microteaching Bar
 pubDate: "8 Februari 2025"
 author: "Teja Mustika"
 image:
-  url: "/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-1.jpg"
+  url: "/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-1.webp"
   alt: ""
 tags: ["berita"]
 ---
@@ -12,7 +12,7 @@ Bandung, Januari 2025 – Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universit
 
 Sebagai tambahan, FPBS juga mendapatkan hibah pembangunan Lab Penjurubahasaan dan Ruang Microteaching baru di lantai 4 dari Kementerian. Pembangunan ini menjadi langkah strategis dalam meningkatkan kualitas pembelajaran, khususnya dalam bidang pendidikan bahasa dan pelatihan keterampilan mengajar mahasiswa.
 
-<img src="/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-3.jpg" alt="Gedung A" class="w-full rounded-lg my-6" />
+<img src="/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-3.webp" alt="Gedung A" class="w-full rounded-lg my-6" />
 
 Untuk menandai pemanfaatan kembali Gedung A serta peresmian dua laboratorium baru, FPBS mengadakan kegiatan syukuran dan doa bersama. Acara ini dihadiri oleh pimpinan fakultas, dosen, tenaga kependidikan, serta mahasiswa yang turut merasakan manfaat dari fasilitas baru ini.
 

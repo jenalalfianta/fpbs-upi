@@ -3,7 +3,7 @@ title: "Bimbingan Karir bagi Wisudawan Gelombang 1 FPBS: Mempersiapkan Lulusan M
 pubDate: "18 Februari 2025"
 author: "Teja Mustika"
 image:
-  url: "/images/berita/2025/2februari/Bimbingan-Karir-bagi-Wisudawan-Gelombang-1-FPBS-Mempersiapkan-Lulusan-Menuju-Dunia-Kerja-2025.jpg"
+  url: "/images/berita/2025/2februari/Bimbingan-Karir-bagi-Wisudawan-Gelombang-1-FPBS-Mempersiapkan-Lulusan-Menuju-Dunia-Kerja-2025.webp"
   alt: ""
 tags: ["berita"]
 ---

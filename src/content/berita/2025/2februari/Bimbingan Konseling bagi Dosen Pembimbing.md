@@ -3,7 +3,7 @@ title: "Bimbingan Konseling bagi Dosen Pembimbing Akademik di FPBS: Meningkatkan
 pubDate: "21 Februari 2025"
 author: "Teja Mustika"
 image:
-  url: "/images/berita/2025/2februari/Bimbingan-Konseling-bagi-Dosen-Pembimbing-Akademik-di-FPBS-Meningkatkan-Kualitas-Layanan-bagi-Mahasiswa.png"
+  url: "/images/berita/2025/2februari/Bimbingan-Konseling-bagi-Dosen-Pembimbing-Akademik-di-FPBS-Meningkatkan-Kualitas-Layanan-bagi-Mahasiswa.webp"
   alt: ""
 tags: ["berita"]
 ---

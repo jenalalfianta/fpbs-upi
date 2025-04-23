@@ -3,7 +3,7 @@ title: "Meningkatkan Kesadaran Hak Kekayaan Intelektual: FPBS Gelar Sosialisasi 
 pubDate: "13 Februari 2025"
 author: "Admin"
 image:
-  url: "/images/berita/2025/2februari/Meningkatkan-Kesadaran-Hak-Kekayaan-Intelektual-FPBS-Gelar-Sosialisasi-Peningkatan-HKI-1.jpg"
+  url: "/images/berita/2025/2februari/Meningkatkan-Kesadaran-Hak-Kekayaan-Intelektual-FPBS-Gelar-Sosialisasi-Peningkatan-HKI-1.webp"
   alt: ""
 tags: ["berita"]
 ---
