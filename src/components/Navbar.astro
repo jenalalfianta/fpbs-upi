@@ -1,117 +1,125 @@
-
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-3 md:px-[30px] md:py-4 gap-4 md:gap-6">
-
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3">
       <img src="../../logofpbs.webp" class="h-9 w-auto md:h-12" alt="FPBS Logo" />
     </a>
 
-    <!-- Tombol Kanan: Bahasa, Dark mode, Hamburger -->
-    <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-      <div class="flex items-center gap-4 md:gap-6">
-        <!-- Tombol Bahasa -->
-        <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-          <svg class="w-5 h-5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
-            <g fill-rule="evenodd">
-              <path fill="#e70011" d="M0 0h640v480H0z" />
-              <path fill="#fff" d="M0 240h640v240H0z" />
-            </g>
-          </svg>
-          ID
-        </button>
-
-        <!-- Dropdown Bahasa -->
-        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
-          <ul class="py-2 font-medium" role="none">
-            <li>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                <div class="inline-flex items-center">
-                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
-                    <path fill="#b22234" d="M0 0h512v512H0z" />
-                    <path fill="#fff" d="M0 57.1h512v57.1H0zm0 114.2h512v57.1H0zm0 114.2h512v57.1H0zm0 114.2h512v57.1H0z" />
-                    <path fill="#3c3b6e" d="M0 0h228.6v228.6H0z" />
-                    <circle cx="28.6" cy="28.6" r="14.3" fill="#fff" />
-                    <circle cx="85.7" cy="28.6" r="14.3" fill="#fff" />
-                    <circle cx="142.9" cy="28.6" r="14.3" fill="#fff" />
-                    <circle cx="28.6" cy="85.7" r="14.3" fill="#fff" />
-                    <circle cx="85.7" cy="85.7" r="14.3" fill="#fff" />
-                    <circle cx="142.9" cy="85.7" r="14.3" fill="#fff" />
-                  </svg>
-                  EN
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Tombol Dark Mode -->
-        <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2">
-          <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364l-1.414-1.414M6.05 6.05L4.636 4.636m12.728 0l-1.414 1.414M6.05 17.95l-1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
-          </svg>
-          <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-          </svg>
-        </button>
+    <!-- Bahasa, Dark Mode, Hamburger -->
+    <div class="flex items-center md:order-2 gap-4">
+      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+        <svg class="w-5 h-5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480"><g fill-rule="evenodd"><path fill="#e70011" d="M0 0h640v480H0z"/><path fill="#fff" d="M0 240h640v240H0z"/></g></svg>ID
+      </button>
+      <div id="language-dropdown-menu" class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700">
+        <ul class="py-2 font-medium">
+          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">🇬🇧 EN</a></li>
+        </ul>
       </div>
 
-      <!-- Hamburger Button -->
-      <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      <!-- Dark Mode -->
+      <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2 transition-colors">
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364l-1.414-1.414M6.05 6.05L4.636 4.636
+                  m12.728 0l-1.414 1.414M6.05 17.95l-1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+        </svg>
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+
+      <!-- Hamburger -->
+      <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
       </button>
     </div>
-        <!-- Menu Navigasi -->
-        <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
-          <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            
-            <!-- <li><a href="/" class="block py-2 px-3 text-white bg-purple-700 rounded-sm md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-500" aria-current="page">Beranda</a></li> -->
 
-            <li><a href="/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Beranda</a></li>
+    <!-- MENU -->
+    <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
+      <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
-            
-            <li class="relative">
-              <button id="dropdownProfilLink" data-dropdown-toggle="dropdownProfil" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Profil
-                <svg class="w-2.5 h-2.5 ml-2.5" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownProfil" class="z-50 hidden md:absolute top-full left-0 mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownProfilLink">
-                  <li><a href="/profil.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tentang FPBS</a></li>
-                  <li><a href="/pimpinan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pimpinan</a></li>
-                  <li><a href="/staf.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Staf</a></li>
-                </ul>
-              </div>
-            </li>
-    
-            <li class="relative">
-              <button id="dropdownPPIDLink" data-dropdown-toggle="dropdownPPID" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                PPID
-                <svg class="w-2.5 h-2.5 ml-2.5" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownPPID" class="z-50 hidden md:absolute top-full left-0 mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownPPIDLink">
-                  <li><a href="/ppid.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PPID FPBS</a></li>
-                  <li><a href="https://ppid.upi.edu" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PPID UPI</a></li>
-                </ul>
-              </div>
-            </li>
-    
-            <li><a href="/program-studi.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Program Studi</a></li>
-            <li><a href="https://lppm.upi.edu/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Riset dan Publikasi</a></li>
-            <li><a href="/zona-integritas.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Zona Integritas</a></li>
-            <li><a href="/fasilitas.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Fasilitas</a></li>
-            <li><a href="/kontak.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontak</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <!-- Beranda -->
+        <li><a href="/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Beranda</a></li>
 
+        <!-- Dropdown Profil (Desktop) -->
+        <li class="hidden md:block relative group">
+          <a href="#" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">
+            Profil
+            <svg class="w-2.5 h-2.5 ml-2.5" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
+            <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
+              <li><a href="/profil.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Tentang FPBS</a></li>
+              <li><a href="/program-studi.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Program Studi</a></li>
+              <li><a href="/fasilitas.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Fasilitas</a></li>
+              <li><a href="/pimpinan.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Pimpinan</a></li>
+              <li><a href="/staf.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Staf</a></li>
+              <li><a href="/kontak.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Kontak</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Dropdown Profil (Mobile) -->
+        <li class="md:hidden">
+          <details class="group">
+            <summary class="flex items-center justify-between px-3 py-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
+              Profil
+              <svg class="w-4 h-4 text-gray-500 transition group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </summary>
+            <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
+              <li><a href="/profil.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Tentang FPBS</a></li>
+              <li><a href="/program-studi.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Program Studi</a></li>
+              <li><a href="/fasilitas.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Fasilitas</a></li>
+              <li><a href="/pimpinan.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Pimpinan</a></li>
+              <li><a href="/staf.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Staf</a></li>
+              <li><a href="/kontak.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Kontak</a></li>
+            </ul>
+          </details>
+        </li>
 
+        <!-- PPID (Desktop) -->
+        <li class="hidden md:block relative group">
+          <a href="#" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 
+             md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">
+            PPID
+            <svg class="w-2.5 h-2.5 ml-2.5" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+          </a>
+          <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg 
+              invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
+            <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
+              <li><a href="/ppid-fpbs.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">PPID FPBS</a></li>
+              <li><a href="https://ppid.upi.edu/" target="_blank" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">PPID UPI</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- PPID (Mobile) -->
+        <li class="md:hidden">
+          <details class="group">
+            <summary class="flex items-center justify-between px-3 py-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
+              PPID
+              <svg class="w-4 h-4 text-gray-500 transition group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </summary>
+            <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
+              <li><a href="/ppid-fpbs.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">PPID FPBS</a></li>
+              <li><a href="https://ppid.upi.edu/" target="_blank" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">PPID UPI</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- Lainnya -->
+        <li><a href="/zona-integritas.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Zona Integritas</a></li>
+        <li><a href="https://lppm.upi.edu/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Riset & Publikasi</a></li>
+        <li><a href="/legalisasi.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Legalisasi Dokumen</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
