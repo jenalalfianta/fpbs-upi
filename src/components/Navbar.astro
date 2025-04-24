@@ -1,3 +1,7 @@
+---
+const fixHtml = (url) => `${url}.html`;
+---
+
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-3 md:px-[30px] md:py-4 gap-4 md:gap-6">
     <!-- Logo -->
@@ -36,12 +40,10 @@
         </svg>
       </button>
     </div>
-
     <!-- MENU -->
     <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
       <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
-        <!-- Beranda -->
         <li><a href="/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Beranda</a></li>
 
         <!-- Dropdown Profil (Desktop) -->
@@ -54,15 +56,16 @@
           </a>
           <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
             <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/profil.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Tentang FPBS</a></li>
-              <li><a href="/program-studi.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Program Studi</a></li>
-              <li><a href="/fasilitas.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Fasilitas</a></li>
-              <li><a href="/pimpinan.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Pimpinan</a></li>
-              <li><a href="/staf.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Staf</a></li>
-              <li><a href="/kontak.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Kontak</a></li>
+              <li><a href={fixHtml("/profil/profil")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Tentang FPBS</a></li>
+              <li><a href={fixHtml("/profil/program-studi")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Program Studi</a></li>
+              <li><a href={fixHtml("/profil/fasilitas")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Fasilitas</a></li>
+              <li><a href={fixHtml("/profil/pimpinan")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Pimpinan</a></li>
+              <li><a href={fixHtml("/profil/staf")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Staf</a></li>
+              <li><a href={fixHtml("/profil/kontak")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Kontak</a></li>
             </ul>
           </div>
         </li>
+
         <!-- Dropdown Profil (Mobile) -->
         <li class="md:hidden">
           <details class="group">
@@ -73,17 +76,17 @@
               </svg>
             </summary>
             <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/profil.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Tentang FPBS</a></li>
-              <li><a href="/program-studi.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Program Studi</a></li>
-              <li><a href="/fasilitas.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Fasilitas</a></li>
-              <li><a href="/pimpinan.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Pimpinan</a></li>
-              <li><a href="/staf.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Staf</a></li>
-              <li><a href="/kontak.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Kontak</a></li>
+              <li><a href={fixHtml("/profil/profil")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Tentang FPBS</a></li>
+              <li><a href={fixHtml("/profil/program-studi")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Program Studi</a></li>
+              <li><a href={fixHtml("/profil/fasilitas")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Fasilitas</a></li>
+              <li><a href={fixHtml("/profil/pimpinan")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Pimpinan</a></li>
+              <li><a href={fixHtml("/profil/staf")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Staf</a></li>
+              <li><a href={fixHtml("/profil/kontak")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Kontak</a></li>
             </ul>
           </details>
         </li>
 
-        <!-- PPID (Desktop) -->
+        <!-- PPID -->
         <li class="hidden md:block relative group">
           <a href="#" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 
              md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">
@@ -93,13 +96,12 @@
           <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg 
               invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
             <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/ppid-fpbs.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">PPID FPBS</a></li>
+              <li><a href="/ppid/ppid.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">PPID FPBS</a></li>
               <li><a href="https://ppid.upi.edu/" target="_blank" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">PPID UPI</a></li>
             </ul>
           </div>
         </li>
 
-        <!-- PPID (Mobile) -->
         <li class="md:hidden">
           <details class="group">
             <summary class="flex items-center justify-between px-3 py-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
@@ -109,14 +111,13 @@
               </svg>
             </summary>
             <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/ppid-fpbs.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">PPID FPBS</a></li>
+              <li><a href="/ppid/index.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">PPID FPBS</a></li>
               <li><a href="https://ppid.upi.edu/" target="_blank" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">PPID UPI</a></li>
             </ul>
           </details>
         </li>
 
-        <!-- Lainnya -->
-        <li><a href="/zona-integritas.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Zona Integritas</a></li>
+        <li><a href="/zona-integritas/zona-integritas.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Zona Integritas</a></li>
         <li><a href="https://lppm.upi.edu/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Riset & Publikasi</a></li>
         <li><a href="/legalisasi.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Legalisasi Dokumen</a></li>
       </ul>
