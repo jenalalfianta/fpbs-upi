@@ -19,7 +19,12 @@ if (!post) throw new Error(`Post not found for slug: ${slug}`);
 const { title, pubDate, image, description, tags } = post.data;
 const { Content } = await post.render();
 
-const related = posts.filter(p => p.slug !== post.slug).slice(0, 6);
+// ✅ Urutkan dari yang terbaru, lalu ambil 5 berita selain yang sedang dibaca
+const related = posts
+  .filter(p => p.slug !== post.slug)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 5);
+
 const fixHtml = (url) => `${url}.html`;
 ---
 
@@ -52,8 +57,8 @@ const fixHtml = (url) => `${url}.html`;
 
   <aside aria-label="Related articles" class="py-16 bg-gray-50 dark:bg-gray-800">
     <div class="px-4 mx-auto max-w-screen-xl">
-      <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Berita Lainnya</h2>
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+      <h2 class="mb-8 text-3xl font-bold text-gray-900 dark:text-white">Berita Lainnya</h2>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {related.map(item => {
           const relatedUrl = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
           return (
@@ -64,7 +69,7 @@ const fixHtml = (url) => `${url}.html`;
                 </a>
               )}
               <div class="p-4">
-                <h3 class="text-sm font-semibold mb-1 text-gray-900 dark:text-white leading-snug line-clamp-2">
+                <h3 class="text-base font-semibold mb-1 text-gray-900 dark:text-white leading-snug">
                   <a href={relatedUrl}>{item.data.title}</a>
                 </h3>
                 <p class="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
