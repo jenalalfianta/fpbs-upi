@@ -1,5 +1,5 @@
 <!-- Carousel Section -->
-<section class="bg-white dark:bg-gray-900 pt-10 md:pt-19 px-0">
+<section class="bg-white dark:bg-gray-900 pt-9 md:pt-19 px-0">
   <style>
     .carousel-wrapper {
       height: 250px; /* Mobile default */
@@ -11,12 +11,12 @@
     }
   </style>
 
-  <div id="default-carousel" class="relative mt-0" data-carousel="static">
+  <div id="default-carousel" class="relative mt-0" data-carousel="slide" data-carousel-interval="7000">
     <!-- Carousel wrapper -->
     <div class="carousel-wrapper overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
       
       <!-- Slides -->
-      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
+      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item="active">
         <img
           src="/images/beranda/fpbs-zi.webp"
           alt="Slide 1"
@@ -36,14 +36,15 @@
 
     <!-- Slider controls -->
     <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </span>
     </button>
+
     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
         </svg>
