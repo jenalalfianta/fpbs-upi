@@ -19,7 +19,6 @@ if (!post) throw new Error(`Post not found for slug: ${slug}`);
 const { title, pubDate, image, description, tags } = post.data;
 const { Content } = await post.render();
 
-// ✅ Urutkan dari yang terbaru, lalu ambil 5 berita selain yang sedang dibaca
 const related = posts
   .filter(p => p.slug !== post.slug)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
@@ -36,7 +35,9 @@ const fixHtml = (url) => `${url}.html`;
           <h1 class="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:text-4xl dark:text-white">
             {title}
           </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">{pubDate}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            {pubDate}
+          </p>
         </header>
 
         {image && (
@@ -57,22 +58,24 @@ const fixHtml = (url) => `${url}.html`;
 
   <aside aria-label="Related articles" class="py-16 bg-gray-50 dark:bg-gray-800">
     <div class="px-4 mx-auto max-w-screen-xl">
-      <h2 class="mb-8 text-3xl font-bold text-gray-900 dark:text-white">Berita Lainnya</h2>
+      <h2 class="mb-8 text-3xl font-bold text-gray-900 dark:text-white">
+        Berita Lainnya
+      </h2>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {related.map(item => {
           const relatedUrl = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
           return (
-            <article class="bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-600 shadow-md overflow-hidden">
+            <article class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               {item.data.image && (
                 <a href={relatedUrl}>
                   <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-32 object-cover" />
                 </a>
               )}
-              <div class="p-4">
+              <div class="p-4 flex flex-col flex-1">
                 <h3 class="text-base font-semibold mb-1 text-gray-900 dark:text-white leading-snug">
                   <a href={relatedUrl}>{item.data.title}</a>
                 </h3>
-                <p class="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
+                <p class="text-sm text-gray-700 dark:text-gray-300 line-clamp-2 mt-auto">
                   {item.data.description ?? ''}
                 </p>
               </div>

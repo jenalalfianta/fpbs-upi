@@ -46,19 +46,21 @@
       </div>
 
       <!-- QR Code -->
-      <div class="mt-4">
+      <div class="mt-6">
         <p class="text-sm text-gray-700 dark:text-gray-300 mb-2">Scan untuk buka lokasi kami:</p>
-        <img src="../maps.webp" alt="QR Lokasi FPBS" class="w-32 h-32">
+        <img src="../maps.webp" alt="QR Lokasi FPBS" class="w-44 h-44"> <!-- Perbesar dari w-32 h-32 ke w-44 h-44 -->
       </div>
     </div>
 
     <!-- Google Maps -->
     <div class="h-full">
-      <iframe class="w-full h-full rounded-lg shadow-lg min-h-[100%]" loading="lazy"
-        src="https://maps.google.com/maps?q=Fakultas%20Pendidikan%20Bahasa%20dan%20Sastra&amp;t=m&amp;z=18&amp;output=embed&amp;iwloc=near"
-        title="Lokasi FPBS UPI"
-        allowfullscreen>
-      </iframe>
+      <div class="relative w-full pt-[56.25%]"> <!-- Aspect Ratio 16:9 -->
+        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" loading="lazy"
+          src="https://maps.google.com/maps?q=Fakultas%20Pendidikan%20Bahasa%20dan%20Sastra&amp;t=m&amp;z=18&amp;output=embed&amp;iwloc=near"
+          title="Lokasi FPBS UPI"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
   </div>

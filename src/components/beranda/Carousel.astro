@@ -1,17 +1,21 @@
----
-const fixHtml = (url) => `${url}.html`;
----
-
 <!-- Carousel Section -->
-<section class="bg-white dark:bg-gray-900 py-0 px-0">
+<section class="bg-white dark:bg-gray-900 pt-10 md:pt-19 px-0">
+  <style>
+    .carousel-wrapper {
+      height: 250px; /* Mobile default */
+    }
+    @media (min-width: 768px) {
+      .carousel-wrapper {
+        height: calc(100vh - 64px); /* Desktop */
+      }
+    }
+  </style>
+
   <div id="default-carousel" class="relative mt-0" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div
-  class="overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center"
-  style="height: calc(100vh - 64px);"
->
-
-      <!-- Slide 1 -->
+    <div class="carousel-wrapper overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+      
+      <!-- Slides -->
       <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
         <img
           src="/images/beranda/fpbs-zi.webp"
@@ -20,7 +24,6 @@ const fixHtml = (url) => `${url}.html`;
         />
       </div>
 
-      <!-- Slide 2 -->
       <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
         <img
           src="/images/beranda/fpbs-wbk.webp"
@@ -28,6 +31,7 @@ const fixHtml = (url) => `${url}.html`;
           class="max-h-full max-w-full object-contain"
         />
       </div>
+
     </div>
 
     <!-- Slider controls -->
@@ -38,7 +42,6 @@ const fixHtml = (url) => `${url}.html`;
         </svg>
       </span>
     </button>
-
     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-600/50 group-hover:bg-gray-700/80">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
