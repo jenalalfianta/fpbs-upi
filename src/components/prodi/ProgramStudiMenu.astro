@@ -1,0 +1,114 @@
+---
+const menuItems = [
+  { id: 'profil', label: 'Tentang Prodi' },
+  { id: 'kurikulum', label: 'Kurikulum', external: 'https://kurikulum.upi.edu/struktur/prodi/P067' },
+  { id: 'akreditasi', label: 'Akreditasi' },
+  { id: 'pengembangan-akademik', label: 'Pengembangan Akademik' },
+  { id: 'dosen', label: 'Dosen' },
+  { id: 'fasilitas', label: 'Fasilitas' },
+  { id: 'pmb', label: 'PMB/Pendaftaran', external: 'https://pmb.upi.edu/' }
+];
+---
+
+<section class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-20 z-30 px-4 py-3">
+  <div class="max-w-6xl mx-auto">
+    <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
+      <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
+        {menuItems.map(item => (
+          item.external
+            ? <a href={item.external} target="_blank"
+                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+                {item.label}
+              </a>
+            : <button type="button" data-tab={item.id}
+                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+                {item.label}
+              </button>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Button Mobile -->
+<button id="menu-toggle"
+  class="fixed bottom-6 right-6 z-50 md:hidden bg-purple-700 text-white rounded-full px-4 py-2 shadow-lg">
+  Menu
+</button>
+
+<!-- Dropdown Floating Menu Mobile -->
+<div id="menu-float" class="fixed bottom-20 right-6 z-40 bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-700 p-4 w-56 shadow-lg space-y-2 hidden">
+  {menuItems.map(item => (
+    item.external
+      ? <a href={item.external} target="_blank"
+          class="block text-sm text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400">
+          {item.label}
+        </a>
+      : <button type="button" data-tab={item.id}
+          class="block w-full text-left text-sm text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400">
+          {item.label}
+        </button>
+  ))}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('menu-toggle');
+  const menuFloat = document.getElementById('menu-float');
+  const scrollContainer = document.getElementById('menu-scroll');
+
+  toggleButton.addEventListener('click', () => {
+    menuFloat.classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('[data-tab]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      const tabId = e.target.closest('[data-tab]').getAttribute('data-tab');
+      document.querySelectorAll('[data-content]').forEach(content => {
+        content.classList.add('hidden');
+      });
+      const selectedContent = document.getElementById(tabId);
+      if (selectedContent) {
+        selectedContent.classList.remove('hidden');
+      }
+      menuFloat.classList.add('hidden');
+    });
+  });
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollContainer.classList.add('active');
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+  });
+  scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+  });
+  scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+  });
+  scrollContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  });
+});
+</script>
+
+<style>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
