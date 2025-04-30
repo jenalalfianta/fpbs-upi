@@ -1,75 +1,27 @@
 ---
+import Layout from '../../layouts/Layout.astro';
 import ProgramStudiMenu from '../../components/prodi/ProgramStudiMenu.astro';
 import ProgramStudiContent from '../../components/prodi/ProgramStudiContent.astro';
-import Layout from '../../layouts/Layout.astro';
+import { getCollection, getEntryBySlug } from 'astro:content';
 
-import pendidikanBahasaDanSastraIndonesiaS1 from '../../content/program-studi/pendidikan-bahasa-dan-sastra-indonesia-s1.js';
-import pendidikanBahasaIndonesiaS2 from '../../content/program-studi/pendidikan-bahasa-indonesia-s2.js';
-import pendidikanBahasaIndonesiaS3 from '../../content/program-studi/pendidikan-bahasa-indonesia-s3.js';
-import bahasaDanSastraIndonesiaS1 from '../../content/program-studi/bahasa-dan-sastra-indonesia-s1.js';
-import pendidikanBahasaSundaS1 from '../../content/program-studi/pendidikan-bahasa-sunda-s1.js';
-import pendidikanBahasaDanBudayaSundaS2 from '../../content/program-studi/pendidikan-bahasa-dan-budaya-sunda-s2.js';
-import pendidikanBahasaInggrisS1 from '../../content/program-studi/pendidikan-bahasa-inggris-s1.js';
-import pendidikanBahasaInggrisS2 from '../../content/program-studi/pendidikan-bahasa-inggris-s2.js';
-import pendidikanBahasaInggrisS3 from '../../content/program-studi/pendidikan-bahasa-inggris-s3.js';
-import bahasaDanSastraInggrisS1 from '../../content/program-studi/bahasa-dan-sastra-inggris-s1.js';
-import pendidikanBahasaJermanS1 from '../../content/program-studi/pendidikan-bahasa-jerman-s1.js';
-import pendidikanBahasaArabS1 from '../../content/program-studi/pendidikan-bahasa-arab-s1.js';
-import pendidikanBahasaArabS2 from '../../content/program-studi/pendidikan-bahasa-arab-s2.js';
-import pendidikanBahasaJepangS1 from '../../content/program-studi/pendidikan-bahasa-jepang-s1.js';
-import pendidikanBahasaJepangS2 from '../../content/program-studi/pendidikan-bahasa-jepang-s2.js';
-import pendidikanBahasaPerancisS1 from '../../content/program-studi/pendidikan-bahasa-perancis-s1.js';
-import pendidikanBahasaKoreaS1 from '../../content/program-studi/pendidikan-bahasa-korea-s1.js';
-
+// 👇 Ini WAJIB ditambahkan untuk slug dinamis
 export async function getStaticPaths() {
-  return [
-    { params: { slug: 'pendidikan-bahasa-dan-sastra-indonesia-s1' } },
-    { params: { slug: 'pendidikan-bahasa-indonesia-s2' } },
-    { params: { slug: 'pendidikan-bahasa-indonesia-s3' } },
-    { params: { slug: 'bahasa-dan-sastra-indonesia-s1' } },
-    { params: { slug: 'pendidikan-bahasa-sunda-s1' } },
-    { params: { slug: 'pendidikan-bahasa-dan-budaya-sunda-s2' } },
-    { params: { slug: 'pendidikan-bahasa-inggris-s1' } },
-    { params: { slug: 'pendidikan-bahasa-inggris-s2' } },
-    { params: { slug: 'pendidikan-bahasa-inggris-s3' } },
-    { params: { slug: 'bahasa-dan-sastra-inggris-s1' } },
-    { params: { slug: 'pendidikan-bahasa-jerman-s1' } },
-    { params: { slug: 'pendidikan-bahasa-arab-s1' } },
-    { params: { slug: 'pendidikan-bahasa-arab-s2' } },
-    { params: { slug: 'pendidikan-bahasa-jepang-s1' } },
-    { params: { slug: 'pendidikan-bahasa-jepang-s2' } },
-    { params: { slug: 'pendidikan-bahasa-perancis-s1' } },
-    { params: { slug: 'pendidikan-bahasa-korea-s1' } },
-  ];
+  const entries = await getCollection('program-studi');
+  return entries.map(entry => ({
+    params: { slug: entry.slug }
+  }));
 }
 
 const { slug } = Astro.params;
 
-const allProdi = {
-  'pendidikan-bahasa-dan-sastra-indonesia-s1': pendidikanBahasaDanSastraIndonesiaS1,
-  'pendidikan-bahasa-indonesia-s2': pendidikanBahasaIndonesiaS2,
-  'pendidikan-bahasa-indonesia-s3': pendidikanBahasaIndonesiaS3,
-  'bahasa-dan-sastra-indonesia-s1': bahasaDanSastraIndonesiaS1,
-  'pendidikan-bahasa-sunda-s1': pendidikanBahasaSundaS1,
-  'pendidikan-bahasa-dan-budaya-sunda-s2': pendidikanBahasaDanBudayaSundaS2,
-  'pendidikan-bahasa-inggris-s1': pendidikanBahasaInggrisS1,
-  'pendidikan-bahasa-inggris-s2': pendidikanBahasaInggrisS2,
-  'pendidikan-bahasa-inggris-s3': pendidikanBahasaInggrisS3,
-  'bahasa-dan-sastra-inggris-s1': bahasaDanSastraInggrisS1,
-  'pendidikan-bahasa-jerman-s1': pendidikanBahasaJermanS1,
-  'pendidikan-bahasa-arab-s1': pendidikanBahasaArabS1,
-  'pendidikan-bahasa-arab-s2': pendidikanBahasaArabS2,
-  'pendidikan-bahasa-jepang-s1': pendidikanBahasaJepangS1,
-  'pendidikan-bahasa-jepang-s2': pendidikanBahasaJepangS2,
-  'pendidikan-bahasa-perancis-s1': pendidikanBahasaPerancisS1,
-  'pendidikan-bahasa-korea-s1': pendidikanBahasaKoreaS1,
-};
+// Ambil data berdasarkan slug
+const prodiData = await getEntryBySlug('program-studi', slug);
+if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
-const prodiData = allProdi[slug];
-const activeTab = 'profil'; // ✅ Default tampil konten 'profil'
+const activeTab = 'profil';
 ---
 
 <Layout>
-  <ProgramStudiMenu activeTab={activeTab} />
+  <ProgramStudiMenu activeTab={activeTab} menuItems={prodiData.data.menu} />
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>

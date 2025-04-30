@@ -10,7 +10,8 @@ const menuItems = [
 ];
 ---
 
-<section class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-20 z-30 px-4 py-3">
+<!-- Box menu prodi -->
+<section class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-14 md:top-20 z-30 px-4 py-3 md:mt-0">
   <div class="max-w-6xl mx-auto">
     <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
       <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
@@ -51,6 +52,7 @@ const menuItems = [
   ))}
 </div>
 
+<!-- Script Interaksi -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('menu-toggle');
@@ -63,18 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-tab]').forEach(button => {
     button.addEventListener('click', (e) => {
+      
       const tabId = e.target.closest('[data-tab]').getAttribute('data-tab');
-      document.querySelectorAll('[data-content]').forEach(content => {
-        content.classList.add('hidden');
-      });
-      const selectedContent = document.getElementById(tabId);
-      if (selectedContent) {
-        selectedContent.classList.remove('hidden');
-      }
-      menuFloat.classList.add('hidden');
+
+document.querySelectorAll('[data-content]').forEach(content => {
+  content.classList.add('hidden');
+});
+const selectedContent = document.getElementById(tabId);
+if (selectedContent) {
+  selectedContent.classList.remove('hidden');
+
+  // Scroll ke paling atas
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+menuFloat.classList.add('hidden');
+
     });
   });
 
+  // Horizontal drag scroll
   let isDown = false;
   let startX;
   let scrollLeft;
