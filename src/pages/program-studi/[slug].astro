@@ -4,7 +4,6 @@ import ProgramStudiMenu from '../../components/prodi/ProgramStudiMenu.astro';
 import ProgramStudiContent from '../../components/prodi/ProgramStudiContent.astro';
 import { getCollection, getEntryBySlug } from 'astro:content';
 
-// 👇 Ini WAJIB ditambahkan untuk slug dinamis
 export async function getStaticPaths() {
   const entries = await getCollection('program-studi');
   return entries.map(entry => ({
@@ -14,14 +13,14 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-// Ambil data berdasarkan slug
 const prodiData = await getEntryBySlug('program-studi', slug);
 if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
 const activeTab = 'profil';
+const menuItems = prodiData.data.menu || []; // ✅ WAJIB ADA INI
 ---
 
 <Layout>
-  <ProgramStudiMenu activeTab={activeTab} menuItems={prodiData.data.menu} />
+  <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} /> <!-- ✅ DIKIRIM KE SINI -->
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>

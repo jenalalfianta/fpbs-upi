@@ -1,17 +1,9 @@
 ---
-const menuItems = [
-  { id: 'profil', label: 'Tentang Prodi' },
-  { id: 'kurikulum', label: 'Kurikulum', external: 'https://kurikulum.upi.edu/struktur/prodi/P067' },
-  { id: 'akreditasi', label: 'Akreditasi' },
-  { id: 'pengembangan-akademik', label: 'Pengembangan Akademik' },
-  { id: 'dosen', label: 'Dosen' },
-  { id: 'fasilitas', label: 'Fasilitas' },
-  { id: 'pmb', label: 'PMB/Pendaftaran', external: 'https://pmb.upi.edu/' }
-];
+const { menuItems } = Astro.props;
 ---
 
-<!-- Box menu prodi -->
-<section class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-14 md:top-20 z-30 px-4 py-3 md:mt-0">
+<!-- Sticky Menu dengan border atas dan bawah -->
+<div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
   <div class="max-w-6xl mx-auto">
     <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
       <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
@@ -29,7 +21,7 @@ const menuItems = [
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- Floating Button Mobile -->
 <button id="menu-toggle"
@@ -65,25 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-tab]').forEach(button => {
     button.addEventListener('click', (e) => {
-      
       const tabId = e.target.closest('[data-tab]').getAttribute('data-tab');
 
-document.querySelectorAll('[data-content]').forEach(content => {
-  content.classList.add('hidden');
-});
-const selectedContent = document.getElementById(tabId);
-if (selectedContent) {
-  selectedContent.classList.remove('hidden');
+      document.querySelectorAll('[data-content]').forEach(content => {
+        content.classList.add('hidden');
+      });
+      const selectedContent = document.getElementById(tabId);
+      if (selectedContent) {
+        selectedContent.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
 
-  // Scroll ke paling atas
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-menuFloat.classList.add('hidden');
-
+      menuFloat.classList.add('hidden');
     });
   });
 

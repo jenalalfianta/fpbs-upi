@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
+// Koleksi BERITA (jangan diubah)
 const beritaCollection = defineCollection({
   type: 'content',
   schema: z.object({
@@ -15,17 +16,30 @@ const beritaCollection = defineCollection({
   }),
 });
 
+// Koleksi PROGRAM STUDI (revisi)
 const prodiCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
-    sections: z.record(
+
+    // ✅ menu sticky untuk navbar
+    menu: z.array(
       z.object({
-        title: z.string(),
-        content: z.string().optional(),
-        externalLink: z.string().url().optional(),
+        id: z.string(),
+        label: z.string(),
+        external: z.string().optional(),
       })
-    )
+    ).optional(),
+
+    // ✅ konten setiap tab menu
+    sections: z.record(
+      z.string(),
+      z.object({
+        title: z.string().optional(),
+        content: z.string().optional(),
+        external: z.string().optional(),
+      })
+    ),
   }),
 });
 
