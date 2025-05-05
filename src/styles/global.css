@@ -10,3 +10,28 @@
 .dark .prose b {
   color: #e5e7eb; /* atau bisa #e5e7eb (text-gray-200) kalau mau lebih lembut */
 }
+
+/* Tombol Ally/Sienna – dipaksa ke kanan bawah di atas Back to Top */
+.asw-menu-btn {
+  left: unset !important;
+  right: 20px !important;       /* pas sejajar Back to Top */
+  bottom: 70px !important;      /* di atas Back to Top */
+  width: 36px !important;
+  height: 36px !important;
+  border-width: 2px !important;
+  outline-width: 2px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.asw-menu-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.asw-menu {
+  left: unset !important;
+  right: 0 !important;
+}
+
+
+

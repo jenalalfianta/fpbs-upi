@@ -1,12 +1,12 @@
 <!-- Carousel Section -->
-<section class="bg-white dark:bg-gray-900 pt-0 px-0 -mt-1">
+<section class="bg-white dark:bg-gray-900 px-0 pt-0 -mt-1">
   <style>
     .carousel-wrapper {
-      height: 250px; /* Mobile default */
+      height: 250px; /* Tinggi default untuk mobile */
     }
     @media (min-width: 768px) {
       .carousel-wrapper {
-        height: calc(100vh - 64px); /* Desktop */
+        height: calc(100vh - 72px); /* Untuk desktop dengan header fixed tinggi 72px */
       }
     }
     .skeleton {
@@ -20,11 +20,10 @@
     }
   </style>
 
-  <div id="default-carousel" class="relative mt-0" data-carousel="slide" data-carousel-interval="7000">
+  <div id="default-carousel" class="relative" data-carousel="slide" data-carousel-interval="7000">
     <!-- Carousel wrapper -->
     <div class="carousel-wrapper overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-      
-      <!-- Slides -->
+      <!-- Slide 1 -->
       <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item="active">
         <div class="relative w-full h-full flex items-center justify-center">
           <div class="absolute inset-0 skeleton flex items-center justify-center" id="skeleton-1">
@@ -33,12 +32,14 @@
           <img
             src="/images/beranda/fpbs-zi.webp"
             alt="Slide 1"
-            class="max-h-full max-w-full object-contain opacity-0 transition-opacity duration-700"
+            class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
             loading="eager"
             onload="this.classList.remove('opacity-0'); document.getElementById('skeleton-1').remove();"
           />
         </div>
       </div>
+
+      <!-- Slide 2 -->
       <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
         <div class="relative w-full h-full flex items-center justify-center">
           <div class="absolute inset-0 skeleton flex items-center justify-center" id="skeleton-2">
@@ -47,17 +48,18 @@
           <img
             src="/images/beranda/fpbs-wbk.webp"
             alt="Slide 2"
-            class="max-h-full max-w-full object-contain opacity-0 transition-opacity duration-700"
+            class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
             loading="lazy"
             onload="this.classList.remove('opacity-0'); document.getElementById('skeleton-2').remove();"
           />
         </div>
       </div>
+    </div> <!-- /carousel-wrapper -->
 
-    </div>
-
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <!-- Tombol Sebelumnya -->
+    <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -65,12 +67,15 @@
       </span>
     </button>
 
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <!-- Tombol Berikutnya -->
+    <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
         </svg>
       </span>
     </button>
-  </div>
+  </div> <!-- /#default-carousel -->
 </section>
