@@ -262,62 +262,60 @@ sections:
             </summary>
             <div class="px-4 py-4 text-gray-700 dark:text-gray-300 space-y-4">
 
-              <p>Sistem penilaian perkuliahan di UPI mengacu pada Pedoman Pelaksanaan Pendidikan UPI <a href="https://spm.upi.edu/dokumen-spmi-guidelines-for-the-implementation-of-edication-at-upi/" target="_blank" rel="noopener">(tautan Pedoman)</a>. Penilaian program magister dan doktor dirancang untuk mengevaluasi pencapaian mahasiswa selama satu semester. Enam aspek penilaian meliputi prinsip, teknik dan instrumen, mekanisme dan prosedur, pelaksanaan, pelaporan, dan kelulusan mahasiswa. Prinsip-prinsip penilaian terdiri atas integrasi dari prinsip pendidikan, autentik, objektif, akuntabel, dan transparan. Teknik penilaian terdiri dari observasi, partisipasi, prestasi, tes tertulis, tes lisan, dan survei.</p>
+              <p>Sistem penilaian perkuliahan di UPI mengacu pada Pedoman Pelaksanaan Pendidikan UPI. Penilaian program magister dan doktor dirancang untuk mengevaluasi pencapaian mahasiswa selama satu semester. Enam aspek penilaian meliputi prinsip, teknik dan instrumen, mekanisme dan prosedur, pelaksanaan, pelaporan, dan kelulusan mahasiswa. Prinsip-prinsip penilaian terdiri atas integrasi dari prinsip pendidikan, autentik, objektif, akuntabel, dan transparan. Teknik penilaian terdiri dari observasi, partisipasi, prestasi, tes tertulis, tes lisan, dan survei.</p>
 
-              <p>Sistem penilaian meliputi proses pembelajaran dan hasil pembelajaran siswa. Sistem ini menerapkan penilaian formatif yang bertujuan untuk memperoleh informasi yang digunakan untuk perbaikan proses pembelajaran (penyampaian program) dan penilaian sumatif yang bertujuan untuk mengevaluasi pencapaian siswa terhadap tujuan pembelajaran yang dimaksud (LO). Penilaian formatif dilakukan selama kursus dengan memberikan umpan balik baik secara lisan maupun tertulis terhadap karya yang telah diselesaikan oleh setiap siswa. Sementara itu, penilaian sumatif dilakukan dua kali dalam bentuk Ujian Tengah Semester dan Ujian Akhir Semester.</p>
+              <p>Sistem penilaian meliputi proses pembelajaran dan hasil pembelajaran siswa. Sistem ini menerapkan penilaian formatif untuk perbaikan proses pembelajaran dan penilaian sumatif untuk mengevaluasi pencapaian terhadap tujuan pembelajaran (LO). Penilaian formatif dilakukan selama kursus dengan umpan balik terhadap karya siswa. Penilaian sumatif dilakukan dalam bentuk UTS dan UAS.</p>
 
-              <p>Pemilihan bentuk penilaian disesuaikan dengan model pembelajaran yang digunakan. Dengan model pembelajaran berbasis proyek, penilaian sebagai pembelajaran menjadi pilihan utama. Siswa menilai Kemampuan Kognitif, Sikap, Keterampilan Umum, dan Keterampilan Khusus melalui penilaian proyek, tugas partisipatif, dan kompetensi kognitif. Penilaian melibatkan siswa sebagai penilai, baik untuk diri sendiri maupun teman sejawat.</p>
+              <p>Pemilihan bentuk penilaian disesuaikan dengan model pembelajaran. Dengan model berbasis proyek, penilaian sebagai pembelajaran menjadi utama. Siswa menilai Kemampuan Kognitif, Sikap, Keterampilan Umum, dan Keterampilan Khusus melalui proyek, tugas partisipatif, dan kompetensi kognitif. Penilaian melibatkan siswa sebagai penilai diri dan sejawat.</p>
 
-              <p>Kompetensi kognitif, sikap, keterampilan umum, dan keterampilan khusus direncanakan sejak awal perkuliahan dengan mengalokasikan persentase untuk setiap pencapaian (RPS) melalui sistem pembelajaran terintegrasi universitas, SPOT. Misalnya, aspek penilaian Pengetahuan (K), Keterampilan Umum (KU), dan Keterampilan Khusus dilakukan dalam penilaian kognitif melalui penampilan dalam bentuk makalah dan presentasi proyek. Sementara itu, aspek penilaian sikap (A1) ditunjukkan melalui aspek partisipasi siswa dalam kegiatan kelompok. Aspek sikap diukur melalui indikator kepemimpinan dan kemampuan berkolaborasi, serta menyelesaikan masalah bersama.</p>
+              <p>Kompetensi kognitif, sikap, keterampilan umum, dan khusus direncanakan sejak awal dengan alokasi persentase pada RPS melalui sistem SPOT. Penilaian kognitif dilakukan melalui makalah dan presentasi proyek, sementara aspek sikap melalui partisipasi kelompok dan indikator seperti kepemimpinan dan kolaborasi.</p>
 
-              <p>Jika siswa absen pada hari ujian karena sakit, agar diizinkan untuk mengulang ujian, siswa kemudian harus menyerahkan laporan medis terkait kondisi yang diklaim. Namun, jika siswa melewatkan kelas lebih dari tiga kali, mereka tidak diizinkan untuk mengikuti ujian dan mereka harus mengulang mata kuliah tersebut pada semester berikutnya. Siswa dapat mengulang ujian (remedial) untuk mata kuliah berbasis konten, namun tidak untuk mata kuliah berbasis keterampilan. Program ini menerapkan kebijakan penilaian yang serupa dengan universitas. Manajemen penilaian dilakukan secara elektronik melalui sistem input nilai universitas, SInNDo. Mengenai transparansi dan keadilan, dosen diwajibkan memberikan akses kepada siswa untuk melihat nilai mereka berdasarkan skor mentah.</p>
+              <p>Jika siswa absen saat ujian karena sakit, mereka harus menyerahkan laporan medis agar bisa ujian ulang. Jika absen lebih dari tiga kali, tidak boleh ikut ujian dan harus mengulang. Remedial hanya berlaku untuk mata kuliah konten. Penilaian dikelola melalui sistem SInNDo. Dosen wajib memberikan akses transparan terhadap nilai mentah siswa.</p>
 
               <ol class="list-decimal pl-5 space-y-2">
-                <li>Penilaian sikap menggunakan teknik penilaian observasi. Penilaian pengetahuan, keterampilan umum, dan keterampilan khusus dilakukan dengan memilih satu atau menggabungkan berbagai teknik yang disebutkan di atas. Hasil akhirnya merupakan integrasi dari berbagai teknik dan instrumen penilaian yang digunakan.</li>
-                <li>Mekanisme penilaian: mengembangkan, menyampaikan, dan menyepakati tahapan, teknik, instrumen, kriteria, indikator, dan bobot penilaian antara guru dan mahasiswa (seperti yang tercantum dalam silabus mata kuliah); melaksanakan proses penilaian sesuai dengan tahapan, teknik, instrumen, kriteria, indikator, dan bobot penilaian; memberikan umpan balik kepada mahasiswa; dan mendokumentasikan proses penilaian dan hasil belajar mahasiswa secara akuntabel dan transparan.</li>
-                <li>Prosedur penilaian meliputi tahapan perencanaan, kegiatan pemberian tugas atau pertanyaan, observasi performa belajar, pengembalian hasil observasi, atau pemberian nilai akhir. Tahapan perencanaan dapat dilakukan melalui tahapan berbasis dan/atau penilaian ulang. Pelaksanaan penilaian dilakukan dengan rencana pembelajaran yang dilaksanakan oleh dosen/tim pengajar.</li>
-                <li>Skala penilaian berkisar dari A, A-, B+, B, B-, C+, C, C-, D+, D, D-, hingga E, dan akan diumumkan kepada mahasiswa setelah satu tahap pembelajaran. Hasil penilaian pencapaian pembelajaran bagi lulusan setiap semester dinyatakan dalam indeks prestasi semester (IPS), sedangkan hasil pencapaian pembelajaran bagi lulusan pada akhir program studi disajikan dalam indeks prestasi kumulatif (IPK).</li>
-                <li>Nilai kelulusan minimum untuk program Magister adalah B- (2,70), sementara nilai kelulusan untuk mata kuliah yang dianggap sangat penting bagi kompetensi profesional lulusan program Magister adalah B (3,0). Mahasiswa program Magister dapat dinyatakan lulus jika mereka telah menyelesaikan semua beban belajar yang ditetapkan dan mencapai hasil belajar yang ditargetkan oleh program studi dengan indeks prestasi kumulatif (IPK) sebesar 3,00 atau lebih tinggi. Predikat memuaskan diberikan kepada mahasiswa yang mendapatkan IPK antara 3,00–3,50; predikat sangat memuaskan kepada mahasiswa dengan IPK antara 3,51–3,75, dan predikat cum laude kepada mahasiswa yang memperoleh IPK antara 3,76–4,00.</li>
+                <li>Penilaian sikap: observasi. Pengetahuan, keterampilan umum dan khusus: berbagai teknik yang digabung. Hasil akhir berupa integrasi teknik dan instrumen.</li>
+                <li>Mekanisme: menyepakati teknik, indikator, bobot; melaksanakan dan mendokumentasikan proses penilaian.</li>
+                <li>Prosedur: dari perencanaan, pemberian tugas, observasi, hingga pengembalian hasil dan pemberian nilai akhir.</li>
+                <li>Skala nilai: A hingga E. IPS digunakan untuk hasil per semester, IPK untuk kelulusan program.</li>
+                <li>Nilai kelulusan minimum Magister: B- (2,70). Nilai untuk mata kuliah penting: B (3,0). Predikat kelulusan: Memuaskan (3,00–3,50), Sangat Memuaskan (3,51–3,75), Cum Laude (3,76–4,00).</li>
               </ol>
-
-              <img src="/images/akreditasi/indonesia-s2-s3/tabel-penilaian.webp" alt="Tabel Penilaian" class="rounded-lg mt-6">
-
-            </div>
+                          <img src="/images/akreditasi/indonesia-s2-s3/tabel-penilaian.webp" alt="Tabel Penilaian" class="rounded-lg mt-6">
+          </div>
           </details>
-                    <!-- Toggle Proses Perkuliahan -->
+          <!-- Toggle Proses Perkuliahan -->
           <details class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
               Proses Perkuliahan
             </summary>
             <div class="px-4 py-4 text-gray-700 dark:text-gray-300 space-y-4">
 
-              <p>Proses pembelajaran pada program magister Pendidikan Bahasa Indonesia dilaksanakan secara moderat dalam suasana yang komunikatif, nyaman, mandiri, dan berdisiplin tinggi. Dosen dan mahasiswa adalah mitra yang solid dalam seluruh kegiatan studi selama dalam penggalian keilmuan. Akan tetapi, mahasiswa tetap memegang etika akademik dan etika budaya bangsa Indonesia. Dengan demikian, mahasiswa dapat melaksanakan studi secara kondusif untuk menghasilkan temuan yang inovatif, kreatif, dan akurat.</p>
+              <p>Proses pembelajaran pada program magister Pendidikan Bahasa Indonesia dilaksanakan secara moderat dalam suasana yang komunikatif, nyaman, mandiri, dan berdisiplin tinggi. Dosen dan mahasiswa adalah mitra yang solid dalam kegiatan studi. Namun, mahasiswa tetap memegang etika akademik dan budaya bangsa Indonesia untuk mendukung proses studi yang inovatif dan akurat.</p>
 
-              <p>Agar proses pembelajaran terlaksana dengan baik, mahasiswa harus tercantum Namanya dalam daftar peserta mata kuliah. Untuk sampai terdaftar, mahasiswa terlebih dahulu melakukan kontrak mata kuliah. Jika ternyata ada kekeliruan, mahasiswa dapat melakukan penggantian, pembatalan, atau penambahan jumlah sks mata kuliah sepanjang tidak melebihi batas yang telah ditentukan melalui PRS.</p>
+              <p>Agar pembelajaran berjalan baik, mahasiswa harus tercantum dalam daftar peserta mata kuliah. Ini dilakukan melalui kontrak mata kuliah. Jika ada kesalahan, mahasiswa dapat melakukan perubahan jumlah sks melalui PRS.</p>
 
-              <p>Dalam pelaksanaan pembelajaran, mahasiswa dan dosen harus mengisi Berita Acara Perkuliahan (BAP). Mahasiswa yang jumlah kehadirannya kurang dari 80% tidak diperkenankan mengikuti ujian dan dinyatakan gagal. Pemantauan untuk terlaksananya pembelajaran dilakukan oleh prodi dan SPs. Apabila terjadi penggantian waktu perkuliahan, dosen yang bersangkutan harus memberi tahu prodi untuk penjadwalan ulang atau mencari tempat dan hari yang kosong dilakukan.</p>
+              <p>Dalam pelaksanaan, mahasiswa dan dosen wajib mengisi Berita Acara Perkuliahan (BAP). Mahasiswa dengan kehadiran kurang dari 80% tidak boleh mengikuti ujian. Jika jadwal berubah, dosen harus berkoordinasi dengan prodi untuk penjadwalan ulang.</p>
 
-              <p>Dalam implementasi pembelajaran di kelas, setiap mata kuliah diampu oleh seorang dosen atau Tim pengampu mata kuliah. Perkuliahan melalui Tim dapat dilakukan maksimal oleh dua orang dosen dengan mempertimbangkan karakteristik mata kuliah dan pembinaan keilmuan para dosen. Penentuan perkuliahan yang dilaksanakan dengan tim dosen ditentukan oleh program studi.</p>
+              <p>Setiap mata kuliah diampu oleh satu dosen atau tim pengampu maksimal dua dosen. Penentuan oleh program studi sesuai karakteristik mata kuliah.</p>
 
-              <p>Bentuk perkuliahan yang dilakukan di Universitas Pendidikan Indonesia dapat berupa:</p>
+              <p>Bentuk perkuliahan di UPI mencakup:</p>
               <ol class="list-decimal pl-5 space-y-2">
                 <li>Kuliah, responsi, dan/atau tutorial;</li>
                 <li>Seminar atau bentuk lain yang sejenis;</li>
-                <li>Praktikum, praktik studio, praktik bengkel, praktik lapangan, penelitian, pengabdian kepada masyarakat, dan/atau proses pembelajaran lainnya; dan</li>
-                <li>Bentuk pembelajaran lain yang ditetapkan sesuai dengan kebutuhan dalam memenuhi capaian pembelajaran, seperti pembelajaran sistem blok, modul, dual mode, <em>hybrid learning</em>, pembelajaran berbasis TIK, dan lain-lain.</li>
+                <li>Praktikum, praktik studio, praktik bengkel, praktik lapangan, penelitian, pengabdian masyarakat, dsb;</li>
+                <li>Pembelajaran lain sesuai kebutuhan capaian, seperti sistem blok, modul, dual mode, <em>hybrid learning</em>, pembelajaran TIK, dsb.</li>
               </ol>
 
-              <p>Perkuliahan dapat dilakukan dalam bentuk lain di perguruan tinggi mitra di dalam atau di luar negeri sesuai dengan kesepakatan. Mahasiswa yang mengikuti bentuk perkuliahan ini tetap harus tercatat sebagai mahasiswa aktif di UPI dan melakukan kontrak mata kuliah. Kredit yang diperoleh dari perguruan tinggi mitra tersebut diakui sebagai perolehan kredit.</p>
+              <p>Perkuliahan bisa dilakukan di perguruan tinggi mitra, dalam/luar negeri. Mahasiswa harus tetap aktif dan mengontrak mata kuliah di UPI. Kredit dari mitra diakui.</p>
 
-              <p>Frekuensi perkuliahan dalam satu semester paling sedikit berjumlah 16 pertemuan, termasuk Ujian Tengah Semester (UTS) dan Ujian Akhir Semester (UAS), dengan rincian: tatap muka berjumlah 14 pertemuan, ujian tengah semester berjumlah 1 pertemuan, dan ujian akhir semester berjumlah 1 pertemuan. Dosen yang belum mencapai minimal 14 kali pertemuan tatap muka diharuskan melengkapi perkuliahan sebelum ujian mata kuliah tersebut dilaksanakan.</p>
+              <p>Setiap semester wajib ada minimal 16 pertemuan, terdiri dari: 14 tatap muka, 1 UTS, 1 UAS. Jika belum 14 pertemuan, dosen wajib melengkapi sebelum ujian.</p>
 
-              <p>Selain itu, proses perkuliahan di Sekolah Pascasarjana UPI mengikuti ketentuan-ketentuan sebagai berikut:</p>
+              <p>Ketentuan dari Sekolah Pascasarjana UPI meliputi:</p>
               <ol class="list-decimal pl-5 space-y-2">
-                <li>Proses perkuliahan ditempuh dengan beban studi antara 12–15 sks per semester.</li>
-                <li>Proses perkuliahan diselenggarakan dalam berbagai bentuk kegiatan seperti tatap muka di kelas, praktik di laboratorium, praktik di lapangan, kajian mandiri, survei lapangan, seminar, dan lokakarya.</li>
-                <li>Proses perkuliahan diselenggarakan secara penuh di SPs atau melalui kerja sama dengan Perguruan Tinggi tertentu (di dalam atau di luar negeri) seperti melalui program <em>sandwich</em> atau <em>double degree</em>. Ketentuan lebih lanjut tentang hal ini diatur dengan ketetapan Direktur SPs.</li>
-                <li>Mahasiswa mengontrak mata kuliah yang ditawarkan oleh Prodi pada setiap semester. Untuk MKK Keahlian Khusus masing-masing, mahasiswa dapat mengambil mata kuliah dari Prodi lain sesuai dengan kebutuhannya atas rekomendasi dari dosen PA dan diketahui oleh Ketua Prodi yang bersangkutan.</li>
-                <li>Ketentuan lebih lanjut tentang pengambilan beban studi diatur dengan ketetapan Direktur SPs.</li>
+                <li>Beban studi per semester: 12–15 sks.</li>
+                <li>Kegiatan perkuliahan: kelas, lab, lapangan, studi mandiri, survei, seminar, lokakarya.</li>
+                <li>Diselenggarakan penuh di SPs atau kerja sama PT dalam/luar negeri melalui <em>sandwich</em> atau <em>double degree</em>.</li>
+                <li>Mahasiswa mengontrak mata kuliah prodi tiap semester. MKK Keahlian Khusus bisa ambil dari prodi lain atas rekomendasi PA dan persetujuan Ketua Prodi.</li>
+                <li>Ketentuan pengambilan beban studi ditetapkan oleh Direktur SPs.</li>
               </ol>
 
             </div>
@@ -325,5 +323,6 @@ sections:
 
         </div>
       </section>
+
     
 ---
