@@ -104,6 +104,7 @@ sections:
           <p class="text-gray-700 dark:text-gray-300"><em>(Belum tersedia. Konten ini akan diisi dengan testimoni alumni.)</em></p>
         </div>
       </section>
+      
   akreditasi:
     title: "Akreditasi Pendidikan Bahasa Jerman S1"
     content: |
