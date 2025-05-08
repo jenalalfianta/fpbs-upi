@@ -1,65 +1,39 @@
-<!-- Carousel Section -->
 <section class="bg-white dark:bg-gray-900 px-0 pt-0 -mt-1">
   <style>
     .carousel-wrapper {
-      height: 250px; /* Tinggi default untuk mobile */
+      height: 250px;
     }
     @media (min-width: 768px) {
       .carousel-wrapper {
-        height: calc(100vh - 72px); /* Untuk desktop dengan header fixed tinggi 72px */
+        height: calc(100vh - 72px);
       }
     }
-    .skeleton {
-      background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
-      background-size: 200% 100%;
-      animation: skeleton-loading 1.5s infinite;
+
+    .carousel-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+      pointer-events: none;
     }
-    @keyframes skeleton-loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
+
+    .carousel-slide.active {
+      opacity: 1;
+      pointer-events: auto;
     }
   </style>
 
-  <div id="default-carousel" class="relative" data-carousel="slide" data-carousel-interval="7000">
-    <!-- Carousel wrapper -->
-    <div class="carousel-wrapper overflow-hidden relative bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-      <!-- Slide 1 -->
-      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item="active">
-        <div class="relative w-full h-full flex items-center justify-center">
-          <div class="absolute inset-0 skeleton flex items-center justify-center" id="skeleton-1">
-            <span class="text-purple-700 font-semibold text-lg">Loading...</span>
-          </div>
-          <img
-            src="/images/beranda/fpbs-zi.webp"
-            alt="Slide 1"
-            class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
-            loading="eager"
-            onload="this.classList.remove('opacity-0'); document.getElementById('skeleton-1').remove();"
-          />
-        </div>
-      </div>
+  <div class="relative w-full carousel-wrapper overflow-hidden bg-gray-50 dark:bg-gray-800">
+    <!-- Slides -->
+    <div class="carousel-slide active">
+      <img src="/images/beranda/fpbs-zi.webp" class="w-full h-full object-cover" loading="eager" alt="Slide 1" />
+    </div>
+    <div class="carousel-slide">
+      <img src="/images/beranda/fpbs-wbk.webp" class="w-full h-full object-cover" loading="eager" alt="Slide 2" />
+    </div>
 
-      <!-- Slide 2 -->
-      <div class="hidden duration-700 ease-in-out flex items-center justify-center" data-carousel-item>
-        <div class="relative w-full h-full flex items-center justify-center">
-          <div class="absolute inset-0 skeleton flex items-center justify-center" id="skeleton-2">
-            <span class="text-purple-700 font-semibold text-lg">Loading...</span>
-          </div>
-          <img
-            src="/images/beranda/fpbs-wbk.webp"
-            alt="Slide 2"
-            class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
-            loading="lazy"
-            onload="this.classList.remove('opacity-0'); document.getElementById('skeleton-2').remove();"
-          />
-        </div>
-      </div>
-    </div> <!-- /carousel-wrapper -->
-
-    <!-- Tombol Sebelumnya -->
-    <button type="button"
-            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev>
+    <!-- Tombol Prev -->
+    <button onclick="prevSlide()" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none">
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -67,15 +41,37 @@
       </span>
     </button>
 
-    <!-- Tombol Berikutnya -->
-    <button type="button"
-            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next>
+    <!-- Tombol Next -->
+    <button onclick="nextSlide()" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none">
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-400/50 group-hover:bg-gray-700/90">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
         </svg>
       </span>
     </button>
-  </div> <!-- /#default-carousel -->
+  </div>
+
+  <!-- Script -->
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    window.nextSlide = function () {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    };
+
+    window.prevSlide = function () {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    };
+
+    setInterval(() => window.nextSlide(), 7000);
+  </script>
 </section>

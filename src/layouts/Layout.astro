@@ -26,7 +26,10 @@ const title = getPageTitle(Astro.url.pathname);
     <Footer />
 
 <!-- Flowbite JS -->
-<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+<!-- Alpine.js -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 <!-- Toggle Tema -->
 <script src="/theme-toggle.js" defer></script>
