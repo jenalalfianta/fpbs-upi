@@ -1,5 +1,5 @@
 ---
-title: "Pendidikan Bahasa Jerman (S1)"
+title: "Pendidikan Bahasa Arab (S2)"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
@@ -484,10 +484,14 @@ sections:
   pengembangan-akademik:
     title: "Pengembangan Akademik"
     content: |
+
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
+      <div class="max-w-6xl mx-auto">
+
       <!-- Toggle Penelitian Dosen -->
       <details open class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
         <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
-          Penelitian Dosen - Pendidikan Bahasa Arab (S2)
+          Penelitian Dosen - Pendidikan Bahasa Arab
         </summary>
         <div class="px-4 py-6 text-gray-700 dark:text-gray-300">
           <!-- Paste konten penelitian dosen di sini -->
@@ -632,11 +636,14 @@ sections:
         </div>
       </details>
 
+            </div>
+      </section>
+
 
   prestasi:
     title: "Prestasi Mahasiswa"
     content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
+        <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto">
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Tingkat Internasional</h2>
@@ -722,10 +729,7 @@ sections:
 
           </div>
         </div>
-      </section>
-
-
-
+        </section>
 
 
 
