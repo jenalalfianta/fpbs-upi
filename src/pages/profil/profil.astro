@@ -18,3 +18,20 @@ import Fakta from '../../components/profil/Fakta.astro';
     <StrukturOrganisasi/>
     <Fakta/>
 </Layout>
+ 
+
+<!-- CSS PhotoSwipe -->
+<link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
+
+<!-- JS PhotoSwipe inisialisasi -->
+<script is:inline type="module">
+  import PhotoSwipeLightbox from '/vendor/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#pimpinan-gallery, #struktur-gallery',
+    children: 'a',
+    pswpModule: () => Promise.resolve(PhotoSwipe)
+  });
+  lightbox.init();
+</script>

@@ -1,11 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import StafFpbs from '../../components/staf/StafFpbs.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-    <StafFpbs/>
+  <StafFpbs />
 </Layout>
+
+<!-- CSS PhotoSwipe -->
+<link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
+
+<!-- JS PhotoSwipe inisialisasi (harus is:inline) -->
+<script is:inline type="module">
+  import PhotoSwipeLightbox from '/vendor/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#staf-gallery',
+    children: 'a',
+    pswpModule: () => Promise.resolve(PhotoSwipe)
+  });
+  lightbox.init();
+</script>
