@@ -135,7 +135,7 @@ sections:
                 Program Studi Pendidikan Bahasa Indonesia pada jenjang <strong>Doktor</strong> Universitas Pendidikan Indonesia mendapatkan peringkat <strong>Akreditasi A</strong>.
                 Sertifikat ini berlaku sejak <strong>27 Oktober 2020</strong> hingga <strong>27 Oktober 2025</strong>.
               </p>
-              <img src="/images/akreditasi/indonesia-s2-s3/banpt-s3.webp" alt="Sertifikat Akreditasi BAN-PT S3" class="w-full rounded-lg">
+              <img src="/images/akreditasi/indonesia-s3/banpt-s3.webp" alt="Sertifikat Akreditasi BAN-PT S3" class="w-full rounded-lg">
             </div>
           </details>
 
@@ -150,7 +150,7 @@ sections:
                 yang merupakan anggota <em>European Quality Assurance Register for Higher Education (EQAR)</em> sejak 2009.
                 Akreditasi ini berlaku hingga tanggal <strong>30 Mei 2025</strong> dan diberikan secara resmi di Bayreuth pada <strong>14 Mei 2024</strong>.
               </p>
-              <img src="/images/akreditasi/indonesia-s2-s3/acquin.webp" alt="Sertifikat ACQUIN DPILE" class="w-full rounded-lg">
+              <img src="/images/akreditasi/indonesia-s3/acquin.webp" alt="Sertifikat ACQUIN DPILE" class="w-full rounded-lg">
             </div>
           </details>
 
@@ -161,53 +161,55 @@ sections:
   dosen:
     title: "Pendidikan Bahasa Indonesia S3"
     content: |
-              <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
-              <div class="max-w-6xl mx-auto text-center">
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/yeti.webp" alt="Yeti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Yeti Mulyati, M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </div>
+            <a href="/images/dosen/indonesia-dik-s3/yeti.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/yeti.webp" alt="Yeti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Yeti Mulyati, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/vismaia.webp" alt="Vismaia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Vismaia S. Damaianti, M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </div>
+            <a href="/images/dosen/indonesia-dik-s3/vismaia.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/vismaia.webp" alt="Vismaia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Vismaia S. Damaianti, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Dadang S. Anshori, M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </div>
+            <a href="/images/dosen/indonesia-dik-s3/dadang.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Dadang S. Anshori, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/sumiyadi.webp" alt="Sumiyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sumiyadi, M.Hum.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </div>
+            <a href="/images/dosen/indonesia-dik-s3/sumiyadi.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/sumiyadi.webp" alt="Sumiyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sumiyadi, M.Hum.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-              </div>
+            <a href="/images/dosen/indonesia-dik-s3/dadang-sunendar.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/dadang-sunendar.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Dadang Sunendar, M.Hum.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-               <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+            <a href="/images/dosen/indonesia-dik-s3/andoyo.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s3/andoyo.webp" alt="Andoyo" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Andoyo Sastromiharjo, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+            </a>
 
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/dadang-sunendar.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Dadang Sunendar, M.Hum.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </div>
-
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-                <img src="/images/dosen/indonesia-s2-s3/andoyo.webp" alt="Andoyo" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Andoyo Sastromiharjo, M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </div>
-
-                  </div>
-                </div>
-              </section>
+          </div>
+        </div>
+      </section>
 
 
   fasilitas:
@@ -279,7 +281,7 @@ sections:
                 <li>Skala nilai: A hingga E. IPS digunakan untuk hasil per semester, IPK untuk kelulusan program.</li>
                 <li>Nilai kelulusan minimum Magister: B- (2,70). Nilai untuk mata kuliah penting: B (3,0). Predikat kelulusan: Memuaskan (3,00–3,50), Sangat Memuaskan (3,51–3,75), Cum Laude (3,76–4,00).</li>
               </ol>
-                          <img src="/images/akreditasi/indonesia-s2-s3/tabel-penilaian.webp" alt="Tabel Penilaian" class="rounded-lg mt-6">
+                          <img src="/images/akreditasi/indonesia-s3/tabel-penilaian.webp" alt="Tabel Penilaian" class="rounded-lg mt-6">
           </div>
           </details>
           <!-- Toggle Proses Perkuliahan -->

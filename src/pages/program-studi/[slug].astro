@@ -17,10 +17,26 @@ const prodiData = await getEntryBySlug('program-studi', slug);
 if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
 const activeTab = 'profil';
-const menuItems = prodiData.data.menu || []; // ✅ WAJIB ADA INI
+const menuItems = prodiData.data.menu || [];
 ---
 
 <Layout>
-  <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} /> <!-- ✅ DIKIRIM KE SINI -->
+  <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} />
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
+
+<!-- CSS PhotoSwipe -->
+<link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
+
+<!-- JS PhotoSwipe inisialisasi -->
+<script is:inline type="module">
+  import PhotoSwipeLightbox from '/vendor/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#dosen-gallery',
+    children: 'a',
+    pswpModule: () => Promise.resolve(PhotoSwipe)
+  });
+  lightbox.init();
+</script>

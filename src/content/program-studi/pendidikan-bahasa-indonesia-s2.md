@@ -93,7 +93,7 @@ sections:
         <div class="max-w-6xl mx-auto">
 
           <!-- Akreditasi Nasional -->
-          <details open class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
               Akreditasi Nasional (BAN-PT)
             </summary>
@@ -130,35 +130,40 @@ sections:
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto text-center">
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s2/isah.webp" alt="Isah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s2/isah.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s2/isah.webp" alt="Isah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Isah Cahyani, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s2/khaerudin.webp" alt="Khaerudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s2/khaerudin.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s2/khaerudin.webp" alt="Khaerudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Khaerudin Kurniawan, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s2/tedi.webp" alt="Tedi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s2/tedi.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s2/tedi.webp" alt="Tedi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Tedi Permadi, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s2/rudi.webp" alt="Rudi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s2/rudi.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s2/rudi.webp" alt="Rudi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rudi Adi Nugroho, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
+            </a>
 
           </div>
         </div>
       </section>
+
 
 
   fasilitas:

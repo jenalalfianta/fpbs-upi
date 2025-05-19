@@ -96,7 +96,7 @@ sections:
         <div class="max-w-6xl mx-auto">
 
           <!-- Akreditasi Nasional -->
-          <details open class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
               Akreditasi Nasional (LAMDIK)
             </summary>
@@ -173,146 +173,161 @@ sections:
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto text-center">
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+
+            <a href="/images/dosen/indonesia-dik-s1/dadang.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s1/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Dadang, M.Si.</h3>
               <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/vismaia.webp" alt="Vismaia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s1/vismaia.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s1/vismaia.webp" alt="Vismaia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Vismaia S. Damaianti, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/sumiyadi.webp" alt="Sumiyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s1/sumiyadi.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s1/sumiyadi.webp" alt="Sumiyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sumiyadi, M.Hum.</h3>
               <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+            </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/yeti.webp" alt="Yeti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/indonesia-dik-s1/yeti.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/indonesia-dik-s1/yeti.webp" alt="Yeti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Yeti Mulyati, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+            </a>
+                  <a href="/images/dosen/indonesia-dik-s1/isah.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/isah.webp" alt="Isah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Isah Cahyani, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+      </a>
 
-          </div>
+      <a href="/images/dosen/indonesia-dik-s1/andoyo.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/andoyo.webp" alt="Andoyo" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Andoyo Sastromiharjo, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+      </a>
 
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+      <a href="/images/dosen/indonesia-dik-s1/khaerudin.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/khaerudin.webp" alt="Khaerudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Khaerudin Kurniawan, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+      </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/isah.webp" alt="Isah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Isah Cahyani, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-            </div>
+      <a href="/images/dosen/indonesia-dik-s1/halimah.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/halimah.webp" alt="Halimah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Halimah, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+      </a>
+      
+        <a href="/images/dosen/indonesia-dik-s1/encep.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/encep.webp" alt="Encep" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Drs. Encep Kusumah, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/andoyo.webp" alt="Andoyo" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Andoyo Sastromiharjo, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+        <a href="/images/dosen/indonesia-dik-s1/nunung.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/nunung.webp" alt="Nunung" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dra. Nunung Sitaresmi, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/khaerudin.webp" alt="Khaerudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Khaerudin Kurniawan, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+        <a href="/images/dosen/indonesia-dik-s1/novi.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/novi.webp" alt="Novi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dra. Novi Resmini, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/halimah.webp" alt="Halimah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Halimah, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+        <a href="/images/dosen/indonesia-dik-s1/ida.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/ida.webp" alt="Ida" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Ida Widia, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+        </a>
 
-          </div>
+        <a href="/images/dosen/indonesia-dik-s1/rosita.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/rosita.webp" alt="Rosita" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Rosita Rahma, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+        </a>
 
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+        <a href="/images/dosen/indonesia-dik-s1/rudi.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/rudi.webp" alt="Rudi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rudi Adi Nugroho, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/encep.webp" alt="Encep" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Drs. Encep Kusumah, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-            </div>
+      <a href="/images/dosen/indonesia-dik-s1/suci.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/suci.webp" alt="Suci" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Suci Sundusiah, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+      </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/ida.webp" alt="Ida" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Ida Widia, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
+      <a href="/images/dosen/indonesia-dik-s1/lilis.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/lilis.webp" alt="Lilis" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dra. Lilis Siti Sulistyaningsih, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+      </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/rosita.webp" alt="Rosita" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Rosita Rahma, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
+      <a href="/images/dosen/indonesia-dik-s1/welsi.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/welsi.webp" alt="Welsi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Welsi Damayanti, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+      </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/rudi.webp" alt="Rudi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rudi Adi Nugroho, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
+      <a href="/images/dosen/indonesia-dik-s1/denny.webp" data-pswp-width="800" data-pswp-height="1067"
+         class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+        <img src="/images/dosen/indonesia-dik-s1/denny.webp" alt="Denny" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Drs. Denny Iskandar, M.Pd.</h3>
+        <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+      </a>
 
-          </div>
+        <a href="/images/dosen/indonesia-dik-s1/whilky.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/whilky.webp" alt="Whilky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Mochamad Whilky Rizkyanfi, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+        </a>
 
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+        <a href="/images/dosen/indonesia-dik-s1/fuadin.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/fuadin.webp" alt="Fuadin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ahmad Fu'adin, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/suci.webp" alt="Suci" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Suci Sundusiah, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
+        <a href="/images/dosen/indonesia-dik-s1/eka.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/eka.webp" alt="Eka" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Eka Rahmat Fauzy, S.S., M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
+        </a>
 
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/lilis.webp" alt="Lilis" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dra. Lilis Siti Sulistyaningsih, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/welsi.webp" alt="Welsi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Welsi Damayanti, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/denny.webp" alt="Denny" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Drs. Denny Iskandar, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
-
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
-            
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/whilky.webp" alt="Whilky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Mochamad Whilky Rizkyanfi, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/fuadin.webp" alt="Fuadin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ahmad Fu'adin, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/eka.webp" alt="Eka" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Eka Rahmat Fauzy, S.S., M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/indonesia-s1/siti.webp" alt="Siti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Siti Hamidah, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
-            </div>
-
-          </div>
-        </div>
+        <a href="/images/dosen/indonesia-dik-s1/siti.webp" data-pswp-width="800" data-pswp-height="1067"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+          <img src="/images/dosen/indonesia-dik-s1/siti.webp" alt="Siti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Siti Hamidah, M.Pd.</h3>
+          <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
+        </a>
+       </div>
       </section>
 
 ---
