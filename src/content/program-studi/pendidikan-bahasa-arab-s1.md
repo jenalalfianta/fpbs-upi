@@ -129,115 +129,117 @@ sections:
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-            <!-- Dosen 1 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/sofyan.webp" alt="Sofyan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/sofyan.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/sofyan.webp" alt="Sofyan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sofyan Sauri, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Guru Besar</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-            <!-- Dosen 2 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/syihabuddin.webp" alt="Syihabuddin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/syihabuddin.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/syihabuddin.webp" alt="Syihabuddin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Syihabuddin, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Guru Besar</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-            <!-- Dosen 3 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/maman.webp" alt="Maman" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/maman.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/maman.webp" alt="Maman" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Maman Abdurahman, M.Ag.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Guru Besar</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-            <!-- Dosen 4 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/yayan.webp" alt="Yayan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/yayan.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/yayan.webp" alt="Yayan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Yayan Nurbayan, M.Ag.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Guru Besar</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-            <!-- Dosen 5 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/zaka.webp" alt="Zaka" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/zaka.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/zaka.webp" alt="Zaka" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Mohamad Zaka Al Farisi, S.Pd., M.Hum.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Guru Besar</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
+            </a>
 
-            <!-- Dosen 6 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/asep.webp" alt="Asep" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/asep.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/asep.webp" alt="Asep" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Asep Sopian, S.Pd., M.Ag.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor Kepala</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+            </a>
 
-            <!-- Dosen 7 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/mad.webp" alt="Mad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/mad.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/mad.webp" alt="Mad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Mad'Ali, M.A.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor Kepala</p>
-            </div>
+              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+            </a>
 
-            <!-- Dosen 8 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-              <img src="/images/dosen/arab/tatang.webp" alt="Tatang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <a href="/images/dosen/arab-s1/tatang.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/tatang.webp" alt="Tatang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Drs. Tatang, M.Hum.</h3>
-              <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor Kepala</p>
-            </div>
-                      <!-- Dosen 9 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/nalahuddin.webp" alt="Nalahuddin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Nalahuddin Saleh, S.Pd., M.Ag.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor</p>
-          </div>
+              <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
+            </a>
 
-          <!-- Dosen 10 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/hikmah.webp" alt="Hikmah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Hikmah Maulani, M.Pd.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor</p>
-          </div>
+            <a href="/images/dosen/arab-s1/nalahuddin.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/nalahuddin.webp" alt="Nalahuddin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Nalahuddin Saleh, S.Pd., M.Ag.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+            </a>
 
-          <!-- Dosen 11 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/rinaldi.webp" alt="Rinaldi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rinaldi Supriadi, M.Pd.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor</p>
-          </div>
+            <a href="/images/dosen/arab-s1/hikmah.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/hikmah.webp" alt="Hikmah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Hikmah Maulani, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+            </a>
 
-          <!-- Dosen 12 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/mia.webp" alt="Mia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Mia Nurmala, M.Pd.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor</p>
-          </div>
+            <a href="/images/dosen/arab-s1/rinaldi.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/rinaldi.webp" alt="Rinaldi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rinaldi Supriadi, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+            </a>
 
-          <!-- Dosen 13 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/shofa.webp" alt="Shofa" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Shofa Musthofa Khalid, M.Pd.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Lektor</p>
-          </div>
+            <a href="/images/dosen/arab-s1/mia.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/mia.webp" alt="Mia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Mia Nurmala, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+            </a>
 
-          <!-- Dosen 14 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/yusuf.webp" alt="Yusuf" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Yusuf Ali Tantowi, Lc., M.A.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Asisten Ahli</p>
-          </div>
+            <a href="/images/dosen/arab-s1/shofa.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/shofa.webp" alt="Shofa" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Shofa Musthofa Khalid, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Lektor</p>
+            </a>
 
-          <!-- Dosen 15 -->
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1">
-            <img src="/images/dosen/arab/farhan.webp" alt="Farhan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Farhan Fuadi, M.Pd.</h3>
-            <p class="text-[#422367] dark:text-purple-300 font-medium">Asisten Ahli</p>
-          </div>
+            <a href="/images/dosen/arab-s1/yusuf.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/yusuf.webp" alt="Yusuf" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Yusuf Ali Tantowi, Lc., M.A.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
+            </a>
 
+            <a href="/images/dosen/arab-s1/farhan.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/arab-s1/farhan.webp" alt="Farhan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Farhan Fuadi, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
+            </a>
+
+          </div>
         </div>
-      </div>
       </section>
+
 
 
 

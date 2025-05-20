@@ -12,8 +12,8 @@ menu:
     label: "Fasilitas"
   - id: "dosen"
     label: "Dosen"
-  - id: "pembelajaran"
-    label: "Sistem Pembelajaran"
+  - id: "pengembangan-akademik"
+    label: "Pengembangan Akademik"
   - id: "pmb"
     label: "PMB / Pendaftaran"
     external: "https://pmb.upi.edu/"
@@ -197,6 +197,20 @@ sections:
           <div class="max-w-6xl mx-auto text-center">
             <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
+            <a href="/images/dosen/inggris-dik-s1/fuad.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/inggris-dik-s1/fuad.webp" alt="Fuad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Fuad Abdul Hamied, M.A., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
+            </a>
+
+            <a href="/images/dosen/inggris-dik-s1/nenden.webp" data-pswp-width="800" data-pswp-height="1067"
+              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+              <img src="/images/dosen/inggris-dik-s1/nenden.webp" alt="Nenden" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Nenden Sri Lengkanawati, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
+            </a>
+
               <a href="/images/dosen/inggris-dik-s1/didi.webp" data-pswp-width="800" data-pswp-height="1067"
                 class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
                 <img src="/images/dosen/inggris-dik-s1/didi.webp" alt="Didi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
@@ -371,26 +385,12 @@ sections:
               <p class="text-[#422367] dark:text-purple-300">Asisten Ahli</p>
             </a>
 
-            <a href="/images/dosen/inggris-dik-s1/fuad.webp" data-pswp-width="800" data-pswp-height="1067"
-              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-              <img src="/images/dosen/inggris-dik-s1/fuad.webp" alt="Fuad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Fuad Abdul Hamied, M.A., Ph.D.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
-            </a>
-
-            <a href="/images/dosen/inggris-dik-s1/nenden.webp" data-pswp-width="800" data-pswp-height="1067"
-              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-              <img src="/images/dosen/inggris-dik-s1/nenden.webp" alt="Nenden" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Nenden Sri Lengkanawati, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
-            </a>
-
           </div>
         </div>
         </section>
 
-  pembelajaran:
-    title: "Sistem Pembelajaran"
+  pengembangan-akademik:
+    title: "Pengembangan Akademik"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
 
