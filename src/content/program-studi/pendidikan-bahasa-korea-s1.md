@@ -3,20 +3,24 @@ title: "Pendidikan Bahasa Korea (S1)"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
+  - id: "akreditasi"
+    label: "Akreditasi"
   - id: "kurikulum"
     label: "Kurikulum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C115"
-  - id: "akreditasi"
-    label: "Akreditasi"
   - id: "dosen"
     label: "Dosen"  
   - id: "struktur-organisasi"
     label: "Struktur Organisasi"
-  - id: "jurnal"
-    label: "Jurnal"
-    external: "https://ejournal.upi.edu/index.php/JoKAL/index"
   - id: "fasilitas"
     label: "Fasilitas"
+  # - id: "kerja-sama"
+  #   label: "Kerja Sama"
+  - id: "penelitian"
+    label: "Penelitian"  
+  - id: "jurnal"
+    label: "Jurnal"  
+    external: "https://ejournal.upi.edu/index.php/JoKAL/index"
   - id: "pmb"
     label: "PMB / Pendaftaran"
     external: "https://pmb.upi.edu/"
@@ -63,9 +67,7 @@ sections:
             </div>
 
                 <!-- Keterangan tambahan -->
-                <p class="text-gray-700 dark:text-gray-300 mb-6">Jumlah peminat Prodi meningkat dari 220 pada awalnya menjadi 1.859 orang pada tahun 2022. Kuota mahasiswa baru setiap tahun berjumlah 80 orang.</p>
-                <p class="text-gray-700 dark:text-gray-300 mb-6">Hingga saat ini, Prodi telah meluluskan sekitar 180 alumni yang tersebar di berbagai sektor pekerjaan: pendidikan, penerjemahan, industri manufaktur, sekretariat, dan lainnya. Beberapa alumni juga melanjutkan studi magister di universitas ternama di dalam dan luar negeri.</p>
-                <p class="text-gray-700 dark:text-gray-300 mb-6">Prodi menjalin kerja sama dengan lembaga nasional seperti AJARI, PELBAKORI, APSKI, King Sejong Institute, dan KCCI; serta institusi luar negeri seperti KOICA, Korea Foundation, AKS, Soonchun Hyang University, Sookmyung Women’s University, dan Jeju National University.</p>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">Sejak awal berdiri, jumlah peminat Program Studi Pendidikan Bahasa Korea terus meningkat, dari 220 orang hingga mencapai 1.859 orang pada tahun 2022, dengan kuota penerimaan mahasiswa baru sebanyak 80 orang setiap tahunnya. Hingga kini, Prodi telah meluluskan sekitar 180 alumni yang tersebar di berbagai sektor pekerjaan, seperti pendidikan, penerjemahan, industri manufaktur, sekretariat, dan lainnya; beberapa di antaranya juga melanjutkan studi magister di universitas ternama di dalam dan luar negeri. Prodi juga aktif menjalin kerja sama dengan berbagai lembaga nasional seperti AJARI, PELBAKORI, APSKI, King Sejong Institute, dan KCCI, serta institusi luar negeri seperti KOICA, Korea Foundation, AKS, Soonchun Hyang University, Sookmyung Women’s University, dan Jeju National University.</p>
 
                 <!-- Visi -->
                 <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi</h2>
@@ -96,9 +98,20 @@ sections:
                   <li>Memiliki kecakapan dalam bidang penulisan, penerjemahan, jurnalistik, kesenian, dan penelitian.</li>
                   <li>Memiliki kecakapan bahasa Korea dalam bidang pariwisata, perkantoran, bisnis, dan iptek.</li>
                 </ol>
+
+                <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Kontak Prodi</h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                  Program Studi Pendidikan Bahasa Korea<br>
+                  Fakultas Pendidikan Bahasa dan Sastra – Universitas Pendidikan Indonesia<br>
+                  Jl. Dr. Setiabudhi No. 229, Gedung A FPBS UPI, Lantai 1<br>
+                  Kode Pos 40154 Kota Bandung<br>
+                  Telepon: 085161480508<br>
+                  Email: <a href="mailto:dikkorea@upi.edu" class="text-purple-700 dark:text-purple-300 hover:underline">dikkorea@upi.edu</a><br>
+                  Instagram: <a href="https://instagram.com/dikkoreaupi" class="text-purple-700 dark:text-purple-300 hover:underline">@dikkoreaupi</a>
+                </p>
               </div>
             </section>
-
+        
       
   akreditasi:
     title: "Akreditasi Pendidikan Bahasa Korea S1"
@@ -180,108 +193,177 @@ sections:
   struktur-organisasi:
     title: "Struktur Organisasi"
     content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl overflow-x-auto">
-          <div id="svg-tree" style="min-width: 1000px; height: 100%;"></div>
-        </div>
-      </section>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          // Fungsi untuk menambahkan domain
-          const withDomain = (path) => {
-            const baseUrl = window.location.origin;
-            return path.startsWith("http") ? path : baseUrl + path;
-          };
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-0">
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl overflow-x-auto">
+        <div id="svg-tree" style="min-width: 1000px; height: 100%;"></div>
+      </div>
+        </section>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const withDomain = (path) => {
+              const baseUrl = window.location.origin;
+              return path.startsWith("http") ? path : baseUrl + path;
+            };
 
-          const data = {
-            id: "ketua",
-            data: {
-              imageURL: withDomain("/images/dosen/korea/didin.webp"),
-              name: "Didin Samsudin, S.E., M.M., CHCM., CIT.",
-              title: "Ketua Prodi <br> Publikasi IJE & JOKAL"
-            },
-            children: [
-              {
-                id: "gkm",
-                data: {
-                  imageURL: withDomain("/images/dosen/korea/arif.webp"),
-                  name: "Arif Husein Lubis, S.Pd., M.Pd.",
-                  title: "Gugus Kendali Mutu"
-                }
+            const data = {
+              id: "ketua",
+              data: {
+                imageURL: withDomain("/images/dosen/korea/didin.webp"),
+                name: "Didin Samsudin, S.E., M.M., CHCM., CIT.",
+                title: "Ketua Prodi <br> Publikasi IJE & JOKAL"
               },
-              {
-                id: "tpk",
-                data: {
-                  imageURL: withDomain("/images/dosen/korea/risa.webp"),
-                  name: "Risa Triarisanti, S.Pd., M.Pd.",
-                  title: "Tim Penyusun Kurikulum"
+              children: [
+                {
+                  id: "gkm",
+                  data: {
+                    imageURL: withDomain("/images/dosen/korea/arif.webp"),
+                    name: "Arif Husein Lubis, S.Pd., M.Pd.",
+                    title: "Gugus Kendali Mutu"
+                  }
+                },
+                {
+                  id: "tpk",
+                  data: {
+                    imageURL: withDomain("/images/dosen/korea/risa.webp"),
+                    name: "Risa Triarisanti, S.Pd., M.Pd.",
+                    title: "Tim Penyusun Kurikulum"
+                  }
+                },
+                {
+                  id: "dpk",
+                  data: {
+                    imageURL: withDomain("/images/dosen/korea/ashanti.webp"),
+                    name: "Ashanti Widyana, S.Hum., M.A.",
+                    title: "Dosen Pembimbing Kemahasiswaan"
+                  }
+                },
+                {
+                  id: "media",
+                  data: {
+                    imageURL: withDomain("/images/dosen/korea/jayanti.webp"),
+                    name: "Jayanti Megasari, S.S., M.A.",
+                    title: "Pengelola Website & Media Sosial"
+                  }
+                },
+                {
+                  id: "skm",
+                  data: {
+                    imageURL: withDomain("/images/dosen/korea/vela.webp"),
+                    name: "Velayeti Nurfitriana Ansas, S.Pd., M.Pd.",
+                    title: "Anggota SKM"
+                  }
+                },
+                {
+                  id: "staf",
+                  data: {
+                    imageURL: withDomain("/images/staf/asep.webp"),
+                    name: "Asep Ahmad Suja’i, M.Pd.",
+                    title: "Staf Prodi"
+                  }
                 }
-              },
-              {
-                id: "dpk",
-                data: {
-                  imageURL: withDomain("/images/dosen/korea/ashanti.webp"),
-                  name: "Ashanti Widyana, S.Hum., M.A.",
-                  title: "Dosen Pembimbing Kemahasiswaan"
-                }
-              },
-              {
-                id: "media",
-                data: {
-                  imageURL: withDomain("/images/dosen/korea/jayanti.webp"),
-                  name: "Jayanti Megasari, S.S., M.A.",
-                  title: "Pengelola Website & Media Sosial"
-                }
-              },
-              {
-                id: "staf",
-                data: {
-                  imageURL: withDomain("/images/staf/asep.webp"),
-                  name: "Asep Ahmad Suja’i, M.Pd.",
-                  title: "Staf Prodi"
-                }
-              }
-            ]
-          };
+              ]
+            };
 
-          const container = document.getElementById('svg-tree');
-          setTimeout(() => {
-            const tree = new ApexTree(container, {
-              contentKey: "data",
-              width: container.clientWidth || 1000,
-              nodeWidth: 240,
-              nodeHeight: 120,
-              direction: "top",
-              childrenSpacing: 50,
-              siblingSpacing: 30,
-              fontColor: "#fff",
-              borderColor: "transparent",
-              canvasStyle: document.documentElement.classList.contains('dark')
-                ? "background: #1f2937;"
-                : "background: #f6f6f6;",
-              enableToolbar: true,
-              nodeTemplate: (content) => `
-                <div style='display: flex; align-items: center; justify-content: space-between; padding: 10px; height: 100%; box-sizing: border-box; background-color: #4f46e5; border-left: 8px solid #8b5cf6;'>
-                  <div style='flex-grow: 1; padding-right: 10px; text-align: left; font-family: Arial;'>
-                    <div style="font-weight: bold; font-size: 14px; color: white;">${content.name}</div>
-                    <div style="font-size: 12px; color: white;">${content.title}</div>
+            const container = document.getElementById('svg-tree');
+            setTimeout(() => {
+              const tree = new ApexTree(container, {
+                contentKey: "data",
+                width: container.clientWidth || 1000,
+                nodeWidth: 240,
+                nodeHeight: 120,
+                direction: "top",
+                childrenSpacing: 50,
+                siblingSpacing: 30,
+                fontColor: "#fff",
+                borderColor: "transparent",
+                canvasStyle: document.documentElement.classList.contains('dark')
+                  ? "background: #1f2937;"
+                  : "background: #f6f6f6;",
+                enableToolbar: true,
+                nodeTemplate: (content) => `
+                  <div style='display: flex; align-items: center; justify-content: space-between; padding: 10px; height: 100%; box-sizing: border-box; background-color: #4f46e5; border-left: 8px solid #8b5cf6;'>
+                    <div style='flex-grow: 1; padding-right: 10px; text-align: left; font-family: Arial;'>
+                      <div style="font-weight: bold; font-size: 14px; color: white;">${content.name}</div>
+                      <div style="font-size: 12px; color: white;">${content.title}</div>
+                    </div>
+                    <img src='${content.imageURL}' alt='' style='width: 50px; height: 50px; border-radius: 50%; object-fit: cover;'/>
                   </div>
-                  <img src='${content.imageURL}' alt='' style='width: 50px; height: 50px; border-radius: 50%; object-fit: cover;'/>
-                </div>
-              `
-            });
-            tree.render(data);
-          }, 100);
+                `
+              });
+              tree.render(data);
+            }, 100);
 
-          // Mode gelap dinamis saat switch
-          new MutationObserver(() => {
-            container.style.background = document.documentElement.classList.contains('dark')
-              ? '#1f2937'
-              : '#f6f6f6';
-          }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-        });
-      </script>
+            new MutationObserver(() => {
+              container.style.background = document.documentElement.classList.contains('dark')
+                ? '#1f2937'
+                : '#f6f6f6';
+            }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+          });
+        </script>
 
+
+        <div class="max-w-6xl mx-auto px-4 pt-18">
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Detail Personalia Struktur Organisasi</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <!-- 1 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/didin.webp" alt="Didin Samsudin" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Didin Samsudin, S.E., M.M., CHCM., CIT.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Ketua Prodi <br>Publikasi IJE & JOKAL</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> didinsamsudin@upi.edu</p>
+          </div>
+
+          <!-- 2 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/arif.webp" alt="Arif Husein" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Arif Husein Lubis, S.Pd., M.Pd.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Ketua Gugus Kendali Mutu (GKM)</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> lubis_ah@upi.edu</p>
+          </div>
+
+          <!-- 3 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/risa.webp" alt="Risa Triarisanti" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Risa Triarisanti, S.Pd., M.Pd.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Ketua Tim Pengembang Kurikulum</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> risatriarisanti@upi.edu</p>
+          </div>
+
+          <!-- 4 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/ashanti.webp" alt="Ashanti Widyana" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Ashanti Widyana, S.Hum., M.A.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Dosen Pembimbing Kemahasiswaan</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> ashantiwdn@upi.edu</p>
+          </div>
+
+          <!-- 5 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/jayanti.webp" alt="Jayanti Megasari" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Jayanti Megasari, S.S., M.A.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Pengelola Website dan Media Sosial</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> jayanti_megasari@upi.edu</p>
+          </div>
+
+          <!-- 6 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/dosen/korea/vela.webp" alt="Velayeti Nurfitriana Ansas" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Velayeti Nurfitriana Ansas, S.Pd., M.Pd.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Anggota SKM</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> velaansas@upi.edu</p>
+          </div>
+
+          <!-- 7 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 text-center">
+            <img src="/images/staf/asep.webp" alt="Asep Ahmad Suja’i" class="mx-auto w-24 h-24 object-cover rounded-full mb-3">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Asep Ahmad Suja’i, M.Pd.</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Staf Program Studi</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="fas fa-envelope mr-1"></i> asep@upi.edu</p>
+          </div>
+
+        </div>
+      </div>
 
   dosen:
     title: "Dosen Pendidikan Bahasa Korea S1"
@@ -426,6 +508,144 @@ sections:
           </div>
         </div>
       </section>
+
+
+  kerja-sama:
+    title: "Kerja Sama Program Studi"
+    content: |
+          sfasdf
+
+
+  penelitian:
+    title: "Penelitian & Pengabdian Masyarakat"
+    content: |
+        <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+          <div class="max-w-6xl mx-auto">
+
+            <!-- Penelitian 2024 -->
+            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+              <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
+                Penelitian Dosen Tahun 2024
+              </summary>
+              <div class="px-4 py-4 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 space-y-6">
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    1. Representasi Ideologi melalui Analisis Wacana Kritis dalam Buku Teks Bahasa Korea
+                  </p>
+                  <p><strong>Ketua:</strong> Risa Triarisanti, S.Pd., M.Pd.</p>
+                  <p><strong>Anggota:</strong> Velayeti Nurfitriana Ansas, Asma Azizah, Jayanti Megasari</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    2. Technological Pedagogical and Content Knowledge (TPACK) Pengajar Bahasa Korea
+                  </p>
+                  <p><strong>Ketua:</strong> Didin Samsudin, S.E., M.M., CHCM., CIT.</p>
+                  <p><strong>Anggota:</strong> Arif Husein Lubis, Ashanti Widyana, Meutia Khaliya</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Pengabdian 2024 -->
+            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+              <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
+                Pengabdian Kepada Masyarakat Tahun 2024
+              </summary>
+              <div class="px-4 py-4 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 space-y-6">
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    1. Pembekalan Bahasa Korea Dasar Bidang Pariwisata di Denpasar, Bali
+                  </p>
+                  <p><strong>Ketua:</strong> Ashanti Widyana, S.Hum., M.A.</p>
+                  <p><strong>Anggota:</strong> Didin Samsudin, Asma Azizah, Jayanti Megasari, Teja Mustika</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    2. Keterampilan Public Speaking Berbasis Multimodal untuk Siswa SMK Jasa Boga
+                  </p>
+                  <p><strong>Ketua:</strong> Arif Husein Lubis, S.Pd., M.Pd.</p>
+                  <p><strong>Anggota:</strong> Risa Triarisanti, Velayeti Nurfitriana Ansas, Ari Arifin Danuwijaya, Meutia Khaliya</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Penelitian 2025 -->
+            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+              <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
+                Penelitian Dosen Tahun 2025
+              </summary>
+              <div class="px-4 py-4 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 space-y-6">
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    1. Pembedahan Pola Retorika Digital Storytelling Lintas Bahasa
+                  </p>
+                  <p><strong>Ketua:</strong> Velayeti Nurfitriana Ansas, S.Pd., M.Pd.</p>
+                  <p><strong>Anggota:</strong> Risa Triarisanti, Arif Husein Lubis</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    2. Eksplorasi Retorika Esai Personal Statement Berbasis GenAI
+                  </p>
+                  <p><strong>Ketua:</strong> Arif Husein Lubis, S.Pd., M.Pd.</p>
+                  <p><strong>Anggota:</strong> Velayeti Nurfitriana Ansas, Dr. Ruswan Dallyono</p>
+                  <p><strong>Sumber Pendanaan:</strong> LPPM UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    3. Subordinasi Perempuan dalam Peribahasa Korea
+                  </p>
+                  <p><strong>Ketua:</strong> Ashanti Widyana, S.Hum., M.A.</p>
+                  <p><strong>Anggota:</strong> Didin Samsudin, Asma Azizah, Jayanti Megasari</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    4. Literasi Kritis Berbasis Cerita & Penilaian Web untuk Guru SD
+                  </p>
+                  <p><strong>Ketua:</strong> Didin Samsudin, S.E., M.M., CHCM., CIT.</p>
+                  <p><strong>Anggota:</strong> Risa Triarisanti</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Pengabdian 2025 -->
+            <details class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+              <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
+                Pengabdian Kepada Masyarakat Tahun 2025
+              </summary>
+              <div class="px-4 py-4 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 space-y-6">
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    1. Pelatihan Prompt-Based AI use untuk Peneliti Pemula
+                  </p>
+                  <p><strong>Ketua:</strong> Jayanti Megasari, S.S., M.A.</p>
+                  <p><strong>Anggota:</strong> Didin Samsudin, Asma Azizah</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+
+                <div>
+                  <p class="font-semibold text-purple-800 dark:text-purple-300">
+                    2. Pelatihan AI Prompt untuk Penulisan Penelitian di FKIP UAD
+                  </p>
+                  <p><strong>Ketua:</strong> Risa Triarisanti, S.Pd., M.Pd.</p>
+                  <p><strong>Anggota:</strong> Arif Husein Lubis</p>
+                  <p><strong>Sumber Pendanaan:</strong> FPBS UPI</p>
+                </div>
+              </div>
+            </details>
+
+          </div>
+        </section>
 
 
 ---
