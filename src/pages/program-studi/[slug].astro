@@ -25,6 +25,9 @@ const menuItems = prodiData.data.menu || [];
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
 
+<!-- CDN ApexTree -->
+<script src="https://cdn.jsdelivr.net/npm/apextree" defer></script>
+
 <!-- CSS PhotoSwipe -->
 <link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
 
@@ -34,8 +37,8 @@ const menuItems = prodiData.data.menu || [];
   import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
 
   const lightbox = new PhotoSwipeLightbox({
-    gallery: '#dosen-gallery',
-    children: 'a',
+    gallery: '.dosen-gallery',
+    children: 'a.zoomable',
     pswpModule: () => Promise.resolve(PhotoSwipe)
   });
   lightbox.init();
