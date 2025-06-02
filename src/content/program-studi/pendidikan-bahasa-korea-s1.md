@@ -14,8 +14,8 @@ menu:
     label: "Struktur Organisasi"
   - id: "fasilitas"
     label: "Fasilitas"
-  # - id: "kerja-sama"
-  #   label: "Kerja Sama"
+  - id: "kerja-sama"
+    label: "Kerja Sama"
   - id: "penelitian"
     label: "Penelitian"  
   - id: "jurnal"
@@ -510,12 +510,6 @@ sections:
       </section>
 
 
-  kerja-sama:
-    title: "Kerja Sama Program Studi"
-    content: |
-          sfasdf
-
-
   penelitian:
     title: "Penelitian & Pengabdian Masyarakat"
     content: |
@@ -646,6 +640,141 @@ sections:
 
           </div>
         </section>
+
+
+  kerja-sama:
+    title: "Kerja Sama Program Studi"
+    content: |
+      <section id="kerja-sama" class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-2xl font-semibold text-purple-800 dark:text-purple-300 mb-4">
+            Data Kerja Sama
+          </h2>
+
+          <!-- Kategori Tabs -->
+          <div id="kategoriTabs" class="flex flex-wrap gap-2 mb-6">
+            <button data-kategori="" class="tab-btn active px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded hover:bg-purple-200 dark:hover:bg-purple-800">Semua</button>
+            <button data-kategori="Pendidikan" class="tab-btn px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded hover:bg-purple-200 dark:hover:bg-purple-800">Pendidikan</button>
+            <button data-kategori="Penelitian" class="tab-btn px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded hover:bg-purple-200 dark:hover:bg-purple-800">Penelitian</button>
+            <button data-kategori="PKM" class="tab-btn px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded hover:bg-purple-200 dark:hover:bg-purple-800">PKM</button>
+            <button data-kategori="Pengembangan" class="tab-btn px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded hover:bg-purple-200 dark:hover:bg-purple-800">Pengembangan</button>
+          </div>
+
+          <!-- Search -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 space-y-4 sm:space-y-0">
+            <input id="searchInput" type="text" placeholder="Cari nama / tingkat..." class="w-full sm:w-1/3 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+          </div>
+
+          <!-- Pagination Atas -->
+          <div id="paginationTop" class="mb-4 flex flex-wrap gap-2 justify-end text-sm"></div>
+
+          <!-- Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full table-auto border-collapse">
+              <thead class="bg-gray-100 dark:bg-gray-800">
+                <tr>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Nama Lembaga</th>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Tingkat</th>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Judul & Ruang Lingkup</th>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Manfaat / Output</th>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Durasi</th>
+                  <th class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300">Bukti / Tautan</th>
+                </tr>
+              </thead>
+              <tbody id="partnersTableBody" class="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700"></tbody>
+            </table>
+          </div>
+
+          <!-- Pagination Bawah -->
+          <div id="paginationBottom" class="mt-4 flex flex-wrap gap-2 justify-end text-sm"></div>
+        </div>
+      </section>
+
+      <script is:inline>
+        const tableBody = document.getElementById("partnersTableBody");
+        const searchInput = document.getElementById("searchInput");
+        const kategoriTabs = document.getElementById("kategoriTabs");
+        const paginationTop = document.getElementById("paginationTop");
+        const paginationBottom = document.getElementById("paginationBottom");
+
+        let partnersData = [];
+        let kategoriAktif = "";
+        let currentPage = 1;
+        const rowsPerPage = 10;
+
+        function renderTable() {
+          const q = searchInput.value.toLowerCase();
+          const filtered = partnersData.filter(p => {
+            const matchSearch = (p.nama_lembaga || "").toLowerCase().includes(q) || (p.tingkat || "").toLowerCase().includes(q);
+            const matchKategori = kategoriAktif ? p.kategori === kategoriAktif : true;
+            return matchSearch && matchKategori;
+          });
+
+          const totalPages = Math.ceil(filtered.length / rowsPerPage);
+          const start = (currentPage - 1) * rowsPerPage;
+          const pageData = filtered.slice(start, start + rowsPerPage);
+
+          tableBody.innerHTML = "";
+          pageData.forEach(p => {
+            const tr = document.createElement("tr");
+            tr.className = "hover:bg-gray-50 dark:hover:bg-gray-800";
+            tr.innerHTML = `
+              <td class="px-4 py-3">${p.nama_lembaga}</td>
+              <td class="px-4 py-3">${p.tingkat}</td>
+              <td class="px-4 py-3">${p.judul_dan_lingkup}</td>
+              <td class="px-4 py-3">${p.manfaat_output}</td>
+              <td class="px-4 py-3">${p.durasi}</td>
+              <td class="px-4 py-3 text-purple-700 hover:underline"><a href="${p.bukti_tautan}" target="_blank" rel="noopener">Lihat</a></td>
+            `;
+            tableBody.appendChild(tr);
+          });
+
+          renderPagination(totalPages);
+        }
+
+        function renderPagination(totalPages) {
+          [paginationTop, paginationBottom].forEach(container => {
+            container.innerHTML = "";
+            for (let i = 1; i <= totalPages; i++) {
+              const btn = document.createElement("button");
+              btn.className = `px-2 py-1 border rounded ${i === currentPage ? 'bg-purple-600 text-white' : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300'}`;
+              btn.textContent = i;
+              btn.addEventListener("click", () => {
+                currentPage = i;
+                renderTable();
+              });
+              container.appendChild(btn);
+            }
+          });
+        }
+
+        fetch("/data/partners.json")
+          .then(res => res.json())
+          .then(data => {
+            partnersData = data;
+            renderTable();
+          });
+
+        searchInput.addEventListener("input", () => {
+          currentPage = 1;
+          renderTable();
+        });
+
+        kategoriTabs.addEventListener("click", e => {
+          const btn = e.target.closest("button[data-kategori]");
+          if (!btn) return;
+          kategoriAktif = btn.dataset.kategori;
+          currentPage = 1;
+          document.querySelectorAll("#kategoriTabs .tab-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          renderTable();
+        });
+      </script>
+
+
+
+
+
 
 
 ---
