@@ -24,6 +24,13 @@ const fixHtml = (url) => `${url}.html`;
           const slug = slugify(title, { lower: true, strict: true });
           const url = fixHtml(`/berita/${slug}`);
 
+          // Format tanggal menjadi "d MMMM yyyy" dalam bahasa Indonesia
+          const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          });
+
           return (
             <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               <a href={url}>
@@ -37,7 +44,7 @@ const fixHtml = (url) => `${url}.html`;
                     {tags?.[0] ?? 'Berita'}
                   </span>
                   <span class="text-sm text-gray-500 dark:text-gray-400">
-                    {pubDate}
+                    {tampilTanggal}
                   </span>
                 </div>
                 <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">

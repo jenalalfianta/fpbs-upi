@@ -20,11 +20,20 @@ const { title, pubDate, image, description, tags } = post.data;
 const { Content } = await post.render();
 
 const related = posts
-  .filter(p => p.slug !== post.slug)
-  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .filter(p => slugify(p.data.title, { lower: true, strict: true }) !== slug)
+  .sort((a, b) => {
+    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+  })
   .slice(0, 5);
 
 const fixHtml = (url) => `${url}.html`;
+
+// Format tanggal utama
+const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
 ---
 
 <Layout pageTitle={title}>
@@ -36,7 +45,7 @@ const fixHtml = (url) => `${url}.html`;
             {title}
           </h1>
           <p class="text-sm text-gray-500 dark:text-gray-400">
-            {pubDate}
+            {tampilTanggal}
           </p>
         </header>
 
