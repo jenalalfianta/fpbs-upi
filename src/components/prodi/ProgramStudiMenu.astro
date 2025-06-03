@@ -1,5 +1,5 @@
 ---
-const { menuItems } = Astro.props;
+const { menuItems, activeTab, slug } = Astro.props;
 ---
 <!-- Sticky Menu (desktop & mobile scrollable) -->
 <div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
@@ -12,65 +12,33 @@ const { menuItems } = Astro.props;
                 class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
                 {item.label}
               </a>
-            : <button type="button" data-tab={item.id}
-                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+            : <a href={`/program-studi/${slug}/${item.id}.html`}
+                class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
+                  activeTab === item.id
+                    ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'
+                    : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                }`}>
                 {item.label}
-              </button>
+              </a>
         ))}
       </div>
     </div>
   </div>
 </div>
 
-<!-- Floating Button Mobile - kiri bawah (DISEMBUNYIKAN) -->
-<button id="menu-toggle"
-  class="hidden md:hidden fixed bottom-6 left-6 z-50 bg-purple-700 text-white rounded-full px-4 py-2 shadow-lg">
-  Menu
-</button>
+<style>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
 
-<!-- Dropdown Floating Menu Mobile - kiri bawah (DISEMBUNYIKAN) -->
-<div id="menu-float" class="hidden md:hidden fixed bottom-20 left-6 z-40 bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-700 p-4 w-56 shadow-lg space-y-2">
-  {menuItems.map(item => (
-    item.external
-      ? <a href={item.external} target="_blank"
-          class="block text-sm text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400">
-          {item.label}
-        </a>
-      : <button type="button" data-tab={item.id}
-          class="block w-full text-left text-sm text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400">
-          {item.label}
-        </button>
-  ))}
-</div>
-
-<!-- Script Interaksi -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.getElementById('menu-toggle');
-  const menuFloat = document.getElementById('menu-float');
   const scrollContainer = document.getElementById('menu-scroll');
-
-  // Menu toggle tetap ada untuk kompatibilitas, meskipun tidak tampil
-  toggleButton?.addEventListener('click', () => {
-    menuFloat?.classList.toggle('hidden');
-  });
-
-  document.querySelectorAll('[data-tab]').forEach(button => {
-    button.addEventListener('click', (e) => {
-      const tabId = e.target.closest('[data-tab]').getAttribute('data-tab');
-      document.querySelectorAll('[data-content]').forEach(content => {
-        content.classList.add('hidden');
-      });
-      const selectedContent = document.getElementById(tabId);
-      if (selectedContent) {
-        selectedContent.classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-      menuFloat?.classList.add('hidden');
-    });
-  });
-
-  // Horizontal drag scroll
   let isDown = false;
   let startX;
   let scrollLeft;
@@ -98,13 +66,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
-<style>
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-</style>
