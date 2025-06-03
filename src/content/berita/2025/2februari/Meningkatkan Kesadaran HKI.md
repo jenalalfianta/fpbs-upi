@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/Meningkatkan-Kesadaran-Hak-Kekayaan-Intelektual-FPBS-Gelar-Sosialisasi-Peningkatan-HKI-1.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI) menyelenggarakan kegiatan sosialisasi kekayaan intelektual yang diinisiasi oleh Direktorat Inovasi, Publikasi, dan Kekayaan Intelektual UPI (DIPUU UPI). Kegiatan ini bertujuan untuk meningkatkan pemahaman civitas akademika terhadap pentingnya hak kekayaan intelektual (HKI) serta mendorong peningkatan jumlah HKI di lingkungan FPBS.
 

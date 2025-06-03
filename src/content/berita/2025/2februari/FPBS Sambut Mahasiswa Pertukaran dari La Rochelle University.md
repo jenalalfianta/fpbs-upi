@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/FPBS-Sambut-Mahasiswa-Pertukaran-dari-La-Rochelle-University (1).webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia menyambut kedatangan lima mahasiswa pertukaran pelajar dari La Rochelle University, Prancis. Acara penyambutan yang berlangsung di ruang rapat lantai 1 Gedung FPBS ini dihadiri oleh Dekan FPBS, para Wakil Dekan, serta Ketua Program Studi Pendidikan Bahasa Prancis.

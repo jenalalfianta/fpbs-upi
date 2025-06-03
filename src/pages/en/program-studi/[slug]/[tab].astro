@@ -1,0 +1,50 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ProgramStudiMenu from '../../../components/prodi/ProgramStudiMenu.astro';
+import ProgramStudiContent from '../../../components/prodi/ProgramStudiContent.astro';
+import { getCollection, getEntryBySlug } from 'astro:content';
+
+const { slug, tab } = Astro.params;
+
+const prodiData = await getEntryBySlug('program-studi', slug);
+if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
+
+const activeTab = tab || 'profil';
+const menuItems = prodiData.data.menu || [];
+
+export async function getStaticPaths() {
+  const entries = await getCollection('program-studi');
+  const paths = [];
+
+  for (const entry of entries) {
+    const slug = entry.slug;
+    const tabs = entry.data.menu?.map(item => item.id) || ['profil'];
+    for (const tab of tabs) {
+      paths.push({ params: { slug, tab } });
+    }
+  }
+
+  console.log("Generated paths:", paths);
+  return paths;
+}
+---
+
+<Layout>
+  <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} slug={slug} />
+  <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
+</Layout>
+
+<!-- Script eksternal jika dibutuhkan -->
+<script src="https://cdn.jsdelivr.net/npm/apextree" defer></script>
+<link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
+<script is:inline type="module">
+  import PhotoSwipeLightbox from '/vendor/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.dosen-gallery',
+    children: 'a.zoomable',
+    pswpModule: () => Promise.resolve(PhotoSwipe)
+  });
+  lightbox.init();
+</script>

@@ -1,6 +1,10 @@
 ---
 const fixHtml = (url) => `${url}.html`;
+const currentPath = Astro.url.pathname;
+const lang = currentPath.startsWith('/en') ? 'en' : 'id';
+const switchLang = lang === 'en' ? currentPath.replace('/en', '') : '/en' + currentPath;
 ---
+
 <!-- Dummy Navbar untuk jaga jarak -->
 <div aria-hidden="true" class="invisible pointer-events-none">
   <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-700">
@@ -13,9 +17,8 @@ const fixHtml = (url) => `${url}.html`;
       <!-- Dummy Bahasa, Dark Mode, Hamburger -->
       <div class="flex items-center md:order-2 gap-4">
         <div class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg">
-          <svg class="w-5 h-5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
-            <g fill-rule="evenodd"><path fill="#e70011" d="M0 0h640v480H0z"/><path fill="#fff" d="M0 240h640v240H0z"/></g>
-          </svg>ID
+          <img src="https://flagcdn.com/id.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="Indonesian Flag" />
+            ID
         </div>
         <div class="text-gray-500 dark:text-gray-300 rounded-lg text-sm p-2"></div>
         <div class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"></div>
@@ -45,13 +48,40 @@ const fixHtml = (url) => `${url}.html`;
 
     <!-- Bahasa, Dark Mode, Hamburger -->
     <div class="flex items-center md:order-2 gap-4">
-      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
-        <svg class="w-5 h-5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480"><g fill-rule="evenodd"><path fill="#e70011" d="M0 0h640v480H0z"/><path fill="#fff" d="M0 240h640v240H0z"/></g></svg>ID
-      </button>
-      <div id="language-dropdown-menu" class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700">
-        <ul class="py-2 font-medium">
-          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">🇬🇧 EN</a></li>
-        </ul>
+    <button type="button" data-dropdown-toggle="language-dropdown-menu"
+      class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+      {lang === 'en' ? (
+        <>
+          <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" />
+          EN
+        </>
+      ) : (
+        <>
+          <img src="https://flagcdn.com/id.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="Indonesian Flag" />
+          ID
+        </>
+      )}
+    </button>
+      <div id="language-dropdown-menu"
+        class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700">
+          <ul class="py-2 font-medium">
+            {lang === 'en' ? (
+              <li>
+                <a href={switchLang}
+                  class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  🇮🇩 ID
+                </a>
+              </li>
+            ) : (
+              <li>
+                <a href={switchLang}
+                  class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" />
+                  EN
+                </a>
+              </li>
+            )}
+          </ul>
       </div>
 
       <!-- Dark Mode -->
@@ -160,4 +190,3 @@ const fixHtml = (url) => `${url}.html`;
     </div>
   </div>
 </nav>
-

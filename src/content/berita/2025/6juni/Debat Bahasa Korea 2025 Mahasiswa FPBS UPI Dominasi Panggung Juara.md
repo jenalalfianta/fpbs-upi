@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/debat-bahasa-korea-2025.webp"
   alt: "Tim Debat Bahasa Korea FPBS UPI di CGV FX Sudirman"
 tags: ["berita"]
+lang: id
 ---
 
 Kompetisi Debat Bahasa Korea untuk Mahasiswa Indonesia kembali digelar tahun ini oleh Korean Cultural Center Indonesia (KCCI) bekerja sama dengan King Sejong Institute (KSI) Jakarta. Ajang bergengsi ini menjadi wadah bagi mahasiswa dari berbagai perguruan tinggi di Indonesia untuk menunjukkan kefasihan mereka dalam berbahasa Korea serta melatih kemampuan berpikir kritis.

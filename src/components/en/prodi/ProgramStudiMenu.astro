@@ -1,0 +1,68 @@
+---
+const { menuItems, activeTab, slug } = Astro.props;
+---
+<!-- Sticky Menu (desktop & mobile scrollable) -->
+<div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
+  <div class="max-w-6xl mx-auto">
+    <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
+      <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
+        {menuItems.map(item => (
+          item.external
+            ? <a href={item.external} target="_blank"
+                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+                {item.label}
+              </a>
+            : <a href={`/program-studi/${slug}/${item.id}.html`}
+                class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
+                  activeTab === item.id
+                    ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'
+                    : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                }`}>
+                {item.label}
+              </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollContainer = document.getElementById('menu-scroll');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollContainer.classList.add('active');
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+  });
+  scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+  });
+  scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+  });
+  scrollContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  });
+});
+</script>

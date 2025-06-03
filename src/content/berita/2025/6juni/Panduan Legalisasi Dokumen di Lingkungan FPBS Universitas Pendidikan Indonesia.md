@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/6juni/freepick-document.webp"
   alt: "Pelayanan Legalisasi Dokumen di FPBS UPI"
 tags: ["panduan", "legalisasi"]
+lang: id
 ---
 
 Bagi mahasiswa dan lulusan, legalisasi dokumen merupakan salah satu proses administratif yang penting. Legalisasi diperlukan untuk memastikan bahwa dokumen akademik yang dimiliki, seperti ijazah dan transkrip nilai, memiliki keabsahan resmi dan diakui oleh berbagai instansi baik di dalam maupun luar negeri. Artikel ini akan membahas secara lengkap mengenai prosedur legalisasi dokumen di Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI).

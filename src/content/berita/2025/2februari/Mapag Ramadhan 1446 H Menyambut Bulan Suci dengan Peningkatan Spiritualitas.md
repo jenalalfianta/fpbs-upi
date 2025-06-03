@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/Mapag-Ramadhan-1446-H-Menyambut-Bulan-Suci-dengan-Peningkatan-Spiritualitas-2-1024x576.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Dalam rangka menyambut datangnya bulan suci Ramadhan 1446 H, Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia menggelar kegiatan Mapag Ramadhan pada Rabu, 26 Februari 2025. Acara ini dihadiri oleh para dosen, tenaga kependidikan, serta cleaning service di lingkungan FPBS.

@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/3maret/Kunjungan-Ketua-Majelis-Wali-Amanat-MWA-ke-FPBS-Meninjau-Fasilitas-dan-Mendorong-Kemajuan-Akademik-1 (1).webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI) menerima kunjungan dari Ketua Majelis Wali Amanat (MWA), Sekretaris MWA dan Ketua Komite Audit Universitas pada Rabu, 26 Maret 2025. Kunjungan ini disambut baik oleh para pimpinan fakultas, termasuk Dekan FPBS beserta para Wakil Dekan.

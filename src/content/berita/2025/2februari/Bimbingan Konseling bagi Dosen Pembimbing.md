@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/Bimbingan-Konseling-bagi-Dosen-Pembimbing-Akademik-di-FPBS-Meningkatkan-Kualitas-Layanan-bagi-Mahasiswa.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI) menyelenggarakan kegiatan bimbingan konseling bagi dosen pembimbing akademik pada tanggal 21 Februari 2025. Kegiatan ini bertujuan untuk meningkatkan kapasitas dosen dalam memberikan layanan bimbingan akademik yang optimal kepada mahasiswa selama masa perkuliahan. Kegiatan dilakukan secara Hybrid, Luring di Auditorium FPBS dan Daring melalui Zoom Meeting.

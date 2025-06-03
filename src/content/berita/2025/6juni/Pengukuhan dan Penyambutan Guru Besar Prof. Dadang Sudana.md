@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/dadang-sudana.webp"
   alt: "Prof. Dr. Dadang Sudana menerima pengukuhan Guru Besar di Gedung BPU Achmad Sanusi UPI"
 tags: ["berita"]
+lang: id
 ---
 
 Universitas Pendidikan Indonesia menggelar acara pengukuhan Guru Besar bagi Prof. Dr. Dadang Sudana, M.A., Ph.D. dalam bidang Linguistik Makna pada Rabu, 21 Mei 2025, bertempat di Gedung BPU Achmad Sanusi UPI. Acara berlangsung khidmat mulai pukul 08.00 hingga 12.00 WIB dan dihadiri oleh jajaran pimpinan universitas, keluarga, rekan akademisi, serta sivitas akademika.

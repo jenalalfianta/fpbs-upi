@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/isola-upi.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Masa penerimaan mahasiswa baru merupakan momen yang sangat dinantikan oleh calon mahasiswa yang ingin melanjutkan pendidikan ke jenjang perguruan tinggi. Salah satu informasi yang paling dicari dalam periode ini adalah daya tampung serta sebaran kuota di setiap program studi. Artikel ini menyajikan informasi lengkap mengenai daya tampung di Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI) untuk jalur SNBP, SNBT, dan Ujian Mandiri, berdasarkan data resmi yang tercantum dalam laman Penerimaan Mahasiswa Baru UPI (https://pmb.upi.edu).

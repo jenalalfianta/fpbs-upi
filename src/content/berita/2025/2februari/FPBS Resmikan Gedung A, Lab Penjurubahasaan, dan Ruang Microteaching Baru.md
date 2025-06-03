@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-1.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Bandung, Januari 2025 – Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia resmi kembali menggunakan Gedung A, yang sebelumnya digunakan oleh Fakultas Pendidikan Seni dan Desain (FPSD). Setelah FPSD mendapatkan gedung baru, Gedung A kini dapat difungsikan kembali oleh FPBS sebagai bagian dari upaya peningkatan fasilitas akademik.

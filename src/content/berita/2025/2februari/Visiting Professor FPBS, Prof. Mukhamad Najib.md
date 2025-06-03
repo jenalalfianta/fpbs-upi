@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/Visiting-Professor-FPBS-Prof.-Mukhamad-Najib-Berbagi-Wawasan-tentang-Program-Guru-Bantu-BIPA-di-Australia (1).webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) dengan bangga menyelenggarakan kegiatan Visiting Professor yang menghadirkan Prof. Mukhamad Najib, M.Si., seorang guru besar di Institut Pertanian Bogor yang pernah menjabat sebagai Atase Pendidikan dan Kebudayaan RI di Canberra pada periode 2021-2024. Kegiatan ini bertujuan untuk berbagi pengalaman kepada para mahasiswa mengenai program guru bantu mengajar BIPA di Australia serta mendorong para dosen agar dapat memotivasi mahasiswanya untuk mengikuti program guru bantu Australia dari Atase Pendidikan dan Kebudayaan RI di Canberra.

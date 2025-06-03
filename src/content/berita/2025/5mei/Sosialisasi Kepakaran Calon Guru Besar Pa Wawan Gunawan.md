@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/sosialisasi-kepakaran-guru-besar.webp"
   alt: "Dr. Wawan Gunawan menyampaikan presentasi ilmiah di Auditorium B lantai 4, Gedung FPBS UPI"
 tags: ["berita"]
+lang: id
 ---
 
 Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia menggelar kegiatan Sosialisasi Kepakaran Calon Guru Besar pada Rabu, 21 Mei 2025, bertempat di Auditorium B lantai 4, Gedung FPBS UPI. Acara ini menghadirkan Bapak Dr. Wawan Gunawan, M.Ed., Ph.D., yang menyampaikan presentasi ilmiah berjudul “Unlocking the Power of Language: Systemic Functional Linguistics-Informed Application in Education, Media Discourse, and Language Description.”

@@ -7,6 +7,7 @@ const beritaCollection = defineCollection({
     title: z.string(),
     pubDate: z.string(),
     author: z.string(),
+    lang: z.enum(['id', 'en']),
     image: z
       .object({
         url: z.string(),

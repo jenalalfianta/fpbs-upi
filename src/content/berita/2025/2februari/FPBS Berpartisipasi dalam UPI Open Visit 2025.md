@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/2februari/FPBS-Berpartisipasi-dalam-UPI-Open-Visit-2025-Perkenalkan-Program-Studi-dan-Gelar-Field-Trip-Kampus-1.webp"
   alt: ""
 tags: ["berita"]
+lang: id
 ---
 
 Bandung, 8 Februari 2025 – Universitas Pendidikan Indonesia (UPI) sukses menggelar **UPI Open Visit 2025**, sebuah acara open house pertama yang bertujuan untuk memperkenalkan berbagai program studi kepada calon mahasiswa. Kegiatan yang berlangsung di **Gedung Gymnasium UPI** ini menghadirkan stand-stand dari berbagai fakultas, termasuk Fakultas Pendidikan Bahasa dan Sastra (FPBS).

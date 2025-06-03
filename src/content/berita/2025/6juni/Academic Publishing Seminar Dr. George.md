@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/seminar-academic-publishing.webp"
   alt: "Dr. George Koutsouris memaparkan strategi publikasi ilmiah di Auditorium B FPBS UPI"
 tags: ["berita"]
+lang: id
 ---
 
 Bandung, 16 Mei 2025 – Program Studi Bahasa dan Sastra Inggris FPBS UPI bekerja sama dengan SUN Education sukses menyelenggarakan Academic Publishing Seminar bertempat di Auditorium B FPBS UPI. Acara yang berlangsung pukul 09.00–11.00 WIB ini diikuti oleh dosen dan mahasiswa dari berbagai program studi di lingkungan FPBS UPI.

@@ -6,6 +6,7 @@ image:
   url: "/images/berita/2025/5mei/festival-pantun-brunei.webp"
   alt: "Tim FPBS UPI tampil di Festival Pantun Antarnegara Brunei"
 tags: ["berita"]
+lang: id
 ---
 
 Brunei Darussalam, 24–28 Mei 2025 — Delegasi mahasiswa dari Fakultas Pendidikan Bahasa dan Sastra (FPBS) Universitas Pendidikan Indonesia (UPI) sukses mengukir prestasi membanggakan dalam ajang budaya internasional bertajuk Memperkasa Pantun Nusantara Ke-4 yang berlangsung di Dewan Bahasa dan Pustaka, Brunei Darussalam. Dalam kompetisi pantun antarnegara, tim FPBS UPI berhasil menyabet posisi Juara 1, menandai kemenangan Indonesia dalam diplomasi budaya lewat sastra lisan.
