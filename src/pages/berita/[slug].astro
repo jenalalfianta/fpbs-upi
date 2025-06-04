@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const posts = await getCollection('berita');
+const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
 const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
 const { title, pubDate, image, description, tags } = post.data;

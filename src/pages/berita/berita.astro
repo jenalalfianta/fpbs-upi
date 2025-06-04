@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
-const allPosts = await getCollection('berita');
+const allPosts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
 allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const fixHtml = (url) => `${url}.html`;

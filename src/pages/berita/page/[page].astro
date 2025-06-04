@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection('berita');
+  const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
   posts.sort((a, b) => {
     return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
   });
