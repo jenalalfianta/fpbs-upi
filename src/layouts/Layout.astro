@@ -2,9 +2,12 @@
 import "../styles/global.css";
 import { getPageTitle } from "../scripts/title.ts";
 
+const { pageTitle, pageDescription } = Astro.props;
+
 const pathname = Astro.url.pathname;
 const lang = pathname.startsWith('/en') ? 'en' : 'id';
-const title = getPageTitle(pathname);
+const title = pageTitle ?? getPageTitle(pathname);
+const description = pageDescription ?? "Website resmi Fakultas Pendidikan Bahasa dan Sastra Universitas Pendidikan Indonesia (FPBS UPI).";
 
 // Dinamis import Navbar & Footer
 const Navbar = lang === 'en'
@@ -16,16 +19,24 @@ const Footer = lang === 'en'
   : (await import("../components/Footer.astro")).default;
 ---
 
-
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="FPBS UPI, berita FPBS, sastra, bahasa, universitas pendidikan indonesia" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E09XPHZJTL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -33,8 +44,6 @@ const Footer = lang === 'en'
       gtag('js', new Date());
       gtag('config', 'G-E09XPHZJTL');
     </script>
-
-    <title>{title}</title>
   </head>
 
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
@@ -80,4 +89,3 @@ const Footer = lang === 'en'
     height: 100%;
   }
 </style>
-
