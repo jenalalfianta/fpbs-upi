@@ -1,6 +1,6 @@
 ---
 title: "Kunjungan Ketua Majelis Wali Amanat (MWA) ke FPBS Meninjau Fasilitas dan Mendorong Kemajuan Akademik"
-pubDate: "26 Maret 2025"
+pubDate: "2025-03-26"
 author: "Admin"
 image:
   url: "/images/berita/2025/3maret/Kunjungan-Ketua-Majelis-Wali-Amanat-MWA-ke-FPBS-Meninjau-Fasilitas-dan-Mendorong-Kemajuan-Akademik-1 (1).webp"

@@ -1,7 +1,7 @@
 ---
 title: "FPBS Inaugurates Building A, New Interpreting Lab, and Microteaching Room"
-pubDate: "8 February 2025"
-author: "Teja Mustika"
+pubDate: "2025-02-08"
+author: "Admin"
 image:
   url: "/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-1.webp"
   alt: ""

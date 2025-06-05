@@ -1,10 +1,11 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection('berita');
+  const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
+
   posts.sort((a, b) => {
     return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
   });
@@ -15,15 +16,15 @@ const { page } = Astro.props;
 const fixHtml = (url) => `${url}.html`;
 ---
 
-<Layout pageTitle="Berita">
+<Layout pageTitle="News">
   <section class="bg-gray-50 dark:bg-gray-800 pt-10 md:pt-10 px-4">
     <div class="mx-auto max-w-screen-xl">
       <div class="mx-auto text-center mb-10">
         <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          Berita FPBS
+          FPBS News
         </h2>
         <p class="font-light text-gray-500 dark:text-gray-300 text-base md:text-lg">
-          Kumpulan informasi terbaru seputar kegiatan, agenda, dan pengumuman dari FPBS UPI.
+          A collection of the latest information about events, agendas, and announcements from FPBS UPI.
         </p>
       </div>
 
@@ -31,10 +32,10 @@ const fixHtml = (url) => `${url}.html`;
         {page.data.map((post) => {
           const { title, pubDate, image, tags } = post.data;
           const slug = slugify(title, { lower: true, strict: true });
-          const url = fixHtml(`/berita/${slug}`);
+          const url = fixHtml(`/en/news/${slug}`);
 
-          // Format tanggal menjadi "d MMMM yyyy" dalam bahasa Indonesia
-          const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
+          // Format date in English
+          const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
             day: 'numeric',
             month: 'long',
             year: 'numeric'
@@ -50,10 +51,10 @@ const fixHtml = (url) => `${url}.html`;
               <div class="flex flex-col justify-between flex-1 p-6">
                 <div class="flex items-center justify-between mb-2">
                   <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-200 w-fit">
-                    {tags?.[0] ?? 'Berita'}
+                    {tags?.[0] ?? 'News'}
                   </span>
                   <span class="text-sm text-gray-500 dark:text-gray-400">
-                    {tampilTanggal}
+                    {formattedDate}
                   </span>
                 </div>
                 <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -67,13 +68,13 @@ const fixHtml = (url) => `${url}.html`;
 
       <div class="flex justify-center mt-12 gap-4">
         {page.url.prev && (
-          <a href={fixHtml(page.url.prev)} class="text-purple-700 dark:text-purple-400 hover:underline">← Sebelumnya</a>
+          <a href={fixHtml(page.url.prev)} class="text-purple-700 dark:text-purple-400 hover:underline">← Previous</a>
         )}
         <span class="text-gray-500 dark:text-gray-300">
-          Halaman {page.currentPage} dari {page.lastPage}
+          Page {page.currentPage} of {page.lastPage}
         </span>
         {page.url.next && (
-          <a href={fixHtml(page.url.next)} class="text-purple-700 dark:text-purple-400 hover:underline">Berikutnya →</a>
+          <a href={fixHtml(page.url.next)} class="text-purple-700 dark:text-purple-400 hover:underline">Next →</a>
         )}
       </div>
     </div>

@@ -1,6 +1,6 @@
 ---
 title: "Raising Intellectual Property Awareness: FPBS Holds Socialization on IP Rights"
-pubDate: "13 February 2025"
+pubDate: "2025-02-13"
 author: "Admin"
 image:
   url: "/images/berita/2025/2februari/Meningkatkan-Kesadaran-Hak-Kekayaan-Intelektual-FPBS-Gelar-Sosialisasi-Peningkatan-HKI-1.webp"

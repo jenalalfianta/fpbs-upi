@@ -1,10 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import StafFpbs from '../../components/staf/StafFpbs.astro';
+import Layout from '@/layouts/Layout.astro';
+import PimpinanFpbs from '@/components/en/pimpinan/PimpinanFpbs.astro';
 ---
 
 <Layout>
-  <StafFpbs />
+  <PimpinanFpbs />
 </Layout>
 
 <!-- CSS PhotoSwipe -->
@@ -16,7 +16,7 @@ import StafFpbs from '../../components/staf/StafFpbs.astro';
   import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
 
   const lightbox = new PhotoSwipeLightbox({
-    gallery: '#staf-gallery',
+    gallery: '#pimpinan-gallery',
     children: 'a',
     pswpModule: () => Promise.resolve(PhotoSwipe)
   });

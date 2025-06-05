@@ -1,6 +1,6 @@
 ---
 title: "FPBS Sambut Mahasiswa Pertukaran dari La Rochelle University"
-pubDate: "26 Maret 2025"
+pubDate: "2025-03-26"
 author: "Admin"
 image:
   url: "/images/berita/2025/2februari/FPBS-Sambut-Mahasiswa-Pertukaran-dari-La-Rochelle-University (1).webp"

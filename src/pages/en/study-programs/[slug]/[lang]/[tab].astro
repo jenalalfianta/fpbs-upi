@@ -1,12 +1,12 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import ProgramStudiMenu from '../../../components/prodi/ProgramStudiMenu.astro';
-import ProgramStudiContent from '../../../components/prodi/ProgramStudiContent.astro';
+import Layout from '@/layouts/Layout.astro';
+import ProgramStudiMenu from '@/components/en/prodi/ProgramStudiMenu.astro';
+import ProgramStudiContent from '@/components/en/prodi/ProgramStudiContent.astro';
 import { getCollection, getEntryBySlug } from 'astro:content';
 
-const { slug, tab } = Astro.params;
+const { lang, slug, tab } = Astro.params;
 
-const prodiData = await getEntryBySlug('program-studi', slug);
+const prodiData = await getEntryBySlug('program-studi', `${lang}/${slug}`);
 if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
 const activeTab = tab || 'profil';
@@ -17,14 +17,15 @@ export async function getStaticPaths() {
   const paths = [];
 
   for (const entry of entries) {
-    const slug = entry.slug;
+    const [lang, ...slugParts] = entry.slug.split('/');
+    const slug = slugParts.join('/');
     const tabs = entry.data.menu?.map(item => item.id) || ['profil'];
+
     for (const tab of tabs) {
-      paths.push({ params: { slug, tab } });
+      paths.push({ params: { lang, slug, tab } });
     }
   }
 
-  console.log("Generated paths:", paths);
   return paths;
 }
 ---

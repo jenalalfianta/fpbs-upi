@@ -1,7 +1,7 @@
 ---
 title: "Counseling Workshop for Academic Advisors at FPBS: Enhancing the Quality of Student Support Services"
-pubDate: "21 February 2025"
-author: "Teja Mustika"
+pubDate: "2025-02-21"
+author: "Admin"
 image:
   url: "/images/berita/2025/2februari/Bimbingan-Konseling-bagi-Dosen-Pembimbing-Akademik-di-FPBS-Meningkatkan-Kualitas-Layanan-bagi-Mahasiswa.webp"
   alt: ""

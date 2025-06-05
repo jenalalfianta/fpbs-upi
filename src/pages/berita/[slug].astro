@@ -1,10 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('berita');
+  const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
   return posts.map((post) => ({
     params: {
       slug: slugify(post.data.title, { lower: true, strict: true }),

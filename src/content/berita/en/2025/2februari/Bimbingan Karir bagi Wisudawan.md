@@ -1,7 +1,7 @@
 ---
 title: "Career Coaching for FPBS Batch 1 Graduates: Preparing for the Professional World"
-pubDate: "18 February 2025"
-author: "Teja Mustika"
+pubDate: "2025-02-18"
+author: "Admin"
 image:
   url: "/images/berita/2025/2februari/Bimbingan-Karir-bagi-Wisudawan-Gelombang-1-FPBS-Mempersiapkan-Lulusan-Menuju-Dunia-Kerja-2025.webp"
   alt: ""

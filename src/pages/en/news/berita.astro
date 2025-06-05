@@ -1,20 +1,20 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
-const allPosts = await getCollection('berita');
+const allPosts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
 allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const fixHtml = (url) => `${url}.html`;
 ---
 
-<Layout pageTitle="Berita">
+<Layout pageTitle="News">
   <section class="pt-32 pb-12 bg-white dark:bg-gray-900">
     <div class="mx-auto max-w-screen-xl px-6 md:px-10 lg:px-14">
       <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
         <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          Berita FPBS
+          FPBS News
         </h2>
       </div>
 
@@ -22,10 +22,9 @@ const fixHtml = (url) => `${url}.html`;
         {allPosts.map((post) => {
           const { title, pubDate, image, tags } = post.data;
           const slug = slugify(title, { lower: true, strict: true });
-          const url = fixHtml(`/berita/${slug}`);
+          const url = fixHtml(`/en/news/${slug}`);
 
-          // Format tanggal menjadi "d MMMM yyyy" dalam bahasa Indonesia
-          const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
+          const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
             day: 'numeric',
             month: 'long',
             year: 'numeric'
@@ -41,10 +40,10 @@ const fixHtml = (url) => `${url}.html`;
               <div class="flex flex-col justify-between flex-1 p-6">
                 <div class="flex items-center justify-between mb-2">
                   <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-200 w-fit">
-                    {tags?.[0] ?? 'Berita'}
+                    {tags?.[0] ?? 'News'}
                   </span>
                   <span class="text-sm text-gray-500 dark:text-gray-400">
-                    {tampilTanggal}
+                    {formattedDate}
                   </span>
                 </div>
                 <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">

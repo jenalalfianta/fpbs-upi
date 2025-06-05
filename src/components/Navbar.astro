@@ -1,8 +1,11 @@
 ---
+import { slugMap } from "../utils/i18nSlugMap";
 const fixHtml = (url) => `${url}.html`;
 const currentPath = Astro.url.pathname;
 const lang = currentPath.startsWith('/en') ? 'en' : 'id';
-const switchLang = lang === 'en' ? currentPath.replace('/en', '') : '/en' + currentPath;
+const switchLang = slugMap[currentPath] ?? (lang === 'en'
+  ? currentPath.replace(/^\/en/, '')
+  : '/en' + currentPath);
 ---
 
 <!-- Dummy Navbar untuk jaga jarak -->

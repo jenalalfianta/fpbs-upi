@@ -1,7 +1,7 @@
 ---
 title: "FPBS Resmikan Gedung A, Lab Penjurubahasaan, dan Ruang Microteaching Baru"
-pubDate: "8 Februari 2025"
-author: "Teja Mustika"
+pubDate: "2025-02-08"
+author: "Admin"
 image:
   url: "/images/berita/2025/2februari/FPBS-Resmikan-Gedung-A-Lab-Penjurubahasaan-dan-Ruang-Microteaching-Baru-1.webp"
   alt: ""

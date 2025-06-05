@@ -6,25 +6,25 @@ import { getCollection, getEntryBySlug } from 'astro:content';
 
 const { slug, tab } = Astro.params;
 
-const prodiData = await getEntryBySlug('program-studi', slug);
+const prodiData = await getEntryBySlug('program-studi', `id/${slug}`);
 if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
 const activeTab = tab || 'profil';
 const menuItems = prodiData.data.menu || [];
 
 export async function getStaticPaths() {
-  const entries = await getCollection('program-studi');
+  const entries = (await getCollection('program-studi')).filter(e => e.id.startsWith('id/'));
   const paths = [];
 
   for (const entry of entries) {
-    const slug = entry.slug;
+    const slug = entry.slug.split('/')[1]; // ambil bagian setelah 'id/'
     const tabs = entry.data.menu?.map(item => item.id) || ['profil'];
+
     for (const tab of tabs) {
       paths.push({ params: { slug, tab } });
     }
   }
 
-  console.log("Generated paths:", paths);
   return paths;
 }
 ---

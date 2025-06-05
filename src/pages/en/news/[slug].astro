@@ -1,10 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('berita');
+const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
+
   return posts.map((post) => ({
     params: {
       slug: slugify(post.data.title, { lower: true, strict: true }),
@@ -13,7 +14,8 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const posts = await getCollection('berita');
+const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
+
 const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
 const { title, pubDate, image, description, tags } = post.data;
@@ -28,8 +30,8 @@ const related = posts
 
 const fixHtml = (url) => `${url}.html`;
 
-// Format tanggal utama
-const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
+// Format date in English
+const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
   day: 'numeric',
   month: 'long',
   year: 'numeric'
@@ -45,7 +47,7 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
             {title}
           </h1>
           <p class="text-sm text-gray-500 dark:text-gray-400">
-            {tampilTanggal}
+            {formattedDate}
           </p>
         </header>
 
@@ -68,11 +70,11 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
   <aside aria-label="Related articles" class="bg-gray-50 dark:bg-gray-800 pt-10 md:pt-10 pb-20">
     <div class="px-4 mx-auto max-w-screen-xl">
       <h2 class="mb-8 text-3xl font-bold text-gray-900 dark:text-white">
-        Berita Lainnya
+        Other News
       </h2>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {related.map(item => {
-          const relatedUrl = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
+          const relatedUrl = fixHtml(`/en/news/${slugify(item.data.title, { lower: true, strict: true })}`);
           return (
             <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               {item.data.image && (

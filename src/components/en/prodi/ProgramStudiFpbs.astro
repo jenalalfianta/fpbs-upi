@@ -1,29 +1,29 @@
 ---
 const programs = [
-  { name: "Pendidikan Bahasa dan Sastra Indonesia", level: "S1", slug: "pendidikan-bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-pen-nib" },
-  { name: "Pendidikan Bahasa Indonesia", level: "S2", slug: "pendidikan-bahasa-indonesia-s2", icon: "fa-solid fa-book" },
-  { name: "Pendidikan Bahasa Indonesia", level: "S3", slug: "pendidikan-bahasa-indonesia-s3", icon: "fa-solid fa-book" },
-  { name: "Bahasa dan Sastra Indonesia", level: "S1", slug: "bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-book-open" },
-  { name: "Pendidikan Bahasa Sunda", level: "S1", slug: "pendidikan-bahasa-sunda-s1", icon: "fa-solid fa-leaf" },
-  { name: "Pendidikan Bahasa dan Budaya Sunda", level: "S2", slug: "pendidikan-bahasa-dan-budaya-sunda-s2", icon: "fa-solid fa-masks-theater" },
-  { name: "Pendidikan Bahasa Inggris", level: "S1", slug: "pendidikan-bahasa-inggris-s1", icon: "fa-solid fa-language" },
-  { name: "Pendidikan Bahasa Inggris", level: "S2", slug: "pendidikan-bahasa-inggris-s2", icon: "fa-solid fa-language" },
-  { name: "Pendidikan Bahasa Inggris", level: "S3", slug: "pendidikan-bahasa-inggris-s3", icon: "fa-solid fa-language" },
-  { name: "Bahasa dan Sastra Inggris", level: "S1", slug: "bahasa-dan-sastra-inggris-s1", icon: "fa-solid fa-book-atlas" },
-  { name: "Pendidikan Bahasa Jerman", level: "S1", slug: "pendidikan-bahasa-jerman-s1", icon: "fa-solid fa-globe" },
-  { name: "Pendidikan Bahasa Arab", level: "S1", slug: "pendidikan-bahasa-arab-s1", icon: "fa-solid fa-file-lines" },
-  { name: "Pendidikan Bahasa Arab", level: "S2", slug: "pendidikan-bahasa-arab-s2", icon: "fa-solid fa-file-lines" },
-  { name: "Pendidikan Bahasa Jepang", level: "S1", slug: "pendidikan-bahasa-jepang-s1", icon: "fa-solid fa-circle-nodes" },
-  { name: "Pendidikan Bahasa Jepang", level: "S2", slug: "pendidikan-bahasa-jepang-s2", icon: "fa-solid fa-circle-nodes" },
-  { name: "Pendidikan Bahasa Perancis", level: "S1", slug: "pendidikan-bahasa-perancis-s1", icon: "fa-solid fa-champagne-glasses" },
-  { name: "Pendidikan Bahasa Korea", level: "S1", slug: "pendidikan-bahasa-korea-s1", icon: "fa-solid fa-user-graduate" },
+  { name: "Indonesian Language and Literature Education", level: "Bachelor", slug: "indonesian-language-and-literature-education-bachelor", icon: "fa-solid fa-pen-nib" },
+  { name: "Indonesian Language Education", level: "Master", slug: "indonesian-language-education-master", icon: "fa-solid fa-book" },
+  { name: "Indonesian Language Education", level: "Doctorate", slug: "indonesian-language-education-doctorate", icon: "fa-solid fa-book" },
+  { name: "Indonesian Language and Literature", level: "Bachelor", slug: "indonesian-language-and-literature-bachelor", icon: "fa-solid fa-book-open" },
+  { name: "Sundanese Language Education", level: "Bachelor", slug: "sundanese-language-education-bachelor", icon: "fa-solid fa-leaf" },
+  { name: "Sundanese Language and Culture Education", level: "Master", slug: "sundanese-language-and-culture-education-master", icon: "fa-solid fa-masks-theater" },
+  { name: "English Language Education", level: "Bachelor", slug: "english-language-education-bachelor", icon: "fa-solid fa-language" },
+  { name: "English Language Education", level: "Master", slug: "english-language-education-master", icon: "fa-solid fa-language" },
+  { name: "English Language Education", level: "Doctorate", slug: "english-language-education-doctorate", icon: "fa-solid fa-language" },
+  { name: "English Language and Literature", level: "Bachelor", slug: "english-language-and-literature-bachelor", icon: "fa-solid fa-book-atlas" },
+  { name: "German Language Education", level: "Bachelor", slug: "german-language-education-bachelor", icon: "fa-solid fa-globe" },
+  { name: "Arabic Language Education", level: "Bachelor", slug: "arabic-language-education-bachelor", icon: "fa-solid fa-file-lines" },
+  { name: "Arabic Language Education", level: "Master", slug: "arabic-language-education-master", icon: "fa-solid fa-file-lines" },
+  { name: "Japanese Language Education", level: "Bachelor", slug: "japanese-language-education-bachelor", icon: "fa-solid fa-circle-nodes" },
+  { name: "Japanese Language Education", level: "Master", slug: "japanese-language-education-master", icon: "fa-solid fa-circle-nodes" },
+  { name: "French Language Education", level: "Bachelor", slug: "french-language-education-bachelor", icon: "fa-solid fa-champagne-glasses" },
+  { name: "Korean Language Education", level: "Bachelor", slug: "korean-language-education-bachelor", icon: "fa-solid fa-user-graduate" },
 ];
 ---
 
 <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-25 md:pb-25 px-6">
   <div class="max-w-6xl mx-auto text-center pt-4">
     <h1 class="text-2xl md:text-4xl font-bold text-purple-900 dark:text-purple-400 uppercase mb-12">
-      Program Studi
+      Study Programs
     </h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -42,9 +42,9 @@ const programs = [
               </div>
             </div>
           </div>
-          <a href={`/program-studi/${prodi.slug}/profil.html`} class="mt-2 text-sm font-medium text-purple-700 dark:text-purple-300 hover:underline block">
-            Selengkapnya →
-          </a>
+            <a href={`/en/study-programs/${prodi.slug}/profile.html`} class="mt-2 text-sm font-medium text-purple-700 dark:text-purple-300 hover:underline block">
+              Read more →
+            </a>
         </div>
       ))}
     </div>

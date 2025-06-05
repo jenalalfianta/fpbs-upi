@@ -1,7 +1,7 @@
 ---
 title: "FPBS Participates in UPI Open Visit 2025: Showcasing Study Programs and Organizing Campus Field Trips"
-pubDate: "8 February 2025"
-author: "Teja Mustika"
+pubDate: "2025-02-08"
+author: "Admin"
 image:
   url: "/images/berita/2025/2februari/FPBS-Berpartisipasi-dalam-UPI-Open-Visit-2025-Perkenalkan-Program-Studi-dan-Gelar-Field-Trip-Kampus-1.webp"
   alt: ""

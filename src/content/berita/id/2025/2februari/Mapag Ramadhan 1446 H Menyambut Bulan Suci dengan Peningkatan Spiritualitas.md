@@ -1,6 +1,6 @@
 ---
 title: "Mapag Ramadhan 1446 H: Menyambut Bulan Suci dengan Peningkatan Spiritualitas"
-pubDate: "26 Februari 2025"
+pubDate: "2025-02-26"
 author: "Admin"
 image:
   url: "/images/berita/2025/2februari/Mapag-Ramadhan-1446-H-Menyambut-Bulan-Suci-dengan-Peningkatan-Spiritualitas-2-1024x576.webp"

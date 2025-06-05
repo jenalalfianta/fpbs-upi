@@ -1,6 +1,6 @@
 ---
 title: "Welcoming Ramadan 1446 H: Embracing the Holy Month Through Spiritual Reflection"
-pubDate: "26 February 2025"
+pubDate: "2025-02-26"
 author: "Admin"
 image:
   url: "/images/berita/2025/2februari/Mapag-Ramadhan-1446-H-Menyambut-Bulan-Suci-dengan-Peningkatan-Spiritualitas-2-1024x576.webp"

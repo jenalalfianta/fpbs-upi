@@ -156,7 +156,7 @@ const berita = (await getCollection('berita'))
     </div>
     <!-- Read more -->
     <div class="text-right">
-      <a href={fixHtml("/en/profil/profil")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Read more »</a>
+      <a href={fixHtml("/en/profile/profile")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Read more »</a>
     </div>
   </div>
 </section>
@@ -182,7 +182,7 @@ const berita = (await getCollection('berita'))
       <p class="text-justify text-base md:text-lg leading-relaxed mb-6">
         In 1963, FKIP and the Teacher Education Institute (under the Ministry of Education) were merged into the Institute of Teacher Training and Education (IKIP), and the Faculty of Language and Arts Education (FKSS) de facto became one of its faculties. However, FKSS was officially recognized in 1964 through Instruction of the Minister of Higher Education and Science No. 128 of 1964, which included 4 departments and 2 sections.
       </p>
-      <a href={fixHtml("/en/profil/profil")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Read more »</a>
+      <a href={fixHtml("/en/profile/profile")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Read more »</a>
     </div>
   </div>
 </section>
@@ -192,7 +192,8 @@ const berita = (await getCollection('berita'))
     <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-8 uppercase">Latest News</h2>
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       {berita.map(item => {
-        const url = fixHtml(`/en/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
+        const url = fixHtml(`/en/news/${slugify(item.data.title, { lower: true, strict: true })}`);
+
         const tampilTanggal = new Date(item.data.pubDate).toLocaleDateString('en-GB', {
           day: 'numeric',
           month: 'long',
@@ -225,7 +226,7 @@ const berita = (await getCollection('berita'))
       })}
     </div>
     <div class="text-center mt-8">
-      <a href={fixHtml("/en/berita/page/1")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">See All News »</a>
+      <a href={fixHtml("/en/news/page/1")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">See All News »</a>
     </div>
   </div>
 </section>
