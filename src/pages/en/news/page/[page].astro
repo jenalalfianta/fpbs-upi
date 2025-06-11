@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
-const fixHtml = (url) => `${url}.html`;
+const fixHtml = (url) => `${url}/index.html`;
 ---
 
 <Layout pageTitle="News">

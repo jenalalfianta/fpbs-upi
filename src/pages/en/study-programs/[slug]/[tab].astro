@@ -2,18 +2,19 @@
 import Layout from '@/layouts/Layout.astro';
 import ProgramStudiMenu from '@/components/en/prodi/ProgramStudiMenu.astro';
 import ProgramStudiContent from '@/components/en/prodi/ProgramStudiContent.astro';
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
-const { lang, slug, tab } = Astro.params;
+const { slug, tab } = Astro.params;
 
-const prodiData = await getEntryBySlug('program-studi', `${lang}/${slug}`);
+// Gunakan getEntry untuk versi baru
+const prodiData = await getEntry('program-studi', `en/${slug}`);
 if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
-const activeTab = tab || 'profil';
+const activeTab = tab || 'profile'; // default tab
 const menuItems = prodiData.data.menu || [];
 
 export async function getStaticPaths() {
-  const entries = await getCollection('program-studi');
+  const entries = (await getCollection('program-studi')).filter(entry => entry.id.startsWith('en/'));
   const paths = [];
 
   for (const entry of entries) {
@@ -35,7 +36,7 @@ export async function getStaticPaths() {
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
 
-<!-- Script eksternal jika dibutuhkan -->
+<!-- Optional external scripts -->
 <script src="https://cdn.jsdelivr.net/npm/apextree" defer></script>
 <link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
 <script is:inline type="module">
