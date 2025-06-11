@@ -1,11 +1,32 @@
 ---
-import { slugMap } from "../utils/i18nSlugMap";
-const fixHtml = (url) => `${url}.html`;
-const currentPath = Astro.url.pathname;
-const lang = currentPath.startsWith('/en') ? 'en' : 'id';
-const switchLang = slugMap[currentPath] ?? (lang === 'en'
-  ? currentPath.replace(/^\/en/, '')
-  : '/en' + currentPath);
+import { slugMap } from '@/utils/i18nSlugMap';
+
+let currentPath = Astro.url.pathname;
+
+// Pastikan selalu /index.html di ujung
+if (currentPath.endsWith('/')) currentPath += 'index.html';
+if (!currentPath.endsWith('.html')) currentPath += '/index.html';
+
+// Bersihkan double slash (kalau ada)
+const cleanPath = currentPath.replace(/\/{2,}/g, '/');
+
+
+const lang = cleanPath.startsWith('/en') ? 'en' : 'id';
+
+const defaultLangSwitch = lang === 'en'
+  ? cleanPath.replace(/^\/en/, '') || '/index.html'
+  : '/en' + (cleanPath === '/index.html' ? '' : cleanPath);
+
+const fixHtml = (url) =>
+  url.endsWith('.html') || url.endsWith('/') ? url : `${url}/index.html`;
+
+const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
+
+// Debug log (hapus di production)
+console.log("Astro.path:", Astro.url.pathname);
+console.log("Clean path:", cleanPath);
+console.log("SlugMap hit:", slugMap[cleanPath]);
+console.log("Switch to:", switchLang);
 ---
 
 <!-- Dummy Navbar untuk jaga jarak -->
@@ -53,7 +74,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
     <div class="flex items-center md:order-2 gap-4">
     <button type="button" data-dropdown-toggle="language-dropdown-menu"
       class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
-      {lang === 'en' ? (
+      {lang == 'en' ? (
         <>
           <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" />
           EN
@@ -68,7 +89,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
       <div id="language-dropdown-menu"
         class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700">
           <ul class="py-2 font-medium">
-            {lang === 'en' ? (
+            {lang == 'en' ? (
               <li>
                 <a href={switchLang}
                   class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">

@@ -1,5 +1,7 @@
 export const slugMap = {
   // EN to ID
+  "/en/": "/",
+  "/en/index.html": "/index.html",
   "/en/news/": "/berita/",
   "/en/news/page/1/index.html": "/berita/page/1/index.html",
   "/en/news/page/2/index.html": "/berita/page/2/index.html",
@@ -34,6 +36,8 @@ export const slugMap = {
   "/en/news/career-coaching-for-fpbs-batch-1-graduates-preparing-for-the-professional-world/index.html": "/berita/bimbingan-karir-bagi-wisudawan-gelombang-1-fpbs-mempersiapkan-lulusan-menuju-dunia-kerja/index.html",
 
   // ID to EN
+  "/": "/en/",
+  "/index.html": "/en/index.html",
   "/berita/": "/en/news/",
   "/berita/page/1/index.html": "/en/news/page/1/index.html",
   "/berita/page/2/index.html": "/en/news/page/2/index.html",
