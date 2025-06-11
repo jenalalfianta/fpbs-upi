@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
-const fixHtml = (url) => `${url}.html`;
+const fixHtml = (url) => url.replace(/\/$/, '') + '/index.html';
 
 const berita = (await getCollection('berita'))
   .filter(item => item.data.lang === 'id')
@@ -49,6 +49,9 @@ const berita = (await getCollection('berita'))
     <div class="relative w-full carousel-wrapper overflow-hidden bg-gray-50 dark:bg-gray-800 m-0 p-0">
       <!-- Slides -->
       <div class="carousel-slide active">
+        <img src="/images/beranda/PDDI 2025.webp" class="w-full h-full" alt="Slide Rektor" />
+      </div>
+      <div class="carousel-slide">
         <img src="/images/beranda/Ucapan Selamat Rektor.webp" class="w-full h-full" alt="Slide Rektor" />
       </div>
       <div class="carousel-slide">
@@ -160,7 +163,7 @@ const berita = (await getCollection('berita'))
       </div>
       <!-- Selengkapnya rata kanan -->
       <div class="text-right">
-        <a href={fixHtml("/profil/profil")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
+        <a href="/profil/tentang/index.html" class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
       </div>
     </div>
   </section>
@@ -186,7 +189,7 @@ const berita = (await getCollection('berita'))
         <p class="text-justify text-base md:text-lg leading-relaxed mb-6">
           Pada tahun 1963, FKIP dan Institut Pendidikan Guru (yang berada di bawah Departemen Pendidikan) digabungkan menjadi Institut Keguruan dan Ilmu Pendidikan (IKIP), dan Fakultas Keguruan Sastra dan Seni (FKSS) secara de facto merupakan salah satu fakultasnya. Namun, FKSS diakui secara resmi pada tahun 1964 melalui Instruksi Menteri Pendidikan Tinggi dan Ilmu Pengetahuan No. 128 tahun 1964 yang memiliki 4 (empat) jurusan dan 2 (dua) seksi.
         </p>
-        <a href={fixHtml("/profil/profil")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
+        <a href="/profil/tentang/index.html" class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
       </div>
     </div>
   </section>

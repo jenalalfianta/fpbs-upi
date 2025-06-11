@@ -6,14 +6,14 @@ import slugify from 'slugify';
 const allPosts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
 allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
-const fixHtml = (url) => `${url}.html`;
+const fixHtml = (url) => `${url}/index.html`;
 ---
 
 <Layout pageTitle="Berita">
-  <section class="pt-32 pb-12 bg-white dark:bg-gray-900">
+  <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12">
     <div class="mx-auto max-w-screen-xl px-6 md:px-10 lg:px-14">
-      <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-        <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+      <div class="mx-auto max-w-screen-sm text-center mb-8">
+        <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           Berita FPBS
         </h2>
       </div>
@@ -22,9 +22,8 @@ const fixHtml = (url) => `${url}.html`;
         {allPosts.map((post) => {
           const { title, pubDate, image, tags } = post.data;
           const slug = slugify(title, { lower: true, strict: true });
-          const url = fixHtml(`/berita/${slug}`);
+          const url = `/berita/${slug}/index.html`;
 
-          // Format tanggal menjadi "d MMMM yyyy" dalam bahasa Indonesia
           const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
             day: 'numeric',
             month: 'long',
@@ -58,3 +57,4 @@ const fixHtml = (url) => `${url}.html`;
     </div>
   </section>
 </Layout>
+

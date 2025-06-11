@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   output: 'static',
-  build: { format: 'file' },
+  build: { format: 'directory' },
   integrations: [sitemap()],
   i18n: {
     locales: ['id', 'en'],

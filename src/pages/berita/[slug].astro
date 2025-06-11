@@ -26,7 +26,7 @@ const related = posts
   })
   .slice(0, 5);
 
-const fixHtml = (url) => `${url}.html`;
+const fixHtml = (url) => `${url}/index.html`;
 
 // Format tanggal utama
 const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {

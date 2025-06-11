@@ -13,7 +13,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
   <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-700">
     <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
       <a href="/en/" class="flex items-center gap-3">
-        <img src="../../logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
+        <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
       </a>
       <div class="flex items-center md:order-2 gap-4">
         <div class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg">
@@ -39,7 +39,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
     <!-- Logo -->
     <a href="/en/" class="flex items-center gap-3">
-      <img src="../../logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
+      <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
     </a>
 
     <!-- Language, Dark Mode, Hamburger -->
@@ -125,7 +125,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
           </a>
           <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
             <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href={fixHtml("/en/profile/profile")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">About FPBS</a></li>
+              <li><a href={fixHtml("/en/profile/index")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">About FPBS</a></li>
               <li><a href={fixHtml("/en/profile/study-programs")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Study Programs</a></li>
               <li><a href={fixHtml("/en/profile/facilities")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Facilities</a></li>
               <li><a href={fixHtml("/en/profile/leadership")} class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">Leadership</a></li>
@@ -144,7 +144,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
               </svg>
             </summary>
             <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href={fixHtml("/en/profile/profile")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">About FPBS</a></li>
+              <li><a href={fixHtml("/en/profile/index")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">About FPBS</a></li>
               <li><a href={fixHtml("/en/profile/study-programs")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Study Programs</a></li>
               <li><a href={fixHtml("/en/profile/facilities")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Facilities</a></li>
               <li><a href={fixHtml("/en/profile/leadership")} class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">Leadership</a></li>
@@ -164,7 +164,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
           <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-700 rounded-lg shadow-lg 
               invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
             <ul class="py-2 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/en/ppid/ppid.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">FPBS PPID</a></li>
+              <li><a href="/en/ppid/index.html" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">FPBS PPID</a></li>
               <li><a href="https://ppid.upi.edu/" target="_blank" class="block px-4 py-2 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-600">UPI PPID</a></li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
               </svg>
             </summary>
             <ul class="pl-6 mt-1 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-              <li><a href="/en/ppid/ppid.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">FPBS PPID</a></li>
+              <li><a href="/en/ppid/index.html" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">FPBS PPID</a></li>
               <li><a href="https://ppid.upi.edu/" target="_blank" class="block py-2 hover:text-purple-700 dark:hover:text-purple-400">UPI PPID</a></li>
             </ul>
           </details>
@@ -187,7 +187,7 @@ const switchLang = slugMap[currentPath] ?? (lang === 'en'
 
         <!-- Other Main Links -->
         <li>
-          <a href="/en/integrity-zone/integrity-zone.html"
+          <a href="/en/integrity-zone/index.html"
              class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 
                     md:hover:bg-transparent md:hover:text-purple-700 
                     dark:text-white md:dark:hover:text-purple-500 transition-colors">
