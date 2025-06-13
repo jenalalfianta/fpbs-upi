@@ -193,7 +193,7 @@ sections:
               <p class="mb-4">
                 Mahasiswa Program Studi Pendidikan Bahasa Jepang dapat memanfaatkan fasilitas yang tersedia di FPBS UPI seperti laboratorium bahasa, ruang kelas multimedia, ruang budaya Jepang, dan lainnya.
               </p>
-              <a href="/profil/fasilitas.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
+              <a href="/profil/fasilitas/index.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
                 Lihat Fasilitas FPBS
               </a>
             </div>

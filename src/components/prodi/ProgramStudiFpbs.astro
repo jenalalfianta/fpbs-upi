@@ -20,29 +20,25 @@ const programs = [
 ];
 ---
 
-<section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-25 md:pb-25 px-6">
-  <div class="max-w-6xl mx-auto text-center pt-4">
-    <h1 class="text-2xl md:text-4xl font-bold text-purple-900 dark:text-purple-400 uppercase mb-12">
+<section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-25 md:pb-25 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl md:text-4xl font-bold text-purple-900 dark:text-purple-400 uppercase mb-12">
       Program Studi
-    </h1>
+    </h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {programs.map((prodi) => (
-        <div class="group bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-left hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out">
-          <div class="flex items-start gap-4 mb-5">
-            <i class={`${prodi.icon} text-purple-700 text-3xl mt-1 transform group-hover:scale-110 transition duration-300`}></i>
-            <div class="flex-1">
-              <div class="flex items-center gap-2">
-                <h2 class="text-lg font-semibold text-gray-900 dark:text-white leading-snug">
-                  {prodi.name}
-                </h2>
-                <span class="inline-block bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded">
-                  {prodi.level}
-                </span>
-              </div>
-            </div>
+        <div class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out">
+          <div class="flex flex-col items-center gap-3 mb-4">
+            <i class={`${prodi.icon} text-purple-700 text-3xl transform group-hover:scale-110 transition duration-300`}></i>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-snug">
+              {prodi.name}
+            </h3>
+            <span class="inline-block bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded">
+              {prodi.level}
+            </span>
           </div>
-          <a href={`/program-studi/${prodi.slug}/profil/index.html`} class="mt-2 text-sm font-medium text-purple-700 dark:text-purple-300 hover:underline block">
+          <a href={`/program-studi/${prodi.slug}/profil/index.html`} class="text-sm font-medium text-purple-700 dark:text-purple-300 hover:underline">
             Selengkapnya →
           </a>
         </div>
@@ -50,3 +46,4 @@ const programs = [
     </div>
   </div>
 </section>
+

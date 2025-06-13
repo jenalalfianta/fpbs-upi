@@ -1,5 +1,6 @@
 ---
-const { menuItems, activeTab, slug } = Astro.props;
+const { menuItems, activeTab, slug, prodiId } = Astro.props;
+const lang = prodiId.startsWith('en/') ? 'en' : 'id';
 ---
 <!-- Sticky Menu (desktop & mobile scrollable) -->
 <div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
@@ -12,7 +13,8 @@ const { menuItems, activeTab, slug } = Astro.props;
                 class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
                 {item.label}
               </a>
-            : <a href={`/program-studi/${slug}/${item.id}/index.html`}
+            : <a
+                href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}
                 class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
                   activeTab === item.id
                     ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'

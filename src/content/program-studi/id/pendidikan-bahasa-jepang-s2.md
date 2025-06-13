@@ -20,17 +20,17 @@ menu:
 sections:
   profil:
     title: "Tentang Prodi"
-    content: "Ini adalah konten dummy untuk Pendidikan Bahasa Jepang (S2)."
+    content: ""
   akreditasi:
     title: "Akreditasi"
-    content: "Terakreditasi Unggul oleh BAN-PT."
+    content: ""
   pengembangan-akademik:
     title: "Pengembangan Akademik"
-    content: "Fokus pada riset dan pengajaran berbasis literasi."
+    content: "."
   dosen:
     title: "Dosen"
-    content: "Dosen kami berasal dari lulusan dalam dan luar negeri."
+    content: "."
   fasilitas:
     title: "Fasilitas"
-    content: "Perpustakaan, laboratorium bahasa, dan ruang diskusi."
+    content: ""
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Pendidikan Bahasa Jerman (S1)"
+title: "Pendidikan Bahasa Indonesia S3"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
@@ -24,105 +24,78 @@ sections:
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto px-4">
 
-      <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sejarah & Akreditasi</h2><br>
+                  <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sejarah & Akreditasi</h2><br>
 
-      <!-- Timeline -->
-      <div class="relative border-l-2 border-purple-300 dark:border-purple-600 pl-14 space-y-10 mb-6">
+          <!-- Timeline -->
+          <div class="relative border-l-2 border-purple-300 dark:border-purple-600 pl-14 space-y-10 mb-6">
 
-        <div class="relative">
-          <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-          <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1968 – Embrio Pascasarjana</h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-1">Program Studi Pendidikan Bahasa Indonesia mulai berkembang di bawah LPPD IKIP Bandung sebagai embrio pendidikan pascasarjana di Indonesia.</p>
-        </div>
+            <div class="relative">
+              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1968 – Embrio Pascasarjana</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Program Studi Pendidikan Bahasa Indonesia mulai berkembang di bawah LPPD IKIP Bandung sebagai embrio pendidikan pascasarjana di Indonesia.</p>
+            </div>
 
-        <div class="relative">
-          <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-          <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1981/1982 – Mahasiswa S3 Pertama</h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-1">Program Doktor (S3) mulai menerima mahasiswa pada tahun akademik 1981/1982.</p>
-        </div>
+            <div class="relative">
+              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1981/1982 – Mahasiswa S3 Pertama</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Program Doktor (S3) mulai menerima mahasiswa pada tahun akademik 1981/1982.</p>
+            </div>
 
-        <div class="relative">
-          <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-          <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1993 – Izin Resmi S2 dan S3</h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-1">Program Studi secara resmi memperoleh izin sebagai Prodi S2 dan S3 melalui SK Dirjen Dikti No. 588/Dikti/Kep/1993 tertanggal 21 Oktober 1993.</p>
-        </div>
+            <div class="relative">
+              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1993 – Izin Resmi S2 dan S3</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Program Studi secara resmi memperoleh izin sebagai Prodi S2 dan S3 melalui SK Dirjen Dikti No. 588/Dikti/Kep/1993 tertanggal 21 Oktober 1993.</p>
+            </div>
 
-        <div class="relative">
-          <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-          <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2020 – Akreditasi Program Doktor</h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-1">Peringkat akreditasi A berdasarkan SK BAN-PT No. 6720/SK/BAN-PT/Akred/D/X/2020.</p>
-        </div>
+            <div class="relative">
+              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2020 – Akreditasi Program Doktor</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Peringkat akreditasi A berdasarkan SK BAN-PT No. 6720/SK/BAN-PT/Akred/D/X/2020.</p>
+            </div>
 
-        <div class="relative">
-          <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-          <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2022 – Akreditasi Program Magister</h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-1">Peringkat akreditasi UNGGUL berdasarkan SK BAN-PT No. 6586/SK/BAN-PT/Ak.Ppj/M/IX/2022.</p>
-        </div>
+            <div class="relative">
+              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2022 – Akreditasi Program Magister</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Peringkat akreditasi UNGGUL berdasarkan SK BAN-PT No. 6586/SK/BAN-PT/Ak.Ppj/M/IX/2022.</p>
+            </div>
 
-      </div>
-
-      <!-- Kajian Utama -->
-      <p class="text-gray-700 dark:text-gray-300 mb-8">Kajian utama Program Studi ini mencakup perkembangan mutakhir pendidikan bahasa dan sastra Indonesia, pengembangan model pembelajaran bahasa, sastra, dan BIPA, serta kajian bahasa, sastra, dan tradisi lisan.</p>
-
+          </div>
+          
+  
+          <p class="text-gray-700 dark:text-gray-300 mb-8">Kajian utama Program Studi ini mencakup perkembangan mutakhir pendidikan bahasa dan sastra Indonesia, pengembangan model pembelajaran bahasa, sastra, dan BIPA, serta kajian bahasa, sastra, dan tradisi lisan.</p>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">Menjadi salah satu pusat kepeloporan dan keunggulan dalam bidang pengajaran dan pendidikan bahasa dan sastra Indonesia yang berorientasi pada pengakuan internasional untuk menghasilkan lulusan magister yang menjunjung tinggi nilai-nilai luhur bahasa Indonesia sebagai identitas bangsa.</p>
-
-
-                    <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Misi</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li>Menyelenggarakan pendidikan kependidikan dalam bidang bahasa dan sastra Indonesia.</li>
-            <li>Menyelenggarakan penelitian dan pengembangan keilmuan bahasa dan sastra Indonesia.</li>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Menjadi pusat kepeloporan dan keunggulan dalam pendidikan bahasa dan sastra Indonesia yang terekognisi nasional dan internasional untuk pengembangan model transdisipliner pendidikan bahasa dan sastra Indonesia, lingustik terapan, komunikasi pedagogis, sastra didaktis, dan revitalisas tradisi lisan.
+          </p>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Misi</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
+            <li>Menyelenggarakan pendidikan dengan model transdisipliner dalam bidang Pendidikan bahasa dan sastra Indonesia, linguistik terapan, komunikasi pedagogis, sastra didaktik, dan revitalisasi sastra lisan.</li>
+            <li>Menyelenggarakan penelitian dan pengembangan keilmuan dengan model transdisipliner dalam bidang pendidikan bahasa dan sastra Indonesia, linguistik terapan, komunikasi pedagogis, sastra didaktik, dan revitalisasi sastra lisan.</li>
             <li>Menyebarluaskan ilmu pengetahuan dan teknologi dalam bidang disiplin dan permasalahan pendidikan/pengajaran bahasa dan sastra melalui pengabdian kepada masyarakat.</li>
-          </ul>
-
+          </ol>
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Tujuan</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li>Membina dan mengembangkan mahasiswa program doktor yang berkualitas di bidang Pendidikan Bahasa dan Sastra Indonesia menjadi sarjana, pendidik, tenaga kependidikan, dan profesional yang beriman, bertaqwa, berkompeten tinggi, dan mengamalkan ilmu dan keahliannya secara bertanggung jawab dan mandiri.</li>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
+            <li>Menghasilkan (calon) pendidik (guru/dosen), peneliti, dan instruktur bidang Pendidikan Bahasa dan Sastra Indonesia yang menguasai ilmu bahasa dan sastra secara komprehensif dan mengembangkannya dalam pembelajaran/pelatihan dan riset yang bermanfaat bagi masyarakat.</li>
             <li>Mengembangkan dan menyebarluaskan temuan dan karya penelitian yang kreatif, orisinal, dan tervalidasi dalam bidang Pendidikan Bahasa dan Sastra Indonesia.</li>
             <li>Mengembangkan dan menyebarluaskan ilmu pengetahuan dan layanan ahli di bidang pendidikan bahasa dan sastra Indonesia.</li>
-          </ul>
+          </ol>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Profil Lulusan</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li><strong>Pendidik Bahasa dan Sastra Indonesia profesional:</strong> Mampu mengembangkan pengetahuan, teknologi, seni, dan budaya di bidang pendidikan bahasa dan sastra Indonesia serta mengimplementasikannya dalam proses pembelajaran.</li>
-            <li><strong>Peneliti bidang pendidikan bahasa dan sastra Indonesia:</strong> Mampu mengembangkan dan mengimplementasikan pengetahuan dalam praktik riset hingga menghasilkan karya inovatif dan teruji.</li>
-            <li><strong>Praktisi bidang pendidikan bahasa dan sastra Indonesia:</strong> Mampu memecahkan permasalahan melalui pendekatan interdisipliner atau multidisipliner.</li>
-            <li><strong>Konsultan:</strong> Mampu mengelola riset dan pengembangan yang diakui secara nasional dan internasional.</li>
-          </ul>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Capaian Pembelajaran Lulusan</h2>
-          <h3 class="font-semibold text-purple-700 dark:text-purple-400 mt-4">Sikap</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-4">Menunjukkan sikap dan perilaku ilmiah, edukatif, dan religius, yang berkontribusi dalam peningkatan mutu kehidupan masyarakat berdasarkan budaya, norma, dan etika akademik.</p>
-
-          <h3 class="font-semibold text-purple-700 dark:text-purple-400">Pengetahuan</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-4">Menguasai filosofi pendidikan dan teori belajar serta implikasinya pada pembelajaran bahasa dan sastra Indonesia.</p>
-
-          <h3 class="font-semibold text-purple-700 dark:text-purple-400">Keterampilan Umum</h3>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-4 space-y-2">
-            <li>Mampu mengembangkan teori atau gagasan ilmiah baru berdasarkan penelitian ilmiah yang logis, kritis, sistematis, dan kreatif.</li>
-            <li>Mampu mengintegrasikan keterampilan belajar dan berinovasi, penguasaan informasi, serta pengembangan karier dan kecakapan hidup.</li>
-          </ul>
-
-          <h3 class="font-semibold text-purple-700 dark:text-purple-400">Keterampilan Khusus</h3>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-4 space-y-2">
-            <li>Mampu menghasilkan karya kreatif, orisinal, dan teruji melalui riset di bidang pendidikan bahasa dan sastra Indonesia.</li>
-            <li>Mampu menyelesaikan problematika pendidikan dan pembelajaran bahasa Indonesia untuk penutur asli maupun asing secara interdisipliner.</li>
-          </ul>
-
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mt-10 mb-2">Ulasan Alumni</h2>
-          <p class="text-gray-700 dark:text-gray-300"><em>(Belum tersedia. Konten ini akan diisi dengan testimoni alumni.)</em></p>
+                    <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sasaran</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
+            <li>Menghasilkan ahli pendidikan bahasa dan sastra Indonesia yang beriman, bertakwa kepada Tuhan Yang Maha Esa, berkompetensi tinggi dan berwawasan luas. Lulusan harus mampu menyebarluaskan ilmu pengetahuan dan teknologi di bidang pendidikan bahasa dan sastra dengan segala aspeknya serta menampilkan diri sebagai pribadi yang memiliki integritas dan kepekaan yang tinggi, santun, jujur, memegang teguh etika ilmiah, terbuka, tanggap terhadap perkembangan masyarakat dan ilmu pengetahuan, serta terus mengembangkan diri sebagai ilmuwan.</li>
+            <li>Menghasilkan tenaga pendidik profesional yang mampu menerapkan dan menemukan pandangan-pandangan filosofis untuk pendidikan bahasa dan sastra Indonesia, serta menghasilkan karya-karya penelitian ilmiah yang inovatif, kreatif, dan bermutu tinggi.</li>
+            <li>Menghasilkan konsultan pendidikan bahasa dan sastra Indonesia yang mumpuni untuk merancang dan mengejawantahkan kebijakan serta solusi berbagai permasalahan dalam bidang pendidikan bahasa dan sastra Indonesia.</li>
+          </ol>
         </div>
       </section>
-
 
   akreditasi:
     title: "Akreditasi Pendidikan Bahasa Indonesia S3"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
         <div class="max-w-6xl mx-auto">
-
-          <!-- Toggle S2 BAN-PT -->
 
           <!-- Toggle S3 BAN-PT -->
           <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
@@ -139,24 +112,23 @@ sections:
             </div>
           </details>
 
-          <!-- Toggle ACQUIN S3 -->
+          <!-- Toggle ACQUIN S3 (Updated) -->
           <details class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
               Akreditasi Internasional (S3) – ACQUIN
             </summary>
             <div class="px-4 py-4 text-gray-700 dark:text-gray-300">
               <p class="mb-4">
-                Program Studi Pendidikan Bahasa Indonesia (Doktor) telah mendapatkan akreditasi internasional dari <strong>ACQUIN</strong> (Accreditation, Certification and Quality Assurance Institute),
+                Program Studi Pendidikan Bahasa Indonesia (Doktor) telah memperoleh akreditasi internasional dari <strong>ACQUIN</strong> (Accreditation, Certification and Quality Assurance Institute),
                 yang merupakan anggota <em>European Quality Assurance Register for Higher Education (EQAR)</em> sejak 2009.
-                Akreditasi ini berlaku hingga tanggal <strong>30 Mei 2025</strong> dan diberikan secara resmi di Bayreuth pada <strong>14 Mei 2024</strong>.
+                Akreditasi ini berlaku hingga tanggal <strong>30 September 2030</strong> dan diberikan secara resmi di Bayreuth pada <strong>10 Maret 2025</strong>.
               </p>
-              <img src="/images/akreditasi/indonesia-s3/acquin.webp" alt="Sertifikat ACQUIN DPILE" class="w-full rounded-lg">
+              <img src="/images/akreditasi/indonesia-s3/acquin-2030.webp" alt="Sertifikat ACQUIN DPILE 2030" class="w-full rounded-lg">
             </div>
           </details>
 
         </div>
       </section>
-
 
   dosen:
     title: "Pendidikan Bahasa Indonesia S3"
@@ -228,7 +200,7 @@ sections:
               <p class="mb-4">
                 Daftar lengkap fasilitas khusus di lingkungan Fakultas Pendidikan Bahasa dan Sastra (FPBS) UPI tersedia melalui tautan berikut.
               </p>
-              <a href="/profil/fasilitas.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
+              <a href="/profil/fasilitas/index.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
                 Lihat Fasilitas FPBS
               </a>
             </div>
