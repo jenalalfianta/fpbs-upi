@@ -1,5 +1,6 @@
 ---
 title: "Bimbingan Karir bagi Wisudawan Gelombang 1 FPBS: Mempersiapkan Lulusan Menuju Dunia Kerja"
+slugId: bimbingan-karir-fpbs-2025
 pubDate: "2025-02-18"
 author: "Admin"
 image:

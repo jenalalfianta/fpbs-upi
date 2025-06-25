@@ -1,5 +1,6 @@
 ---
 title: "Panduan Legalisasi Dokumen di Lingkungan FPBS Universitas Pendidikan Indonesia"
+slugId: legalisasi-dokumen-fpbs-2025
 pubDate: "2025-06-02"
 author: "Admin"
 image:

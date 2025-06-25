@@ -1,5 +1,6 @@
 ---
 title: "Career Coaching for FPBS Batch 1 Graduates: Preparing for the Professional World"
+slugId: bimbingan-karir-fpbs-2025
 pubDate: "2025-02-18"
 author: "Admin"
 image:

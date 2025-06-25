@@ -1,5 +1,6 @@
 ---
 title: "FPBS Sambut Mahasiswa Pertukaran dari La Rochelle University"
+slugId: pertukaran-la-rochelle-fpbs
 pubDate: "2025-03-26"
 author: "Admin"
 image:

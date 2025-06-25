@@ -1,5 +1,6 @@
 ---
 title: "FPBS Welcomes Exchange Students from La Rochelle University"
+slugId: pertukaran-la-rochelle-fpbs
 pubDate: "2025-03-26"
 author: "Admin"
 image:

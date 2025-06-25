@@ -5,30 +5,37 @@ import slugify from 'slugify';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
-  return posts.map((post) => ({
-    params: {
-      slug: slugify(post.data.title, { lower: true, strict: true }),
-    },
-  }));
+
+  return posts.map((post) => {
+    const slug = slugify(post.data.title, { lower: true, strict: true });
+    return {
+      params: { slug },
+    };
+  });
 }
 
 const { slug } = Astro.params;
+
+// Ambil semua berita bahasa Indonesia
 const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
-const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
+
+// Cari post yang slugify(title) === slug
+const post = posts.find(p =>
+  slugify(p.data.title, { lower: true, strict: true }) === slug
+);
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
+
 const { title, pubDate, image, description, tags } = post.data;
 const { Content } = await post.render();
 
+// Berita terkait
 const related = posts
-  .filter(p => slugify(p.data.title, { lower: true, strict: true }) !== slug)
-  .sort((a, b) => {
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
-  })
+  .filter(p => p.id !== post.id)
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 5);
 
 const fixHtml = (url) => `${url}/index.html`;
 
-// Format tanggal utama
 const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
   day: 'numeric',
   month: 'long',
@@ -72,7 +79,9 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
       </h2>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {related.map(item => {
-          const relatedUrl = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
+          const relatedSlug = slugify(item.data.title, { lower: true, strict: true });
+          const relatedUrl = fixHtml(`/berita/${relatedSlug}`);
+
           return (
             <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               {item.data.image && (

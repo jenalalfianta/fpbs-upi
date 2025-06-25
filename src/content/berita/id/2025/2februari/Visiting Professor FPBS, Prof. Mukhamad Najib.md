@@ -1,5 +1,6 @@
 ---
 title: "Visiting Professor FPBS: Prof. Mukhamad Najib Berbagi Wawasan tentang Program Guru Bantu BIPA di Australia"
+slugId: visiting-professor-bipa-2025
 pubDate: "2025-02-20"
 author: "Admin"
 image:

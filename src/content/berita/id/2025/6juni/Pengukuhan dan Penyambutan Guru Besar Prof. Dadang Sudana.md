@@ -1,5 +1,6 @@
 ---
 title: "Prof. Dr. Dadang Sudana, M.A., Ph.D. Dikukuhkan sebagai Guru Besar dalam Bidang Linguistik Makna"
+slugId: guru-besar-dadang-sudana
 pubDate: "2025-05-21"
 author: "Admin"
 image:

@@ -1,5 +1,6 @@
 ---
 title: "FPBS Berpartisipasi dalam UPI Open Visit 2025: Perkenalkan Program Studi dan Gelar Field Trip Kampus"
+slugId: upi-open-visit-fpbs-2025
 pubDate: "2025-02-08"
 author: "Admin"
 image:

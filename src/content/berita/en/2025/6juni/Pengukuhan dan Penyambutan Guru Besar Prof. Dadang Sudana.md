@@ -1,5 +1,6 @@
 ---
 title: "Prof. Dr. Dadang Sudana, M.A., Ph.D. Inaugurated as Professor in the Field of Semantics"
+slugId: guru-besar-dadang-sudana
 pubDate: "2025-05-21"
 author: "Admin"
 image:

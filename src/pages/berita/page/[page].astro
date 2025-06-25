@@ -5,9 +5,7 @@ import slugify from 'slugify';
 
 export async function getStaticPaths({ paginate }) {
   const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
-  posts.sort((a, b) => {
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
-  });
+  posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
   return paginate(posts, { pageSize: 9 });
 }
 
@@ -33,7 +31,6 @@ const fixHtml = (url) => `${url}/index.html`;
           const slug = slugify(title, { lower: true, strict: true });
           const url = fixHtml(`/berita/${slug}`);
 
-          // Format tanggal menjadi "d MMMM yyyy" dalam bahasa Indonesia
           const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
             day: 'numeric',
             month: 'long',

@@ -1,5 +1,6 @@
 ---
 title: "FPBS UPI Students Win International Pantun Festival in Brunei, Showcasing Indonesian Culture"
+slugId: festival-pantun-brunei-2025
 pubDate: "2025-05-28"
 author: "Admin"
 image:

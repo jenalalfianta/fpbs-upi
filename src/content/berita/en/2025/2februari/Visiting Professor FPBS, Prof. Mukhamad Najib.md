@@ -1,5 +1,6 @@
 ---
 title: "FPBS Visiting Professor: Prof. Mukhamad Najib Shares Insights on the BIPA Teaching Assistant Program in Australia"
+slugId: visiting-professor-bipa-2025
 pubDate: "2025-02-20"
 author: "Admin"
 image:

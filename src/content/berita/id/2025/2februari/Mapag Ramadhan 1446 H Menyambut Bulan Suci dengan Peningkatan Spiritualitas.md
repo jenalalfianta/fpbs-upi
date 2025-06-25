@@ -1,5 +1,6 @@
 ---
 title: "Mapag Ramadhan 1446 H: Menyambut Bulan Suci dengan Peningkatan Spiritualitas"
+slugId: mapag-ramadhan-1446h
 pubDate: "2025-02-26"
 author: "Admin"
 image:

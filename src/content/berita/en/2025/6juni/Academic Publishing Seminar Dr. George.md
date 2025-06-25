@@ -1,5 +1,6 @@
 ---
 title: "Academic Publishing Seminar with the University of Exeter: FPBS UPI Lecturers and Students Enthusiastically Explore Scientific Publication Strategies"
+slugId: seminar-publikasi-fpbs-2025
 pubDate: "2025-05-16"
 author: "Admin"
 image:

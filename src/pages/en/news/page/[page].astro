@@ -5,10 +5,7 @@ import slugify from 'slugify';
 
 export async function getStaticPaths({ paginate }) {
   const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
-
-  posts.sort((a, b) => {
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
-  });
+  posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
   return paginate(posts, { pageSize: 9 });
 }
 
@@ -31,10 +28,9 @@ const fixHtml = (url) => `${url}/index.html`;
       <div class="grid gap-8 lg:grid-cols-3">
         {page.data.map((post) => {
           const { title, pubDate, image, tags } = post.data;
-          const slug = slugify(title, { lower: true, strict: true });
+          const slug = slugify(title, { lower: true, strict: true }); // ← penting!
           const url = fixHtml(`/en/news/${slug}`);
 
-          // Format date in English
           const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
             day: 'numeric',
             month: 'long',

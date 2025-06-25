@@ -1,5 +1,6 @@
 ---
 title: "Debat Bahasa Korea 2025: Mahasiswa Prodi Pendidikan Bahasa Korea FPBS UPI Dominasi Panggung Juara"
+slugId: debat-korea-fpbs-2025
 pubDate: "2025-05-23"
 author: "Admin"
 image:

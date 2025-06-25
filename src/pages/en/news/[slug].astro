@@ -4,11 +4,11 @@ import { getCollection } from 'astro:content';
 import slugify from 'slugify';
 
 export async function getStaticPaths() {
-const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
+  const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
 
   return posts.map((post) => ({
     params: {
-      slug: slugify(post.data.title, { lower: true, strict: true }),
+      slug: slugify(post.data.title, { lower: true, strict: true }), // slug dari judul
     },
   }));
 }
@@ -16,21 +16,20 @@ const posts = (await getCollection('berita')).filter(post => post.data.lang === 
 const { slug } = Astro.params;
 const posts = (await getCollection('berita')).filter(post => post.data.lang === 'en');
 
+// Cari berdasarkan slug yang dihasilkan dari judul
 const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
+
 const { title, pubDate, image, description, tags } = post.data;
 const { Content } = await post.render();
 
 const related = posts
-  .filter(p => slugify(p.data.title, { lower: true, strict: true }) !== slug)
-  .sort((a, b) => {
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
-  })
+  .filter(p => p.data.title !== title)
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 5);
 
-const fixHtml = (url) => `${url}.html`;
+const fixHtml = (url) => `${url}/index.html`;
 
-// Format date in English
 const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
   day: 'numeric',
   month: 'long',
@@ -74,7 +73,9 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
       </h2>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {related.map(item => {
-          const relatedUrl = fixHtml(`/en/news/${slugify(item.data.title, { lower: true, strict: true })}`);
+          const relatedSlug = slugify(item.data.title, { lower: true, strict: true });
+          const relatedUrl = fixHtml(`/en/news/${relatedSlug}`);
+
           return (
             <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               {item.data.image && (

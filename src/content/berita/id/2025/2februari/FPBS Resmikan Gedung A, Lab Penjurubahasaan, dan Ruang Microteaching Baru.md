@@ -1,5 +1,6 @@
 ---
 title: "FPBS Resmikan Gedung A, Lab Penjurubahasaan, dan Ruang Microteaching Baru"
+slugId: peresmian-gedung-a-fpbs
 pubDate: "2025-02-08"
 author: "Admin"
 image:

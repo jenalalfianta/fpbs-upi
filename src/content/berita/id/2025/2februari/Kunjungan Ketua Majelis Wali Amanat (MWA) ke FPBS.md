@@ -1,5 +1,6 @@
 ---
 title: "Kunjungan Ketua Majelis Wali Amanat (MWA) ke FPBS Meninjau Fasilitas dan Mendorong Kemajuan Akademik"
+slugId: kunjungan-mwa-fpbs-2025
 pubDate: "2025-03-26"
 author: "Admin"
 image:

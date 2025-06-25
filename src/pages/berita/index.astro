@@ -22,7 +22,7 @@ const fixHtml = (url) => `${url}/index.html`;
         {allPosts.map((post) => {
           const { title, pubDate, image, tags } = post.data;
           const slug = slugify(title, { lower: true, strict: true });
-          const url = `/berita/${slug}/index.html`;
+          const url = fixHtml(`/berita/${slug}`);
 
           const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
             day: 'numeric',
@@ -57,4 +57,3 @@ const fixHtml = (url) => `${url}/index.html`;
     </div>
   </section>
 </Layout>
-

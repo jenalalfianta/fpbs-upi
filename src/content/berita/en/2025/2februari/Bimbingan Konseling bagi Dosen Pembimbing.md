@@ -1,5 +1,6 @@
 ---
 title: "Counseling Workshop for Academic Advisors at FPBS: Enhancing the Quality of Student Support Services"
+slugId: bimbingan-konseling-fpbs-2025
 pubDate: "2025-02-21"
 author: "Admin"
 image:

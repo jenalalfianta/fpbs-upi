@@ -1,5 +1,6 @@
 ---
 title: "Welcoming Ramadan 1446 H: Embracing the Holy Month Through Spiritual Reflection"
+slugId: mapag-ramadhan-1446h
 pubDate: "2025-02-26"
 author: "Admin"
 image:

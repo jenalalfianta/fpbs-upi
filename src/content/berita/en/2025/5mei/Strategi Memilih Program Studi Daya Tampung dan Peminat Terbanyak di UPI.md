@@ -1,5 +1,6 @@
 ---
 title: "Strategies for Choosing Study Programs with the Highest Capacity and Demand at UPI"
+slugId: strategi-peminatan-upi-2025
 pubDate: "2025-05-05"
 author: "Admin"
 image:

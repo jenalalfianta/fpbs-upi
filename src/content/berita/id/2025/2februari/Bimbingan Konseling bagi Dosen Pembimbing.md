@@ -1,5 +1,6 @@
 ---
 title: "Bimbingan Konseling bagi Dosen Pembimbing Akademik di FPBS: Meningkatkan Kualitas Layanan bagi Mahasiswa"
+slugId: bimbingan-konseling-fpbs-2025
 pubDate: "2025-02-21"
 author: "Admin"
 image:

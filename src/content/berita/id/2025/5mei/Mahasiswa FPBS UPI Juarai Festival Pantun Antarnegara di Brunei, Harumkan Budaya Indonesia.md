@@ -1,5 +1,6 @@
 ---
 title: "Mahasiswa FPBS UPI Juarai Festival Pantun Antarnegara di Brunei, Harumkan Budaya Indonesia"
+slugId: festival-pantun-brunei-2025
 pubDate: "2025-05-28"
 author: "Admin"
 image:

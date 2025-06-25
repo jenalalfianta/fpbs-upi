@@ -1,5 +1,6 @@
 ---
 title: "FPBS Inaugurates Building A, New Interpreting Lab, and Microteaching Room"
+slugId: peresmian-gedung-a-fpbs
 pubDate: "2025-02-08"
 author: "Admin"
 image:

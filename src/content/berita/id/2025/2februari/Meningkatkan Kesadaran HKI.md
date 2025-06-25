@@ -1,5 +1,6 @@
 ---
 title: "Meningkatkan Kesadaran Hak Kekayaan Intelektual: FPBS Gelar Sosialisasi Peningkatan HKI"
+slugId: sosialisasi-hki-fpbs-2025
 pubDate: "2025-02-13"
 author: "Admin"
 image:

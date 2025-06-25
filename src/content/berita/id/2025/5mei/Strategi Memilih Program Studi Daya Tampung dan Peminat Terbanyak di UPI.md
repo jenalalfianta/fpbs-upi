@@ -1,5 +1,6 @@
 ---
 title: "Strategi Memilih Program Studi Daya Tampung dan Peminat Terbanyak di UPI"
+slugId: strategi-peminatan-upi-2025
 pubDate: "2025-05-05"
 author: "Admin"
 image:

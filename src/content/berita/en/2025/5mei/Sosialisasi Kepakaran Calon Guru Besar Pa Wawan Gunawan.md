@@ -1,5 +1,6 @@
 ---
 title: "Expertise Socialization of FPBS UPI Professor Candidate: Exploring Language through a Functional Linguistic Approach"
+slugId: sosialisasi-guru-besar-2025
 pubDate: "2025-05-21"
 author: "Admin"
 image:

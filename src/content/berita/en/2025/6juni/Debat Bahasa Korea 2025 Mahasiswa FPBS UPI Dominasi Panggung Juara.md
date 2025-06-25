@@ -1,5 +1,6 @@
 ---
 title: "Korean Language Debate 2025: FPBS UPI Korean Education Students Dominate the Winners’ Stage"
+slugId: debat-korea-fpbs-2025
 pubDate: "2025-05-23"
 author: "Admin"
 image:

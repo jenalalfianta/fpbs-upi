@@ -1,5 +1,6 @@
 ---
 title: "Chairman of the Board of Trustees Visits FPBS to Review Facilities and Encourage Academic Advancement"
+slugId: kunjungan-mwa-fpbs-2025
 pubDate: "2025-03-26"
 author: "Admin"
 image:

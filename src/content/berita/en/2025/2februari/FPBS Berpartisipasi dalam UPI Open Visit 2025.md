@@ -1,5 +1,6 @@
 ---
 title: "FPBS Participates in UPI Open Visit 2025: Showcasing Study Programs and Organizing Campus Field Trips"
+slugId: upi-open-visit-fpbs-2025
 pubDate: "2025-02-08"
 author: "Admin"
 image:

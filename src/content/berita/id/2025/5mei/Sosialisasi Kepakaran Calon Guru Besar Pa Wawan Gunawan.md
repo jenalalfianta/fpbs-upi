@@ -1,5 +1,6 @@
 ---
 title: "Sosialisasi Kepakaran Calon Guru Besar FPBS UPI: Membuka Wawasan Bahasa melalui Pendekatan Linguistik Fungsional"
+slugId: sosialisasi-guru-besar-2025
 pubDate: "2025-05-21"
 author: "Admin"
 image:
