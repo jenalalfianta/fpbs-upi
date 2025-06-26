@@ -1,4 +1,6 @@
 ---
+slugId: sunda-s2
+lang: en
 title: "Pendidikan Bahasa dan Budaya Sunda (S2)"
 menu:
   - id: "profil"

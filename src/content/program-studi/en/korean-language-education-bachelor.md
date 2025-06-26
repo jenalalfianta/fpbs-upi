@@ -1,4 +1,6 @@
 ---
+slugId: korea-s1
+lang: en
 title: "Korean Language Education (Bachelor's Program)"
 menu:
   - id: "about"

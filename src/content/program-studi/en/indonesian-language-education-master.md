@@ -1,4 +1,6 @@
 ---
+slugId: indonesia-dik-s2
+lang: en
 title: "Pendidikan Bahasa Indonesia (S2)"
 menu:
   - id: "profil"

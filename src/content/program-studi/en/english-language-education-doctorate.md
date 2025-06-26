@@ -1,4 +1,6 @@
 ---
+slugId: inggris-dik-s3
+lang: en
 title: "Pendidikan Bahasa Inggris (S3)"
 menu:
   - id: "profil"

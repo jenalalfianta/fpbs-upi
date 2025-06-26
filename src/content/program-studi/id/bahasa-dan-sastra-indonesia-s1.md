@@ -1,4 +1,6 @@
 ---
+slugId: indonesia-nondik-s1
+lang: id
 title: "Bahasa dan Sastra Indonesia (S1)"
 menu:
   - id: "profil"

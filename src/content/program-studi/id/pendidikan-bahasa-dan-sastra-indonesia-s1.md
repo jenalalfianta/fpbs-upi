@@ -1,4 +1,6 @@
 ---
+slugId: indonesia-dik-s1
+lang: id
 title: "Pendidikan Bahasa dan Sastra Indonesia (S1)"
 menu:
   - id: "profil"

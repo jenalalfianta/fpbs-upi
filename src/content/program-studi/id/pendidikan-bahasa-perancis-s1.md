@@ -1,4 +1,6 @@
 ---
+slugId: perancis-s1
+lang: id
 title: "Pendidikan Bahasa Perancis (S1)"
 menu:
   - id: "profil"

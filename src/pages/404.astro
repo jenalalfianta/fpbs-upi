@@ -7,6 +7,12 @@ const isEN = Astro.url.pathname.startsWith('/en/');
 const title = isEN
   ? "Page Not Found | FPBS"
   : getPageTitle(Astro.url.pathname);
+const homeLink = isEN ? "/en/" : "/";
+const buttonLabel = isEN ? "Back to Homepage" : "Kembali ke Beranda";
+const headingText = isEN ? "Page Not Found" : "Halaman tidak ditemukan";
+const paragraphText = isEN
+  ? "Sorry, the page you are looking for is not available or may have been moved."
+  : "Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.";
 ---
 
 <!doctype html>
@@ -22,22 +28,53 @@ const title = isEN
     <section class="px-4">
       <div class="max-w-screen-sm text-center">
         <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#422367] dark:text-purple-400">404</h1>
-        <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-          {isEN ? "Page Not Found" : "Halaman tidak ditemukan"}
+        <p id="heading-text" class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+          {headingText}
         </p>
-        <p class="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
-          {isEN
-            ? "Sorry, the page you are looking for is not available or may have been moved."
-            : "Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan."}
+        <p id="paragraph-text" class="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
+          {paragraphText}
         </p>
         <a
-          href={isEN ? "/en/" : "/"}
+          id="back-home-btn"
+          href={homeLink}
           class="inline-flex text-white bg-[#422367] hover:bg-[#341b54] focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900 my-4"
         >
-          {isEN ? "Back to Homepage" : "Kembali ke Beranda"}
+          {buttonLabel}
         </a>
       </div>
     </section>
+
+    <!-- Fallback untuk server static (deteksi langsung dari URL) -->
+    <script is:inline>
+      (function () {
+        const path = window.location.pathname;
+        const isEN = path.startsWith('/en/');
+        document.documentElement.lang = isEN ? 'en' : 'id';
+
+        const btn = document.getElementById('back-home-btn');
+        const heading = document.getElementById('heading-text');
+        const paragraph = document.getElementById('paragraph-text');
+
+        if (btn) {
+          btn.href = isEN ? '/en/' : '/';
+          btn.innerText = isEN ? 'Back to Homepage' : 'Kembali ke Beranda';
+        }
+
+        if (heading) {
+          heading.textContent = isEN ? 'Page Not Found' : 'Halaman tidak ditemukan';
+        }
+
+        if (paragraph) {
+          paragraph.textContent = isEN
+            ? 'Sorry, the page you are looking for is not available or may have been moved.'
+            : 'Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.';
+        }
+
+        document.title = isEN
+          ? 'Page Not Found | FPBS'
+          : 'Halaman tidak ditemukan | FPBS';
+      })();
+    </script>
 
     <script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>

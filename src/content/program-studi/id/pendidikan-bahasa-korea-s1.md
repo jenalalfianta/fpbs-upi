@@ -1,4 +1,6 @@
 ---
+slugId: korea-s1
+lang: id
 title: "Pendidikan Bahasa Korea (S1)"
 menu:
   - id: "profil"

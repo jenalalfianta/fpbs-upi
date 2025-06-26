@@ -1,4 +1,6 @@
 ---
+slugId: jepang-s2
+lang: id
 title: "Pendidikan Bahasa Jepang (S2)"
 menu:
   - id: "profil"

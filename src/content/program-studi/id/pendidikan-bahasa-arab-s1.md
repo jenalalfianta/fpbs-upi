@@ -1,4 +1,6 @@
 ---
+slugId: arab-s1
+lang: id
 title: "Pendidikan Bahasa Arab (S1)"
 menu:
   - id: "profil"
