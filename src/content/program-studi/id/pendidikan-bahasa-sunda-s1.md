@@ -1,4 +1,6 @@
 ---
+slugId: sunda-s1
+lang: id
 title: "Pendidikan Bahasa Sunda (S1)"
 menu:
   - id: "profil"

@@ -1,4 +1,6 @@
 ---
+slugId: indonesia-dik-s3
+lang: en
 title: "Doctoral Program in Indonesian Language Education"
 menu:
   - id: "profile"

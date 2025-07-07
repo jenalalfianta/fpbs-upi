@@ -1,4 +1,6 @@
 ---
+slugId: inggris-dik-s1
+lang: en
 title: "Pendidikan Bahasa Inggris (S1)"
 menu:
   - id: "profil"

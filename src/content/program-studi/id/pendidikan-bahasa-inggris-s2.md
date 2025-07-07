@@ -1,4 +1,6 @@
 ---
+slugId: inggris-dik-s2
+lang: id
 title: "Pendidikan Bahasa Inggris (S2)"
 menu:
   - id: "profil"

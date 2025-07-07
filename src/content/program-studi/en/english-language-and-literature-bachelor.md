@@ -1,4 +1,6 @@
 ---
+slugId: inggris-nondik-s1
+lang: en
 title: "Bahasa dan Sastra Inggris (S1)"
 menu:
   - id: "profil"

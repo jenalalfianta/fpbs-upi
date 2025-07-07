@@ -1,4 +1,6 @@
 ---
+slugId: jerman-s1
+lang: en
 title: "Pendidikan Bahasa Jerman (S1)"
 menu:
   - id: "profil"

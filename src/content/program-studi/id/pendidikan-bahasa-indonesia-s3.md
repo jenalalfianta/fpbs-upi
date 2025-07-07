@@ -1,4 +1,6 @@
 ---
+slugId: indonesia-dik-s3
+lang: id
 title: "Pendidikan Bahasa Indonesia S3"
 menu:
   - id: "profil"
