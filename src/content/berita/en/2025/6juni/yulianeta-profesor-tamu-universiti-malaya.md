@@ -1,5 +1,5 @@
 ---
-title: "Guest Lecture: Representation of Women in Indonesian & Malaysian Folktales"
+title: "Dr. Yulianeta Appointed as Visiting Professor at Universiti Malaya, Discusses the Role of Women in Nusantara Folktales"
 slugId: yulianeta-profesor-tamu-universiti-malaya
 pubDate: "2025-06-03"
 author: "Teja Mustika"
