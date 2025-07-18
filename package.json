@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/mdx": "^4.3.1",
     "@astrojs/sitemap": "^3.4.1",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.9.4",
+    "astro": "^5.12.0",
     "date-fns": "^4.1.0",
     "flowbite": "^3.1.2",
     "gray-matter": "^4.0.3",
