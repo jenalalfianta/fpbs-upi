@@ -110,6 +110,8 @@ export const slugMap = {
   "/berita/menggugah-literasi-bencana-melalui-rekonstruksi-legenda-dan-pembelajaran-hots/index.html": "/en/news/promoting-disaster-literacy-through-legend-reconstruction-and-hots-based-learning/index.html",
   "/en/news/festival-101-dongeng-sunda-wa-kepoh-folktales-for-education-inclusion-and-sustainable-culture/index.html": "/berita/festival-101-dongeng-sunda-wa-kepoh-dongeng-untuk-pendidikan-inklusi-dan-budaya-berkelanjutan/index.html",
   "/berita/festival-101-dongeng-sunda-wa-kepoh-dongeng-untuk-pendidikan-inklusi-dan-budaya-berkelanjutan/index.html": "/en/news/festival-101-dongeng-sunda-wa-kepoh-folktales-for-education-inclusion-and-sustainable-culture/index.html",
+  "/en/news/fpbs-collaborates-with-fk-upi-to-advance-sdgs-through-interdisciplinary-community-service/index.html": "/berita/fpbs-gandeng-fk-upi-wujudkan-sdgs-melalui-pengabdian-lintas-disiplin-ilmu/index.html",
+  "/berita/fpbs-gandeng-fk-upi-wujudkan-sdgs-melalui-pengabdian-lintas-disiplin-ilmu/index.html": "/en/news/fpbs-collaborates-with-fk-upi-to-advance-sdgs-through-interdisciplinary-community-service/index.html",
   "/en/news/fpbs-upi-sends-students-to-australia-strengthening-cultural-diplomacy-and-sdgs/index.html": "/berita/fpbs-upi-kirim-mahasiswa-ke-australia-perkuat-diplomasi-budaya-dan-sdgs/index.html",
   "/berita/fpbs-upi-kirim-mahasiswa-ke-australia-perkuat-diplomasi-budaya-dan-sdgs/index.html": "/en/news/fpbs-upi-sends-students-to-australia-strengthening-cultural-diplomacy-and-sdgs/index.html",
   "/en/news/fpbs-upi-and-universitas-terbuka-forge-synergy-to-enhance-postgraduate-quality/index.html": "/berita/fpbs-upi-dan-universitas-terbuka-bangun-sinergi-untuk-tingkatkan-mutu-pascasarjana/index.html",
