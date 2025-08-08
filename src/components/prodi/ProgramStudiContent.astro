@@ -1,23 +1,48 @@
 ---
-const { prodiData, activeTab } = Astro.props;
-const sections = prodiData.data.sections;
-const menu = prodiData.data.menu || [];
----
+// src/components/prodi/ProgramStudiContent.astro
+import { injectInlineCarousel } from '@/lib/inlineCarousel.js';
 
+const { prodiData, activeTab } = Astro.props;
+
+const sections = prodiData?.data?.sections ?? {};
+const menu = prodiData?.data?.menu ?? [];
+
+function getSectionTitle(key, section) {
+  return section?.title || (menu.find((item) => item.id === key)?.label) || key;
+}
+
+// Transform hanya blok :::carousel → HTML, sisanya dibiarkan apa adanya
+const rendered = Object.fromEntries(
+  Object.entries(sections).map(([key, section]) => {
+    const raw = section?.content ?? '';
+    const html = injectInlineCarousel(raw);
+    return [key, html];
+  })
+);
+---
 <section class="bg-white dark:bg-gray-900 pt-30 pb-0 px-4">
   <div class="max-w-6xl mx-auto space-y-24">
     {Object.entries(sections).map(([key, section]) => (
       <div id={key} data-content class={activeTab === key ? 'block' : 'hidden'}>
         <h2 class="text-2xl md:text-3xl font-bold text-purple-900 dark:text-purple-400 mb-4">
-          {section.title || menu.find(item => item.id === key)?.label || key}
+          {getSectionTitle(key, section)}
         </h2>
-    
-        {section.externalLink ? (
-          <a href={section.externalLink} target="_blank" class="text-purple-700 hover:underline">
+
+        {section?.externalLink ? (
+          <a
+            href={section.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-purple-700 dark:text-purple-300 hover:underline"
+          >
             Lihat Detail
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7v12a2 2 0 0 0 2 2h12" />
+            </svg>
           </a>
         ) : (
-          <div class="text-gray-800 dark:text-gray-100 leading-relaxed" set:html={section.content} />
+          <div class="text-gray-800 dark:text-gray-100 leading-relaxed" set:html={rendered[key]} />
         )}
       </div>
     ))}

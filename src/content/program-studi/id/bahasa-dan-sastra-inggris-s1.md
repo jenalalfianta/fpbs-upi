@@ -96,7 +96,19 @@ sections:
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">
             UPI Masuk 300 Besar Dunia dalam QS Ranking Bidang Bahasa dan Sastra Inggris serta Linguistik
           </h2>
-          
+        </div>
+      </section>
+
+      :::carousel
+      { "heightMobile": 360, "heightDesktop": 560, "objectFit": "contain", "intervalMs": 9000 }
+      /images/qs/inggris/qs-1.webp|QS Ranking Subject Overview
+      /images/qs/inggris/qs-2.webp|Peringkat Bahasa & Sastra Inggris
+      /images/qs/inggris/qs-3.webp|Peringkat Linguistik
+      :::
+
+      <section class="bg-white dark:bg-gray-900 pt-0 md:pt-0 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto px-4">
+
           <p class="text-gray-700 dark:text-gray-300 mb-6">
             Universitas Pendidikan Indonesia (UPI) kembali menorehkan prestasi gemilang dengan meraih
             peringkat bergengsi dalam QS World University Rankings by Subject 2025. Kali ini, dua bidang
@@ -133,6 +145,7 @@ sections:
             meningkatkan mutu pendidikan dan penelitian, serta memperkuat reputasi internasional
             universitas di masa mendatang.
           </p>
+
         </div>
       </section>
 

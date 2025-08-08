@@ -182,6 +182,8 @@ export const slugMap = {
   "/en/study-programs/english-language-and-literature-bachelor/akreditasi/index.html": "/program-studi/bahasa-dan-sastra-inggris-s1/akreditasi/index.html",
   "/program-studi/bahasa-dan-sastra-inggris-s1/dosen/index.html": "/en/study-programs/english-language-and-literature-bachelor/dosen/index.html",
   "/en/study-programs/english-language-and-literature-bachelor/dosen/index.html": "/program-studi/bahasa-dan-sastra-inggris-s1/dosen/index.html",
+  "/program-studi/bahasa-dan-sastra-inggris-s1/qsranking/index.html": "/en/study-programs/english-language-and-literature-bachelor/qsranking/index.html",
+  "/en/study-programs/english-language-and-literature-bachelor/qsranking/index.html": "/program-studi/bahasa-dan-sastra-inggris-s1/qsranking/index.html",
   "/program-studi/bahasa-dan-sastra-inggris-s1/fasilitas/index.html": "/en/study-programs/english-language-and-literature-bachelor/fasilitas/index.html",
   "/en/study-programs/english-language-and-literature-bachelor/fasilitas/index.html": "/program-studi/bahasa-dan-sastra-inggris-s1/fasilitas/index.html",
   "/program-studi/bahasa-dan-sastra-inggris-s1/prestasi/index.html": "/en/study-programs/english-language-and-literature-bachelor/prestasi/index.html",
