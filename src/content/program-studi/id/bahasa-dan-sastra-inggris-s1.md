@@ -12,6 +12,8 @@ menu:
     label: "Akreditasi"
   - id: "dosen"
     label: "Dosen"
+  - id: "qsranking"
+    label: "QS Ranking"
   - id: "fasilitas"
     label: "Fasilitas"
   - id: "prestasi"
@@ -84,6 +86,56 @@ sections:
           <p class="text-gray-700 dark:text-gray-300"><em>(Konten akan diisi dengan testimoni alumni.)</em></p>
         </div>
       </section>
+
+
+  qsranking:
+    title: "QS Ranking UPI"
+    content: |
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">
+            UPI Masuk 300 Besar Dunia dalam QS Ranking Bidang Bahasa dan Sastra Inggris serta Linguistik
+          </h2>
+          
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Universitas Pendidikan Indonesia (UPI) kembali menorehkan prestasi gemilang dengan meraih
+            peringkat bergengsi dalam QS World University Rankings by Subject 2025. Kali ini, dua bidang
+            studi unggulan UPI, yaitu Bahasa dan Sastra Inggris serta Linguistik, berhasil masuk dalam
+            jajaran 300 besar dunia.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Dalam ranking yang dirilis pada Maret 2025 ini, program Bahasa dan Sastra Inggris UPI
+            menduduki peringkat 3 di Indonesia, menempati posisi 66 di Asia, dan berhasil bersaing di
+            peringkat 251–300 dunia. Sementara itu, bidang Linguistik menempati posisi ke-4 di
+            Indonesia, peringkat 88 di Asia, dan berhasil masuk dalam peringkat 301–350 dunia.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Rektor UPI (2020-2025), M. Solehudin, menyatakan bahwa pencapaian ini merupakan tonggak
+            penting pengakuan internasional atas kualitas keilmuan dan riset yang terus dikembangkan
+            oleh UPI. "Prestasi ini membuktikan bahwa UPI mampu bersaing secara global dan menjadi
+            salah satu universitas terbaik di bidang pendidikan, khususnya dalam Bahasa dan Sastra
+            Inggris serta Linguistik," ujarnya.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Wakil Rektor Bidang Pendidikan dan Kemahasiswaan (2020-2025), Prof. Didi Sukyadi,
+            menjelaskan bahwa QS World University Rankings menilai berdasarkan lima indikator utama,
+            yaitu reputasi akademik, reputasi pemberi kerja, citations per paper, H-index citations,
+            dan jaringan riset internasional. "Skor tinggi yang diraih UPI dalam indikator-indikator
+            tersebut mencerminkan kualitas riset dan relevansi pendidikan yang tinggi di tingkat
+            global," tambah Prof. Didi.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300">
+            Pencapaian ini tentu menjadi motivasi bagi seluruh civitas akademika UPI untuk terus
+            meningkatkan mutu pendidikan dan penelitian, serta memperkuat reputasi internasional
+            universitas di masa mendatang.
+          </p>
+        </div>
+      </section>
+
 
   akreditasi:
     title: "Akreditasi Bahasa dan Sastra Inggris (S1)"
