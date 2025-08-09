@@ -17,8 +17,6 @@ lang: id
 /images/berita/2025/8agustus/icollite-9/3.webp|Peserta konferensi dari berbagai negara
 ::: -->
 
-ICOLLITE 9 Angkat Isu Transformasi Digital dan Dorong Kontribusi Akademik terhadap SDGs
- 
 Bandung, 6 Agustus 2025. Konferensi internasional tahunan ICOLLITE (International Conference on Language, Literature, Culture, and Education) kembali digelar oleh Fakultas Pendidikan Bahasa dan Sastra Universitas Pendidikan Indonesia (UPI) pada Rabu, 6 Agustus 2025. Dengan mengangkat tema “Digital Transformation in Language, Literature, Culture, and Education”. ICOLLITE ke-9 menegaskan peran dunia akademik dalam mendukung tujuan pembangunan berkelanjutan (Sustainable Development Goals/SDGs), terutama di sektor pendidikan berkualitas, kesetaraan akses teknologi, pelestarian budaya lokal, dan kolaborasi global.
 Konferensi ini dihadiri oleh ratusan akademisi dari berbagai negara, baik secara luring maupun daring. Mereka berdiskusi, mempresentasikan riset dan merumuskan strategi untuk menjawab tantangan abad ke-21 melalui pendekatan lintas disiplin. Dalam berbagai sesi, para peserta menyoroti bagaimana transformasi digital berperan penting dalam mewujudkan pendidikan yang inklusif dan bermutu (SDG 4). Inovasi dalam media pembelajaran digital, teknologi pembelajaran bahasa (CALL/MALL) dan asesmen daring menjadi solusi untuk meningkatkan kualitas pengajaran, terutama di wilayah dengan keterbatasan akses.
 
