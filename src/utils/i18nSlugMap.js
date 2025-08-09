@@ -152,6 +152,8 @@ export const slugMap = {
   "/berita/berbagi-gagasan-dan-riset-akademik-undergraduate-students-of-english-studies-uses-seminar/index.html": "/en/news/sharing-ideas-and-academic-research-undergraduate-students-of-english-studies-uses-seminar/index.html",
   "/en/news/icollite-9-raises-digital-transformation-issues-and-encourages-academic-contribution-to-the-sdgs/index.html": "/berita/icollite-9-angkat-isu-transformasi-digital-dan-dorong-kontribusi-akademik-terhadap-sdgs/index.html",
   "/berita/icollite-9-angkat-isu-transformasi-digital-dan-dorong-kontribusi-akademik-terhadap-sdgs/index.html": "/en/news/icollite-9-raises-digital-transformation-issues-and-encourages-academic-contribution-to-the-sdgs/index.html",
+  "/en/news/young-lecturer-training-discusses-international-publication-strategies-in-the-ai-era/index.html": "/berita/pelatihan-dosen-muda-bahas-strategi-publikasi-internasional-di-era-ai/index.html",
+  "/berita/pelatihan-dosen-muda-bahas-strategi-publikasi-internasional-di-era-ai/index.html": "/en/news/young-lecturer-training-discusses-international-publication-strategies-in-the-ai-era/index.html",
   "/berita/page/1/index.html": "/en/news/page/1/index.html",
   "/en/news/page/1/index.html": "/berita/page/1/index.html",
   "/berita/page/2/index.html": "/en/news/page/2/index.html",
