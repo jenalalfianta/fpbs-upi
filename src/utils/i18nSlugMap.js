@@ -150,6 +150,8 @@ export const slugMap = {
   "/berita/tot-kompetensi-mahasiswa-fpbs-upi-bekali-dosen-muda-dengan-keterampilan-abad-21-dukung-sdgs-4/index.html": "/en/news/fpbs-upi-student-competency-tot-equipping-young-lecturers-with-21st-century-skills-to-support-sdg-4/index.html",
   "/en/news/sharing-ideas-and-academic-research-undergraduate-students-of-english-studies-uses-seminar/index.html": "/berita/berbagi-gagasan-dan-riset-akademik-undergraduate-students-of-english-studies-uses-seminar/index.html",
   "/berita/berbagi-gagasan-dan-riset-akademik-undergraduate-students-of-english-studies-uses-seminar/index.html": "/en/news/sharing-ideas-and-academic-research-undergraduate-students-of-english-studies-uses-seminar/index.html",
+  "/en/news/icollite-9-highlights-digital-transformation-issues-and-encourages-academic-contribution-to-the-sdgs/index.html": "/berita/icollite-9-angkat-isu-transformasi-digital-dan-dorong-kontribusi-akademik-terhadap-sdgs/index.html",
+  "/berita/icollite-9-angkat-isu-transformasi-digital-dan-dorong-kontribusi-akademik-terhadap-sdgs/index.html": "/en/news/icollite-9-highlights-digital-transformation-issues-and-encourages-academic-contribution-to-the-sdgs/index.html",
   "/berita/page/1/index.html": "/en/news/page/1/index.html",
   "/en/news/page/1/index.html": "/berita/page/1/index.html",
   "/berita/page/2/index.html": "/en/news/page/2/index.html",
