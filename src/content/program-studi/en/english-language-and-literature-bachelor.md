@@ -12,6 +12,8 @@ menu:
     label: "Akreditasi"
   - id: "dosen"
     label: "Dosen"
+  - id: "qsranking"
+    label: "QS Ranking"
   - id: "fasilitas"
     label: "Fasilitas"
   - id: "prestasi"
@@ -84,6 +86,65 @@ sections:
           <p class="text-gray-700 dark:text-gray-300"><em>(Konten akan diisi dengan testimoni alumni.)</em></p>
         </div>
       </section>
+
+  qsranking:
+    title: "QS Ranking UPI"
+    content: |
+
+      :::carousel
+      { "heightMobile": 360, "heightDesktop": 560, "objectFit": "contain", "intervalMs": 9000 }
+      /images/lainnya/inggris-nondik/qsranking-1.webp|QS Ranking Subject Overview
+      /images/lainnya/inggris-nondik/qsranking-2.webp|English Language & Literature Ranking
+      /images/lainnya/inggris-nondik/qsranking-3.webp|Linguistics Ranking
+      :::
+
+      <section class="bg-white dark:bg-gray-900 pt-0 md:pt-0 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto px-4">
+
+          <br>
+
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">
+            UPI Ranked in the World’s Top 300 for English Language & Literature and Linguistics in QS Ranking
+          </h2>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Universitas Pendidikan Indonesia (UPI) has once again achieved a remarkable milestone by earning
+            a prestigious position in the QS World University Rankings by Subject 2025. This year, two of UPI’s
+            flagship fields of study, English Language & Literature and Linguistics, have successfully entered
+            the world’s top 300.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            In the ranking released in March 2025, UPI’s English Language & Literature program ranked 3rd in
+            Indonesia, 66th in Asia, and placed within the 251–300 range worldwide. Meanwhile, the field of
+            Linguistics ranked 4th in Indonesia, 88th in Asia, and achieved a position within the 301–350 range
+            globally.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            UPI Rector (2020–2025), M. Solehudin, stated that this achievement marks a significant milestone
+            in gaining international recognition for the academic quality and research continuously developed
+            by UPI. "This accomplishment proves that UPI can compete globally and is among the best universities
+            in education, particularly in English Language & Literature and Linguistics," he said.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Vice Rector for Education and Student Affairs (2020–2025), Prof. Didi Sukyadi, explained that the
+            QS World University Rankings are based on five main indicators: academic reputation, employer
+            reputation, citations per paper, H-index citations, and international research network. "The high
+            scores achieved by UPI in these indicators reflect the strong quality of research and the high
+            relevance of its education at the global level," added Prof. Didi.
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300">
+            This achievement certainly serves as motivation for the entire UPI academic community to continue
+            improving the quality of education and research, as well as strengthening the university’s
+            international reputation in the future.
+          </p>
+
+        </div>
+      </section>
+
 
   akreditasi:
     title: "Akreditasi Bahasa dan Sastra Inggris (S1)"
