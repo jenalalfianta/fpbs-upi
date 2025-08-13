@@ -156,6 +156,8 @@ export const slugMap = {
   "/berita/prodi-pendidikan-bahasa-jepang-fpbs-upi-gelar-japanzukishow-ke-18-bersama-sokenfest/index.html": "/en/news/japanese-language-education-study-program-of-fpbs-upi-holds-the-18th-japanzukishow-with-sokenfest/index.html",
   "/en/news/young-lecturer-training-discusses-international-publication-strategies-in-the-ai-era/index.html": "/berita/pelatihan-dosen-muda-bahas-strategi-publikasi-internasional-di-era-ai/index.html",
   "/berita/pelatihan-dosen-muda-bahas-strategi-publikasi-internasional-di-era-ai/index.html": "/en/news/young-lecturer-training-discusses-international-publication-strategies-in-the-ai-era/index.html",
+  "/en/news/upi-and-mgmp-bantul-collaborate-to-enhance-teacher-capacity-through-the-from-design-to-deep-learning-program/index.html": "/berita/upi-dan-mgmp-bantul-kolaborasi-tingkatkan-kapasitas-guru-lewat-program-from-design-to-deep-learning/index.html",
+  "/berita/upi-dan-mgmp-bantul-kolaborasi-tingkatkan-kapasitas-guru-lewat-program-from-design-to-deep-learning/index.html": "/en/news/upi-and-mgmp-bantul-collaborate-to-enhance-teacher-capacity-through-the-from-design-to-deep-learning-program/index.html",
   "/berita/page/1/index.html": "/en/news/page/1/index.html",
   "/en/news/page/1/index.html": "/berita/page/1/index.html",
   "/berita/page/2/index.html": "/en/news/page/2/index.html",
