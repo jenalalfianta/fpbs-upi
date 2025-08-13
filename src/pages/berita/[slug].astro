@@ -2,11 +2,9 @@
 import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
-import { injectInlineCarousel } from '@/lib/inlineCarousel.js';
-import { renderNewsMD } from '@/lib/renderMarkdownNews.js';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
+  const posts = (await getCollection('berita')).filter((post) => post.data.lang === 'id');
 
   return posts.map((post) => {
     const slug = slugify(post.data.title, { lower: true, strict: true });
@@ -15,27 +13,36 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const posts = (await getCollection('berita')).filter(post => post.data.lang === 'id');
-const post = posts.find(p => slugify(p.data.title, { lower: true, strict: true }) === slug);
+
+// Ambil semua berita bahasa Indonesia
+const posts = (await getCollection('berita')).filter((post) => post.data.lang === 'id');
+
+// Temukan post sesuai slug
+const post = posts.find(
+  (p) => slugify(p.data.title, { lower: true, strict: true }) === slug
+);
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
 
-const { title, pubDate, image, description, tags } = post.data;
+// Render konten markdown (ini otomatis pakai remarkPlugins termasuk carouselDirective)
+const { Content } = await post.render();
 
-// 🔽 proses markdown + inject carousel
-const mdWithCarousel = injectInlineCarousel(post.body ?? '');
-const html = await renderNewsMD(mdWithCarousel);
+const { title, pubDate, image, description } = post.data;
 
-// Related
+// Berita terkait
 const related = posts
-  .filter(p => p.id !== post.id)
+  .filter((p) => p.id !== post.id)
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 5);
 
 const fixHtml = (url) => `${url}/index.html`;
+
 const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
-  day: 'numeric', month: 'long', year: 'numeric'
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
 });
 ---
+
 <Layout pageTitle={title}>
   <main class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-24 antialiased">
     <div class="px-4 mx-auto max-w-screen-xl">
@@ -44,9 +51,7 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
           <h1 class="mb-2 text-3xl md:text-4xl font-extrabold leading-tight text-gray-900 dark:text-white">
             {title}
           </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            {tampilTanggal}
-          </p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">{tampilTanggal}</p>
         </header>
 
         {image && (
@@ -60,8 +65,8 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
           </figure>
         )}
 
-        {/* ⬇️ render HTML hasil markdown + carousel */}
-        <div set:html={html} />
+        {/* Konten markdown + carouselDirective sudah diproses di sini */}
+        <Content />
       </article>
     </div>
   </main>
@@ -70,14 +75,19 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
     <div class="px-4 mx-auto max-w-screen-xl">
       <h2 class="mb-8 text-3xl font-bold text-gray-900 dark:text-white">Berita Lainnya</h2>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        {related.map(item => {
+        {related.map((item) => {
           const relatedSlug = slugify(item.data.title, { lower: true, strict: true });
           const relatedUrl = fixHtml(`/berita/${relatedSlug}`);
+
           return (
             <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition flex flex-col h-full">
               {item.data.image && (
                 <a href={relatedUrl}>
-                  <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-32 object-cover" />
+                  <img
+                    src={item.data.image.url}
+                    alt={item.data.image.alt}
+                    class="w-full h-32 object-cover"
+                  />
                 </a>
               )}
               <div class="p-4 flex flex-col flex-1">

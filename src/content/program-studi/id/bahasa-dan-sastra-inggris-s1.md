@@ -191,94 +191,251 @@ sections:
     title: "Dosen Bahasa dan Sastra Inggris (S1)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-          <div class="max-w-6xl mx-auto text-center">
-            <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="dosen-gallery grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-              <a href="/images/dosen/inggris-nondik/eri.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/eri.webp" alt="Eri" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, S.Pd., M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/bachrudin.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+            <!-- Prof. Bachrudin Musthafa -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/bachrudin.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
                 <img src="/images/dosen/inggris-nondik/bachrudin.webp" alt="Bachrudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Bachrudin Musthafa, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
               </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Bachrudin Musthafa, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
 
-              <a href="/images/dosen/inggris-nondik/dadang.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+            <!-- Prof. Eri Kurniawan -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/eri.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-nondik/eri.webp" alt="Eri" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Dadang Sudana -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/dadang.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
                 <img src="/images/dosen/inggris-nondik/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dadang Sudana, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
               </a>
-
-              <a href="/images/dosen/inggris-nondik/safrina.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/safrina.webp" alt="Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. R. Safrina Noorman, M.A.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-              <a href="/images/dosen/inggris-nondik/ahmad.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/ahmad.webp" alt="Ahmad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/isti.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/isti.webp" alt="Isti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, S.Pd., M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/nia.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/nia.webp" alt="Nia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/budi.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/budi.webp" alt="Budi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, M.P.C.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-              <a href="/images/dosen/inggris-nondik/ernie.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/ernie.webp" alt="Ernie" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ernie D. Ayu Imperiani, S.S., M.Ed.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/riesky.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/riesky.webp" alt="Riesky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Riesky, S.Pd., M.Ed.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/dian.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/dian.webp" alt="Dian" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">R. Dian Dia-an Muniroh, S.Pd., M.Hum., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/ruswan.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/ruswan.webp" alt="Ruswan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Li. Ruswan Dallyono, S.Sos., M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dadang Sudana, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+                      <!-- Prof. Ahmad Bukhori Muslim -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ahmad.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ahmad.webp" alt="Ahmad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Guru Besar</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
             </div>
           </div>
-        </section>
+
+          <!-- Iwa Lukmana -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/iwa.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/iwa.webp" alt="Iwa Lukmana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Iwa Lukmana, M.A., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Raden Safrina -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/safrina.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/safrina.webp" alt="Raden Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Raden Safrina, M.A.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Wawan Gunawan -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/wawan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/wawan.webp" alt="Wawan Gunawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Wawan Gunawan, M.Ed.St., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Isti Siti Saleha Gandana -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/isti.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/isti.webp" alt="Isti Siti Saleha Gandana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, M.Ed., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Nia Nafisah -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/nia.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/nia.webp" alt="Nia Nafisah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- R Dian Dia-an Muniroh -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/dian.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/dian.webp" alt="R Dian Dia-an Muniroh" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">R Dian Dia-an Muniroh, S.Pd., M.Hum., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Budi Hermawan -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/budi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/budi.webp" alt="Budi Hermawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, S.Pd., M.P.C.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor Kepala</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Riesky -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/riesky.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/riesky.webp" alt="Riesky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Riesky, S.Pd., M.Ed.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Ernie Diyahkusumaning Ayu Imperiani -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ernie.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ernie.webp" alt="Ernie Diyahkusumaning Ayu Imperiani" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ernie Diyahkusumaning Ayu Imperiani, S.S., M.Ed.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Susi Septaviana Rakhmawati -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/susi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/susi.webp" alt="Susi Septaviana Rakhmawati" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Susi Septaviana Rakhmawati, M.Pd., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Li. Ruswan Dallyono -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ruswan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ruswan.webp" alt="Li. Ruswan Dallyono" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Li. Ruswan Dallyono, S.Sos., M.Pd.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Nita Novianti -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/nita.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/nita.webp" alt="Nita Novianti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Nita Novianti, S.S., M.A., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lektor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Ayu Fitri Kusumaningrum -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ayu.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ayu.webp" alt="Ayu Fitri Kusumaningrum" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ayu Fitri Kusumaningrum, S.S., M.A.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Jabatan Fungsional:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Tenaga Pengajar</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="#" target="" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+
+
 
 
   fasilitas:
@@ -298,7 +455,7 @@ sections:
               <p class="mb-4">
                 Daftar lengkap fasilitas khusus di lingkungan Fakultas Pendidikan Bahasa dan Sastra (FPBS) UPI tersedia melalui tautan berikut.
               </p>
-              <a href="/profil/fasilitas/index.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
+              <a href="/profil/fasilitas/index.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="">
                 Lihat Fasilitas FPBS
               </a>
             </div>
@@ -313,7 +470,7 @@ sections:
               <p class="mb-4">
                 Selain di fakultas, UPI juga menyediakan berbagai fasilitas penunjang umum untuk sivitas akademika secara keseluruhan.
               </p>
-              <a href="https://www.upi.edu/pendidikan/fasilitas" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
+              <a href="https://www.upi.edu/pendidikan/fasilitas" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="">
                 Lihat Fasilitas UPI
               </a>
             </div>

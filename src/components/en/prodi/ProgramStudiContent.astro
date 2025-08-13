@@ -1,7 +1,19 @@
 ---
+import { injectInlineCarousel } from '@/lib/inlineCarousel.js';
+
 const { prodiData, activeTab } = Astro.props;
-const sections = prodiData.data.sections;
-const menu = prodiData.data.menu || [];
+
+const sections = prodiData?.data?.sections ?? {};
+const menu = prodiData?.data?.menu ?? [];
+
+function getSectionTitle(key, section) {
+  return section?.title || (menu.find((item) => item.id === key)?.label) || key;
+}
+
+function renderContent(html) {
+  // proses :::carousel ... ::: jadi HTML siap pakai
+  return injectInlineCarousel(html ?? '');
+}
 ---
 
 <section class="bg-white dark:bg-gray-900 pt-30 pb-0 px-4">
@@ -9,15 +21,23 @@ const menu = prodiData.data.menu || [];
     {Object.entries(sections).map(([key, section]) => (
       <div id={key} data-content class={activeTab === key ? 'block' : 'hidden'}>
         <h2 class="text-2xl md:text-3xl font-bold text-purple-900 dark:text-purple-400 mb-4">
-          {section.title || menu.find(item => item.id === key)?.label || key}
+          {getSectionTitle(key, section)}
         </h2>
-    
-        {section.externalLink ? (
-          <a href={section.externalLink} target="_blank" class="text-purple-700 hover:underline">
-            Lihat Detail
+
+        {section?.externalLink ? (
+          <a
+            href={section.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-purple-700 hover:underline"
+          >
+            View Detail
           </a>
         ) : (
-          <div class="text-gray-800 dark:text-gray-100 leading-relaxed" set:html={section.content} />
+          <div
+            class="text-gray-800 dark:text-gray-100 leading-relaxed"
+            set:html={renderContent(section?.content)}
+          />
         )}
       </div>
     ))}

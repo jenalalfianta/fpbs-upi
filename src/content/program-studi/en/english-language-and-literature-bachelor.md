@@ -1,91 +1,92 @@
 ---
 slugId: inggris-nondik-s1
 lang: en
-title: "Bahasa dan Sastra Inggris (S1)"
+title: "English Language and Literature (Bachelor's Degree)"
 menu:
   - id: "profil"
-    label: "Tentang Prodi"
+    label: "About the Program"
   - id: "kurikulum"
-    label: "Kurikulum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C505"
   - id: "akreditasi"
-    label: "Akreditasi"
+    label: "Accreditation"
   - id: "dosen"
-    label: "Dosen"
+    label: "Lecturers"
   - id: "qsranking"
     label: "QS Ranking"
   - id: "fasilitas"
-    label: "Fasilitas"
+    label: "Facilities"
   - id: "prestasi"
-    label: "Prestasi"
+    label: "Achievements"
   - id: "rekamjejak"
-    label: "Rekam Jejak Alumni"
+    label: "Alumni Track Record"
   - id: "pmb"
-    label: "PMB / Pendaftaran"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
   profil:
-    title: "Tentang Bahasa dan Sastra Inggris (S1)"
+    title: "About English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto px-4">
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sejarah</h2><br>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">History</h2><br>
 
           <div class="relative border-l-2 border-purple-300 dark:border-purple-600 pl-14 space-y-10 mb-6">
             <div class="relative"><div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1964: Pengakuan Resmi FKSS di Bawah IKIP</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">FKSS diakui secara resmi melalui Keputusan Menteri PTIP No. 128 tahun 1964 setelah penggabungan FKIP UNPAD dan Institut Pendidikan Guru.</p>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1964: Official Recognition of FKSS under IKIP</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">FKSS was officially recognized through the Minister of PTIP Decree No. 128 of 1964 following the merger of FKIP UNPAD and the Teachers’ Training Institute.</p>
             </div>
             <div class="relative"><div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1983: FKSS Menjadi FPBS</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">Berdasarkan SK Rektor IKIP Bandung No. 302/PT.25.R/E/1983, FKSS berubah menjadi Fakultas Pendidikan Bahasa dan Seni (FPBS).</p>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1983: FKSS Became FPBS</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Based on the Rector’s Decree of IKIP Bandung No. 302/PT.25.R/E/1983, FKSS was transformed into the Faculty of Language and Arts Education (FPBS).</p>
             </div>
             <div class="relative"><div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1999: Berdirinya Prodi Bahasa dan Sastra Inggris</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">Diresmikan melalui SK Dirjen DIKTI No. 386/DIKTI/Kep/1999 sebagai bagian dari perluasan mandat IKIP menjadi UPI.</p>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">1999: Establishment of the English Language and Literature Study Program</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">Inaugurated through the Directorate General of Higher Education Decree No. 386/DIKTI/Kep/1999 as part of IKIP’s mandate expansion into UPI.</p>
             </div>
             <div class="relative"><div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2022: Akreditasi Unggul</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">Prodi memperoleh akreditasi Unggul berdasarkan SK BAN-PT No. 2305/SK/BAN-PT/Akred/S/IV/2022 tertanggal 12 April 2022.</p>
+              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2022: Excellent Accreditation</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">The program received an “Excellent” accreditation based on BAN-PT Decree No. 2305/SK/BAN-PT/Akred/S/IV/2022 dated April 12, 2022.</p>
             </div>
           </div>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi</h2>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Vision</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Menjadi pelopor dan unggul dalam bidang linguistik, kesastraan, dan penerjemahan bahasa Inggris serta pembelajarannya.
+            To become a pioneer and excel in the fields of English linguistics, literature, and translation as well as their teaching.
           </p>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Misi</h2>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Mission</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li>Menyelenggarakan pembelajaran bermutu tinggi dalam linguistik, sastra, dan penerjemahan bahasa Inggris.</li>
-            <li>Melakukan penelitian dan publikasi dalam bidang linguistik, sastra, dan penerjemahan.</li>
-            <li>Menyelenggarakan pengabdian kepada masyarakat berbasis keilmuan Program Studi.</li>
-            <li>Menjalin kemitraan dengan institusi lokal, nasional, dan internasional.</li>
+            <li>Deliver high-quality learning in English linguistics, literature, and translation.</li>
+            <li>Conduct research and publish in the fields of linguistics, literature, and translation.</li>
+            <li>Carry out community service based on the academic expertise of the Study Program.</li>
+            <li>Establish partnerships with local, national, and international institutions.</li>
           </ul>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Tujuan</h2>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Objectives</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li>Menghasilkan lulusan dengan kecakapan bahasa Inggris dan penguasaan linguistik, sastra, serta penerjemahan.</li>
-            <li>Menumbuhkan budaya riset dalam bidang kebahasaan dan kesastraan.</li>
-            <li>Mendorong kontribusi Prodi dalam pengabdian berbasis keilmuan kepada masyarakat.</li>
-            <li>Membangun kerja sama yang saling menguntungkan dengan berbagai institusi.</li>
+            <li>Produce graduates with English proficiency and mastery of linguistics, literature, and translation.</li>
+            <li>Foster a research culture in language and literary studies.</li>
+            <li>Encourage the program’s contribution to community service based on academic expertise.</li>
+            <li>Build mutually beneficial cooperation with various institutions.</li>
           </ul>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Profil Lulusan</h2>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Graduate Profile</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li><strong>Linguis:</strong> Meneliti dan menganalisis fenomena bahasa.</li>
-            <li><strong>Kritikus Sastra:</strong> Menganalisis dan menafsirkan karya sastra.</li>
-            <li><strong>Penerjemah & Interpreter:</strong> Menerjemahkan dan mentransfer makna lintas bahasa.</li>
-            <li><strong>Editor & Copywriter:</strong> Menyunting dan menghasilkan konten profesional.</li>
-            <li><strong>Peneliti & Akademisi:</strong> Menyumbang pemikiran ilmiah di bidang kebahasaan.</li>
-            <li><strong>Penyiar & Jurnalis:</strong> Menyampaikan informasi melalui berbagai media.</li>
-            <li><strong>Instruktur Bahasa:</strong> Mengajar bahasa Inggris di lembaga nonformal.</li>
+            <li><strong>Linguist:</strong> Researches and analyzes language phenomena.</li>
+            <li><strong>Literary Critic:</strong> Analyzes and interprets literary works.</li>
+            <li><strong>Translator & Interpreter:</strong> Translates and transfers meaning across languages.</li>
+            <li><strong>Editor & Copywriter:</strong> Edits and produces professional content.</li>
+            <li><strong>Researcher & Academic:</strong> Contributes scholarly thought in the field of linguistics.</li>
+            <li><strong>Broadcaster & Journalist:</strong> Delivers information through various media.</li>
+            <li><strong>Language Instructor:</strong> Teaches English in non-formal institutions.</li>
           </ul>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Ulasan Alumni</h2>
-          <p class="text-gray-700 dark:text-gray-300"><em>(Konten akan diisi dengan testimoni alumni.)</em></p>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Alumni Testimonials</h2>
+          <p class="text-gray-700 dark:text-gray-300"><em>(Content will be filled with alumni testimonials.)</em></p>
         </div>
       </section>
+
 
   qsranking:
     title: "QS Ranking UPI"
@@ -147,302 +148,459 @@ sections:
 
 
   akreditasi:
-    title: "Akreditasi Bahasa dan Sastra Inggris (S1)"
+    title: "Accreditation of English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
         <div class="max-w-6xl mx-auto">
 
-          <!-- Akreditasi Nasional -->
+          <!-- National Accreditation -->
           <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
-              Akreditasi Nasional (BAN-PT)
+              National Accreditation (BAN-PT)
             </summary>
             <div class="px-4 py-4 text-gray-700 dark:text-gray-300">
               <p class="mb-4">
-                Berdasarkan Keputusan <strong>BAN-PT No. 2305/SK/BAN-PT/Akred/S/IV/2022</strong>, Program Studi Bahasa dan Sastra Inggris, pada Program Sarjana Universitas Pendidikan Indonesia, Kota Bandung dinyatakan memenuhi syarat peringkat <strong>Akreditasi Unggul</strong>.
+                Based on the <strong>BAN-PT Decree No. 2305/SK/BAN-PT/Akred/S/IV/2022</strong>, the Bachelor's Program in English Language and Literature, at Universitas Pendidikan Indonesia, Bandung City, has been granted the rating of <strong>Excellent Accreditation</strong>.
               </p>
               <p class="mb-4">
-                Sertifikat akreditasi ini berlaku sejak tanggal <strong>12 April 2022</strong> sampai dengan <strong>12 April 2027</strong>.
+                This accreditation certificate is valid from <strong>April 12, 2022</strong> to <strong>April 12, 2027</strong>.
               </p>
-              <img src="/images/akreditasi/inggris-nondik/banpt-s1.webp" alt="Sertifikat Akreditasi BAN-PT" class="w-full rounded-lg">
+              <img src="/images/akreditasi/inggris-nondik/banpt-s1.webp" alt="BAN-PT Accreditation Certificate" class="w-full rounded-lg">
             </div>
           </details>
 
-          <!-- Akreditasi Internasional -->
+          <!-- International Accreditation -->
           <details class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="cursor-pointer px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700">
-              Akreditasi Internasional (ACQUIN)
+              International Accreditation (ACQUIN)
             </summary>
             <div class="px-4 py-4 text-gray-700 dark:text-gray-300">
               <p class="mb-4">
-                Program Studi <strong>Bahasa dan Sastra Inggris (S1)</strong> telah memperoleh akreditasi internasional dari <strong>ACQUIN (Accreditation, Certification and Quality Assurance Institute)</strong>.
+                The <strong>English Language and Literature (Bachelor's Degree)</strong> Program has received international accreditation from <strong>ACQUIN (Accreditation, Certification and Quality Assurance Institute)</strong>.
               </p>
-              <img src="/images/akreditasi/inggris-nondik/acquin-s1.webp" alt="Sertifikat Akreditasi ACQUIN" class="w-full rounded-lg">
+              <img src="/images/akreditasi/inggris-nondik/acquin-s1.webp" alt="ACQUIN Accreditation Certificate" class="w-full rounded-lg">
             </div>
           </details>
 
         </div>
       </section>
 
+
   dosen:
-    title: "Dosen Bahasa dan Sastra Inggris (S1)"
+    title: "Lecturers of English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-          <div class="max-w-6xl mx-auto text-center">
-            <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="dosen-gallery grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-              <a href="/images/dosen/inggris-nondik/eri.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/eri.webp" alt="Eri" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, S.Pd., M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/bachrudin.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+            <!-- Prof. Bachrudin Musthafa -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/bachrudin.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
                 <img src="/images/dosen/inggris-nondik/bachrudin.webp" alt="Bachrudin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Bachrudin Musthafa, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
               </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Bachrudin Musthafa, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Professor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
 
-              <a href="/images/dosen/inggris-nondik/dadang.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+            <!-- Prof. Eri Kurniawan -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/eri.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-nondik/eri.webp" alt="Eri" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Professor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Dadang Sudana -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/dadang.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
                 <img src="/images/dosen/inggris-nondik/dadang.webp" alt="Dadang" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dadang Sudana, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
               </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dadang Sudana, M.A., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Professor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
 
-              <a href="/images/dosen/inggris-nondik/safrina.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/safrina.webp" alt="Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. R. Safrina Noorman, M.A.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-              <a href="/images/dosen/inggris-nondik/ahmad.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
+            <!-- Prof. Ahmad Bukhori Muslim -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-nondik/ahmad.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
                 <img src="/images/dosen/inggris-nondik/ahmad.webp" alt="Ahmad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
               </a>
-
-              <a href="/images/dosen/inggris-nondik/isti.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/isti.webp" alt="Isti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, S.Pd., M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/nia.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/nia.webp" alt="Nia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/budi.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/budi.webp" alt="Budi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, M.P.C.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-              <a href="/images/dosen/inggris-nondik/ernie.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/ernie.webp" alt="Ernie" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ernie D. Ayu Imperiani, S.S., M.Ed.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/riesky.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/riesky.webp" alt="Riesky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Riesky, S.Pd., M.Ed.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/dian.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/dian.webp" alt="Dian" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">R. Dian Dia-an Muniroh, S.Pd., M.Hum., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-nondik/ruswan.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-nondik/ruswan.webp" alt="Ruswan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Li. Ruswan Dallyono, S.Sos., M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+              <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Professor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+            <!-- Iwa Lukmana -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/iwa.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/iwa.webp" alt="Iwa Lukmana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Iwa Lukmana, M.A., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
             </div>
           </div>
-        </section>
+
+          <!-- Dr. Raden Safrina -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/safrina.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/safrina.webp" alt="Raden Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Raden Safrina, M.A.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Wawan Gunawan -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/wawan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/wawan.webp" alt="Wawan Gunawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Wawan Gunawan, M.Ed.St., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Isti Siti Saleha Gandana -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/isti.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/isti.webp" alt="Isti Siti Saleha Gandana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, M.Ed., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Nia Nafisah -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/nia.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/nia.webp" alt="Nia Nafisah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- R Dian Dia-an Muniroh -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/dian.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/dian.webp" alt="R Dian Dia-an Muniroh" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">R Dian Dia-an Muniroh, S.Pd., M.Hum., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Budi Hermawan -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/budi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/budi.webp" alt="Budi Hermawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, S.Pd., M.P.C.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Associate Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+          <!-- Riesky -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/riesky.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/riesky.webp" alt="Riesky" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Riesky, S.Pd., M.Ed.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Assistant Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Ernie Diyahkusumaning Ayu Imperiani -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ernie.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ernie.webp" alt="Ernie Diyahkusumaning Ayu Imperiani" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ernie Diyahkusumaning Ayu Imperiani, S.S., M.Ed.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Assistant Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Susi Septaviana Rakhmawati -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/susi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/susi.webp" alt="Susi Septaviana Rakhmawati" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Susi Septaviana Rakhmawati, M.Pd., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Assistant Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Dr. Li. Ruswan Dallyono -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ruswan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ruswan.webp" alt="Li. Ruswan Dallyono" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Li. Ruswan Dallyono, S.Sos., M.Pd.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Assistant Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Nita Novianti -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/nita.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/nita.webp" alt="Nita Novianti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Nita Novianti, S.S., M.A., Ph.D.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Assistant Professor</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+
+          <!-- Ayu Fitri Kusumaningrum -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+            <a href="/images/dosen/inggris-nondik/ayu.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+              <img src="/images/dosen/inggris-nondik/ayu.webp" alt="Ayu Fitri Kusumaningrum" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            </a>
+            <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ayu Fitri Kusumaningrum, S.S., M.A.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Academic Position:</p>
+            <p class="text-[#422367] dark:text-purple-300 font-medium mb-2">Lecturer</p>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+              <a href="" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+            </div>
+          </div>
+        </div> <!-- end grid -->
+      </div> <!-- end max-w-6xl -->
+      </section>
 
 
   fasilitas:
-    title: "Fasilitas"
+    title: "Facilities"
     content: |
-      <!-- Section Fasilitas -->
-            <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+      <!-- Facilities Section -->
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
 
         <div class="max-w-6xl mx-auto">
 
-          <!-- Fasilitas FPBS -->
+          <!-- FPBS Facilities -->
           <details open class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white">
-              Fasilitas di FPBS UPI
+              Facilities at FPBS UPI
             </summary>
             <div class="px-4 py-4 text-gray-800 dark:text-gray-300">
               <p class="mb-4">
-                Daftar lengkap fasilitas khusus di lingkungan Fakultas Pendidikan Bahasa dan Sastra (FPBS) UPI tersedia melalui tautan berikut.
+                A complete list of special facilities within the Faculty of Language and Literature Education (FPBS) UPI is available through the following link.
               </p>
-              <a href="/profil/fasilitas.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
-                Lihat Fasilitas FPBS
+              <a href="/profile/facilities.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="">
+                View FPBS Facilities
               </a>
             </div>
           </details>
 
-          <!-- Fasilitas UPI -->
+          <!-- UPI Facilities -->
           <details class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
             <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white">
-              Fasilitas Umum di UPI
+              General Facilities at UPI
             </summary>
             <div class="px-4 py-4 text-gray-800 dark:text-gray-300">
               <p class="mb-4">
-                Selain di fakultas, UPI juga menyediakan berbagai fasilitas penunjang umum untuk sivitas akademika secara keseluruhan.
+                In addition to faculty-specific facilities, UPI also provides various general supporting facilities for the entire academic community.
               </p>
-              <a href="https://www.upi.edu/pendidikan/fasilitas" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="_blank">
-                Lihat Fasilitas UPI
+              <a href="https://www.upi.edu/pendidikan/fasilitas" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded-lg transition" target="">
+                View UPI Facilities
               </a>
             </div>
           </details>
         </div>
       </section>
 
+
   prestasi:
-    title: "Prestasi Mahasiswa Bahasa dan Sastra Inggris (S1)"
+    title: "Achievements of English Language and Literature Students (Bachelor's Degree)"
     content: |
-        <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
 
         <div class="max-w-6xl mx-auto">
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Prestasi Akademik</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-10">
-            <li>Champion National University Debating Championship UPI 2017</li>
-            <li>Best Speaker NUDC UPI 2017</li>
-            <li>Juara 1 Newscasting Competition of ESCW</li>
-            <li>Juara 1 Storytelling Competition of ESCW</li>
-            <li>Juara 2 Poetry Reading Competition of ESCW</li>
-            <li>Juara 2 National Essay Writing Competition in Gemasi’s English Competition</li>
-            <li>Liaison Officer di SSEAYP International General Assembly</li>
-            <li>Best Speaker Novice Category NUDC 2018</li>
-            <li>Delegasi ASEAN-India Student Exchange</li>
-            <li>Delegasi Bali Democracy Student Conference</li>
-            <li>Duta Bahasa Jawa Barat 2018</li>
-            <li>Juara 1 & 2 Newscasting Competition of ESCW</li>
-            <li>Juara 1 Storytelling Competition of ESCW</li>
-            <li>Juara 3 Mahasiswa Berprestasi FPBS 2018</li>
-            <li>“Gold Standard” dari The International Award for Young People (IAYP)</li>
-            <li>Delegasi Forum Pemuda Internasional</li>
-            <li>Semi-finalist National University Debating Championship 2019</li>
-            <li>Juara 1 Newscasting Competition of ESCW</li>
-            <li>Juara 2 Storytelling Competition of ESCW</li>
-            <li>Juara 3 Poetry Reading Competition of ESCW</li>
-            <li>Juara Harapan 1 Newscasting Competition of ESCW</li>
-            <li>Adjudicator Cimahi School Debating Championship</li>
-            <li>Peringkat 4 Mahasiswa Berprestasi FPBS 2020</li>
-            <li>Delegasi Duta Bahasa Jawa Barat</li>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Academic Achievements</h2>
+          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-10 leading-relaxed">
+            <li>Champion, National University Debating Championship UPI 2017</li>
+            <li>Best Speaker, NUDC UPI 2017</li>
+            <li>1st Place, Newscasting Competition of ESCW</li>
+            <li>1st Place, Storytelling Competition of ESCW</li>
+            <li>2nd Place, Poetry Reading Competition of ESCW</li>
+            <li>2nd Place, National Essay Writing Competition in Gemasi’s English Competition</li>
+            <li>Liaison Officer, SSEAYP International General Assembly</li>
+            <li>Best Speaker, Novice Category NUDC 2018</li>
+            <li>Delegate, ASEAN-India Student Exchange</li>
+            <li>Delegate, Bali Democracy Student Conference</li>
+            <li>West Java Language Ambassador 2018</li>
+            <li>1st & 2nd Place, Newscasting Competition of ESCW</li>
+            <li>1st Place, Storytelling Competition of ESCW</li>
+            <li>3rd Place, FPBS Outstanding Student 2018</li>
+            <li>“Gold Standard” Award, The International Award for Young People (IAYP)</li>
+            <li>Delegate, International Youth Forum</li>
+            <li>Semi-finalist, National University Debating Championship 2019</li>
+            <li>1st Place, Newscasting Competition of ESCW</li>
+            <li>2nd Place, Storytelling Competition of ESCW</li>
+            <li>3rd Place, Poetry Reading Competition of ESCW</li>
+            <li>1st Runner-up, Newscasting Competition of ESCW</li>
+            <li>Adjudicator, Cimahi School Debating Championship</li>
+            <li>4th Place, FPBS Outstanding Student 2020</li>
+            <li>Delegate, West Java Language Ambassador Program</li>
           </ul>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Prestasi Non-Akademik</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-10">
-            <li>Juara 1 Acoustic Contest of ESCW</li>
-            <li>Juara 1 Lomba Basket Putri ESCW</li>
-            <li>Juara 2 Video Contest of ESCW</li>
-            <li>Delegasi Muhibah Kesenian UKM Katumbiri ke Osaka, Jepang</li>
-            <li>Juara 5 Grand Prix Marching Band Kategori Ensamble</li>
-            <li>Juara 1 Telkom University Cup 2018 & 2019</li>
-            <li>Juara 1 Dance Competition of ESCW</li>
-            <li>Juara 1 Futsal Putra ESCW</li>
-            <li>Juara 1 Pemain Terbaik Basket Putri ESCW</li>
-            <li>Juara 1 Basket Putra ESCW</li>
-            <li>Juri Pasanggiri Jaipong SMAN 3 & Sanggar Catrik Palagan Kota Sukabumi</li>
-            <li>Juara 2 Futsal Putri ESCW</li>
-            <li>Juara 2 Fotografi ESCW</li>
-            <li>Juara 3 Video Contest & Singing Contest ESCW</li>
-            <li>Juara 3 Women’s Futsal PORSEMA</li>
-            <li>Juara 3 POMNAS Catur Standar</li>
-            <li>Juara 1 POMNAS Catur Cepat</li>
-            <li>Finalis Jaipongan Jugala Raya 2019</li>
-            <li>Juara 2 Kejuaraan Nasional Taekwondo di UNS</li>
-            <li>2nd Runner Up Putra Putri Bumi Siliwangi 2019</li>
-            <li>2nd Runner Up Red Fox National Softball Championship</li>
-            <li>Narasumber Sukabumi Online Festival 2019</li>
-            <li>Pinilih Mojang Parigel Pasanggiri Mojang Jajaka Kota Sukabumi</li>
-            <li>Juara 1 Badminton ESCW</li>
-            <li>40 Besar Finalis Festival Tari Nusantara Gentra Lestari Budaya</li>
-            <li>Juara 1 Folklore Dance Sopravista International Online Festival Italy</li>
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-6">Non-Academic Achievements</h2>
+          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-10 leading-relaxed">
+            <li>1st Place, Acoustic Contest of ESCW</li>
+            <li>1st Place, Women’s Basketball Tournament ESCW</li>
+            <li>2nd Place, Video Contest of ESCW</li>
+            <li>Delegate, Katumbiri UKM Art and Cultural Mission to Osaka, Japan</li>
+            <li>5th Place, Grand Prix Marching Band Ensemble Category</li>
+            <li>1st Place, Telkom University Cup 2018 & 2019</li>
+            <li>1st Place, Dance Competition of ESCW</li>
+            <li>1st Place, Men’s Futsal ESCW</li>
+            <li>Best Player, Women’s Basketball ESCW</li>
+            <li>1st Place, Men’s Basketball ESCW</li>
+            <li>Judge, Jaipong Competition at SMAN 3 & Sanggar Catrik Palagan, Sukabumi</li>
+            <li>2nd Place, Women’s Futsal ESCW</li>
+            <li>2nd Place, Photography ESCW</li>
+            <li>3rd Place, Video Contest & Singing Contest ESCW</li>
+            <li>3rd Place, Women’s Futsal PORSEMA</li>
+            <li>3rd Place, POMNAS Standard Chess</li>
+            <li>1st Place, POMNAS Rapid Chess</li>
+            <li>Finalist, Jaipongan Jugala Raya 2019</li>
+            <li>2nd Place, National Taekwondo Championship at UNS</li>
+            <li>2nd Runner-up, Putra Putri Bumi Siliwangi 2019</li>
+            <li>2nd Runner-up, Red Fox National Softball Championship</li>
+            <li>Speaker, Sukabumi Online Festival 2019</li>
+            <li>Selected Mojang Parigel, Pasanggiri Mojang Jajaka, Sukabumi City</li>
+            <li>1st Place, Badminton ESCW</li>
+            <li>Top 40 Finalists, Gentra Lestari Budaya Nusantara Dance Festival</li>
+            <li>1st Place, Folklore Dance, Sopravista International Online Festival, Italy</li>
           </ul>
 
         </div>
-        </section>
+      </section>
+
 
   rekamjejak:
-    title: "Rekam Jejak Alumni"
+    title: "Alumni Career Tracking"
     content: |
-        <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-24 px-4">
-          <div class="max-w-6xl mx-auto">
-            <h2 class="text-center text-2xl font-bold text-purple-800 dark:text-purple-300 mb-6">Rekam Jejak (<em>Tracer Study</em>) Alumni Program Studi Bahasa dan Sastra Inggris</h2>
-            <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
-              Data di bawah ini menunjukkan hasil analisis terhadap jawaban dari kuesioner yang telah diisi oleh 119 alumni Program Studi Bahasa dan Sastra Inggris UPI lulusan tahun 2018–2020.
-            </p>
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-24 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-center text-2xl font-bold text-purple-800 dark:text-purple-300 mb-6">Alumni Career Tracking (<em>Tracer Study</em>) of the English Language and Literature Study Program</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+            The data below presents the analysis results from questionnaires completed by 119 alumni of the English Language and Literature Study Program at UPI who graduated between 2018–2020.
+          </p>
 
-            <hr class="border-t border-gray-300 dark:border-gray-600 mb-6">
+          <hr class="border-t border-gray-300 dark:border-gray-600 mb-6">
 
-            <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Status Pekerjaan</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
-              Dari para alumni yang menjadi responden, 97% di antaranya menyatakan telah bekerja dan 3% lainnya menyatakan belum/sedang tidak bekerja.
-            </p>
-            <div class="flex justify-center mb-10">
-              <img src="/images/lainnya/inggris-nondik/image1.webp" alt="Status Pekerjaan" class="rounded-lg w-2/3 max-w-md">
-            </div>
-
-            <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Waktu Tunggu Mendapatkan Pekerjaan Pertama</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
-              Mayoritas alumni telah mendapatkan pekerjaan dalam waktu kurang dari empat bulan setelah kelulusan.
-            </p>
-            <div class="flex justify-center mb-10">
-              <img src="/images/lainnya/inggris-nondik/image2.webp" alt="Waktu Tunggu" class="rounded-lg w-2/3 max-w-md">
-            </div>
-
-            <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Sumber Informasi Pekerjaan</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
-              Informasi pekerjaan paling banyak diperoleh dari kenalan atau relasi (45%), media elektronik/sosial (39%), dan dosen/program studi/pihak fakultas (9%).
-            </p>
-            <div class="flex justify-center mb-10">
-              <img src="/images/lainnya/inggris-nondik/image3.webp" alt="Sumber Informasi" class="rounded-lg w-2/3 max-w-md">
-            </div>
-
-            <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Relevansi Pendidikan dengan Pekerjaan</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
-              Sebanyak 51% alumni menyatakan pekerjaan mereka cukup relevan, 39% sangat relevan, dan hanya 10% menyatakan kurang relevan dengan latar belakang pendidikan Bahasa dan Sastra Inggris.
-            </p>
-            <div class="flex justify-center mb-10">
-              <img src="/images/lainnya/inggris-nondik/image4.webp" alt="Relevansi Pendidikan" class="rounded-lg w-2/3 max-w-md">
-            </div>
-
-            <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Bidang Pekerjaan Alumni</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
-              Lulusan banyak bekerja sebagai pengajar, pelayan publik, dan penerjemah, dengan prospek karier yang luas di berbagai sektor.
-            </p>
-            <div class="flex justify-center mb-6">
-              <img src="/images/lainnya/inggris-nondik/image5.webp" alt="Bidang Pekerjaan Alumni" class="rounded-lg w-2/3 max-w-md">
-            </div>
-
-            <p class="text-gray-700 dark:text-gray-300 text-justify">
-              Data di atas menunjukkan bahwa lulusan Program Studi Bahasa dan Sastra Inggris memiliki peluang besar untuk bersaing di dunia profesional.
-            </p>
+          <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Employment Status</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
+            Among the alumni respondents, 97% reported being employed, while 3% reported being unemployed or not currently working.
+          </p>
+          <div class="flex justify-center mb-10">
+            <img src="/images/lainnya/inggris-nondik/image1.webp" alt="Employment Status" class="rounded-lg w-2/3 max-w-md">
           </div>
-        </section>
+
+          <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Waiting Time to Get the First Job</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
+            The majority of alumni secured a job within less than four months after graduation.
+          </p>
+          <div class="flex justify-center mb-10">
+            <img src="/images/lainnya/inggris-nondik/image2.webp" alt="Waiting Time" class="rounded-lg w-2/3 max-w-md">
+          </div>
+
+          <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Sources of Job Information</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
+            Job information was most commonly obtained from acquaintances or personal networks (45%), electronic/social media (39%), and lecturers/study programs/faculty (9%).
+          </p>
+          <div class="flex justify-center mb-10">
+            <img src="/images/lainnya/inggris-nondik/image3.webp" alt="Sources of Job Information" class="rounded-lg w-2/3 max-w-md">
+          </div>
+
+          <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Relevance of Education to Job</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
+            A total of 51% of alumni stated their job was quite relevant, 39% stated it was highly relevant, and only 10% stated it was less relevant to their English Language and Literature educational background.
+          </p>
+          <div class="flex justify-center mb-10">
+            <img src="/images/lainnya/inggris-nondik/image4.webp" alt="Education Relevance" class="rounded-lg w-2/3 max-w-md">
+          </div>
+
+          <h3 class="text-center text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Fields of Employment</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-justify">
+            Graduates are mostly employed as educators, public service workers, and translators, with broad career prospects across various sectors.
+          </p>
+          <div class="flex justify-center mb-6">
+            <img src="/images/lainnya/inggris-nondik/image5.webp" alt="Fields of Employment" class="rounded-lg w-2/3 max-w-md">
+          </div>
+
+          <p class="text-gray-700 dark:text-gray-300 text-justify">
+            The data above indicates that graduates of the English Language and Literature Study Program have strong opportunities to compete in the professional world.
+          </p>
+        </div>
+      </section>
+
 
 
 ---
