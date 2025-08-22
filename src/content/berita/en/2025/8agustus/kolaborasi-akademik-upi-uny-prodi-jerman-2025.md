@@ -1,5 +1,5 @@
 ---
-title: "Academic Collaboration UPI dan UNY: German Language Education Study Program FPBS UPI Conducts Academic Visit to UNY for Curriculum Benchmarking towards Sustainable Higher Education"
+title: "Academic Collaboration UPI and UNY: German Language Education Study Program FPBS UPI Conducts Academic Visit to UNY for Curriculum Benchmarking towards Sustainable Higher Education"
 slugId: kolaborasi-akademik-upi-uny-prodi-jerman-2025
 pubDate: "2025-08-14"
 author: "Irma Permatawati"
