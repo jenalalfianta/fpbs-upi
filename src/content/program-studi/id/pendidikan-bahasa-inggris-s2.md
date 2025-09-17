@@ -5,6 +5,8 @@ title: "Pendidikan Bahasa Inggris (S2)"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
+  - id: "visi-plo"
+    label: "Visi & PLO"
   - id: "kurikulum"
     label: "Kurikulum"
     external: "https://kurikulum.upi.edu/struktur/prodi/P076"
@@ -19,7 +21,42 @@ menu:
   - id: "pmb"
     label: "PMB / Pendaftaran"
     external: "https://pmb.upi.edu/"
+
 sections:
+  visi-plo:
+    title: "Visi & Program Learning Outcomes (S2)"
+    content: |
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto px-4">
+
+          <!-- Visi Kelembagaan (payung S1–S3) -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Kelembagaan</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            Menjadi program studi sarjana, magister, dan doktor Pendidikan Bahasa Inggris yang unggul di dunia
+            dengan teori dan praktik inovatif sejalan dengan tuntutan masyarakat kontemporer pada tahun 2040.
+          </p>
+
+          <!-- Visi Keilmuan S2 -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Keilmuan (S2)</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            Mengembangkan program Magister Pendidikan Bahasa Inggris yang unggul dan inovatif melalui penyelenggaraan tridharma perguruan tinggi
+            berbasis teori dan praktik linguistik, pedagogi, serta teknologi fungsional mutakhir sesuai tuntutan masyarakat.
+          </p>
+
+          <!-- Program Learning Outcomes (PLO) S2 -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (S2)</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
+            <li>Memanfaatkan pengetahuan dan keterampilan teoretis serta praktis dalam pendidikan Bahasa Inggris sebagai bahasa asing (dengan rujukan level B2 CEFR) beserta pengetahuan pendukung yang relevan di konteks akademik dan profesional.</li>
+            <li>Menganalisis perencanaan pembelajaran, praktik pengajaran, dan evaluasi dalam konteks EFL dengan kerangka analisis yang tepat, selaras dengan teori dan praktik mutakhir di bidang linguistik, pedagogi, teknologi, dan sumber daya yang sesuai.</li>
+            <li>Menerapkan moral, etika, dan nilai-nilai inti universitas untuk menjaga serta membina hubungan akademik dan sosial.</li>
+            <li>Menunjukkan keterampilan abad ke-21, khususnya kreativitas, kolaborasi, komunikasi, dan berpikir kritis dalam konteks multidisipliner serta multi sosio-kultural.</li>
+            <li>Melaksanakan proyek penelitian untuk berkontribusi pada pengembangan dan peningkatan pendidikan EFL yang selaras dengan teori dan praktik mutakhir linguistik, pedagogi, dan teknologi.</li>
+            <li>Melakukan pengembangan diri berkelanjutan dalam meningkatkan kualitas kinerja profesional.</li>
+          </ol>
+
+        </div>
+      </section>
+
   profil:
     title: Tentang Pendidikan Bahasa Inggris S2
     content: |
@@ -97,8 +134,6 @@ sections:
         </div>
       </section>
 
-
-
   akreditasi:
     title: "Akreditasi Pendidikan Bahasa Inggris (S2)"
     content: |
@@ -144,7 +179,6 @@ sections:
         </div>
       </section>
 
-
   fasilitas:
     title: "Fasilitas"
     content: |
@@ -188,303 +222,410 @@ sections:
   dosen:
     title: "Dosen Pendidikan Bahasa Inggris (S2)"
     content: |
-        <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-          <div class="max-w-6xl mx-auto text-center">
-            <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
+        <div class="max-w-6xl mx-auto text-center">
+          <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-            <a href="/images/dosen/inggris-dik-s2/fuad.webp" data-pswp-width="800" data-pswp-height="1067"
-              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-              <img src="/images/dosen/inggris-dik-s2/fuad.webp" alt="Fuad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+            <!-- Prof. Fuad Abdul Hamied -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/fuad.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/fuad.webp" alt="Fuad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Fuad Abdul Hamied, M.A., Ph.D.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
-            </a>
-
-            <a href="/images/dosen/inggris-dik-s2/nenden.webp" data-pswp-width="800" data-pswp-height="1067"
-              class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-              <img src="/images/dosen/inggris-dik-s2/nenden.webp" alt="Nenden" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Nenden Sri Lengkanawati, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300">Emeritus</p>
-            </a>
-
-              <a href="/images/dosen/inggris-dik-s2/didi.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/didi.webp" alt="Didi Sukyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Didi Sukyadi, M.A.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/emi.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/emi.webp" alt="Emi Emilia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Emi Emillia, M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/sri-setyarini.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/sri-setyarini.webp" alt="Sri Setyarini" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/bukhori.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/bukhori.webp" alt="Ahmad Bukhori" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, S.Pd., M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-              <a href="/images/dosen/inggris-dik-s2/eri.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/eri.webp" alt="Eri Kurniawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, S.Pd., M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Guru Besar</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/dadang.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/dadang.webp" alt="Dadang Sudana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dadang Sudana, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/safrina.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/safrina.webp" alt="Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. R. Safrina Noorman, M.A.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/ika.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/ika.webp" alt="Ika" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ika Lestari Damayanti, M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/gin.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/gin.webp" alt="Gin Gin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Gin Gin Gustine, M.Pd., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/budi.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/budi.webp" alt="Budi Hermawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, M.PC.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/wawan.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/wawan.webp" alt="Wawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Wawan Gunawan, S.Pd., M.EdSt., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-              <a href="/images/dosen/inggris-dik-s2/isti.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/isti.webp" alt="Isti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, S.Pd., M.Ed., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/nia.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/nia.webp" alt="Nia Nafisah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/fazri.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/fazri.webp" alt="Fazri Nur Yusuf" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Fazri Nur Yusuf, M.Pd.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor Kepala</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/yanty.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/yanty.webp" alt="Yanty" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Yanty Wirza, M.Pd., M.A., Ph.D.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
-              <a href="/images/dosen/inggris-dik-s2/rojaab.webp" data-pswp-width="800" data-pswp-height="1067"
-                class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-2 px-1 block">
-                <img src="/images/dosen/inggris-dik-s2/rojaab.webp" alt="Rojab" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rojab Siti Rodiyah, M.Ed.</h3>
-                <p class="text-[#422367] dark:text-purple-300">Lektor</p>
-              </a>
-
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=Lj3RVdAAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978397" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
             </div>
-          </div>
-        </section>
 
+            <!-- Prof. Nenden Sri Lengkanawati -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/nenden.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/nenden.webp" alt="Nenden" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Nenden Sri Lengkanawati, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=HJUVLEgAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5991826" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Didi Sukyadi -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/didi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/didi.webp" alt="Didi Sukyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Didi Sukyadi, M.A.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=yPp0QywAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978293" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Emi Emilia -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/emi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/emi.webp" alt="Emi Emilia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Emi Emilia, M.Ed., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=7u4pKQMAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6728899" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Sri Setyarini -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/sri-setyarini.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/sri-setyarini.webp" alt="Sri Setyarini" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=Bos20BIAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6121097" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Ahmad Bukhori Muslim -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/bukhori.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/bukhori.webp" alt="Ahmad Bukhori" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, S.Pd., M.Ed., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=uKLft4AAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5974554" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Eri Kurniawan -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/eri.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/eri.webp" alt="Eri Kurniawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Eri Kurniawan, S.Pd., M.A., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Guru Besar</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=G1k1-Y4AAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5994389" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Prof. Dadang Sudana -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/dadang.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/dadang.webp" alt="Dadang Sudana" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dadang Sudana, M.A., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=m-rvyKQAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5994886" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. R. Safrina Noorman -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/safrina.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/safrina.webp" alt="Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. R. Safrina Noorman, M.A.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=jYD9BIIAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6126929" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Ika Lestari Damayanti -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/ika.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/ika.webp" alt="Ika" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Ika Lestari Damayanti, M.A., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=jj8fDA4AAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6745874" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Gin Gin Gustine -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/gin.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/gin.webp" alt="Gin Gin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Gin Gin Gustine, M.Pd., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=9e1PsOsAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6729061" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Budi Hermawan -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/budi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/budi.webp" alt="Budi Hermawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Budi Hermawan, M.P.C.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=9SWex4cAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6728996" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Wawan Gunawan -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/wawan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/wawan.webp" alt="Wawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Wawan Gunawan, S.Pd., M.EdSt., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=YJ0Z5yUAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5994823" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Isti Siti Saleha Gandana -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/isti.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/isti.webp" alt="Isti" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Isti Siti Saleha Gandana, S.Pd., M.Ed., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=cO8VtJMAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5979123" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Nia Nafisah -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/nia.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/nia.webp" alt="Nia Nafisah" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Nia Nafisah, S.S., M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=N_3EB5gAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6005566" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Fazri Nur Yusuf -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/fazri.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/fazri.webp" alt="Fazri Nur Yusuf" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Fazri Nur Yusuf, M.Pd.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor Kepala</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=xFZ1DdoAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978422" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Yanty Wirza -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/yanty.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/yanty.webp" alt="Yanty" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Yanty Wirza, M.Pd., M.A., Ph.D.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=nZcioNYAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6658778" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+            <!-- Dr. Rojab Siti Rodiyah -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
+              <a href="/images/dosen/inggris-dik-s2/rojaab.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
+                <img src="/images/dosen/inggris-dik-s2/rojaab.webp" alt="Rojab" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+              </a>
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Rojab Siti Rodiyah, M.Ed.</h3>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Lektor</p>
+              <div class="flex justify-center gap-4 text-sm">
+                <a href="https://scholar.google.co.id/citations?hl=id&user=MK0kgVcAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978990" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
   pengembangan-akademik:
     title: "Pengembangan Akademik"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
 
-          <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto">
 
-            <!-- Toggle: Penelitian Inovasi Pembelajaran -->
-            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-              <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
-                Penelitian Inovasi Pembelajaran (2024–2025)
-              </summary>
-              <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
+          <!-- Toggle: Penelitian Inovasi Pembelajaran -->
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+            <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+              Penelitian Inovasi Pembelajaran (2024–2025)
+            </summary>
+            <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
 
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Didi Sukyadi, M.A.</h3>
-                  <p>Menelisik afordansi semiotika tablet di kelas penerjemahan bagi mahasiswa calon guru.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Emi Emilia, M.Ed., Ph.D.</h3>
-                  <p>Meningkatkan kesadaran kontekstual mahasiswa dalam kelas penjurubahasaan berbasis computer-assisted interpreting tool melalui pendekatan berbasis genre.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Fazri Nur Yusuf, M.Pd.</h3>
-                  <p>Akselerasi literasi asesmen calon guru Bahasa Inggris melalui refleksi dialogis dalam konteks deep learning: Studi di sekolah menengah di Kab. Sleman, DIY.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ika Lestari Damayanti, M.A., Ph.D.</h3>
-                  <p>Penggunaan generative AI DeepSeek dalam pembelajaran Bahasa Inggris berbasis konten (Content-Language Integrated Learning) di kelas bilingual.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Lulu Laela Amalia, S.S., M.Pd.</h3>
-                  <p>Refleksi guru Bahasa Inggris dalam penggunaan metabahasa pada pengajaran Bahasa Inggris sebagai bahasa asing di Indonesia.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Annisa Rahmadani, S.Pd., M.A.</h3>
-                  <p>Pemanfaatan strategi translanguaging dalam kelas berbicara akademik (Speaking for Academic Purposes) di perguruan tinggi.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Drs. Deddy Suryana, M.A.</h3>
-                  <p>Pengaruh kemampuan berkomunikasi Bahasa Inggris terhadap aktivitas ekonomi para pedagang asongan di kawasan wisata Gunung Tangkuban Perahu, Jawa Barat (2025–2025).</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Suharno, M.Pd.</h3>
-                  <p>Needs analysis bahan ajar Bahasa Inggris untuk anggota POLRI Divisi Humas di Polres Subang.</p>
-                </div>
-
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Didi Sukyadi, M.A.</h3>
+                <p>Menelisik afordansi semiotika tablet di kelas penerjemahan bagi mahasiswa calon guru.</p>
               </div>
-            </details>
-            <!-- Toggle: Pengabdian kepada Masyarakat - PkM Bidang Ilmu -->
-            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-              <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
-                Pengabdian kepada Masyarakat (PkM Bidang Ilmu) 2024–2025
-              </summary>
-              <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
 
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Fazri Nur Yusuf, M.Pd.</h3>
-                  <p>Pelatihan model refleksi dialogis terhadap akselerasi literasi asesmen dalam pembelajaran mendalam guru-guru Bahasa Inggris di Kabupaten Klaten, Daerah Istimewa Yogyakarta.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Finita Dewi, S.S., M.A.</h3>
-                  <p>Integrasi deep learning dan teknologi dalam pendidikan guru bahasa.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Gin Gin Gustine, M.Pd., Ph.D.</h3>
-                  <p>Meningkatkan pengetahuan dan kemampuan mengajar guru Bahasa Inggris SMA dalam pendekatan deep learning di wilayah Daerah Istimewa Yogyakarta.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Iyen Nurlaelawati, M.Pd.</h3>
-                  <p>Mentoring guru Bahasa Inggris sekolah menengah pertama di Daerah Istimewa Yogyakarta dalam mengadaptasi materi berbasis deep learning.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Muhammad Handi Gunawan, M.Pd.</h3>
-                  <p>Pelatihan Technological Pedagogical and Content Knowledge (TPACK) bagi guru-guru Bahasa Inggris.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
-                  <p>IHT HOTS in Deep Learning bagi guru Bahasa Inggris Kabupaten Klaten: Terobosan dalam menguatkan kompetensi profesional guru abad 21.</p>
-                </div>
-
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Emi Emilia, M.Ed., Ph.D.</h3>
+                <p>Meningkatkan kesadaran kontekstual mahasiswa dalam kelas penjurubahasaan berbasis computer-assisted interpreting tool melalui pendekatan berbasis genre.</p>
               </div>
-            </details>
-            <!-- Toggle: Penelitian Kerja Sama Internasional / RKLI -->
-            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-              <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
-                Penelitian Internasional / Riset Kolaborasi LPTK Indonesia (RKLI) 2024–2025
-              </summary>
-              <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
 
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
-                  <p>Intercultural communicative competence (ICC) in English language teaching to promote tourism: Comparing students' attitudes in Indonesia and Uzbekistan.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Gin Gin Gustine, M.Pd., Ph.D.</h3>
-                  <p>Enhancing preservice teachers' knowledge and skills in sustainability through education for sustainable development (ESD) model in Indonesia and Japan.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ari Arifin D., S.Pd., M.Ed., Ph.D.</h3>
-                  <p>Eksplorasi aktivitas IDLE yang dilakukan mahasiswa di luar konteks formal.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Pupung Purnawarman, M.Sc.Ed., Ph.D.</h3>
-                  <p>HOTS in multiliteracy pedagogy: Model pembelajaran ESP untuk menguatkan keterampilan literasi digital kritis mahasiswa prodi Bahasa Inggris.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Hj. Nenden Sri Lengkanawati, M.Pd.</h3>
-                  <p>Integrasi kecerdasan buatan dalam penulisan akademik: Studi kualitatif pada penggunaan generative AI oleh mahasiswa pascasarjana.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
-                  <p>Penerapan HOTS dalam pedagogi multiliterasi: Model terobosan dalam menguatkan literasi kesehatan mental mahasiswa.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Hj. Emi Emilia, M.A., Ph.D.</h3>
-                  <p>Investigasi implementasi dan perkembangan pengajaran Bahasa Inggris berbasis teks dalam dua dekade terakhir dan integrasi AI di SMA di Jawa Barat.</p>
-                </div>
-
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Fazri Nur Yusuf, M.Pd.</h3>
+                <p>Akselerasi literasi asesmen calon guru Bahasa Inggris melalui refleksi dialogis dalam konteks deep learning: Studi di sekolah menengah di Kab. Sleman, DIY.</p>
               </div>
-            </details>
-            <!-- Toggle: PkM Tambahan - Polisi & Desa Binaan -->
-            
-            <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-              <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
-                Pengabdian kepada Masyarakat (Tambahan) 2024–2025
-              </summary>
-              <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
 
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Drs. Deddy Suryana, M.A.</h3>
-                  <p>Pelatihan kompetensi berbahasa Inggris bagi anggota polisi pariwisata di Kabupaten Subang.</p>
-                </div>
-
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
-                  <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ika Lestari Damayanti, S.Pd., M.A., Ph.D.</h3>
-                  <p>Pengembangan ekosistem multiliterasi berbasis teknologi digital melalui kolaborasi orang tua, guru, dan masyarakat.</p>
-                </div>
-
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ika Lestari Damayanti, M.A., Ph.D.</h3>
+                <p>Penggunaan generative AI DeepSeek dalam pembelajaran Bahasa Inggris berbasis konten (Content-Language Integrated Learning) di kelas bilingual.</p>
               </div>
-            </details>
 
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Lulu Laela Amalia, S.S., M.Pd.</h3>
+                <p>Refleksi guru Bahasa Inggris dalam penggunaan metabahasa pada pengajaran Bahasa Inggris sebagai bahasa asing di Indonesia.</p>
               </div>
-            </section>
 
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Annisa Rahmadani, S.Pd., M.A.</h3>
+                <p>Pemanfaatan strategi translanguaging dalam kelas berbicara akademik (Speaking for Academic Purposes) di perguruan tinggi.</p>
+              </div>
 
-  
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Drs. Deddy Suryana, M.A.</h3>
+                <p>Pengaruh kemampuan berkomunikasi Bahasa Inggris terhadap aktivitas ekonomi para pedagang asongan di kawasan wisata Gunung Tangkuban Perahu, Jawa Barat (2025–2025).</p>
+              </div>
 
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Suharno, M.Pd.</h3>
+                <p>Needs analysis bahan ajar Bahasa Inggris untuk anggota POLRI Divisi Humas di Polres Subang.</p>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- Toggle: Pengabdian kepada Masyarakat - PkM Bidang Ilmu -->
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+            <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+              Pengabdian kepada Masyarakat (PkM Bidang Ilmu) 2024–2025
+            </summary>
+            <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Fazri Nur Yusuf, M.Pd.</h3>
+                <p>Pelatihan model refleksi dialogis terhadap akselerasi literasi asesmen dalam pembelajaran mendalam guru-guru Bahasa Inggris di Kabupaten Klaten, Daerah Istimewa Yogyakarta.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Finita Dewi, S.S., M.A.</h3>
+                <p>Integrasi deep learning dan teknologi dalam pendidikan guru bahasa.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Gin Gin Gustine, M.Pd., Ph.D.</h3>
+                <p>Meningkatkan pengetahuan dan kemampuan mengajar guru Bahasa Inggris SMA dalam pendekatan deep learning di wilayah Daerah Istimewa Yogyakarta.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Iyen Nurlaelawati, M.Pd.</h3>
+                <p>Mentoring guru Bahasa Inggris sekolah menengah pertama di Daerah Istimewa Yogyakarta dalam mengadaptasi materi berbasis deep learning.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Dr. Muhammad Handi Gunawan, M.Pd.</h3>
+                <p>Pelatihan Technological Pedagogical and Content Knowledge (TPACK) bagi guru-guru Bahasa Inggris.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
+                <p>IHT HOTS in Deep Learning bagi guru Bahasa Inggris Kabupaten Klaten: Terobosan dalam menguatkan kompetensi profesional guru abad 21.</p>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- Toggle: Penelitian Kerja Sama Internasional / RKLI -->
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+            <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+              Penelitian Internasional / Riset Kolaborasi LPTK Indonesia (RKLI) 2024–2025
+            </summary>
+            <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
+                <p>Intercultural communicative competence (ICC) in English language teaching to promote tourism: Comparing students' attitudes in Indonesia and Uzbekistan.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Gin Gin Gustine, M.Pd., Ph.D.</h3>
+                <p>Enhancing preservice teachers' knowledge and skills in sustainability through education for sustainable development (ESD) model in Indonesia and Japan.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ari Arifin D., S.Pd., M.Ed., Ph.D.</h3>
+                <p>Eksplorasi aktivitas IDLE yang dilakukan mahasiswa di luar konteks formal.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Pupung Purnawarman, M.Sc.Ed., Ph.D.</h3>
+                <p>HOTS in multiliteracy pedagogy: Model pembelajaran ESP untuk menguatkan keterampilan literasi digital kritis mahasiswa prodi Bahasa Inggris.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Hj. Nenden Sri Lengkanawati, M.Pd.</h3>
+                <p>Integrasi kecerdasan buatan dalam penulisan akademik: Studi kualitatif pada penggunaan generative AI oleh mahasiswa pascasarjana.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
+                <p>Penerapan HOTS dalam pedagogi multiliterasi: Model terobosan dalam menguatkan literasi kesehatan mental mahasiswa.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Prof. Hj. Emi Emilia, M.A., Ph.D.</h3>
+                <p>Investigasi implementasi dan perkembangan pengajaran Bahasa Inggris berbasis teks dalam dua dekade terakhir dan integrasi AI di SMA di Jawa Barat.</p>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- Toggle: PkM Tambahan -->
+          <details class="mb-6 border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+            <summary class="bg-gray-100 dark:bg-gray-800 px-4 py-3 cursor-pointer font-semibold text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+              Pengabdian kepada Masyarakat (Tambahan) 2024–2025
+            </summary>
+            <div class="px-4 py-6 text-gray-700 dark:text-gray-300 space-y-6">
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Drs. Deddy Suryana, M.A.</h3>
+                <p>Pelatihan kompetensi berbahasa Inggris bagi anggota polisi pariwisata di Kabupaten Subang.</p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow p-5">
+                <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ika Lestari Damayanti, S.Pd., M.A., Ph.D.</h3>
+                <p>Pengembangan ekosistem multiliterasi berbasis teknologi digital melalui kolaborasi orang tua, guru, dan masyarakat.</p>
+              </div>
+
+            </div>
+          </details>
+
+        </div>
+      </section>
 ---
