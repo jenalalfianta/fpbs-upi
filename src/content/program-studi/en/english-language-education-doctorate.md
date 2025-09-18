@@ -3,28 +3,28 @@ slugId: inggris-dik-s3
 lang: en
 title: "English Language Education (Doctorate)"
 menu:
-  - id: "profil"
+  - id: "profile"
     label: "About the Program"
-  - id: "visi-plo"               
+  - id: "visi-plo-s3"               
     label: "Vision & PLO"
-  - id: "kurikulum"
+  - id: "curriculum"
     label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/P077"
-  - id: "akreditasi"
+  - id: "accreditation"
     label: "Accreditation"
-  - id: "pengembangan-akademik"
+  - id: "academic-development"
     label: "Academic Development"
-  - id: "dosen"
+  - id: "faculty-members"
     label: "Faculty Members"
-  - id: "fasilitas"
+  - id: "facilities"
     label: "Facilities"
   - id: "pmb"
-    label: "Admission"
+    label: "Admission / Enrollment"
     external: "https://pmb.upi.edu/"  
 
 
 sections:
-  visi-plo:
+  visi-plo-s3:
     title: "Vision & Program Learning Outcomes (Doctorate)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -33,31 +33,31 @@ sections:
           <!-- Institutional Vision (umbrella S1–S3) -->
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To become a leading and outstanding bachelor, master's, and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
+            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
           </p>
 
           <!-- Academic Vision Doctorate -->
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Academic Vision (Doctorate)</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To organize a leading, innovative, and transformative doctoral program in English Language Education through the three pillars of higher education, based on functional and cutting-edge theories and practices in linguistics, pedagogy, and technology in line with societal demands.
+            To organize a leading, innovative and transformative master’s  English language education study through three pillars of higher education  with functional cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demands of the society.
           </p>
 
           <!-- Program Learning Outcomes (PLO) Doctorate -->
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (Doctorate)</h2>
           <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li>Utilize theoretical and practical knowledge and skills in English as a Foreign Language (EFL) education in academic and professional contexts (with reference to CEFR level C1—minimum C1a) supported by other relevant knowledge.</li>
-            <li>Develop innovative models of lesson planning, teaching practice, and evaluation in EFL education contexts, addressing significant features of 21st-century education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
+            <li>Make use of theoretical and practical knowledge and skills in English as a Foreign Language education in academic and professional contexts (with the reference to level C1 (minimum C1a) of CEFR) with other relevant supportive knowledge.</li>
+            <li>Develop innovative models on lesson planning, teaching practice and evaluation in EFL education contexts attending to significant features of the 21st Century education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
             <li>Apply morals, ethics, and university core values to uphold and maintain academic and social relations.</li>
-            <li>Demonstrate 21st-century skills, especially creativity, effective collaboration, communication, and critical thinking in multidisciplinary and socio-cultural contexts.</li>
-            <li>Conduct research projects with novelty that contribute to the development and enhancement of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
-            <li>Develop innovative models of continuous self-development to improve the quality of professional performance.</li>
+            <li>Demonstrate 21st century skills, especially to do with creativity, effective collaboration, communication, and critical thinking in multidisciplinary and socio-cultural contexts.</li>
+            <li>Perform research projects novelties contributing to the development and enhancement of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
+            <li>Develop innovative models of continuous self-development in improving professional performance quality.</li>
           </ol>
 
         </div>
       </section>
 
-  profil:
-    title: About Doctorate in English Language Education
+  profile:
+    title: About the English Language Education Doctoral Program
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto px-4">
@@ -130,156 +130,207 @@ sections:
         </div>
       </section>
 
-  dosen:
-    title: "Faculty Members (Doctorate)"
+  faculty-members:
+    title: "Faculty Members of English Language Education (Doctoral Program)"
     content: |
         <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-          <div class="max-w-6xl mx-auto text-center">
-            <div id="dosen-gallery" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="dosen-gallery grid grid-cols-2 sm:grid-cols-4 gap-4">
 
             <!-- Prof. Fuad Abdul Hamied, M.A., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/fuad.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/fuad.webp" alt="Fuad" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/fuad.webp" alt="Prof. Fuad Abdul Hamied" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Fuad Abdul Hamied, M.A., Ph.D.</h3>
-              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus</p>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=Lj3RVdAAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978397" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=Lj3RVdAAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978397" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
             <!-- Prof. Dr. Nenden Sri Lengkanawati, M.Pd. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/nenden.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/nenden.webp" alt="Nenden" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/nenden.webp" alt="Prof. Nenden Sri Lengkanawati" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Nenden Sri Lengkanawati, M.Pd.</h3>
-              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus</p>
+              <p class="text-[#422367] dark:text-purple-300 mb-2">Emeritus Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=HJUVLEgAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5991826" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=HJUVLEgAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5991826" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
             <!-- Prof. Dr. Didi Sukyadi, M.A. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/didi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/didi.webp" alt="Didi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/didi.webp" alt="Prof. Didi Sukyadi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Didi Sukyadi, M.A.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=yPp0QywAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978293" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=yPp0QywAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978293" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
             <!-- Prof. Emi Emilia, M.Ed., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/emi.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/emi.webp" alt="Emi" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/emi.webp" alt="Prof. Emi Emilia" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Emi Emilia, M.Ed., Ph.D.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=7u4pKQMAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/6728899" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=7u4pKQMAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6728899" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Prof. Dr. Sri Setyarini, M.A.Ling. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/sri-setyarini.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/sri-setyarini.webp" alt="Sri Setyarini" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/sri-setyarini.webp" alt="Prof. Sri Setyarini" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Dr. Sri Setyarini, M.A.Ling.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=Bos20BIAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/6121097" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=Bos20BIAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6121097" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/bukhori.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/bukhori.webp" alt="Ahmad Bukhori" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/bukhori.webp" alt="Prof. Ahmad Bukhori Muslim" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Prof. Ahmad Bukhori Muslim, M.Ed., Ph.D.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=uKLft4AAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5974554" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=uKLft4AAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5974554" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Dr. R. Safrina Noorman, M.A. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/safrina.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/safrina.webp" alt="Safrina" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/safrina.webp" alt="Dr. R. Safrina Noorman" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. R. Safrina Noorman, M.A.</h3>
               <p class="text-[#422367] dark:text-purple-300">Associate Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=jYD9BIIAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/6126929" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=jYD9BIIAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6126929" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
-            <!-- Associate Professor -->
+            <!-- Gin Gin Gustine, M.Pd., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/gin.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/gin.webp" alt="Gin Gin" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/gin.webp" alt="Dr. Gin Gin Gustine" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Gin Gin Gustine, M.Pd., Ph.D.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Associate Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=9e1PsOsAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/6729061" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=9e1PsOsAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/6729061" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Wawan Gunawan, S.Pd., M.EdSt., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/wawan.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/wawan.webp" alt="Wawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/wawan.webp" alt="Dr. Wawan Gunawan" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Wawan Gunawan, S.Pd., M.EdSt., Ph.D.</h3>
               <p class="text-[#422367] dark:text-purple-300">Associate Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=YJ0Z5yUAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5994823" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=YJ0Z5yUAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5994823" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Dr. Fazri Nur Yusuf, M.Pd. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/fazri.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/fazri.webp" alt="Fazri" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/fazri.webp" alt="Dr. Fazri Nur Yusuf" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Dr. Fazri Nur Yusuf, M.Pd.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Associate Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=xFZ1DdoAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978422" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=xFZ1DdoAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5978422" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
+            <!-- Pupung Purnawarman, M.S.Ed., Ph.D. -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center pb-4 px-2">
               <a href="/images/dosen/inggris-dik-s3/pupung.webp" class="zoomable" data-pswp-width="800" data-pswp-height="1067">
-                <img src="/images/dosen/inggris-dik-s3/pupung.webp" alt="Pupung" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
+                <img src="/images/dosen/inggris-dik-s3/pupung.webp" alt="Dr. Pupung Purnawarman" class="w-full aspect-[3/4] object-cover object-top rounded-t-lg mb-2">
               </a>
               <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1">Pupung Purnawarman, M.S.Ed., Ph.D.</h3>
               <p class="text-[#422367] dark:text-purple-300 mb-2">Associate Professor</p>
               <div class="flex justify-center gap-4 text-sm">
-                <a href="https://scholar.google.co.id/citations?hl=id&user=-e_Y2FMAAAAJ" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fab fa-google"></i> Scholar</a>
-                <a href="https://sinta.kemdikbud.go.id/authors/profile/5979299" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-purple-600"><i class="fas fa-graduation-cap"></i> SINTA</a>
+                <a href="https://scholar.google.co.id/citations?hl=id&user=-e_Y2FMAAAAJ" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fab fa-google"></i> Scholar
+                </a>
+                <a href="https://sinta.kemdikbud.go.id/authors/profile/5979299" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-purple-600">
+                  <i class="fas fa-graduation-cap"></i> SINTA
+                </a>
               </div>
             </div>
 
-            </div> <!-- end of #dosen-gallery -->
-          </div>
+          </div> <!-- end .dosen-gallery -->
+        </div>
         </section>
 
-  fasilitas:
-    title: "Facilities"
+
+  facilities:
+    title: "Facilities at the Faculty of Language and Literature Education (FPBS UPI)"
     content: |
       <!-- Facilities Section -->
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -318,7 +369,7 @@ sections:
         </div>
       </section>
 
-  akreditasi:
+  accreditation:
     title: "Accreditation – English Language Education (Doctorate)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -363,7 +414,7 @@ sections:
         </div>
       </section>
 
-  pengembangan-akademik:
+  academic-development:
     title: "Academic Development"
     content: |
         <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">

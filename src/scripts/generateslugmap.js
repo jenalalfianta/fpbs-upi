@@ -1,4 +1,4 @@
-// scripts/generateslugmap.js
+// src/scripts/generateslugmap.js
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -186,7 +186,10 @@ if (fs.existsSync(beritaDir)) {
   map['/en/news/index.html'] = '/berita/index.html';
 }
 
-/** 3) Pemetaan PROGRAM STUDI (Markdown) */
+/** 3) Pemetaan PROGRAM STUDI (Markdown) — versi lama (union id tab)
+ *    Catatan: ini akan membuat mapping ID->EN dengan tab id yang sama.
+ *    Nanti kita override yang perlu translasi (profil→profile, akreditasi→accreditation, dst) di blok 3b.
+ */
 if (fs.existsSync(prodiDir)) {
   const prodiFiles = walkMd(prodiDir);
 
@@ -225,11 +228,11 @@ if (fs.existsSync(prodiDir)) {
     const baseId = `/program-studi/${idEntry.slug}`;
     const baseEn = `/en/study-programs/${enEntry.slug}`;
 
-    // profil <-> profile
+    // profil <-> profile (khusus ditetapkan)
     map[`${baseId}/profil/index.html`] = `${baseEn}/profile/index.html`;
     map[`${baseEn}/profile/index.html`] = `${baseId}/profil/index.html`;
 
-    // tab lain: gunakan id yang sama (kamu sudah pastikan id konsisten di kedua bahasa)
+    // tab lain: gunakan union id apa adanya (akan dioverride di 3b bila perlu)
     const idMenu = (idEntry.menu || []).filter(m => !m.external);
     const enMenu = (enEntry.menu || []).filter(m => !m.external);
     const allTabs = [...new Set([...(idMenu.map(m => m.id)), ...(enMenu.map(m => m.id))])];
@@ -239,6 +242,84 @@ if (fs.existsSync(prodiDir)) {
       map[`${baseEn}/${tabId}/index.html`] = `${baseId}/${tabId}/index.html`;
     });
   });
+}
+
+/** 3b) OVERRIDE aman khusus prodi: terjemahan ID<->EN untuk tab yang beda nama
+ *     Tidak menyentuh berita atau halaman .astro lain. Hanya menimpa key prodi.
+ */
+try {
+  if (fs.existsSync(prodiDir)) {
+    const prodiFiles_ov = walkMd(prodiDir);
+    const prodi_ov = prodiFiles_ov.map(file => {
+      const raw = fs.readFileSync(file, 'utf-8');
+      const { data } = matter(raw);
+      if (!data?.slugId || !data?.lang || !data?.title) return null;
+
+      const fileSlug = path.basename(file, '.md');
+      const slug = data.slug ? String(data.slug) : fileSlug;
+
+      return {
+        lang: String(data.lang),
+        slugId: String(data.slugId),
+        slug,
+        menu: (data.menu || []).filter(m => !m.external),
+        i18n: data.i18n || {}, // optional per-prodi override
+      };
+    }).filter(Boolean);
+
+    const byId = new Map();  // slugId -> entry lang=id
+    const byEn = new Map();  // slugId -> entry lang=en
+    prodi_ov.forEach(p => (p.lang === 'en' ? byEn : byId).set(p.slugId, p));
+
+    // Kamus default tab id -> en
+    const idToEnTab = {
+      profil: 'profile',
+      akreditasi: 'accreditation',
+      dosen: 'faculty-members',
+      'pengembangan-akademik': 'academic-development',
+      fasilitas: 'facilities',
+      kurikulum: 'curriculum',
+      pmb: 'admissions',
+      'visi-plo-s2': 'visi-plo-s2',
+      'visi-plo-s3': 'visi-plo-s3',
+      'visi-plo-s1': 'visi-plo-s1',
+    };
+    const enToIdTab = Object.fromEntries(
+      Object.entries(idToEnTab).map(([id, en]) => [en, id])
+    );
+
+    for (const [slugIdKey, idEntry] of byId.entries()) {
+      const enEntry = byEn.get(slugIdKey);
+      if (!enEntry) continue;
+
+      const baseId = `/program-studi/${idEntry.slug}`;
+      const baseEn = `/en/study-programs/${enEntry.slug}`;
+
+      // Merge override per-prodi kalau ada di frontmatter
+      const localIdToEn = { ...idToEnTab, ...(idEntry.i18n?.idToEn || {}) };
+      const localEnToId = { ...enToIdTab, ...(enEntry.i18n?.enToId || {}) };
+
+      // Pastikan profil/profile dua arah
+      map[`${baseId}/profil/index.html`] = `${baseEn}/profile/index.html`;
+      map[`${baseEn}/profile/index.html`] = `${baseId}/profil/index.html`;
+
+      // ID -> EN (pakai translasi)
+      idEntry.menu.forEach(m => {
+        const idTab = String(m.id);
+        const enTab = localIdToEn[idTab] || idTab;
+        map[`${baseId}/${idTab}/index.html`] = `${baseEn}/${enTab}/index.html`;
+      });
+
+      // EN -> ID (pakai translasi)
+      enEntry.menu.forEach(m => {
+        const enTab = String(m.id);
+        const idTab = localEnToId[enTab] || enTab;
+        map[`${baseEn}/${enTab}/index.html`] = `${baseId}/${idTab}/index.html`;
+      });
+    }
+  }
+} catch (e) {
+  console.warn('⚠️  Override prodi tabs gagal (di-skip):', e?.message || e);
 }
 
 // Tulis file output
