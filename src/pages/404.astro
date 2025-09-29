@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import { getPageTitle } from "../scripts/title.ts";
 
-// Deteksi apakah path mengandung "/en/"
 const isEN = Astro.url.pathname.startsWith('/en/');
 const title = isEN
   ? "Page Not Found | FPBS"
@@ -26,7 +25,7 @@ const paragraphText = isEN
   </head>
   <body class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen">
     <section class="px-4">
-      <div class="max-w-screen-sm text-center">
+      <div class="max-w-screen-sm mx-auto text-center">
         <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#422367] dark:text-purple-400">404</h1>
         <p id="heading-text" class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
           {headingText}
@@ -41,10 +40,87 @@ const paragraphText = isEN
         >
           {buttonLabel}
         </a>
+
+        <!-- ====== Tautan cepat ====== -->
+        <div class="mt-8 text-left">
+          <h2 class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            {isEN ? 'Quick links' : 'Tautan cepat'}
+          </h2>
+
+          <nav aria-labelledby="quick-links" class="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-gray-600 dark:text-gray-300 text-sm">
+              <li>
+                <a href="/profil/tentang/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Tentang FPBS
+                </a>
+              </li>
+              <li>
+                <a href="/profil/program-studi/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Program Studi
+                </a>
+              </li>
+              <li>
+                <a href="/profil/fasilitas/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Fasilitas
+                </a>
+              </li>
+              <li>
+                <a href="/profil/pimpinan/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Pimpinan
+                </a>
+              </li>
+              <li>
+                <a href="/profil/staf/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Staf
+                </a>
+              </li>
+              <li>
+                <a href="/ppid/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  PPID FPBS
+                </a>
+              </li>
+              <li>
+                <a href="/zona-integritas/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Zona Integritas
+                </a>
+              </li>
+              <li>
+                <a href="/legalisasi/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Legalisasi Dokumen
+                </a>
+              </li>
+              <li>
+                <a href="https://perpustakaan.upi.edu/" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Perpustakaan UPI
+                </a>
+              </li>
+              <li>
+                <a href="https://pmb.upi.edu/" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                  Penerimaan Mahasiswa Baru
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">
+            {isEN
+              ? 'Or use the navigation above to get back on track.'
+              : 'Atau gunakan navigasi di atas untuk kembali ke halaman yang diinginkan.'}
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Fallback untuk server static (deteksi langsung dari URL) -->
     <script is:inline>
       (function () {
         const path = window.location.pathname;
