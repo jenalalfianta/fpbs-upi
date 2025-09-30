@@ -3,15 +3,45 @@ import "../styles/global.css";
 import { getPageTitle } from "../scripts/title.ts";
 
 const isEN = Astro.url.pathname.startsWith('/en/');
+
 const title = isEN
   ? "Page Not Found | FPBS"
   : getPageTitle(Astro.url.pathname);
+
 const homeLink = isEN ? "/en/" : "/";
+
 const buttonLabel = isEN ? "Back to Homepage" : "Kembali ke Beranda";
 const headingText = isEN ? "Page Not Found" : "Halaman tidak ditemukan";
 const paragraphText = isEN
   ? "Sorry, the page you are looking for is not available or may have been moved."
   : "Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.";
+
+// ===== Quick links (label + href) =====
+const quickLinks = isEN
+  ? [
+      { label: "About FPBS", href: "/en/profile/about/" },
+      { label: "Study Programs", href: "/en/profile/study-programs/" },
+      { label: "Facilities", href: "/en/profile/facilities/" },
+      { label: "Leadership", href: "/en/profile/leadership/" },
+      { label: "Staff", href: "/en/profile/staff/" },
+      { label: "FPBS Public Information (PPID)", href: "/en/ppid/" },
+      { label: "Integrity Zone", href: "/en/integrity-zone/" },
+      { label: "Document Legalization", href: "/en/legalization/" },
+      { label: "UPI Library", href: "https://perpustakaan.upi.edu/" },
+      { label: "Admissions", href: "https://pmb.upi.edu/" },
+    ]
+  : [
+      { label: "Tentang FPBS", href: "/profil/tentang/" },
+      { label: "Program Studi", href: "/profil/program-studi/" },
+      { label: "Fasilitas", href: "/profil/fasilitas/" },
+      { label: "Pimpinan", href: "/profil/pimpinan/" },
+      { label: "Staf", href: "/profil/staf/" },
+      { label: "PPID FPBS", href: "/ppid/" },
+      { label: "Zona Integritas", href: "/zona-integritas/" },
+      { label: "Legalisasi Dokumen", href: "/legalisasi/" },
+      { label: "Perpustakaan UPI", href: "https://perpustakaan.upi.edu/" },
+      { label: "Penerimaan Mahasiswa Baru", href: "https://pmb.upi.edu/" },
+    ];
 ---
 
 <!doctype html>
@@ -27,12 +57,15 @@ const paragraphText = isEN
     <section class="px-4">
       <div class="max-w-screen-sm mx-auto text-center">
         <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#422367] dark:text-purple-400">404</h1>
+
         <p id="heading-text" class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
           {headingText}
         </p>
+
         <p id="paragraph-text" class="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
           {paragraphText}
         </p>
+
         <a
           id="back-home-btn"
           href={homeLink}
@@ -41,7 +74,7 @@ const paragraphText = isEN
           {buttonLabel}
         </a>
 
-        <!-- ====== Tautan cepat ====== -->
+        <!-- ====== Tautan cepat / Quick links ====== -->
         <div class="mt-8 text-left">
           <h2 class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
             {isEN ? 'Quick links' : 'Tautan cepat'}
@@ -49,66 +82,16 @@ const paragraphText = isEN
 
           <nav aria-labelledby="quick-links" class="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-gray-600 dark:text-gray-300 text-sm">
-              <li>
-                <a href="/profil/tentang/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Tentang FPBS
-                </a>
-              </li>
-              <li>
-                <a href="/profil/program-studi/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Program Studi
-                </a>
-              </li>
-              <li>
-                <a href="/profil/fasilitas/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Fasilitas
-                </a>
-              </li>
-              <li>
-                <a href="/profil/pimpinan/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Pimpinan
-                </a>
-              </li>
-              <li>
-                <a href="/profil/staf/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Staf
-                </a>
-              </li>
-              <li>
-                <a href="/ppid/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  PPID FPBS
-                </a>
-              </li>
-              <li>
-                <a href="/zona-integritas/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Zona Integritas
-                </a>
-              </li>
-              <li>
-                <a href="/legalisasi/index.html" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Legalisasi Dokumen
-                </a>
-              </li>
-              <li>
-                <a href="https://perpustakaan.upi.edu/" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Perpustakaan UPI
-                </a>
-              </li>
-              <li>
-                <a href="https://pmb.upi.edu/" class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                  <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                  Penerimaan Mahasiswa Baru
-                </a>
-              </li>
+              {
+                quickLinks.map((item) => (
+                  <li>
+                    <a href={item.href} class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
+                      <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
+                      {item.label}
+                    </a>
+                  </li>
+                ))
+              }
             </ul>
           </nav>
 
