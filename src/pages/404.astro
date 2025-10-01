@@ -1,57 +1,15 @@
 ---
 import "../styles/global.css";
-import { getPageTitle } from "../scripts/title.ts";
-
-const isEN = Astro.url.pathname.startsWith('/en/');
-
-const title = isEN
-  ? "Page Not Found | FPBS"
-  : getPageTitle(Astro.url.pathname);
-
-const homeLink = isEN ? "/en/" : "/";
-
-const buttonLabel = isEN ? "Back to Homepage" : "Kembali ke Beranda";
-const headingText = isEN ? "Page Not Found" : "Halaman tidak ditemukan";
-const paragraphText = isEN
-  ? "Sorry, the page you are looking for is not available or may have been moved."
-  : "Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.";
-
-// ===== Quick links (label + href) =====
-const quickLinks = isEN
-  ? [
-      { label: "About FPBS", href: "/en/profile/about/" },
-      { label: "Study Programs", href: "/en/profile/study-programs/" },
-      { label: "Facilities", href: "/en/profile/facilities/" },
-      { label: "Leadership", href: "/en/profile/leadership/" },
-      { label: "Staff", href: "/en/profile/staff/" },
-      { label: "FPBS Public Information (PPID)", href: "/en/ppid/" },
-      { label: "Integrity Zone", href: "/en/integrity-zone/" },
-      { label: "Document Legalization", href: "/en/legalization/" },
-      { label: "UPI Library", href: "https://perpustakaan.upi.edu/" },
-      { label: "Admissions", href: "https://pmb.upi.edu/" },
-    ]
-  : [
-      { label: "Tentang FPBS", href: "/profil/tentang/" },
-      { label: "Program Studi", href: "/profil/program-studi/" },
-      { label: "Fasilitas", href: "/profil/fasilitas/" },
-      { label: "Pimpinan", href: "/profil/pimpinan/" },
-      { label: "Staf", href: "/profil/staf/" },
-      { label: "PPID FPBS", href: "/ppid/" },
-      { label: "Zona Integritas", href: "/zona-integritas/" },
-      { label: "Legalisasi Dokumen", href: "/legalisasi/" },
-      { label: "Perpustakaan UPI", href: "https://perpustakaan.upi.edu/" },
-      { label: "Penerimaan Mahasiswa Baru", href: "https://pmb.upi.edu/" },
-    ];
 ---
 
 <!doctype html>
-<html lang={isEN ? "en" : "id"}>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>404 | FPBS</title>
   </head>
   <body class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen">
     <section class="px-4">
@@ -59,46 +17,28 @@ const quickLinks = isEN
         <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#422367] dark:text-purple-400">404</h1>
 
         <p id="heading-text" class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-          {headingText}
         </p>
 
         <p id="paragraph-text" class="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
-          {paragraphText}
         </p>
 
         <a
           id="back-home-btn"
-          href={homeLink}
+          href="/"
           class="inline-flex text-white bg-[#422367] hover:bg-[#341b54] focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900 my-4"
         >
-          {buttonLabel}
         </a>
 
-        <!-- ====== Tautan cepat / Quick links ====== -->
         <div class="mt-8 text-left">
-          <h2 class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
-            {isEN ? 'Quick links' : 'Tautan cepat'}
+          <h2 id="quick-links-title" class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
           </h2>
 
           <nav aria-labelledby="quick-links" class="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-gray-600 dark:text-gray-300 text-sm">
-              {
-                quickLinks.map((item) => (
-                  <li>
-                    <a href={item.href} class="group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400">
-                      <span class="mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600"></span>
-                      {item.label}
-                    </a>
-                  </li>
-                ))
-              }
+            <ul id="quick-links" class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-gray-600 dark:text-gray-300 text-sm">
             </ul>
           </nav>
 
-          <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">
-            {isEN
-              ? 'Or use the navigation above to get back on track.'
-              : 'Atau gunakan navigasi di atas untuk kembali ke halaman yang diinginkan.'}
+          <p id="foot-note" class="mt-3 text-xs text-gray-500 dark:text-gray-400">
           </p>
         </div>
       </div>
@@ -106,32 +46,80 @@ const quickLinks = isEN
 
     <script is:inline>
       (function () {
-        const path = window.location.pathname;
+        const path = window.location.pathname || '';
         const isEN = path.startsWith('/en/');
-        document.documentElement.lang = isEN ? 'en' : 'id';
 
         const btn = document.getElementById('back-home-btn');
         const heading = document.getElementById('heading-text');
         const paragraph = document.getElementById('paragraph-text');
+        const quickLinksTitle = document.getElementById('quick-links-title');
+        const quickLinksUL = document.getElementById('quick-links');
+        const footNote = document.getElementById('foot-note');
 
-        if (btn) {
-          btn.href = isEN ? '/en/' : '/';
-          btn.innerText = isEN ? 'Back to Homepage' : 'Kembali ke Beranda';
-        }
+        const quickLinksEN = [
+          { label: 'About FPBS',                  href: '/en/profile/about/index.html' },
+          { label: 'Study Programs',              href: '/en/profile/study-programs/index.html' },
+          { label: 'Facilities',                  href: '/en/profile/facilities/index.html' },
+          { label: 'Leadership',                  href: '/en/profile/leadership/index.html' },
+          { label: 'Staff',                       href: '/en/profile/staff/index.html' },
+          { label: 'FPBS Public Information (PPID)', href: '/en/ppid/index.html' },
+          { label: 'Integrity Zone',              href: '/en/integrity-zone/index.html' },
+          { label: 'Document Legalization',       href: '/en/document-legalization/index.html' },
+          { label: 'UPI Library',                 href: 'https://perpustakaan.upi.edu/' },
+          { label: 'Admissions',                  href: 'https://pmb.upi.edu/' },
+        ];
 
-        if (heading) {
-          heading.textContent = isEN ? 'Page Not Found' : 'Halaman tidak ditemukan';
-        }
+        const quickLinksID = [
+          { label: 'Tentang FPBS',               href: '/profil/tentang/index.html' },
+          { label: 'Program Studi',              href: '/profil/program-studi/index.html' },
+          { label: 'Fasilitas',                  href: '/profil/fasilitas/index.html' },
+          { label: 'Pimpinan',                   href: '/profil/pimpinan/index.html' },
+          { label: 'Staf',                       href: '/profil/staf/index.html' },
+          { label: 'PPID FPBS',                  href: '/ppid/index.html' },
+          { label: 'Zona Integritas',            href: '/zona-integritas/index.html' },
+          { label: 'Legalisasi Dokumen',         href: '/legalisasi/index.html' },
+          { label: 'Perpustakaan UPI',           href: 'https://perpustakaan.upi.edu/' },
+          { label: 'Penerimaan Mahasiswa Baru',  href: 'https://pmb.upi.edu/' },
+        ];
 
+        document.documentElement.lang = isEN ? 'en' : 'id';
+        document.title = isEN ? 'Page Not Found | FPBS' : 'Halaman tidak ditemukan | FPBS';
+
+        if (heading) { heading.textContent = isEN ? 'Page Not Found' : 'Halaman tidak ditemukan'; }
         if (paragraph) {
           paragraph.textContent = isEN
             ? 'Sorry, the page you are looking for is not available or may have been moved.'
             : 'Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.';
         }
+        if (btn) {
+          btn.href = isEN ? '/en/index.html' : '/index.html';
+          btn.textContent = isEN ? 'Back to Homepage' : 'Kembali ke Beranda';
+        }
 
-        document.title = isEN
-          ? 'Page Not Found | FPBS'
-          : 'Halaman tidak ditemukan | FPBS';
+        if (quickLinksTitle) quickLinksTitle.textContent = isEN ? 'Quick links' : 'Tautan cepat';
+        if (footNote) footNote.textContent = isEN
+          ? 'Or use the navigation above to get back on track.'
+          : 'Atau gunakan navigasi di atas untuk kembali ke halaman yang diinginkan.';
+
+        if (quickLinksUL) {
+          const data = isEN ? quickLinksEN : quickLinksID;
+          quickLinksUL.innerHTML = '';
+          data.forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            const dot = document.createElement('span');
+
+            a.href = item.href;
+            a.className = 'group inline-flex items-center hover:text-purple-700 dark:hover:text-purple-400';
+            a.textContent = item.label;
+
+            dot.className = 'mr-2 h-1.5 w-1.5 rounded-full bg-gray-300 group-hover:bg-purple-500 dark:bg-gray-600';
+
+            a.prepend(dot);
+            li.appendChild(a);
+            quickLinksUL.appendChild(li);
+          });
+        }
       })();
     </script>
 
