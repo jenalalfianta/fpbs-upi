@@ -1,27 +1,23 @@
 ---
-title: "P3K UPI 2025: Penguatan Kompetensi Mahasiswa melalui Praktik Lapangan di SMP Daarut Tauhiid Boarding School Putri"
-slugId: p3k-upi-dtbs-putri-2025
+title: "P3K UPI 2025: Mahasiswa Perkuat Kompetensi melalui Praktik Lapangan di SMP Daarut Tauhiid Boarding School Putri"
+slugId: p3k-upi-2025-smp-daarut-tauhiid-putri
 pubDate: "2025-09-17"
 author: "FPBS UPI"
 image:
-  url: "/images/berita/2025/9september/p3k-upi-dtbs-putri-2025.webp"
+  url: "/images/berita/2025/9september/p3k-upi-2025-smp-daarut-tauhiid-putri.webp"
   alt: "P3K UPI 2025 di SMP Daarut Tauhiid Boarding School Putri"
 tags: ["berita"]
 lang: id
 ---
 
-**Bandung, 17 September 2025** – Universitas Pendidikan Indonesia (UPI) merespons dinamika zaman, kemajuan teknologi, dan tuntutan dunia kerja dengan berbagai kebijakan inovatif, salah satunya melalui **Program Penguatan Profesional Kependidikan (P3K)** sebagai bagian dari implementasi **Merdeka Belajar Kampus Merdeka (MBKM)**.  
+**Bandung, 17 September 2025** – Universitas Pendidikan Indonesia (UPI) resmi melaksanakan **Program Penguatan Profesional Kependidikan (P3K)** di SMP Daarut Tauhiid Boarding School Putri. Program ini merupakan bagian dari kebijakan **Merdeka Belajar Kampus Merdeka (MBKM)** sekaligus pengembangan dari **Program Pengenalan Lapangan Satuan Pendidikan (PPLSP),** yang semula berbobot 4 SKS menjadi 20 SKS.  
 
-Program ini merupakan pengembangan dari **Program Pengenalan Lapangan Satuan Pendidikan (PPLSP)** yang sebelumnya berbobot 4 SKS menjadi 20 SKS. Tujuannya adalah memberikan pengalaman belajar yang lebih mendalam dan kontekstual bagi mahasiswa melalui praktik langsung di satuan pendidikan.  
+P3K bertujuan memperkuat kompetensi mahasiswa melalui praktik lapangan yang kontekstual. Dengan bimbingan dosen, mahasiswa diarahkan untuk mengasah keterampilan akademik, profesional, serta soft skills agar lebih adaptif menghadapi dinamika dunia pendidikan dan kebutuhan industri.  
 
-P3K sejalan dengan semangat MBKM yang mendorong mahasiswa belajar di luar program studi dan kampus, serta menekankan pembelajaran yang fleksibel, inovatif, dan relevan dengan dunia kerja serta tantangan masa depan. Dengan bimbingan dosen, mahasiswa diarahkan untuk memperoleh pengalaman lapangan yang mendukung penguatan kompetensi **hard skills** dan **soft skills**, sehingga menghasilkan lulusan yang adaptif, profesional, dan siap menghadapi perubahan sosial maupun kebutuhan industri.  
+Serah terima mahasiswa P3K UPI dilaksanakan pada Rabu (17/9), dihadiri oleh **Kepala SMP Daarut Tauhiid Boarding School Putri, Rika Sinta Komara, M.Pd.,** beserta jajaran guru, **Dosen Pembimbing Lapangan Nalahuddin Saleh, M.Ag.,** serta mahasiswa dari **Program Studi Pendidikan Bahasa Arab** dan **Bimbingan Konseling.**  
 
-Salah satu bentuk nyata pelaksanaan program ini adalah melalui penempatan mahasiswa di berbagai satuan pendidikan, salah satunya di **SMP Daarut Tauhiid Boarding School Putri**. Serah terima mahasiswa P3K UPI dilaksanakan pada **Rabu, 17 September 2025** di SMP Daarut Tauhiid Boarding School Putri, dihadiri oleh Kepala Sekolah **Ibu Rika Sinta Komara, M.Pd.** beserta jajarannya, Dosen Pembimbing Lapangan (DPL) **Bapak Nalahuddin Saleh, S.Pd., M.Ag.,** serta mahasiswa peserta P3K dari Program Studi Pendidikan Bahasa Arab dan Bimbingan dan Konseling.  
+Acara diawali dengan pembukaan oleh **Mutia Hardianti, M.Pd.** selaku MC, kemudian dilanjutkan dengan pembacaan Al-Qur’an bersama. Sambutan dari pihak sekolah dan dosen pembimbing menekankan pentingnya sinergi antara mahasiswa, guru, dan sekolah dalam mendukung kegiatan belajar mengajar.  
 
-Kegiatan dimulai dengan pembukaan oleh **Ibu Mutia Hardianti, M.Pd.** selaku MC, dilanjutkan dengan pembacaan Al-Qur’an secara bersama-sama sebagai bentuk doa dan harapan akan kelancaran program. Suasana semakin hangat dengan sambutan dari pihak sekolah dan DPL, yang menekankan pentingnya kolaborasi serta peran aktif mahasiswa dalam mendukung kegiatan belajar mengajar di sekolah.  
+Dalam kesempatan itu, dilakukan pula sesi perkenalan antara guru pamong dan mahasiswa, serta tanya jawab terkait teknis pelaksanaan program. Sebagai bentuk komitmen, kegiatan ditutup dengan penandatanganan dokumen kerja sama antara sekolah dan UPI.  
 
-Acara kemudian dilanjutkan dengan sesi perkenalan antara civitas sekolah dan mahasiswa, di mana guru pamong dari masing-masing program studi diperkenalkan bersama para mahasiswa yang akan menjalani masa praktik. Sesi tanya jawab pun digelar secara interaktif, membuka ruang komunikasi antara pihak sekolah dan mahasiswa terkait teknis pelaksanaan program di lapangan.  
-
-Sebagai bentuk komitmen bersama, kegiatan ini diakhiri dengan penandatanganan dokumen kerja sama antara pihak sekolah dan UPI, yang dilakukan langsung oleh Kepala Sekolah dan Dosen Pembimbing Lapangan.  
-
-Kegiatan ditutup dengan penuh kehangatan dan harapan, bahwa program ini akan menjadi wadah pembelajaran yang bermakna, membangun, dan saling menguntungkan bagi kedua belah pihak. Melalui kegiatan ini, mahasiswa diharapkan tidak hanya mampu mengaplikasikan ilmu yang telah diperoleh di bangku kuliah secara nyata di lingkungan sekolah, tetapi juga membangun kesiapan sebagai calon pendidik profesional yang berdaya saing dan berakhlak mulia.  
+Pihak sekolah menyambut positif pelaksanaan P3K, berharap mahasiswa dapat memberikan kontribusi nyata di lingkungan sekolah. Sementara itu, UPI menekankan bahwa program ini menjadi wadah strategis bagi mahasiswa untuk mengimplementasikan ilmu sekaligus mempersiapkan diri sebagai calon pendidik profesional yang berdaya saing dan berakhlak mulia.  
