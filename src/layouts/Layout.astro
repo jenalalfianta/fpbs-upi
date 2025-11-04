@@ -9,13 +9,12 @@ const lang = pathname.startsWith('/en') ? 'en' : 'id';
 const title = pageTitle ?? getPageTitle(pathname);
 const description = pageDescription ?? "Website resmi Fakultas Pendidikan Bahasa dan Sastra Universitas Pendidikan Indonesia (FPBS UPI).";
 
-// Dinamis import Navbar & Footer
 const Navbar = lang === 'en'
-  ? (await import("../components/NavbarEN.astro")).default
+  ? (await import("../components/NavbarEn.astro")).default
   : (await import("../components/Navbar.astro")).default;
 
 const Footer = lang === 'en'
-  ? (await import("../components/FooterEN.astro")).default
+  ? (await import("../components/FooterEn.astro")).default
   : (await import("../components/Footer.astro")).default;
 ---
 
@@ -28,7 +27,6 @@ const Footer = lang === 'en'
     <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content="FPBS UPI, berita FPBS, sastra, bahasa, universitas pendidikan indonesia" />
@@ -36,7 +34,6 @@ const Footer = lang === 'en'
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
 
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E09XPHZJTL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -53,13 +50,11 @@ const Footer = lang === 'en'
     </main>
     <Footer />
 
-    <!-- Scripts -->
     <script defer src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="/theme-toggle.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
 
-    <!-- Back to Top -->
     <button id="backToTop" title="Kembali ke Atas" class="fixed z-[9999] bottom-4 right-4 bg-purple-700 hover:bg-purple-800 text-white rounded-full p-3 shadow-lg hidden transition-opacity duration-300">
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 384 512">
         <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>

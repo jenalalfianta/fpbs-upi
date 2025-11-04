@@ -23,7 +23,7 @@ const post = posts.find(
 );
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
 
-// Render konten markdown (ini otomatis pakai remarkPlugins termasuk carouselDirective)
+// Render konten markdown melalui pipeline bawaan Astro Content
 const { Content } = await post.render();
 
 const { title, pubDate, image, description } = post.data;
@@ -65,7 +65,7 @@ const tampilTanggal = new Date(pubDate).toLocaleDateString('id-ID', {
           </figure>
         )}
 
-        {/* Konten markdown + carouselDirective sudah diproses di sini */}
+        {/* Konten markdown yang sudah diproses */}
         <Content />
       </article>
     </div>

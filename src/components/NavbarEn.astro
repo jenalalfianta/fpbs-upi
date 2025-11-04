@@ -10,7 +10,6 @@ if (!currentPath.endsWith('.html')) currentPath += '/index.html';
 // Bersihkan double slash (kalau ada)
 const cleanPath = currentPath.replace(/\/{2,}/g, '/');
 
-
 const lang = cleanPath.startsWith('/en') ? 'en' : 'id';
 
 const defaultLangSwitch = lang === 'en'
@@ -21,15 +20,8 @@ const fixHtml = (url) =>
   url.endsWith('.html') || url.endsWith('/') ? url : `${url}/index.html`;
 
 const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
-
-// Debug log (hapus di production)
-console.log("Astro.path:", Astro.url.pathname);
-console.log("Clean path:", cleanPath);
-console.log("SlugMap hit:", slugMap[cleanPath]);
-console.log("Switch to:", switchLang);
 ---
 
-<!-- Dummy Navbar for spacing -->
 <div aria-hidden="true" class="invisible pointer-events-none">
   <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-700">
     <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
@@ -58,12 +50,12 @@ console.log("Switch to:", switchLang);
 </div>
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
-    <!-- Logo -->
+    
     <a href="/en/" class="flex items-center gap-3">
       <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
     </a>
 
-    <!-- Language, Dark Mode, Hamburger -->
+    
     <div class="flex items-center md:order-2 gap-4">
       <button type="button" data-dropdown-toggle="language-dropdown-menu"
         class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
@@ -107,7 +99,7 @@ console.log("Switch to:", switchLang);
         </ul>
       </div>
 
-      <!-- Dark Mode -->
+      
       <button id="theme-toggle" type="button"
         class="text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2 transition-colors">
         <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,7 +113,7 @@ console.log("Switch to:", switchLang);
         </svg>
       </button>
 
-      <!-- Hamburger -->
+      
       <button data-collapse-toggle="navbar-language" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
         <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
@@ -130,13 +122,13 @@ console.log("Switch to:", switchLang);
         </svg>
       </button>
     </div>
-    <!-- MENU -->
+    
     <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
       <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
         <li><a href="/en/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Home</a></li>
 
-        <!-- Dropdown Profile (Desktop) -->
+        
         <li class="hidden md:block relative group">
           <a href="#" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">
             Profile
@@ -155,7 +147,7 @@ console.log("Switch to:", switchLang);
             </ul>
           </div>
         </li>
-        <!-- Dropdown Profile (Mobile) -->
+        
         <li class="md:hidden">
           <details class="group">
             <summary class="flex items-center justify-between px-3 py-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
@@ -175,7 +167,7 @@ console.log("Switch to:", switchLang);
           </details>
         </li>
 
-        <!-- Dropdown PPID (Desktop) -->
+        
         <li class="hidden md:block relative group">
           <a href="#" class="flex items-center justify-between w-full py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 
              md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">
@@ -190,7 +182,7 @@ console.log("Switch to:", switchLang);
             </ul>
           </div>
         </li>
-        <!-- Dropdown PPID (Mobile) -->
+        
         <li class="md:hidden">
           <details class="group">
             <summary class="flex items-center justify-between px-3 py-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
@@ -206,7 +198,7 @@ console.log("Switch to:", switchLang);
           </details>
         </li>
 
-        <!-- Other Main Links -->
+        
         <li>
           <a href="/en/integrity-zone/index.html"
              class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 

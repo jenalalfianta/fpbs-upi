@@ -23,7 +23,7 @@ const post = posts.find(
 );
 if (!post) throw new Error(`Post not found for slug: ${slug}`);
 
-// Render markdown with remarkPlugins (includes carouselDirective)
+// Render markdown using Astro Content pipeline
 const { Content } = await post.render();
 
 const { title, pubDate, image, description } = post.data;
@@ -64,7 +64,7 @@ const displayDate = new Date(pubDate).toLocaleDateString('en-US', {
           </figure>
         )}
 
-        {/* Markdown content + carouselDirective */}
+        {/* Processed markdown content */}
         <Content />
       </article>
     </div>

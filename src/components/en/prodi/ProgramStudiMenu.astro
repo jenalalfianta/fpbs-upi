@@ -2,7 +2,7 @@
 const { menuItems, activeTab, slug, prodiId } = Astro.props;
 const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 ---
-<!-- Sticky Menu (desktop & mobile scrollable) -->
+
 <div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
   <div class="max-w-6xl mx-auto">
     <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
