@@ -5,8 +5,6 @@ title: "English Language Education (Bachelor)"
 menu:
   - id: "profile"
     label: "About the Program"
-  - id: "visi-plo-s1"
-    label: "Vision & PLO"
   - id: "curriculum"
     label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C035"
@@ -22,36 +20,6 @@ menu:
     label: "Admission / Enrollment"
     external: "https://pmb.upi.edu/"
 sections:
-  visi-plo-s1:
-    title: "Vision and PLO – English Language Education (Bachelor’s Program)"
-    content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="max-w-6xl mx-auto px-4">
-
-          <!-- Institutional Vision (umbrella for Bachelor–Master–Doctoral) -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
-          </p>
-
-          <!-- Academic Vision Bachelor -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Academic Vision (Bachelor)</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To organize a leading bachelor‘s  English language education study program through three pillars of higher education with functional and cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demand of the society.  
-          </p>
-
-          <!-- Program Learning Outcomes (PLO) Bachelor -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (Bachelor)</h2>
-          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li>Integrate theoretical and practical knowledge and skills in English as a Foreign Language education with the reference to level B2 with another supportive knowledge.</li>
-            <li>Perform effective lesson planning, current teaching practice, and evaluation in EFL education context based on functional and cutting-edge theories and practices of linguistics, pedagogy and appropriate technology and resources.</li>
-            <li>Make use of the knowledge of the 21th century skills, especially critical thinking, communication, collaboration, creativity in multidisciplinary perspectives. </li>
-            <li>Apply moral, ethics, and university core values to uphold and maintain academic and social relations for continuous self-development.</li>
-            <li>Perform research to contribute to the continuous development and enhance of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.  </li>
-          </ol>
-        </div>
-      </section>
-
   profile:
     title: About the English Language Education Bachelor’s Program
     content: |
@@ -64,34 +32,54 @@ sections:
             <div class="relative">
               <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
               <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">September 1954: Program Establishment</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">The Bachelor’s Program in English Language Education (PPBING) was established pursuant to the Decree of the Minister of Education and Culture of the Republic of Indonesia No. 35742.</p>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">
+                The Bachelor’s Program in English Language Education (PPBING) was established pursuant to the Decree of the Minister of Education and Culture of the Republic of Indonesia No. 35742.
+              </p>
             </div>
 
             <div class="relative">
               <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
               <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2021: Accreditation and International Certification</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">PPBING obtained an “Unggul (Excellent)” accreditation from BAN-PT (Decree 10217/SK/BAN-PT/Akred-Itnl/S/VIII/2021), as well as “Unconditional” status from AQAS and certification from AUN-QA.</p>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">
+                PPBING obtained an “Unggul (Excellent)” accreditation from BAN-PT (Decree 10217/SK/BAN-PT/Akred-Itnl/S/VIII/2021), as well as “Unconditional” status from AQAS and certification from AUN-QA.
+              </p>
             </div>
-
           </div>
 
           <p class="text-gray-700 dark:text-gray-300 mb-10">
             The program specializes in preparing English language education teachers, researchers, program developers, and educational analysts in alignment with the vision and mission of Universitas Pendidikan Indonesia and the Faculty of Language and Literature Education.
           </p>
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Vision</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
-            By 2045, to become an excellent and ASEAN-leading Bachelor’s Program in English Language Education.
+          <!-- Institutional Vision (umbrella for Bachelor–Master–Doctoral) -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
+          </p>
+
+          <!-- Academic Vision Bachelor -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Academic Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To organize a leading bachelor‘s English language education study program through three pillars of higher education with functional and cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demand of the society.  
           </p>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Mission</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
             <li>Deliver undergraduate learning in English Language Education supported by relevant linguistic sciences using cutting-edge methods.</li>
             <li>Conduct relevant and high-quality research at national and international levels.</li>
             <li>Carry out relevant and high-quality community engagement at local, national, and international levels.</li>
             <li>Produce high-quality publications at local, national, and international levels.</li>
             <li>Develop partnership networks with relevant institutions at local, national, and international levels.</li>
-          </ul>
+          </ol>
+
+          <!-- Program Learning Outcomes (PLO) Bachelor -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+            <li>Integrate theoretical and practical knowledge and skills in English as a Foreign Language education with the reference to level B2 with another supportive knowledge.</li>
+            <li>Perform effective lesson planning, current teaching practice, and evaluation in EFL education context based on functional and cutting-edge theories and practices of linguistics, pedagogy and appropriate technology and resources.</li>
+            <li>Make use of the knowledge of the 21th century skills, especially critical thinking, communication, collaboration, creativity in multidisciplinary perspectives. </li>
+            <li>Apply moral, ethics, and university core values to uphold and maintain academic and social relations for continuous self-development.</li>
+            <li>Perform research to contribute to the continuous development and enhance of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.  </li>
+          </ol>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Program Officers</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-4">
@@ -118,6 +106,8 @@ sections:
 
         </div>
       </section>
+
+
 
   accreditation:
     title: "Accreditation – English Language Education (Bachelor’s Program)"

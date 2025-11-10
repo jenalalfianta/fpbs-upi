@@ -5,8 +5,6 @@ title: "English Language Education (Master's)"
 menu:
   - id: "profile"
     label: "About the Program"
-  - id: "visi-plo-s2"
-    label: "Vision & PLO"
   - id: "curriculum"
     label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/P076"
@@ -23,39 +21,6 @@ menu:
     external: "https://pmb.upi.edu/"
 
 sections:
-  visi-plo-s2:
-    title: "Vision and PLO – English Language Education (Master’s Program)"
-    content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="max-w-6xl mx-auto px-4">
-
-          <!-- Institutional Vision (umbrella for Bachelor's–Master's–Doctoral) -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
-          </p>
-
-          <!-- Disciplinary Vision for Master's -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Disciplinary Vision (Master's)</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To organize a leading and innovative master’s  English language education study through three pillars of higher education with functional and cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demands of the society.
-          </p>
-
-          <!-- Program Learning Outcomes (PLO) Master's -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (Master's)</h2>
-          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-
-            <li>Make use of theoretical and practical knowledge and skills in English as a Foreign Language education in academic and professional contexts (with the reference to level B2 of CEFR) with other relevant supportive knowledge.</li>
-                <li>Analyse lesson planning, teaching practice and evaluation in EFL education contexts using an appropriate analysis framework based on functional and cutting-edge theories and practices of linguistics, pedagogy and appropriate technology and resources.</li>
-                <li>Apply morals, ethics, and university core values to uphold and maintain academic and social relations.</li>
-                <li>Demonstrate 21st century skills, especially regarding creativity, collaboration, communication, and critical thinking in multidisciplinary skills and multi socio-cultural contexts.</li>
-                <li>Perform continuous self-development in improving professional performance quality.</li>
-                <li>Perform research projects to contribute to the development and enhancement of EFL education, aligned with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
-          </ol>
-
-        </div>
-      </section>
-
   profile:
     title: About the English Language Education Master’s Program
     content: |
@@ -100,12 +65,35 @@ sections:
               <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">April 4, 2018</h3>
               <p class="text-gray-700 dark:text-gray-300 mt-1">The program received an A accreditation based on Decree No. 959/SK/BAN-PT/Akred/M/IV/2018.</p>
             </div>
-
           </div>
 
           <p class="text-gray-700 dark:text-gray-300 mb-10">
             The Master’s Program (PPBING) specializes in preparing teacher educators, education experts, researchers, program developers, and education analysts in English Language Education. Its alumni are spread across various sectors both domestically and abroad. To improve quality and networking, the program actively collaborates with national and international associations such as ASPBI, TEFLIN, ASIATEFL, International TEFL, and TESOL, as well as higher education institutions in Australia, the United States, New Zealand, and ASEAN countries through scholarship schemes, FLTA, visiting scholar programs, joint seminars, and joint publications.
           </p>
+
+          <!-- Institutional Vision (umbrella for Bachelor's–Master's–Doctoral) -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
+          </p>
+
+          <!-- Disciplinary Vision for Master's -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Disciplinary Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To organize a leading and innovative master’s  English language education study through three pillars of higher education with functional and cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demands of the society.
+          </p>
+
+          <!-- Program Learning Outcomes (PLO) Master's -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+
+            <li>Make use of theoretical and practical knowledge and skills in English as a Foreign Language education in academic and professional contexts (with the reference to level B2 of CEFR) with other relevant supportive knowledge.</li>
+                <li>Analyse lesson planning, teaching practice and evaluation in EFL education contexts using an appropriate analysis framework based on functional and cutting-edge theories and practices of linguistics, pedagogy and appropriate technology and resources.</li>
+                <li>Apply morals, ethics, and university core values to uphold and maintain academic and social relations.</li>
+                <li>Demonstrate 21st century skills, especially regarding creativity, collaboration, communication, and critical thinking in multidisciplinary skills and multi socio-cultural contexts.</li>
+                <li>Perform continuous self-development in improving professional performance quality.</li>
+                <li>Perform research projects to contribute to the development and enhancement of EFL education, aligned with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
+          </ol>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Program Leadership Profile</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-4">

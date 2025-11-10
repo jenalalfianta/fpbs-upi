@@ -30,30 +30,7 @@ sections:
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto px-4">
 
-          <!-- Institutional Vision (umbrella S1–S3) -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
-          </p>
-
-          <!-- Academic Vision Doctorate -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Academic Vision (Doctorate)</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            To organize a leading, innovative and transformative master’s  English language education study through three pillars of higher education  with functional cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demands of the society.
-          </p>
-
-          <!-- Program Learning Outcomes (PLO) Doctorate -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (Doctorate)</h2>
-          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li>Make use of theoretical and practical knowledge and skills in English as a Foreign Language education in academic and professional contexts (with the reference to level C1 (minimum C1a) of CEFR) with other relevant supportive knowledge.</li>
-            <li>Develop innovative models on lesson planning, teaching practice and evaluation in EFL education contexts attending to significant features of the 21st Century education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
-            <li>Apply morals, ethics, and university core values to uphold and maintain academic and social relations.</li>
-            <li>Demonstrate 21st century skills, especially to do with creativity, effective collaboration, communication, and critical thinking in multidisciplinary and socio-cultural contexts.</li>
-            <li>Perform research projects novelties contributing to the development and enhancement of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
-            <li>Develop innovative models of continuous self-development in improving professional performance quality.</li>
-          </ol>
-
-        </div>
+                </div>
       </section>
 
   profile:
@@ -90,9 +67,16 @@ sections:
           </p>
 
 
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Vision</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
-          To conduct a leading doctoral study program in English Language Education that produces transformative research, thought leadership, and scientific contributions to advance theory, policy, and practice globally.
+          <!-- Institutional Vision (umbrella S1–S3) -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Institutional Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To become a leading and outstanding bachelor, master's and doctoral study program in the world with cutting-edge theories and innovative practices in English language education in line with the demands of contemporary society by 2040.
+          </p>
+
+          <!-- Academic Vision Doctorate -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Academic Vision</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            To organize a leading, innovative and transformative master’s  English language education study through three pillars of higher education  with functional cutting-edge theories and practices in linguistics, pedagogy, and technology in line with the demands of the society.
           </p>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Mission</h2>
@@ -102,6 +86,17 @@ sections:
           <li>Prepare academics and institutional leaders capable of shaping discourse and innovation at national and international levels.</li>
           <li>Encourage interdisciplinary collaboration and scholarly engagement across educational and cultural contexts.</li>
           <li>Uphold academic integrity, scientific ethics, and social responsibility in all academic and professional activities.</li>
+          </ol>
+
+          <!-- Program Learning Outcomes (PLO) Doctorate -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+            <li>Make use of theoretical and practical knowledge and skills in English as a Foreign Language education in academic and professional contexts (with the reference to level C1 (minimum C1a) of CEFR) with other relevant supportive knowledge.</li>
+            <li>Develop innovative models on lesson planning, teaching practice and evaluation in EFL education contexts attending to significant features of the 21st Century education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
+            <li>Apply morals, ethics, and university core values to uphold and maintain academic and social relations.</li>
+            <li>Demonstrate 21st century skills, especially to do with creativity, effective collaboration, communication, and critical thinking in multidisciplinary and socio-cultural contexts.</li>
+            <li>Perform research projects novelties contributing to the development and enhancement of EFL education in line with functional and cutting-edge theories and practices of linguistics, pedagogy, and technology.</li>
+            <li>Develop innovative models of continuous self-development in improving professional performance quality.</li>
           </ol>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Program Leadership</h2>

@@ -5,8 +5,6 @@ title: "Pendidikan Bahasa Inggris (S1)"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
-  - id: "visi-plo-s1"
-    label: "Visi & PLO"
   - id: "kurikulum"
     label: "Kurikulum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C035"
@@ -22,102 +20,96 @@ menu:
     label: "PMB / Pendaftaran"
     external: "https://pmb.upi.edu/"
 sections:
-  visi-plo-s1:
-    title: "Visi & Program Learning Outcomes (S1)"
-    content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="max-w-6xl mx-auto px-4">
-
-          <!-- Visi Kelembagaan (payung S1–S3) -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Kelembagaan</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            Menjadi program studi sarjana, magister, dan doctor Pendidikan Bahasa Inggris yang unggul di dunia dengan teori dan praktik inovatif sejalan dengan tuntunan masyarakat kontemporer pada tahun 2040.
-          </p>
-
-          <!-- Visi Keilmuan S1 -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Keilmuan (S1)</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            Mengembangkan program Sarjana Pendidikan Bahasa Inggris yang unggul melalui tridharma perguruan tinggi berbasis teori dan praktik linguistik, pedagogi, dan teknologi fungsional mutakhir sesuai tuntutan masyarakat.
-          </p>
-
-          <!-- Program Learning Outcomes (PLO) S1 -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (S1)</h2>
-          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li>Mengintegrasikan pengetahuan dan keterampilan teoretis serta praktis dalam pendidikan Bahasa Inggris sebagai Bahasa Asing (EFL) dengan acuan tingkat B2 disertai pengetahuan pendukung lainnya.</li>
-            <li>Melaksanakan perencanaan pembelajaran, praktik pengajaran terkini, dan evaluasi yang efektif dalam konteks pendidikan EFL berdasarkan teori dan praktik linguistik, pedagogik, serta teknologi dan sumber daya yang fungsional dan mutakhir.</li>
-            <li>Memanfaatkan pengetahuan tentang keterampilan abad ke-21, khususnya berpikir kritis, komunikasi, kolaborasi, dan kreativitas dari perspektif multidisipliner.</li>
-            <li>Menerapkan moral, etika, dan nilai-nilai inti universitas untuk menjunjung serta memelihara hubungan akademik dan sosial demi pengembangan diri yang berkelanjutan.</li>
-            <li>Melaksanakan penelitian untuk berkontribusi pada pengembangan dan peningkatan pendidikan EFL secara berkelanjutan, selaras dengan teori dan praktik linguistik, pedagogik, dan teknologi yang fungsional serta mutakhir.</li>
-          </ol>
-        </div>
-      </section>
 
   profil:
     title: Tentang Pendidikan Bahasa Inggris S1
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sejarah</h2>
+        <br>
+        <div class="relative border-l-2 border-purple-300 dark:border-purple-600 pl-14 space-y-10 mb-6">
           
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Sejarah</h2><br>
-          <div class="relative border-l-2 border-purple-300 dark:border-purple-600 pl-14 space-y-10 mb-6">
-            
-            <div class="relative">
-              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">September 1954: Pendirian Prodi</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">Program S1 Prodi Pendidikan Bahasa Inggris (PPBING) didirikan sesuai dengan SK MENDIKBUD RI No. 35742.</p>
-            </div>
-
-            <div class="relative">
-              <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
-              <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2021: Akreditasi dan Sertifikasi Internasional</h3>
-              <p class="text-gray-700 dark:text-gray-300 mt-1">PPBING mendapatkan Akreditasi Unggul dari BAN-PT (SK10217/SK/BAN-PT/Akred-Itnl/S/VIII/2021), serta status 'Unconditional' dari AQAS dan sertifikasi AUN-QA.</p>
-            </div>
-
+          <div class="relative">
+            <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+            <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">September 1954: Pendirian Prodi</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-1">
+              Program S1 Prodi Pendidikan Bahasa Inggris (PPBING) didirikan sesuai dengan SK MENDIKBUD RI No. 35742.
+            </p>
           </div>
 
-          <p class="text-gray-700 dark:text-gray-300 mb-10">
-            Prodi berspesialisasi dalam pendidikan guru, peneliti, pengembang program, dan analis pendidikan Bahasa Inggris sesuai dengan visi misi Universitas Pendidikan Indonesia dan Fakultas Pendidikan Bahasa dan Sastra.
-          </p>
-
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Pada tahun 2045, menjadi Program Studi Sarjana Pendidikan Bahasa Inggris yang unggul dan menjadi rujukan pada tingkat ASEAN.
-          </p>
-
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Misi</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-2">
-            <li>Menyelenggarakan pembelajaran tingkat sarjana dalam bidang pendidikan bahasa Inggris yang didukung oleh ilmu kebahasan yang relevan dengan menggunakan metode mutakhir.</li>
-            <li>Melaksanakan penelitian yang relevan dan berkualitas pada tingkat nasional dan internasional.</li>
-            <li>Melaksanakan pengabdian kepada masyarakat yang relevan dan berkualitas pada tingkat lokal, nasional, dan internasional.</li>
-            <li>Menyelenggarakan publikasi yang berkualitas pada tingkat lokal, nasional, dan internasional.</li>
-            <li>Mengembangkan jejaring kemitraan dengan lembaga-lembaga yang relevan pada tingkat lokal, nasional dan internasional.</li>
-          </ul>
-
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Profil Pejabat Struktural</h2>
-          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-4">
-            <li>
-              <strong>Prof. Emi Emilia, M.Ed., Ph.D.</strong><br>
-              <em>Jabatan:</em> Kepala Program Studi Pendidikan Bahasa Inggris<br>
-              <em>Keahlian:</em> Systemic Functional Linguistics, Writing for Academic Purposes, EFL Curriculum Analysis, Grammar (Advanced)
-            </li>
-            <li>
-              <strong>Dr. Rojab Siti Rodiyah, M.Ed</strong><br>
-              <em>Jabatan:</em> Sekretaris Program Studi Pendidikan Bahasa Inggris<br>
-              <em>Keahlian:</em> Grammar: Basic and Advanced, Writing in Professional Context, Intercultural Communication
-            </li>
-          </ul>
-
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Kontak Prodi</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Program Studi Pendidikan Bahasa Inggris<br>
-            Fakultas Pendidikan Bahasa dan Sastra<br>
-            Jl. Setiabudhi No 229<br>
-            Kode Pos 40154 Kota Bandung<br>
-            Instagram: <a href="https://instagram.com/englishedu_upi" class="text-purple-700 dark:text-purple-300 hover:underline">@englishedu_upi</a>
-          </p>
-
+          <div class="relative">
+            <div class="absolute w-4 h-4 bg-purple-600 rounded-full -left-6 top-1.5"></div>
+            <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">2021: Akreditasi dan Sertifikasi Internasional</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-1">
+              PPBING mendapatkan Akreditasi Unggul dari BAN-PT (SK10217/SK/BAN-PT/Akred-Itnl/S/VIII/2021), serta status 'Unconditional' dari AQAS dan sertifikasi AUN-QA.
+            </p>
+          </div>
         </div>
+
+        <p class="text-gray-700 dark:text-gray-300 mb-10">
+          Prodi berspesialisasi dalam pendidikan guru, peneliti, pengembang program, dan analis pendidikan Bahasa Inggris sesuai dengan visi misi Universitas Pendidikan Indonesia dan Fakultas Pendidikan Bahasa dan Sastra.
+        </p>
+
+        <!-- Visi Kelembagaan (payung S1–S3) -->
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Kelembagaan</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-8">
+          Menjadi program studi sarjana, magister, dan doctor Pendidikan Bahasa Inggris yang unggul di dunia dengan teori dan praktik inovatif sejalan dengan tuntunan masyarakat kontemporer pada tahun 2040.
+        </p>
+
+        <!-- Visi Keilmuan S1 -->
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Keilmuan</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-8">
+          Mengembangkan program Sarjana Pendidikan Bahasa Inggris yang unggul melalui tridharma perguruan tinggi berbasis teori dan praktik linguistik, pedagogi, dan teknologi fungsional mutakhir sesuai tuntutan masyarakat.
+        </p>
+
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Misi</h2>
+        <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+          <li>Menyelenggarakan pembelajaran tingkat sarjana dalam bidang pendidikan bahasa Inggris yang didukung oleh ilmu kebahasan yang relevan dengan menggunakan metode mutakhir.</li>
+          <li>Melaksanakan penelitian yang relevan dan berkualitas pada tingkat nasional dan internasional.</li>
+          <li>Melaksanakan pengabdian kepada masyarakat yang relevan dan berkualitas pada tingkat lokal, nasional, dan internasional.</li>
+          <li>Menyelenggarakan publikasi yang berkualitas pada tingkat lokal, nasional, dan internasional.</li>
+          <li>Mengembangkan jejaring kemitraan dengan lembaga-lembaga yang relevan pada tingkat lokal, nasional dan internasional.</li>
+        </ol>
+
+        <!-- Program Learning Outcomes (PLO) S1 -->
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Program Learning Outcomes</h2>
+        <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+          <li>Mengintegrasikan pengetahuan dan keterampilan teoretis serta praktis dalam pendidikan Bahasa Inggris sebagai Bahasa Asing (EFL) dengan acuan tingkat B2 disertai pengetahuan pendukung lainnya.</li>
+          <li>Melaksanakan perencanaan pembelajaran, praktik pengajaran terkini, dan evaluasi yang efektif dalam konteks pendidikan EFL berdasarkan teori dan praktik linguistik, pedagogik, serta teknologi dan sumber daya yang fungsional dan mutakhir.</li>
+          <li>Memanfaatkan pengetahuan tentang keterampilan abad ke-21, khususnya berpikir kritis, komunikasi, kolaborasi, dan kreativitas dari perspektif multidisipliner.</li>
+          <li>Menerapkan moral, etika, dan nilai-nilai inti universitas untuk menjunjung serta memelihara hubungan akademik dan sosial demi pengembangan diri yang berkelanjutan.</li>
+          <li>Melaksanakan penelitian untuk berkontribusi pada pengembangan dan peningkatan pendidikan EFL secara berkelanjutan, selaras dengan teori dan praktik linguistik, pedagogik, dan teknologi yang fungsional serta mutakhir.</li>
+        </ol>
+
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Profil Pejabat Struktural</h2>
+        <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-4">
+          <li>
+            <strong>Prof. Emi Emilia, M.Ed., Ph.D.</strong><br>
+            <em>Jabatan:</em> Kepala Program Studi Pendidikan Bahasa Inggris<br>
+            <em>Keahlian:</em> Systemic Functional Linguistics, Writing for Academic Purposes, EFL Curriculum Analysis, Grammar (Advanced)
+          </li>
+          <li>
+            <strong>Dr. Rojab Siti Rodiyah, M.Ed</strong><br>
+            <em>Jabatan:</em> Sekretaris Program Studi Pendidikan Bahasa Inggris<br>
+            <em>Keahlian:</em> Grammar: Basic and Advanced, Writing in Professional Context, Intercultural Communication
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Kontak Prodi</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">
+          Program Studi Pendidikan Bahasa Inggris<br>
+          Fakultas Pendidikan Bahasa dan Sastra<br>
+          Jl. Setiabudhi No 229<br>
+          Kode Pos 40154 Kota Bandung<br>
+          Instagram: 
+          <a href="https://instagram.com/englishedu_upi" class="text-purple-700 dark:text-purple-300 hover:underline">
+            @englishedu_upi
+          </a>
+        </p>
+      </div>
       </section>
+
 
 
   akreditasi:
@@ -691,8 +683,5 @@ sections:
 
               </div>
             </section>
-
-
-  
 
 ---

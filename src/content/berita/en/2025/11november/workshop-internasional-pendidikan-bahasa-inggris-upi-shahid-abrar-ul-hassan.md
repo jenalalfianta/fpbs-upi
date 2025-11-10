@@ -11,8 +11,7 @@ tags:
 lang: en
 ---
 
-Bandung, November 6, 2025 —  
-The English Language Education Study Program, Faculty of Language and Literature Education (FPBS), Universitas Pendidikan Indonesia (UPI), held a series of *International Professional Development Lectures* featuring Dr. Shahid Abrar-ul-Hassan, Associate Professor at the University Canada West, Vancouver, BC (Canada), and Editor of *The ESP Journal* (Elsevier, SSCI).
+Bandung, November 6, 2025 - The English Language Education Study Program, Faculty of Language and Literature Education (FPBS), Universitas Pendidikan Indonesia (UPI), held a series of *International Professional Development Lectures* featuring Dr. Shahid Abrar-ul-Hassan, Associate Professor at the University Canada West, Vancouver, BC (Canada), and Editor of *The ESP Journal* (Elsevier, SSCI).
 
 The program consisted of two workshop sessions titled:  
 1. *Writing and Publishing in Journals I: Navigating Mainstream Academic Publishing*  

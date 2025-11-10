@@ -5,8 +5,6 @@ title: "Pendidikan Bahasa Inggris (S2)"
 menu:
   - id: "profil"
     label: "Tentang Prodi"
-  - id: "visi-plo-s2"
-    label: "Visi & PLO"
   - id: "kurikulum"
     label: "Kurikulum"
     external: "https://kurikulum.upi.edu/struktur/prodi/P076"
@@ -23,39 +21,6 @@ menu:
     external: "https://pmb.upi.edu/"
 
 sections:
-  visi-plo-s2:
-    title: "Visi & Program Learning Outcomes (S2)"
-    content: |
-      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
-        <div class="max-w-6xl mx-auto px-4">
-
-          <!-- Visi Kelembagaan (payung S1–S3) -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Kelembagaan</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            Menjadi program studi sarjana, magister, dan doktor Pendidikan Bahasa Inggris yang unggul di dunia
-            dengan teori dan praktik inovatif sejalan dengan tuntutan masyarakat kontemporer pada tahun 2040.
-          </p>
-
-          <!-- Visi Keilmuan S2 -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Keilmuan (S2)</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-8">
-            Mengembangkan program Magister Pendidikan Bahasa Inggris yang unggul  dan inovatif melalui tridharma perguruan tinggi berbasis teori dan praktik linguistik, pedagogi, dan teknologi fungsional mutakhir sesuai tuntutan masyarakat. 
-          </p>
-
-          <!-- Program Learning Outcomes (PLO) S2 -->
-          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes (S2)</h2>
-          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-              <li>Memanfaatkan pengetahuan dan keterampilan teoretis serta praktis dalam pendidikan Bahasa Inggris sebagai Bahasa Asing (EFL) di konteks akademik dan profesional (dengan acuan tingkat B2 CEFR) beserta pengetahuan pendukung relevan lainnya.</li>
-              <li>Menganalisis perencanaan pembelajaran, praktik pengajaran, dan evaluasi dalam konteks pendidikan EFL menggunakan kerangka analisis yang tepat berdasarkan teori dan praktik linguistik, pedagogik, serta teknologi dan sumber daya yang fungsional dan mutakhir.</li>
-              <li>Menerapkan moral, etika, dan nilai-nilai inti universitas untuk menjunjung serta memelihara hubungan akademik dan sosial.</li>
-              <li>Menunjukkan keterampilan abad ke-21, khususnya kreativitas, kolaborasi, komunikasi, dan berpikir kritis dalam keterampilan multidisipliner dan konteks multi-sosio-kultural.</li>
-              <li>Melaksanakan pengembangan diri secara berkelanjutan untuk meningkatkan kualitas kinerja profesional.</li>
-              <li>Melaksanakan proyek penelitian untuk berkontribusi pada pengembangan dan peningkatan pendidikan EFL yang selaras dengan teori dan praktik linguistik, pedagogik, dan teknologi yang fungsional serta mutakhir.</li>
-          </ol>
-
-        </div>
-      </section>
-
   profil:
     title: Tentang Pendidikan Bahasa Inggris S2
     content: |
@@ -100,12 +65,37 @@ sections:
               <h3 class="text-base font-semibold text-purple-800 dark:text-purple-300">4 April 2018</h3>
               <p class="text-gray-700 dark:text-gray-300 mt-1">Prodi mendapatkan akreditasi A berdasarkan SK No. 959/SK/BAN-PT/Akred/M/IV/2018.</p>
             </div>
-
           </div>
 
           <p class="text-gray-700 dark:text-gray-300 mb-10">
             Prodi S2 PPBING berspesialisasi dalam pendidikan guru, ahli pendidikan, peneliti, pengembang program, dan analis pendidikan Bahasa Inggris. Lulusannya tersebar di berbagai bidang baik di dalam maupun luar negeri. Sebagai upaya peningkatan mutu dan jejaring, prodi ini aktif bekerja sama dengan asosiasi nasional dan internasional seperti ASPBI, TEFLIN, ASIATEFL, International TEFL, dan TESOL, serta institusi pendidikan tinggi di Australia, Amerika Serikat, Selandia Baru, dan negara-negara ASEAN melalui program beasiswa, FLTA, visiting scholar, joint seminar, dan joint publication.
           </p>
+
+          <p>
+
+          <!-- Visi Kelembagaan (payung S1–S3) -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Kelembagaan</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            Menjadi program studi sarjana, magister, dan doktor Pendidikan Bahasa Inggris yang unggul di dunia
+            dengan teori dan praktik inovatif sejalan dengan tuntutan masyarakat kontemporer pada tahun 2040.
+          </p>
+
+          <!-- Visi Keilmuan S2 -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Visi Keilmuan</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-8">
+            Mengembangkan program Magister Pendidikan Bahasa Inggris yang unggul  dan inovatif melalui tridharma perguruan tinggi berbasis teori dan praktik linguistik, pedagogi, dan teknologi fungsional mutakhir sesuai tuntutan masyarakat. 
+          </p>          
+          
+          <!-- Program Learning Outcomes (PLO) S2 -->
+          <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Program Learning Outcomes</h2>
+          <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 space-y-2 mb-8">
+              <li>Memanfaatkan pengetahuan dan keterampilan teoretis serta praktis dalam pendidikan Bahasa Inggris sebagai Bahasa Asing (EFL) di konteks akademik dan profesional (dengan acuan tingkat B2 CEFR) beserta pengetahuan pendukung relevan lainnya.</li>
+              <li>Menganalisis perencanaan pembelajaran, praktik pengajaran, dan evaluasi dalam konteks pendidikan EFL menggunakan kerangka analisis yang tepat berdasarkan teori dan praktik linguistik, pedagogik, serta teknologi dan sumber daya yang fungsional dan mutakhir.</li>
+              <li>Menerapkan moral, etika, dan nilai-nilai inti universitas untuk menjunjung serta memelihara hubungan akademik dan sosial.</li>
+              <li>Menunjukkan keterampilan abad ke-21, khususnya kreativitas, kolaborasi, komunikasi, dan berpikir kritis dalam keterampilan multidisipliner dan konteks multi-sosio-kultural.</li>
+              <li>Melaksanakan pengembangan diri secara berkelanjutan untuk meningkatkan kualitas kinerja profesional.</li>
+              <li>Melaksanakan proyek penelitian untuk berkontribusi pada pengembangan dan peningkatan pendidikan EFL yang selaras dengan teori dan praktik linguistik, pedagogik, dan teknologi yang fungsional serta mutakhir.</li>
+          </ol>
 
           <h2 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">Profil Pejabat Struktural</h2>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6 space-y-4">
