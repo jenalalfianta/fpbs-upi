@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/10oktober/upi-dorong-guru-bahasa-sunda-menulis-karya-ilmiah-populer.webp"
   alt: "Workshop for Sundanese Language Teachers on Popular Scientific Writing, Cultural Literacy, and Environmental Education at SMAN 1 Cisarua"
-tags:
-  - "news"
+tags: ["news"]
 lang: en
 ---
 

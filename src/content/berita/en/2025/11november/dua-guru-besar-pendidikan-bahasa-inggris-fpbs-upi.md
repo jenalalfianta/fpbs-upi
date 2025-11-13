@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/11november/dua-guru-besar-pendidikan-bahasa-inggris-fpbs-upi.webp"
   alt: "Two Professors of the English Language Education Study Program, FPBS UPI, at the 2025 Professorial Inauguration Ceremony"
-tags:
-  - "news"
+tags: ["news"]
 lang: en
 ---
 

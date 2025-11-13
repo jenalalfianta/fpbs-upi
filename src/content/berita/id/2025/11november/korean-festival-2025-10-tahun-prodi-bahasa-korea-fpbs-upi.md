@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/11november/korean-festival-2025-10-tahun-prodi-bahasa-korea-fpbs-upi.webp"
   alt: "Korean Festival 2025 Merayakan 10 Tahun Program Studi Pendidikan Bahasa Korea FPBS UPI"
-tags:
-  - "berita"
+tags: ["berita"]
 lang: id
 ---
 

@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/11november/korean-festival-2025-10-tahun-prodi-bahasa-korea-fpbs-upi.webp"
   alt: "Korean Festival 2025 Celebrating the 10th Anniversary of the Korean Language Education Study Program at FPBS UPI"
-tags:
-  - "news"
+tags: ["news"]
 lang: en
 ---
 

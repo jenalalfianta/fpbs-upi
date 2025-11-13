@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/11november/pba-fpbs-upi-semiloka-rakernas-ppba-malang-2025.webp"
   alt: "PBA Study Program of FPBS UPI at the National Semiloka and PPBA Indonesia National Working Meeting in Malang"
-tags:
-  - "news"
+tags: ["berita"]
 lang: en
 ---
 

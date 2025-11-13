@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/11november/pba-fpbs-upi-semiloka-rakernas-ppba-malang-2025.webp"
   alt: "Prodi PBA FPBS UPI pada Semiloka Nasional dan Rakernas PPBA Indonesia di Malang"
-tags:
-  - "berita"
+tags: ["news"]
 lang: id
 ---
 

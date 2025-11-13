@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/11november/workshop-internasional-pendidikan-bahasa-inggris-upi-shahid-abrar-ul-hassan.webp"
   alt: "Workshop Internasional Prodi Pendidikan Bahasa Inggris FPBS UPI Bersama Dr. Shahid Abrar-ul-Hassan"
-tags:
-  - "berita"
+tags: ["berita"]
 lang: id
 ---
 

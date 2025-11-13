@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/11november/fpbs-upi-kerja-sama-fbs-unesa-prodi-bahasa-mandarin.webp"
   alt: "FPBS UPI dan FBS UNESA menjalin kerja sama akademik dan inisiasi pembukaan Program Studi Bahasa Mandarin"
-tags:
-  - "berita"
+tags: ["berita"]
 lang: id
 ---
 

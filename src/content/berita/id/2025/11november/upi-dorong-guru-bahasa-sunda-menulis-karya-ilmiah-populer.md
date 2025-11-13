@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/10oktober/upi-dorong-guru-bahasa-sunda-menulis-karya-ilmiah-populer.webp"
   alt: "Pelatihan Guru Bahasa Sunda tentang Penulisan Karya Ilmiah Populer di SMAN 1 Cisarua, Kabupaten Bandung Barat"
-tags:
-  - "berita"
+tags: ["berita"]
 lang: id
 ---
 

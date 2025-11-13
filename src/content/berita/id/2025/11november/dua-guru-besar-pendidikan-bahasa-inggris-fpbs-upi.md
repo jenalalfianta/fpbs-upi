@@ -6,8 +6,7 @@ author: "FPBS UPI"
 image:
   url: "/images/berita/2025/11november/dua-guru-besar-pendidikan-bahasa-inggris-fpbs-upi.webp"
   alt: "Dua Guru Besar Prodi Pendidikan Bahasa Inggris FPBS UPI pada Acara Pengukuhan Guru Besar UPI Tahun 2025"
-tags:
-  - "berita"
+tags: ["berita"]
 lang: id
 ---
 

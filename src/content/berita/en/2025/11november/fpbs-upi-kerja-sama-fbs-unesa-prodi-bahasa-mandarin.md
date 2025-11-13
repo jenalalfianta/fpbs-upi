@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/11november/fpbs-upi-kerja-sama-fbs-unesa-prodi-bahasa-mandarin.webp"
   alt: "FPBS UPI and FBS UNESA discuss academic collaboration and the establishment of a Mandarin Language Study Program"
-tags:
-  - "news"
+tags: ["news"]
 lang: en
 ---
 

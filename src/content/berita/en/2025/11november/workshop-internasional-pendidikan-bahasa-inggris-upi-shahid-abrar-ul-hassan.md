@@ -6,8 +6,7 @@ author: "Faculty of Language and Literature Education, UPI"
 image:
   url: "/images/berita/2025/11november/workshop-internasional-pendidikan-bahasa-inggris-upi-shahid-abrar-ul-hassan.webp"
   alt: "International Workshop by English Language Education Study Program FPBS UPI with Dr. Shahid Abrar-ul-Hassan"
-tags:
-  - "news"
+tags: ["news"]
 lang: en
 ---
 
