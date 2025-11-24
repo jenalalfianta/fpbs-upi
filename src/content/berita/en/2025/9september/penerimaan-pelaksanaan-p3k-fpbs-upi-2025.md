@@ -4,7 +4,7 @@ slugId: penerimaan-pelaksanaan-p3k-fpbs-upi-2025
 pubDate: "2025-09-19"
 author: "Faculty of Language and Literature Education, UPI"
 image:
-  url: "/images/berita/2025/09september/penerimaan-pelaksanaan-p3k-fpbs-upi-2025.webp"
+  url: "/images/berita/2025/9september/penerimaan-pelaksanaan-p3k-fpbs-upi-2025.webp"
   alt: "Signing of the P3K Program Collaboration between FPBS UPI and MTs Ar-Rohmah"
 tags: ["news"]
 lang: en

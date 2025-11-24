@@ -4,7 +4,7 @@ slugId: penerimaan-pelaksanaan-p3k-fpbs-upi-2025
 pubDate: "2025-09-19"
 author: "FPBS UPI"
 image:
-  url: "/images/berita/2025/09september/penerimaan-pelaksanaan-p3k-fpbs-upi-2025.webp"
+  url: "/images/berita/2025/9september/penerimaan-pelaksanaan-p3k-fpbs-upi-2025.webp"
   alt: "Penandatanganan kerja sama Program P3K antara FPBS UPI dan MTs Ar-Rohmah"
 tags: ["berita"]
 lang: id
