@@ -3,30 +3,30 @@ slugId: jerman-s1
 lang: en
 title: "Pendidikan Bahasa Jerman (S1)"
 menu:
-  - id: "profil"
-    label: "Tentang Prodi"
-  - id: "kurikulum"
-    label: "Kurikulum"
+  - id: "profile"
+    label: "About the Program"
+  - id: "curriculum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C065"
-  - id: "akreditasi"
-    label: "Akreditasi"
-  - id: "dosen"
-    label: "Dosen"
-  - id: "pengembangan-akademik"
-    label: "Pengembangan Akademik"
-  - id: "fasilitas"
-    label: "Fasilitas"
+  - id: "accreditation"
+    label: "Accreditation"
+  - id: "faculty-members"
+    label: "Faculty Members"
+  - id: "academic-development"
+    label: "Academic Development"
+  - id: "facilities"
+    label: "Facilities"
   - id: "jurnal"
     label: "Jurnal"
     external: "https://ejournal.upi.edu/index.php/allemania"
   - id: "tracer-study"
     label: "Tracer Study"
     external: "https://docs.google.com/forms/d/e/1FAIpQLScGh2j-yNcJU-Ctm6Kzm7uzs_bjksj3rc4dq5cL31R5bSoZRA/viewform"
-  - id: "pmb"
-    label: "PMB / Pendaftaran"
+  - id: "admissions"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
-  profil:
+  profile:
     title: "Tentang Pendidikan Bahasa Jerman S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -107,7 +107,7 @@ sections:
         </div>
       </section>
       
-  akreditasi:
+  accreditation:
     title: "Akreditasi Pendidikan Bahasa Jerman S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
@@ -143,7 +143,7 @@ sections:
       </section>
 
 
-  dosen:
+  faculty-members:
     title: "Dosen Pendidikan Bahasa Jerman S1"
     content: |
      <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
@@ -225,7 +225,7 @@ sections:
       </section>
 
 
-  fasilitas:
+  facilities:
     title: "Fasilitas"
     content: |
 
@@ -266,7 +266,7 @@ sections:
       </section>
 
 
-  pengembangan-akademik:
+  academic-development:
     title: "Pengembangan Akademik"
     content: |
       <!-- Section Penelitian Dosen -->

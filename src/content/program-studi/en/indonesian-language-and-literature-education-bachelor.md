@@ -3,22 +3,22 @@ slugId: indonesia-dik-s1
 lang: en
 title: "Pendidikan Bahasa dan Sastra Indonesia (S1)"
 menu:
-  - id: "profil"
-    label: "Tentang Prodi"
-  - id: "kurikulum"
-    label: "Kurikulum"
+  - id: "profile"
+    label: "About the Program"
+  - id: "curriculum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C015"
-  - id: "akreditasi"
-    label: "Akreditasi"
-  - id: "dosen"
-    label: "Dosen"
-  - id: "fasilitas"
-    label: "Fasilitas"
-  - id: "pmb"
-    label: "PMB / Pendaftaran"
+  - id: "accreditation"
+    label: "Accreditation"
+  - id: "faculty-members"
+    label: "Faculty Members"
+  - id: "facilities"
+    label: "Facilities"
+  - id: "admissions"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
-  profil:
+  profile:
     title: "Tentang Pendidikan Bahasa dan Sastra Indonesia (S1)"
     content: |
           <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -91,7 +91,7 @@ sections:
               <p class="text-gray-700 dark:text-gray-300"><em>(Konten akan diisi dengan testimoni alumni.)</em></p>
             </div>
             </section>
-  akreditasi:
+  accreditation:
     title: "Akreditasi Pendidikan Bahasa dan Sastra Indonesia (S1)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
@@ -131,7 +131,7 @@ sections:
 
         </div>
       </section>
-  fasilitas:
+  facilities:
     title: "Fasilitas"
     content: |
 
@@ -170,7 +170,7 @@ sections:
           </details>
         </div>
       </section>
-  dosen:
+  faculty-members:
     title: "Dosen Pendidikan Bahasa dan Sastra Indonesia (S1)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">

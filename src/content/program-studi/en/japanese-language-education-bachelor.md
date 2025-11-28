@@ -3,24 +3,24 @@ slugId: jepang-s1
 lang: en
 title: "Pendidikan Bahasa Jepang (S1)"
 menu:
-  - id: "profil"
-    label: "Tentang Prodi"
-  - id: "kurikulum"
-    label: "Kurikulum"
+  - id: "profile"
+    label: "About the Program"
+  - id: "curriculum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C055"
-  - id: "akreditasi"
-    label: "Akreditasi"
-  - id: "dosen"
-    label: "Dosen"
-  - id: "kerjasama"
-    label: "Kerja Sama"
-  - id: "fasilitas"
-    label: "Fasilitas"
-  - id: "pmb"
-    label: "PMB / Pendaftaran"
+  - id: "accreditation"
+    label: "Accreditation"
+  - id: "faculty-members"
+    label: "Faculty Members"
+  - id: "partnerships"
+    label: "Partnerships"
+  - id: "facilities"
+    label: "Facilities"
+  - id: "admissions"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
-  profil:
+  profile:
     title: "Tentang Pendidikan Bahasa Jepang S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -138,7 +138,7 @@ sections:
       </section>
 
 
-  akreditasi:
+  accreditation:
     title: "Akreditasi Pendidikan Bahasa Jepang S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-4">
@@ -177,7 +177,7 @@ sections:
       </section>
 
 
-  fasilitas:
+  facilities:
     title: "Fasilitas"
     content: |
 
@@ -219,7 +219,7 @@ sections:
       </section>
  
  
-  dosen:
+  faculty-members:
     title: "Dosen Pendidikan Bahasa Jepang S1"
     content: |
         <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -470,7 +470,7 @@ sections:
         </section>
 
 
-  kerjasama:
+  partnerships:
     title: "Kerja Sama"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">

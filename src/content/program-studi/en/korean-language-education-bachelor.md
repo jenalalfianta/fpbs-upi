@@ -3,14 +3,14 @@ slugId: korea-s1
 lang: en
 title: "Korean Language Education (Bachelor's Program)"
 menu:
-  - id: "about"
+  - id: "profile"
     label: "About the Program"
   - id: "accreditation"
     label: "Accreditation"
   - id: "curriculum"
     label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C115"
-  - id: "lecturers"
+  - id: "faculty-members"
     label: "Lecturers"
   - id: "organizational-structure"
     label: "Organizational Structure"
@@ -23,24 +23,24 @@ menu:
   - id: "journals"
     label: "Journals"
     external: "https://ejournal.upi.edu/index.php/JoKAL/index"
-  - id: "admission"
+  - id: "admissions"
     label: "Admission"
     external: "https://pmb.upi.edu/"
 i18n:
   enToId:
-    about: profil
+    profile: profil
     accreditation: akreditasi
     curriculum: kurikulum
-    lecturers: dosen
+    "faculty-members": dosen
     organizational-structure: struktur-organisasi
     facilities: fasilitas
     partnerships: kerja-sama
     research: penelitian
     journals: jurnal
-    admission: pmb
+    admissions: pmb
 
 sections:
-  about:
+  profile:
     title: "About the Bachelor's Program in Korean Language Education"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -315,7 +315,7 @@ sections:
         });
       </script>
 
-  lecturers:
+  faculty-members:
     title: "Lecturers of the Bachelor's Program in Korean Language Education"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">

@@ -18,7 +18,7 @@ menu:
     label: "Academic Development"
   - id: "facilities"
     label: "Facilities"
-  - id: "pmb"
+  - id: "admissions"
     label: "Admission / Enrollment"
     external: "https://pmb.upi.edu/"  
 

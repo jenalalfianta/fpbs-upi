@@ -28,16 +28,16 @@ menu:
     external: "https://pmb.upi.edu/"
 i18n:
   idToEn:
-    profil: about
+    profil: profile
     akreditasi: accreditation
     kurikulum: curriculum
-    dosen: lecturers
+    dosen: faculty-members
     struktur-organisasi: organizational-structure
     fasilitas: facilities
     kerja-sama: partnerships
     penelitian: research
     jurnal: journals
-    pmb: admission
+    pmb: admissions
 sections:
   profil:
     title: "Tentang Pendidikan Bahasa Korea S1"

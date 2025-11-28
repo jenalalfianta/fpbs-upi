@@ -3,28 +3,28 @@ slugId: inggris-nondik-s1
 lang: en
 title: "English Language and Literature (Bachelor's Degree)"
 menu:
-  - id: "profil"
+  - id: "profile"
     label: "About the Program"
-  - id: "kurikulum"
+  - id: "curriculum"
     label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C505"
-  - id: "akreditasi"
+  - id: "accreditation"
     label: "Accreditation"
-  - id: "dosen"
+  - id: "faculty-members"
     label: "Lecturers"
   - id: "qsranking"
     label: "QS Ranking"
-  - id: "fasilitas"
+  - id: "facilities"
     label: "Facilities"
-  - id: "prestasi"
+  - id: "achievements"
     label: "Achievements"
-  - id: "rekamjejak"
+  - id: "alumni-track-record"
     label: "Alumni Track Record"
-  - id: "pmb"
+  - id: "admissions"
     label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
-  profil:
+  profile:
     title: "About English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -147,7 +147,7 @@ sections:
       </section>
 
 
-  akreditasi:
+  accreditation:
     title: "Accreditation of English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
@@ -186,7 +186,7 @@ sections:
       </section>
 
 
-  dosen:
+  faculty-members:
     title: "Lecturers of English Language and Literature (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -433,7 +433,7 @@ sections:
       </section>
 
 
-  fasilitas:
+  facilities:
     title: "Facilities"
     content: |
       <!-- Facilities Section -->
@@ -474,7 +474,7 @@ sections:
       </section>
 
 
-  prestasi:
+  achievements:
     title: "Achievements of English Language and Literature Students (Bachelor's Degree)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -543,7 +543,7 @@ sections:
       </section>
 
 
-  rekamjejak:
+  "alumni-track-record":
     title: "Alumni Career Tracking"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-24 px-4">

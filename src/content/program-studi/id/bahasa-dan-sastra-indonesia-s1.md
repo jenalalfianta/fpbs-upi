@@ -104,7 +104,7 @@ sections:
       </section>
 
   profil:
-    title: "Tentang Pendidikan Bahasa dan Sastra Indonesia (S1)"
+    title: "Tentang Bahasa dan Sastra Indonesia (S1)"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
         <div class="max-w-6xl mx-auto px-4">

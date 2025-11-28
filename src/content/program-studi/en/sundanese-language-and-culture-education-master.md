@@ -3,23 +3,23 @@ slugId: sunda-s2
 lang: en
 title: "Pendidikan Bahasa dan Budaya Sunda (S2)"
 menu:
-  - id: "profil"
-    label: "Tentang Prodi"
-  - id: "kurikulum"
-    label: "Kurikulum"
+  - id: "profile"
+    label: "About the Program"
+  - id: "curriculum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/P206"
-  - id: "akreditasi"
-    label: "Akreditasi"
-  - id: "dosen"
-    label: "Dosen"
-  - id: "fasilitas"
-    label: "Fasilitas"
-  - id: "pmb"
-    label: "PMB / Pendaftaran"
+  - id: "accreditation"
+    label: "Accreditation"
+  - id: "faculty-members"
+    label: "Faculty Members"
+  - id: "facilities"
+    label: "Facilities"
+  - id: "admissions"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
 
-  akreditasi:
+  accreditation:
     title: "Akreditasi Pendidikan Bahasa dan Budaya Sunda S2"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 px-4">
@@ -41,7 +41,7 @@ sections:
         </div>
       </section>
 
-  fasilitas:
+  facilities:
     title: "Fasilitas"
     content: |
 

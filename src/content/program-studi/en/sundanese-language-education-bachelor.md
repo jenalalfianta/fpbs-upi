@@ -3,24 +3,24 @@ slugId: sunda-s1
 lang: en
 title: "Pendidikan Bahasa Sunda (S1)"
 menu:
-  - id: "profil"
-    label: "Tentang Prodi"
-  - id: "kurikulum"
-    label: "Kurikulum"
+  - id: "profile"
+    label: "About the Program"
+  - id: "curriculum"
+    label: "Curriculum"
     external: "https://kurikulum.upi.edu/struktur/prodi/C025"
-  - id: "akreditasi"
-    label: "Akreditasi"
-  - id: "pengembangan-akademik"
-    label: "Pengembangan Akademik"
-  - id: "fasilitas"
-    label: "Fasilitas"
-  - id: "dosen"
-    label: "Dosen"
-  - id: "pmb"
-    label: "PMB / Pendaftaran"
+  - id: "accreditation"
+    label: "Accreditation"
+  - id: "academic-development"
+    label: "Academic Development"
+  - id: "facilities"
+    label: "Facilities"
+  - id: "faculty-members"
+    label: "Faculty Members"
+  - id: "admissions"
+    label: "Admissions / Registration"
     external: "https://pmb.upi.edu/"
 sections:
-  profil:
+  profile:
     title: "Tentang Pendidikan Bahasa Sunda S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -107,7 +107,7 @@ sections:
       </section>
 
 
-  akreditasi:
+  accreditation:
     title: "Akreditasi Pendidikan Bahasa Sunda S1"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -143,7 +143,7 @@ sections:
         </div>
       </section>
 
-  fasilitas:
+  facilities:
     title: "Fasilitas"
     content: |
 
@@ -185,7 +185,7 @@ sections:
         </div>
       </section>
 
-  dosen:
+  faculty-members:
     title: "Dosen Pendidikan Bahasa Sunda S1"
     content: |
         <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
@@ -309,7 +309,7 @@ sections:
           </div>
         </section>
 
-  pengembangan-akademik:
+  academic-development:
     title: "Pengembangan Akademik"
     content: |
       <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12 md:pb-24 px-0">
