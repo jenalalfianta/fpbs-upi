@@ -26,6 +26,18 @@ menu:
   - id: "admission"
     label: "Admission"
     external: "https://pmb.upi.edu/"
+i18n:
+  enToId:
+    about: profil
+    accreditation: akreditasi
+    curriculum: kurikulum
+    lecturers: dosen
+    organizational-structure: struktur-organisasi
+    facilities: fasilitas
+    partnerships: kerja-sama
+    research: penelitian
+    journals: jurnal
+    admission: pmb
 
 sections:
   about:
