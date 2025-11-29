@@ -1,9 +1,20 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Ppid from '@/components/en/ppid/Ppid.astro';
-const slugId = 'page-ppid'
+const slugId = 'page-ppid';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'PPID' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
     <Ppid/>
 </Layout>
