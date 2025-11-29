@@ -10,8 +10,8 @@ function getSectionTitle(key, section) {
   return section?.title || (menu.find((item) => item.id === key)?.label) || key;
 }
 ---
-<section class="bg-white dark:bg-gray-900 pt-30 pb-0 px-4">
-  <div class="max-w-6xl mx-auto space-y-24">
+<section class="bg-white dark:bg-gray-900 pt-0 md:pt-0 pb-16 md:pb-20 px-4 md:px-6">
+  <div class="max-w-5xl mx-auto space-y-12 prodi-content pt-2">
     {Object.entries(sections).map(([key, section]) => {
       // Suntikkan carousel untuk setiap section content (ID & EN)
       const raw = section?.content ?? '';
@@ -19,10 +19,6 @@ function getSectionTitle(key, section) {
 
       return (
         <div id={key} data-content class={activeTab === key ? 'block' : 'hidden'}>
-          <h2 class="text-2xl md:text-3xl font-bold text-purple-900 dark:text-purple-400 mb-4">
-            {getSectionTitle(key, section)}
-          </h2>
-
           {section?.externalLink ? (
             <a
               href={section.externalLink}
@@ -44,3 +40,10 @@ function getSectionTitle(key, section) {
     })}
   </div>
 </section>
+
+<style>
+.prodi-content > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+</style>

@@ -1,9 +1,20 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import KontakFpbs from "../../components/kontak/KontakFpbs.astro";
-const slugId = 'page-fasilitas'
+const slugId = 'page-kontak';
+const pageHeading = 'Kontak';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
-	<KontakFpbs/>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Kontak' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <KontakFpbs/>
 </Layout>

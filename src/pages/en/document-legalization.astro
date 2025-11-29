@@ -1,9 +1,20 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import LegalisasiFpbs from '@/components/en/legalisasi/LegalisasiFpbs.astro';
-const slugId = 'page-legalisasi'
+const slugId = 'page-legalisasi';
+const pageHeading = 'Document Legalization';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'Document Legalization' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <LegalisasiFpbs />
 </Layout>

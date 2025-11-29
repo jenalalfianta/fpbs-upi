@@ -3,7 +3,8 @@ const { menuItems, activeTab, slug, prodiId } = Astro.props;
 const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 ---
 
-<div class="sticky top-[64px] md:top-[88px] w-full z-30 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
+<div class="sticky w-full z-30 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md"
+     style="top: var(--prodi-tab-offset, 72px);">
   <div class="max-w-6xl mx-auto">
     <div class="relative">
       <button id="menu-scroll-left"
@@ -101,5 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
   btnRight?.addEventListener('click', () => {
     scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
   });
+
+  const updateOffset = () => {
+    const nav = document.querySelector('nav.fixed');
+    const navHeight = nav?.offsetHeight || 72;
+    document.documentElement.style.setProperty('--prodi-tab-offset', `${navHeight}px`);
+  };
+  updateOffset();
+  window.addEventListener('resize', updateOffset);
 });
 </script>

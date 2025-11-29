@@ -19,7 +19,7 @@ if (!items.length) {
 ---
 
 <nav aria-label="Breadcrumb" class={`bg-white dark:bg-gray-900 ${className}`}>
-  <ol class="flex items-center gap-2 text-xs md:text-sm text-gray-600 dark:text-gray-300 overflow-x-auto no-scrollbar py-3 max-w-6xl mx-auto px-0">
+  <ol class="flex flex-wrap items-center gap-2 text-xs md:text-sm text-gray-600 dark:text-gray-300 py-3 max-w-6xl mx-auto px-0 break-words">
     {items.map((item, index) => {
       const isLast = index === items.length - 1;
       return (

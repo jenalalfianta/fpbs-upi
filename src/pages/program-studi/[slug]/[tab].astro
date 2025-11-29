@@ -13,6 +13,8 @@ const activeTab = tab || 'profil';
 const menuItems = prodiData.data.menu || [];
 const tabLabel = menuItems.find(item => item.id === activeTab)?.label || activeTab;
 const baseProdiPath = `/program-studi/${slug}`;
+const dynamicHeading = tabLabel;
+const dynamicSubtitle = prodiData.data.title;
 const breadcrumbItems = [
   { label: 'Beranda', href: '/index.html' },
   { label: 'Program Studi', href: '/profil/program-studi/index.html' },
@@ -38,8 +40,8 @@ export async function getStaticPaths() {
 ---
 
 <Layout
-  pageHeading={prodiData.data.title}
-  pageSubtitle="Program Studi FPBS UPI"
+  pageHeading={dynamicHeading}
+  pageSubtitle={dynamicSubtitle}
   breadcrumbItems={breadcrumbItems}
   pageHeadingOverlay="rgba(139,48,147,0.8)"
   pageHeadingAlign="left"

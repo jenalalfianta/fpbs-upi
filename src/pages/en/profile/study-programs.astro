@@ -1,9 +1,21 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import ProgramStudiFpbs from '@/components/en/prodi/ProgramStudiFpbs.astro';
-const slugId = 'page-prodi'
+const slugId = 'page-prodi';
+const pageHeading = 'Study Programs';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
-    <ProgramStudiFpbs/>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'Profile', href: '/en/profile/about/index.html' },
+    { label: 'Study Programs' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <ProgramStudiFpbs/>
 </Layout>

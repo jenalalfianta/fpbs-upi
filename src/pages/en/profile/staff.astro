@@ -1,10 +1,21 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import StafFpbs from '@/components/en/staf/StafFpbs.astro';
-const slugId = 'page-staf'
+const slugId = 'page-staf';
+const pageHeading = 'Staff';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'Staff' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <StafFpbs />
 </Layout>
 

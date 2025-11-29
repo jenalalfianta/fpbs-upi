@@ -1,10 +1,22 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import FasilitasFpbs from "../../components/fasilitas/FasilitasFpbs.astro";
-const slugId = 'page-fasilitas'
+const slugId = 'page-fasilitas';
+const pageHeading = 'Fasilitas';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Profil', href: '/profil/tentang/index.html' },
+    { label: 'Fasilitas' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
 	<FasilitasFpbs/>
 </Layout>
 

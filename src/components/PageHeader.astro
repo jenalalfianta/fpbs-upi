@@ -25,8 +25,6 @@ const {
   showText?: boolean;
 } = Astro.props;
 
-const showBreadcrumb = items && items.length > 0;
-
 if (!heading && (!items || items.length === 0)) {
   return null;
 }
@@ -49,47 +47,19 @@ if (!heading && (!items || items.length === 0)) {
     <div class="absolute inset-0 hidden dark:block" style={`background: ${overlayColorDark};`}></div>
     <div class={`relative max-w-6xl w-full mx-auto h-full px-4 flex pb-8 ${align === 'center' ? 'items-center text-center' : 'items-end'} justify-start`}>
       {showText ? (
-        <div>
+        <div class="max-w-full">
           {heading && (
-            <h1 class={`text-3xl md:text-4xl font-bold text-white drop-shadow ${uppercase ? 'uppercase' : ''}`}>
+            <h1 class={`text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow leading-tight break-normal ${uppercase ? 'uppercase' : ''}`}>
               {heading}
             </h1>
           )}
           {subtitle && (
-            <p class="text-xs md:text-sm font-semibold text-yellow-300 dark:text-amber-200 drop-shadow mt-1">
+            <p class="text-sm md:text-base font-semibold text-yellow-300 dark:text-amber-200 drop-shadow mt-1">
               {subtitle}
             </p>
           )}
-          {showBreadcrumb ? (
-            <div class="mt-3">
-              <Breadcrumb items={items} className="ph-breadcrumb px-0 py-0" />
-            </div>
-          ) : null}
         </div>
       ) : null}
     </div>
   </div>
 </section>
-
-<style is:global>
-  .ph-breadcrumb {
-    background: transparent;
-  }
-  .ph-breadcrumb ol {
-    color: #fdfcff;
-  }
-  .ph-breadcrumb a {
-    color: #fdfcff;
-  }
-  .ph-breadcrumb span {
-    color: #fdfcff;
-  }
-  .ph-breadcrumb .text-purple-700,
-  .ph-breadcrumb .dark\:text-purple-300 {
-    color: #fdfcff !important;
-  }
-  .ph-breadcrumb .text-gray-400,
-  .ph-breadcrumb .dark\:text-gray-500 {
-    color: #e5def0;
-  }
-</style>

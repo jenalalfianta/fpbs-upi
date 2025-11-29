@@ -1,9 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramStudiFpbs from '../../components/prodi/ProgramStudiFpbs.astro';
-const slugId = 'page-prodi'
+const slugId = 'page-prodi';
+const pageHeading = 'Program Studi';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
-    <ProgramStudiFpbs/>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Profil', href: '/profil/tentang/index.html' },
+    { label: 'Program Studi' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <ProgramStudiFpbs/>
 </Layout>

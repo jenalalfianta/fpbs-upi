@@ -1,9 +1,21 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import ZonaIntegritas from '@/components/en/zi/ZonaIntegritas.astro';
-const slugId = 'page-zi'
+const slugId = 'page-zi';
+const pageHeading = 'Integrity Zone';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'Integrity Zone' },
+  ]}
+  pageDescription="Integrity Zone FPBS UPI"
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <ZonaIntegritas />
 </Layout>

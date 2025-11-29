@@ -1,10 +1,21 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import PimpinanFpbs from '@/components/en/pimpinan/PimpinanFpbs.astro';
-const slugId = 'page-pimpinan'
+const slugId = 'page-pimpinan';
+const pageHeading = 'Leadership';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'Leadership' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <PimpinanFpbs />
 </Layout>
 

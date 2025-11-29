@@ -6,15 +6,27 @@ import Pimpinan from '../../components/profil/Pimpinan.astro';
 import StrukturOrganisasi from '../../components/profil/StrukturOrganisasi.astro';
 import Fakta from '../../components/profil/Fakta.astro';
 
-const slugId = 'page-tentang'
+const slugId = 'page-tentang';
+const pageHeading = 'Tentang FPBS';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
-    <Sejarah/>
-    <VisiMisi/>
-    <Pimpinan/>
-    <StrukturOrganisasi/>
-    <Fakta/>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Profil', href: '/profil/tentang/index.html' },
+    { label: 'Tentang' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <Sejarah/>
+  <VisiMisi/>
+  <Pimpinan/>
+  <StrukturOrganisasi/>
+  <Fakta/>
 </Layout>
  
 

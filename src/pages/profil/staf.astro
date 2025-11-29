@@ -1,10 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import StafFpbs from '../../components/staf/StafFpbs.astro';
-const slugId = 'page-staf'
+const slugId = 'page-staf';
+const pageHeading = 'Staf';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Staf' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <StafFpbs />
 </Layout>
 
