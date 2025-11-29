@@ -1,0 +1,65 @@
+---
+import Breadcrumb, { type BreadcrumbItem } from './Breadcrumb.astro';
+
+const {
+  heading,
+  items = [],
+  className = '',
+  imageSrc = '/heading.webp',
+  overlayColor = 'rgba(139,48,147,0.9)',
+  overlayColorDark = 'rgba(60,16,92,0.9)',
+  subtitle = '',
+  uppercase = false,
+  align = 'left',
+  showText = true,
+}: {
+  heading?: string;
+  items?: BreadcrumbItem[];
+  className?: string;
+  imageSrc?: string;
+  overlayColor?: string;
+  overlayColorDark?: string;
+  subtitle?: string;
+  uppercase?: boolean;
+  align?: 'left' | 'center';
+  showText?: boolean;
+} = Astro.props;
+
+if (!heading && (!items || items.length === 0)) {
+  return null;
+}
+---
+
+<section class={`w-full ${className}`}>
+  <div class="relative h-[300px] w-full overflow-hidden">
+    <div class="absolute inset-0 bg-cover ph-bg" style={`background-image: url('${imageSrc}');`}></div>
+    <style is:global>
+      .ph-bg {
+        background-position: center;
+      }
+      @media (max-width: 768px) {
+        .ph-bg {
+          background-position: 30% center;
+        }
+      }
+    </style>
+    <div class="absolute inset-0 dark:hidden" style={`background: ${overlayColor};`}></div>
+    <div class="absolute inset-0 hidden dark:block" style={`background: ${overlayColorDark};`}></div>
+    <div class={`relative max-w-6xl w-full mx-auto h-full px-4 flex pb-8 ${align === 'center' ? 'items-center text-center' : 'items-end'} justify-start`}>
+      {showText ? (
+        <div>
+          {heading && (
+            <h1 class={`text-3xl md:text-4xl font-bold text-white drop-shadow ${uppercase ? 'uppercase' : ''}`}>
+              {heading}
+            </h1>
+          )}
+          {subtitle && (
+            <p class="text-xs md:text-sm font-semibold text-yellow-300 dark:text-amber-200 drop-shadow mt-1">
+              {subtitle}
+            </p>
+          )}
+        </div>
+      ) : null}
+    </div>
+  </div>
+</section>

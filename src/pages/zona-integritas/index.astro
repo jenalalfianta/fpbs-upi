@@ -1,9 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ZonaIntegritas from '../../components/zi/ZonaIntegritas.astro';
-const slugId = 'page-zi'
+const slugId = 'page-zi';
+const pageHeading = 'Zona Integritas';
+const pageSubtitle = 'Fakultas Pendidikan Bahasa dan Sastra - UPI';
 ---
 
-<Layout>
-    <ZonaIntegritas/>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Zona Integritas' },
+  ]}
+  pageDescription="Zona Integritas FPBS UPI"
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <ZonaIntegritas />
 </Layout>

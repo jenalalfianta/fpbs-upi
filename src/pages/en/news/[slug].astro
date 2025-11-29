@@ -40,9 +40,15 @@ const displayDate = new Date(pubDate).toLocaleDateString('en-US', {
   month: 'long',
   year: 'numeric'
 });
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/en/index.html' },
+  { label: 'News', href: '/en/news/index.html' },
+  { label: title },
+];
 ---
 
-<Layout pageTitle={title}>
+<Layout pageTitle={title} pageHeading={title} breadcrumbItems={breadcrumbItems}>
   <main class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-24 antialiased">
     <div class="px-4 mx-auto max-w-screen-xl">
       <article class="prose mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:prose-invert">

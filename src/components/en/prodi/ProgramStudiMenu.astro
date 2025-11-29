@@ -3,28 +3,42 @@ const { menuItems, activeTab, slug, prodiId } = Astro.props;
 const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 ---
 
-<div class="fixed top-[56px] md:top-[80px] left-0 w-full z-10 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
+<div class="sticky top-[56px] md:top-[80px] w-full z-30 bg-white dark:bg-gray-900 border-t border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md">
   <div class="max-w-6xl mx-auto">
-    <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
-      <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
-        {menuItems.map(item => (
-          item.external ? (
-            <a href={item.external} target="_blank"
-              class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
-              {item.label}
-            </a>
-          ) : (
-            <a href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}    
-              class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
-                activeTab === item.id
-                  ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'
-                  : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}>
-              {item.label}
-            </a>
-          )
-        ))}
+    <div class="relative">
+      <button id="menu-scroll-left"
+        class="hidden absolute left-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition items-center justify-center">
+        <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing px-2">
+        <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
+          {menuItems.map(item => (
+            item.external ? (
+              <a href={item.external} target="_blank"
+                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+                {item.label}
+              </a>
+            ) : (
+              <a href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}    
+                class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
+                  activeTab === item.id
+                    ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'
+                    : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                }`}>
+                {item.label}
+              </a>
+            )
+          ))}
+        </div>
       </div>
+      <button id="menu-scroll-right"
+        class="hidden absolute right-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition items-center justify-center">
+        <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
   </div>
 </div>
@@ -42,9 +56,21 @@ const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const scrollContainer = document.getElementById('menu-scroll');
+  const btnLeft = document.getElementById('menu-scroll-left');
+  const btnRight = document.getElementById('menu-scroll-right');
   let isDown = false;
   let startX;
   let scrollLeft;
+
+  const updateArrows = () => {
+    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    if (btnLeft) btnLeft.classList.toggle('hidden', scrollContainer.scrollLeft <= 0);
+    if (btnRight) btnRight.classList.toggle('hidden', scrollContainer.scrollLeft >= maxScroll - 2);
+  };
+
+  scrollContainer.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
 
   scrollContainer.addEventListener('mousedown', (e) => {
     isDown = true;
@@ -66,6 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const x = e.pageX - scrollContainer.offsetLeft;
     const walk = (x - startX) * 2;
     scrollContainer.scrollLeft = scrollLeft - walk;
+    updateArrows();
+  });
+
+  btnLeft?.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+  });
+  btnRight?.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
   });
 });
 </script>

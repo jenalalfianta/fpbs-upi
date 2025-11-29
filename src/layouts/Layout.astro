@@ -1,12 +1,27 @@
 ---
 import "../styles/global.css";
 import { getPageTitle } from "../scripts/title.ts";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import PageHeader from "@/components/PageHeader.astro";
 
-const { pageTitle, pageDescription } = Astro.props;
+const {
+  pageTitle,
+  pageDescription,
+  breadcrumbItems,
+  showBreadcrumb = true,
+  pageHeading,
+  pageSubtitle,
+  pageHeadingOverlay,
+  pageHeadingAlign = 'left',
+  headingAfterSubheader = false,
+} = Astro.props;
 
 const pathname = Astro.url.pathname;
 const lang = pathname.startsWith('/en') ? 'en' : 'id';
-const title = pageTitle ?? getPageTitle(pathname);
+const baseSiteTitle = 'Fakultas Pendidikan Bahasa dan Sastra';
+const fallbackTitle = getPageTitle(pathname);
+const primaryTitle = pageHeading ?? pageTitle ?? fallbackTitle;
+const title = primaryTitle ? `${baseSiteTitle} - ${primaryTitle}` : baseSiteTitle;
 const description = pageDescription ?? "Website resmi Fakultas Pendidikan Bahasa dan Sastra Universitas Pendidikan Indonesia (FPBS UPI).";
 
 const Navbar = lang === 'en'
@@ -16,6 +31,69 @@ const Navbar = lang === 'en'
 const Footer = lang === 'en'
   ? (await import("../components/FooterEn.astro")).default
   : (await import("../components/Footer.astro")).default;
+
+const baseHome = lang === 'en' ? '/en/index.html' : '/index.html';
+const labels = {
+  home: { id: 'Beranda', en: 'Home' },
+  profile: { id: 'Profil', en: 'Profile' },
+  news: { id: 'Berita', en: 'News' },
+  studyPrograms: { id: 'Program Studi', en: 'Study Programs' },
+};
+
+function toTitleCase(str: string) {
+  return str.replace(/[-_]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+
+function buildAutoBreadcrumb(pathname: string) {
+  const clean = pathname.replace(/\/index\.html$/, '').replace(/^\/+/, '');
+  let segments = clean ? clean.split('/') : [];
+  const prefix = lang === 'en' ? '/en' : '';
+
+  if (lang === 'en' && segments[0] === 'en') {
+    segments = segments.slice(1);
+  }
+
+  if (segments.length === 0) return [];
+
+  const items = [{ label: labels.home[lang], href: baseHome }];
+
+  segments.forEach((seg, idx) => {
+    const isLast = idx === segments.length - 1;
+    const mapLabel =
+      (seg === 'profil' || seg === 'profile') ? labels.profile[lang] :
+      (seg === 'berita' || seg === 'news') ? labels.news[lang] :
+      (seg === 'program-studi' || seg === 'study-programs') ? labels.studyPrograms[lang] :
+      null;
+
+    const label = mapLabel ?? toTitleCase(seg);
+    // Jangan bikin link kalau hanya 1 segmen (mis. /profil) karena tidak ada halaman indeks
+    // Hindari link untuk segmen yang tidak punya landing (mis. /profil)
+    const hasLanding = !(seg === 'profil' || seg === 'profile');
+    const href = (segments.length === 1 || isLast || !hasLanding)
+      ? undefined
+      : `${prefix}/${segments.slice(0, idx + 1).join('/')}/index.html`;
+    items.push({ label, href });
+  });
+
+  return items;
+}
+
+const isHome =
+  pathname === '/' ||
+  pathname === '/index.html' ||
+  pathname === '/en' ||
+  pathname === '/en/' ||
+  pathname === '/en/index.html';
+
+const computedBreadcrumb = breadcrumbItems ?? (isHome ? [] : buildAutoBreadcrumb(pathname));
+const resolvedHeading = isHome ? undefined : (pageHeading ?? title);
+const resolvedSubtitle = isHome ? undefined : pageSubtitle;
+const shouldShowBreadcrumb = showBreadcrumb && !isHome && computedBreadcrumb?.length > 1;
+const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
 ---
 
 <!doctype html>
@@ -45,6 +123,30 @@ const Footer = lang === 'en'
 
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <Navbar />
+    {shouldShowHeader ? (
+      <PageHeader
+        heading={resolvedHeading}
+        subtitle={resolvedSubtitle}
+        uppercase={true}
+        items={headingAfterSubheader ? [] : (shouldShowBreadcrumb ? computedBreadcrumb : [])}
+        className="mt-0"
+        overlayColor={pageHeadingOverlay}
+        align={pageHeadingAlign}
+        showText={!headingAfterSubheader}
+      />
+    ) : null}
+
+    <slot name="subheader" />
+
+    {headingAfterSubheader && resolvedHeading ? (
+      <div class="max-w-6xl mx-auto px-4 py-6">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2 uppercase">
+          {resolvedHeading}
+        </h1>
+        {shouldShowBreadcrumb ? <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" /> : null}
+      </div>
+    ) : null}
+
     <main>
       <slot />
     </main>

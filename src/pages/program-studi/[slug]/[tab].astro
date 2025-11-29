@@ -11,6 +11,14 @@ if (!prodiData) throw new Error(`Data tidak ditemukan untuk slug: ${slug}`);
 
 const activeTab = tab || 'profil';
 const menuItems = prodiData.data.menu || [];
+const tabLabel = menuItems.find(item => item.id === activeTab)?.label || activeTab;
+const baseProdiPath = `/program-studi/${slug}`;
+const breadcrumbItems = [
+  { label: 'Beranda', href: '/index.html' },
+  { label: 'Program Studi', href: '/profil/program-studi/index.html' },
+  { label: prodiData.data.title, href: `${baseProdiPath}/profil/index.html` },
+  { label: tabLabel },
+];
 
 export async function getStaticPaths() {
   const entries = (await getCollection('program-studi')).filter(e => e.id.startsWith('id/'));
@@ -29,8 +37,12 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout>
-  <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
+<Layout
+  pageHeading={prodiData.data.title}
+  breadcrumbItems={breadcrumbItems}
+  headingAfterSubheader={true}
+>
+  <ProgramStudiMenu slot="subheader" activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
 
