@@ -25,6 +25,8 @@ const {
   showText?: boolean;
 } = Astro.props;
 
+const showBreadcrumb = items && items.length > 0;
+
 if (!heading && (!items || items.length === 0)) {
   return null;
 }
@@ -58,8 +60,36 @@ if (!heading && (!items || items.length === 0)) {
               {subtitle}
             </p>
           )}
+          {showBreadcrumb ? (
+            <div class="mt-3">
+              <Breadcrumb items={items} className="ph-breadcrumb px-0 py-0" />
+            </div>
+          ) : null}
         </div>
       ) : null}
     </div>
   </div>
 </section>
+
+<style is:global>
+  .ph-breadcrumb {
+    background: transparent;
+  }
+  .ph-breadcrumb ol {
+    color: #fdfcff;
+  }
+  .ph-breadcrumb a {
+    color: #fdfcff;
+  }
+  .ph-breadcrumb span {
+    color: #fdfcff;
+  }
+  .ph-breadcrumb .text-purple-700,
+  .ph-breadcrumb .dark\:text-purple-300 {
+    color: #fdfcff !important;
+  }
+  .ph-breadcrumb .text-gray-400,
+  .ph-breadcrumb .dark\:text-gray-500 {
+    color: #e5def0;
+  }
+</style>

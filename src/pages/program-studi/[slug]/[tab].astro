@@ -39,8 +39,10 @@ export async function getStaticPaths() {
 
 <Layout
   pageHeading={prodiData.data.title}
+  pageSubtitle="Program Studi FPBS UPI"
   breadcrumbItems={breadcrumbItems}
-  headingAfterSubheader={true}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
 >
   <ProgramStudiMenu slot="subheader" activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
