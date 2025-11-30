@@ -1,9 +1,21 @@
 ---
 import Berkala from '@/components/en/ppid/Berkala.astro';
 import Layout from '@/layouts/Layout.astro';
-const slugId = 'page-ppid-berkala'
+const slugId = 'page-ppid-berkala';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Mandatory Periodic Information';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'PPID', href: '/en/ppid/index.html' },
+    { label: 'Mandatory Periodic Information' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <Berkala />
 </Layout>

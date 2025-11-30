@@ -1,9 +1,21 @@
 ---
 import SertaMerta from '@/components/en/ppid/SertaMerta.astro';
 import Layout from '@/layouts/Layout.astro';
-const slugId = 'page-ppid-sertamerta'
+const slugId = 'page-ppid-sertamerta';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Emergency Disclosure Information';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'PPID', href: '/en/ppid/index.html' },
+    { label: 'Emergency Disclosure Information' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
   <SertaMerta />
 </Layout>

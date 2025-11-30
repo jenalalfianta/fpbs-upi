@@ -1,9 +1,21 @@
 ---
 import Berkala from '../../components/ppid/Berkala.astro';
 import Layout from '../../layouts/Layout.astro';
-const slugId = 'page-ppid-berkala'
+const slugId = 'page-ppid-berkala';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Informasi yang Wajib Disediakan dan Diumumkan Secara Berkala';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'PPID', href: '/ppid/index.html' },
+    { label: 'Informasi yang Wajib Disediakan dan Diumumkan Secara Berkala' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
     <Berkala/>
 </Layout>

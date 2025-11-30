@@ -1,9 +1,21 @@
 ---
 import SetiapSaat from '../../components/ppid/SetiapSaat.astro';
 import Layout from '../../layouts/Layout.astro';
-const slugId = 'page-ppid-setiapsaat'
+const slugId = 'page-ppid-setiapsaat';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Informasi yang Wajib Disediakan Setiap Saat';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'PPID', href: '/ppid/index.html' },
+    { label: 'Informasi yang Wajib Disediakan Setiap Saat' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
     <SetiapSaat/>
 </Layout>

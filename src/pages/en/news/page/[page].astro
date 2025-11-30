@@ -11,20 +11,23 @@ export async function getStaticPaths({ paginate }) {
 
 const { page } = Astro.props;
 const fixHtml = (url) => `${url}/index.html`;
+
+const pageHeading = 'FPBS News';
+const pageSubtitle = 'Faculty of Language and Literature Education - UPI';
 ---
 
-<Layout pageTitle="News">
-  <section class="bg-gray-50 dark:bg-gray-800 pt-10 md:pt-10 px-4">
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Home', href: '/en/index.html' },
+    { label: 'NEWS' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <section class="bg-gray-50 dark:bg-gray-800 pt-8 md:pt-10 pb-16 md:pb-20 px-4 md:px-6">
     <div class="mx-auto max-w-screen-xl">
-      <div class="mx-auto text-center mb-10">
-        <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          FPBS News
-        </h2>
-        <p class="font-light text-gray-500 dark:text-gray-300 text-base md:text-lg">
-          A collection of the latest information about events, agendas, and announcements from FPBS UPI.
-        </p>
-      </div>
-
       <div class="grid gap-8 lg:grid-cols-3">
         {page.data.map((post) => {
           const { title, pubDate, image, tags } = post.data;

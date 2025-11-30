@@ -1,9 +1,21 @@
 ---
 import SertaMerta from '../../components/ppid/SertaMerta.astro';
 import Layout from '../../layouts/Layout.astro';
-const slugId = 'page-ppid-sertamerta'
+const slugId = 'page-ppid-sertamerta';
+const pageHeading = 'PPID';
+const pageSubtitle = 'Informasi yang Wajib Diumumkan Secara Serta Merta';
 ---
 
-<Layout>
+<Layout
+  pageHeading={pageHeading}
+  pageSubtitle={pageSubtitle}
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'PPID', href: '/ppid/index.html' },
+    { label: 'Informasi yang Wajib Diumumkan Secara Serta Merta' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
     <SertaMerta/>
 </Layout>
