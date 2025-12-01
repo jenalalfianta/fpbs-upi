@@ -11,14 +11,18 @@ allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pub
 const fixHtml = (url) => `${url}/index.html`;
 ---
 
-<Layout pageTitle="Berita">
-  <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-12">
-    <div class="mx-auto max-w-screen-xl px-6 md:px-10 lg:px-14">
-      <div class="mx-auto max-w-screen-sm text-center mb-8">
-        <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          Berita FPBS
-        </h2>
-      </div>
+<Layout
+  pageHeading="Berita"
+  pageSubtitle="Fakultas Pendidikan Bahasa dan Sastra - UPI"
+  breadcrumbItems={[
+    { label: 'Beranda', href: '/index.html' },
+    { label: 'Berita' },
+  ]}
+  pageHeadingOverlay="rgba(139,48,147,0.8)"
+  pageHeadingAlign="left"
+>
+  <section class="bg-gray-50 dark:bg-gray-800 pt-8 md:pt-10 pb-16 md:pb-20 px-4 md:px-6">
+    <div class="max-w-6xl mx-auto">
 
       <div class="grid gap-8 lg:grid-cols-3">
         {allPosts.map((post) => {
@@ -39,7 +43,7 @@ const fixHtml = (url) => `${url}/index.html`;
                   <img src={image.url} alt={image.alt} class="w-full h-48 object-cover" />
                 )}
               </a>
-              <div class="flex flex-col justify-between flex-1 p-6">
+              <div class="flex flex-col gap-3 flex-1 p-6">
                 <div class="flex items-center justify-between mb-2">
                   <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-200 w-fit">
                     {tags?.[0] ?? 'Berita'}

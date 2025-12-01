@@ -18,12 +18,12 @@ if (!items.length) {
 }
 ---
 
-<nav aria-label="Breadcrumb" class={`bg-white dark:bg-gray-900 ${className}`}>
+<nav aria-label="Breadcrumb" class={`bg-gray-50 dark:bg-gray-800 ${className}`}>
   <ol class="flex flex-wrap items-center gap-2 text-xs md:text-sm text-gray-600 dark:text-gray-300 py-3 max-w-6xl mx-auto px-0 break-words">
     {items.map((item, index) => {
       const isLast = index === items.length - 1;
       return (
-        <li class="flex items-center gap-2 whitespace-nowrap">
+        <li class="flex items-center gap-2 whitespace-normal sm:whitespace-nowrap">
           {isLast || !item.href ? (
             <span
               aria-current={isLast ? 'page' : undefined}

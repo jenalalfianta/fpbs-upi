@@ -14,6 +14,7 @@ const {
   pageHeadingOverlay,
   pageHeadingAlign = 'left',
   headingAfterSubheader = false,
+  headingUppercase = true,
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -128,7 +129,7 @@ const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
       <PageHeader
         heading={resolvedHeading}
         subtitle={resolvedSubtitle}
-        uppercase={true}
+        uppercase={headingUppercase}
         items={headingAfterSubheader ? [] : (shouldShowBreadcrumb ? computedBreadcrumb : [])}
         className="mt-0"
         overlayColor={pageHeadingOverlay}
@@ -138,8 +139,10 @@ const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
     ) : null}
 
     {!headingAfterSubheader && shouldShowBreadcrumb ? (
-      <div class="max-w-6xl mx-auto px-4 py-4">
-        <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" />
+      <div class="w-full bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+          <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" />
+        </div>
       </div>
     ) : null}
 
