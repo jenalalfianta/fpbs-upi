@@ -1,30 +1,75 @@
 ---
 const programs = [
-  { name: "Pendidikan Bahasa dan Sastra Indonesia", level: "S1", slug: "pendidikan-bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-pen-nib" },
+  { name: "Pendidikan Bahasa dan Sastra Indonesia", level: "S1", slug: "pendidikan-bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-book" },
   { name: "Pendidikan Bahasa Indonesia", level: "S2", slug: "pendidikan-bahasa-indonesia-s2", icon: "fa-solid fa-book" },
   { name: "Pendidikan Bahasa Indonesia", level: "S3", slug: "pendidikan-bahasa-indonesia-s3", icon: "fa-solid fa-book" },
-  { name: "Bahasa dan Sastra Indonesia", level: "S1", slug: "bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-book-open" },
-  { name: "Pendidikan Bahasa Sunda", level: "S1", slug: "pendidikan-bahasa-sunda-s1", icon: "fa-solid fa-leaf" },
+  { name: "Bahasa dan Sastra Indonesia", level: "S1", slug: "bahasa-dan-sastra-indonesia-s1", icon: "fa-solid fa-pen-nib" },
+  { name: "Pendidikan Bahasa Sunda", level: "S1", slug: "pendidikan-bahasa-sunda-s1", icon: "fa-solid fa-masks-theater" },
   { name: "Pendidikan Bahasa dan Budaya Sunda", level: "S2", slug: "pendidikan-bahasa-dan-budaya-sunda-s2", icon: "fa-solid fa-masks-theater" },
   { name: "Pendidikan Bahasa Inggris", level: "S1", slug: "pendidikan-bahasa-inggris-s1", icon: "fa-solid fa-language" },
   { name: "Pendidikan Bahasa Inggris", level: "S2", slug: "pendidikan-bahasa-inggris-s2", icon: "fa-solid fa-language" },
   { name: "Pendidikan Bahasa Inggris", level: "S3", slug: "pendidikan-bahasa-inggris-s3", icon: "fa-solid fa-language" },
   { name: "Bahasa dan Sastra Inggris", level: "S1", slug: "bahasa-dan-sastra-inggris-s1", icon: "fa-solid fa-book-atlas" },
-  { name: "Pendidikan Bahasa Jerman", level: "S1", slug: "pendidikan-bahasa-jerman-s1", icon: "fa-solid fa-globe" },
-  { name: "Pendidikan Bahasa Arab", level: "S1", slug: "pendidikan-bahasa-arab-s1", icon: "fa-solid fa-file-lines" },
-  { name: "Pendidikan Bahasa Arab", level: "S2", slug: "pendidikan-bahasa-arab-s2", icon: "fa-solid fa-file-lines" },
-  { name: "Pendidikan Bahasa Jepang", level: "S1", slug: "pendidikan-bahasa-jepang-s1", icon: "fa-solid fa-circle-nodes" },
-  { name: "Pendidikan Bahasa Jepang", level: "S2", slug: "pendidikan-bahasa-jepang-s2", icon: "fa-solid fa-circle-nodes" },
-  { name: "Pendidikan Bahasa Perancis", level: "S1", slug: "pendidikan-bahasa-perancis-s1", icon: "fa-solid fa-champagne-glasses" },
-  { name: "Pendidikan Bahasa Korea", level: "S1", slug: "pendidikan-bahasa-korea-s1", icon: "fa-solid fa-user-graduate" },
+  { name: "Pendidikan Bahasa Jerman", level: "S1", slug: "pendidikan-bahasa-jerman-s1", icon: "fa-solid fa-landmark" },
+  { name: "Pendidikan Bahasa Arab", level: "S1", slug: "pendidikan-bahasa-arab-s1", icon: "fa-solid fa-book-quran" },
+  { name: "Pendidikan Bahasa Arab", level: "S2", slug: "pendidikan-bahasa-arab-s2", icon: "fa-solid fa-book-quran" },
+  { name: "Pendidikan Bahasa Jepang", level: "S1", slug: "pendidikan-bahasa-jepang-s1", icon: "fa-solid fa-torii-gate" },
+  { name: "Pendidikan Bahasa Jepang", level: "S2", slug: "pendidikan-bahasa-jepang-s2", icon: "fa-solid fa-torii-gate" },
+  { name: "Pendidikan Bahasa Perancis", level: "S1", slug: "pendidikan-bahasa-perancis-s1", icon: "fa-solid fa-wine-glass" },
+  { name: "Pendidikan Bahasa Korea", level: "S1", slug: "pendidikan-bahasa-korea-s1", icon: "fa-solid fa-yin-yang" },
 ];
 ---
 
 <section class="bg-white dark:bg-gray-900 pt-8 md:pt-10 pb-16 md:pb-20 px-4 md:px-6">
-  <div class="max-w-6xl mx-auto pl-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid gap-4 md:grid-cols-[2fr_1fr] mb-8">
+      <div class="grid gap-3 md:grid-cols-2 bg-purple-50 dark:bg-gray-800 border border-purple-100 dark:border-gray-700 rounded-xl p-4 md:p-5">
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Program</label>
+          <select id="filter-level-id" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <option value="">Semua Program</option>
+            <option value="S1">Sarjana (S1)</option>
+            <option value="S2">Magister (S2)</option>
+            <option value="S3">Doktor (S3)</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Bidang Bahasa</label>
+          <select id="filter-lang-id" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <option value="">Semua Bidang</option>
+            <option value="indonesia">Bahasa Indonesia</option>
+            <option value="sunda">Bahasa Sunda</option>
+            <option value="inggris">Bahasa Inggris</option>
+            <option value="jerman">Bahasa Jerman</option>
+            <option value="arab">Bahasa Arab</option>
+            <option value="jepang">Bahasa Jepang</option>
+            <option value="perancis">Bahasa Perancis</option>
+            <option value="korea">Bahasa Korea</option>
+          </select>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-amber-50 via-red-50 to-gray-50 dark:from-amber-900/40 dark:via-red-900/30 dark:to-gray-900/60 border border-amber-200 dark:border-amber-700 rounded-xl shadow-sm p-4 flex flex-col gap-3 justify-center text-left">
+        <p class="text-sm font-semibold text-gray-900 dark:text-white">Penerimaan Mahasiswa Baru</p>
+        <a href="https://pmb.upi.edu/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 rounded-md transition-colors shadow-sm">
+          Kunjungi PMB UPI →
+        </a>
+      </div>
+    </div>
+
+    <div id="prodi-grid-id" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {programs.map((prodi) => (
-        <div class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out">
+        <div
+          class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out"
+          data-level={prodi.level}
+          data-lang={prodi.slug.includes('indonesia') ? 'indonesia' :
+            prodi.slug.includes('sunda') ? 'sunda' :
+            prodi.slug.includes('inggris') ? 'inggris' :
+            prodi.slug.includes('jerman') ? 'jerman' :
+            prodi.slug.includes('arab') ? 'arab' :
+            prodi.slug.includes('jepang') ? 'jepang' :
+            prodi.slug.includes('perancis') ? 'perancis' :
+            prodi.slug.includes('korea') ? 'korea' : 'other'}
+        >
           <div class="flex flex-col items-center gap-3 mb-4">
             <i class={`${prodi.icon} text-purple-700 text-3xl transform group-hover:scale-110 transition duration-300`}></i>
             <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-snug">
@@ -41,5 +86,24 @@ const programs = [
       ))}
     </div>
   </div>
+
+  <script is:inline>
+    const levelSelect = document.querySelector('#filter-level-id');
+    const langSelect = document.querySelector('#filter-lang-id');
+    const cards = document.querySelectorAll('#prodi-grid-id > div');
+
+    function applyFilter() {
+      const level = levelSelect.value;
+      const lang = langSelect.value;
+      cards.forEach(card => {
+        const matchLevel = !level || card.dataset.level === level;
+        const matchLang = !lang || card.dataset.lang === lang;
+        card.classList.toggle('hidden', !(matchLevel && matchLang));
+      });
+    }
+
+    levelSelect?.addEventListener('change', applyFilter);
+    langSelect?.addEventListener('change', applyFilter);
+  </script>
 </section>
 

@@ -17,7 +17,7 @@ function renderContent(html) {
 ---
 
 <section class="bg-white dark:bg-gray-900 pt-0 md:pt-0 pb-16 md:pb-20 px-4 md:px-6">
-  <div class="max-w-6xl mx-auto space-y-12 prodi-content pt-2 pl-4">
+  <div class="max-w-6xl mx-auto space-y-12 prodi-content pt-2">
     {Object.entries(sections).map(([key, section]) => (
       <div id={key} data-content class={activeTab === key ? 'block' : 'hidden'}>
         {section?.externalLink ? (

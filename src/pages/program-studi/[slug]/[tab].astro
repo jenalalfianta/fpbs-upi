@@ -46,7 +46,9 @@ export async function getStaticPaths() {
   pageHeadingOverlay="rgba(139,48,147,0.8)"
   pageHeadingAlign="left"
 >
-  <ProgramStudiMenu slot="subheader" activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
+  <div class="mt-4 mb-4">
+    <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
+  </div>
   <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
 

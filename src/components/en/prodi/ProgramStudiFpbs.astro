@@ -1,31 +1,76 @@
 ---
 const programs = [
-  { name: "Indonesian Language and Literature Education", level: "Bachelor", slug: "indonesian-language-and-literature-education-bachelor", icon: "fa-solid fa-pen-nib" },
+  { name: "Indonesian Language and Literature Education", level: "Bachelor", slug: "indonesian-language-and-literature-education-bachelor", icon: "fa-solid fa-book" },
   { name: "Indonesian Language Education", level: "Master", slug: "indonesian-language-education-master", icon: "fa-solid fa-book" },
   { name: "Indonesian Language Education", level: "Doctorate", slug: "indonesian-language-education-doctorate", icon: "fa-solid fa-book" },
-  { name: "Indonesian Language and Literature", level: "Bachelor", slug: "indonesian-language-and-literature-bachelor", icon: "fa-solid fa-book-open" },
-  { name: "Sundanese Language Education", level: "Bachelor", slug: "sundanese-language-education-bachelor", icon: "fa-solid fa-leaf" },
+  { name: "Indonesian Language and Literature", level: "Bachelor", slug: "indonesian-language-and-literature-bachelor", icon: "fa-solid fa-pen-nib" },
+  { name: "Sundanese Language Education", level: "Bachelor", slug: "sundanese-language-education-bachelor", icon: "fa-solid fa-masks-theater" },
   { name: "Sundanese Language and Culture Education", level: "Master", slug: "sundanese-language-and-culture-education-master", icon: "fa-solid fa-masks-theater" },
   { name: "English Language Education", level: "Bachelor", slug: "english-language-education-bachelor", icon: "fa-solid fa-language" },
   { name: "English Language Education", level: "Master", slug: "english-language-education-master", icon: "fa-solid fa-language" },
   { name: "English Language Education", level: "Doctorate", slug: "english-language-education-doctorate", icon: "fa-solid fa-language" },
   { name: "English Language and Literature", level: "Bachelor", slug: "english-language-and-literature-bachelor", icon: "fa-solid fa-book-atlas" },
-  { name: "German Language Education", level: "Bachelor", slug: "german-language-education-bachelor", icon: "fa-solid fa-globe" },
-  { name: "Arabic Language Education", level: "Bachelor", slug: "arabic-language-education-bachelor", icon: "fa-solid fa-file-lines" },
-  { name: "Arabic Language Education", level: "Master", slug: "arabic-language-education-master", icon: "fa-solid fa-file-lines" },
-  { name: "Japanese Language Education", level: "Bachelor", slug: "japanese-language-education-bachelor", icon: "fa-solid fa-circle-nodes" },
-  { name: "Japanese Language Education", level: "Master", slug: "japanese-language-education-master", icon: "fa-solid fa-circle-nodes" },
-  { name: "French Language Education", level: "Bachelor", slug: "french-language-education-bachelor", icon: "fa-solid fa-champagne-glasses" },
-  { name: "Korean Language Education", level: "Bachelor", slug: "korean-language-education-bachelor", icon: "fa-solid fa-user-graduate" },
+  { name: "German Language Education", level: "Bachelor", slug: "german-language-education-bachelor", icon: "fa-solid fa-landmark" },
+  { name: "Arabic Language Education", level: "Bachelor", slug: "arabic-language-education-bachelor", icon: "fa-solid fa-book-quran" },
+  { name: "Arabic Language Education", level: "Master", slug: "arabic-language-education-master", icon: "fa-solid fa-book-quran" },
+  { name: "Japanese Language Education", level: "Bachelor", slug: "japanese-language-education-bachelor", icon: "fa-solid fa-torii-gate" },
+  { name: "Japanese Language Education", level: "Master", slug: "japanese-language-education-master", icon: "fa-solid fa-torii-gate" },
+  { name: "French Language Education", level: "Bachelor", slug: "french-language-education-bachelor", icon: "fa-solid fa-wine-glass" },
+  { name: "Korean Language Education", level: "Bachelor", slug: "korean-language-education-bachelor", icon: "fa-solid fa-yin-yang" },
 ];
 ---
 
 <section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-25 md:pb-25 px-4">
-  <div class="max-w-6xl mx-auto text-center pl-4">
+  <div class="max-w-6xl mx-auto text-center">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="text-left grid gap-4 md:grid-cols-[2fr_1fr] mb-8">
+      <div class="grid gap-3 md:grid-cols-2 bg-purple-50 dark:bg-gray-800 border border-purple-100 dark:border-gray-700 rounded-xl p-4 md:p-5">
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Program</label>
+          <select id="filter-level-en" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <option value="">All Programs</option>
+            <option value="Bachelor">Bachelor (S1)</option>
+            <option value="Master">Master (S2)</option>
+            <option value="Doctorate">Doctorate (S3)</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Language Field</label>
+          <select id="filter-lang-en" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <option value="">All Fields</option>
+            <option value="indonesian">Indonesian</option>
+            <option value="sundanese">Sundanese</option>
+            <option value="english">English</option>
+            <option value="german">German</option>
+            <option value="arabic">Arabic</option>
+            <option value="japanese">Japanese</option>
+            <option value="french">French</option>
+            <option value="korean">Korean</option>
+          </select>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-amber-50 via-red-50 to-gray-50 dark:from-amber-900/40 dark:via-red-900/30 dark:to-gray-900/60 border border-amber-200 dark:border-amber-700 rounded-xl shadow-sm p-4 flex flex-col gap-3 justify-center text-left">
+        <p class="text-sm font-semibold text-gray-900 dark:text-white">Penerimaan Mahasiswa Baru</p>
+        <a href="https://pmb.upi.edu/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 rounded-md transition-colors shadow-sm">
+          Visit PMB UPI →
+        </a>
+      </div>
+    </div>
+
+    <div id="prodi-grid-en" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {programs.map((prodi) => (
-        <div class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out">
+        <div
+          class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out"
+          data-level={prodi.level}
+          data-lang={prodi.slug.includes('indonesian') ? 'indonesian' :
+            prodi.slug.includes('sundanese') ? 'sundanese' :
+            prodi.slug.includes('english') ? 'english' :
+            prodi.slug.includes('german') ? 'german' :
+            prodi.slug.includes('arabic') ? 'arabic' :
+            prodi.slug.includes('japanese') ? 'japanese' :
+            prodi.slug.includes('french') ? 'french' :
+            prodi.slug.includes('korean') ? 'korean' : 'other'}
+        >
           <div class="flex flex-col items-center gap-3 mb-4">
             <i class={`${prodi.icon} text-purple-700 text-3xl transform group-hover:scale-110 transition duration-300`}></i>
             <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-snug">
@@ -42,5 +87,24 @@ const programs = [
       ))}
     </div>
   </div>
+
+  <script is:inline>
+    const levelSelectEn = document.querySelector('#filter-level-en');
+    const langSelectEn = document.querySelector('#filter-lang-en');
+    const cardsEn = document.querySelectorAll('#prodi-grid-en > div');
+
+    function applyFilterEn() {
+      const level = levelSelectEn.value;
+      const lang = langSelectEn.value;
+      cardsEn.forEach(card => {
+        const matchLevel = !level || card.dataset.level === level;
+        const matchLang = !lang || card.dataset.lang === lang;
+        card.classList.toggle('hidden', !(matchLevel && matchLang));
+      });
+    }
+
+    levelSelectEn?.addEventListener('change', applyFilterEn);
+    langSelectEn?.addEventListener('change', applyFilterEn);
+  </script>
 </section>
 

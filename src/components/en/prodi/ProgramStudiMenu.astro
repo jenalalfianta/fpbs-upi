@@ -3,30 +3,29 @@ const { menuItems, activeTab, slug, prodiId } = Astro.props;
 const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 ---
 
-<div class="sticky w-full z-30 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3 shadow-md"
-     style="top: var(--prodi-tab-offset, 72px);">
-  <div class="max-w-6xl mx-auto">
-    <div class="relative">
+<div class="w-full flex justify-center">
+  <div class="bg-purple-50 dark:bg-gray-800 border border-purple-200 dark:border-purple-700 rounded-[999px] shadow px-3 py-3 md:px-4 md:py-4 inline-block w-full max-w-6xl">
+    <div class="relative w-full flex justify-center">
       <button id="menu-scroll-left"
         class="hidden absolute left-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition items-center justify-center">
         <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
-      <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing px-2">
+      <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing px-2 max-w-full inline-block">
         <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
           {menuItems.map(item => (
             item.external ? (
               <a href={item.external} target="_blank"
-                class="px-3 py-2 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition whitespace-nowrap">
+                class="px-3 py-2 bg-white/90 dark:bg-gray-900 text-purple-800 dark:text-purple-200 rounded-lg hover:text-purple-700 dark:hover:text-purple-300 hover:bg-white transition whitespace-nowrap shadow-sm">
                 {item.label}
               </a>
             ) : (
               <a href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}    
-                class={`px-3 py-2 rounded-lg whitespace-nowrap transition ${
+                class={`px-3 py-2 rounded-lg whitespace-nowrap transition shadow-sm ${
                   activeTab === item.id
-                    ? 'bg-purple-200 text-purple-900 dark:bg-purple-700 dark:text-white font-semibold'
-                    : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                    ? 'bg-purple-600 text-white dark:bg-purple-500 dark:text-white font-semibold'
+                    : 'bg-white/90 dark:bg-gray-900 text-purple-800 dark:text-purple-200 hover:text-purple-700 dark:hover:text-purple-300 hover:bg-white'
                 }`}>
                 {item.label}
               </a>

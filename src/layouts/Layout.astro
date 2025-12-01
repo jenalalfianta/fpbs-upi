@@ -15,6 +15,7 @@ const {
   pageHeadingAlign = 'left',
   headingAfterSubheader = false,
   headingUppercase = true,
+  breadcrumbBackground = 'bg-white dark:bg-gray-900',
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -139,9 +140,9 @@ const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
     ) : null}
 
     {!headingAfterSubheader && shouldShowBreadcrumb ? (
-      <div class="w-full bg-gray-50 dark:bg-gray-800">
+      <div class={`w-full ${breadcrumbBackground}`}>
         <div class="max-w-6xl mx-auto px-4 py-4">
-          <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" />
+          <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" backgroundClass={breadcrumbBackground} />
         </div>
       </div>
     ) : null}
@@ -151,7 +152,7 @@ const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
         <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2 uppercase">
           {resolvedHeading}
         </h1>
-        {shouldShowBreadcrumb ? <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" /> : null}
+        {shouldShowBreadcrumb ? <Breadcrumb items={computedBreadcrumb} className="px-0 py-0" backgroundClass={breadcrumbBackground} /> : null}
       </div>
     ) : null}
 

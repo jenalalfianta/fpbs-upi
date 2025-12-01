@@ -15,6 +15,8 @@ export const slugMap = {
   "/en/ppid/emergency-disclosure-information/index.html": "/ppid/informasi-yang-wajib-diumumkan-secara-serta-merta/index.html",
   "/profil/fasilitas/index.html": "/en/profile/facilities/index.html",
   "/en/profile/facilities/index.html": "/profil/fasilitas/index.html",
+  "/profil/kontak/index.html": "/en/profile/contact/index.html",
+  "/en/profile/contact/index.html": "/profil/kontak/index.html",
   "/profil/pimpinan/index.html": "/en/profile/leadership/index.html",
   "/en/profile/leadership/index.html": "/profil/pimpinan/index.html",
   "/profil/program-studi/index.html": "/en/profile/study-programs/index.html",
