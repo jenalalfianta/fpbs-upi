@@ -33,6 +33,7 @@ const Navbar = lang === 'en'
 const Footer = lang === 'en'
   ? (await import("../components/FooterEn.astro")).default
   : (await import("../components/Footer.astro")).default;
+const SearchModal = (await import("../components/SearchModal.astro")).default;
 
 const baseHome = lang === 'en' ? '/en/index.html' : '/index.html';
 const labels = {
@@ -125,6 +126,7 @@ const shouldShowHeader = !isHome && (shouldShowBreadcrumb || !!resolvedHeading);
 
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <Navbar />
+    <SearchModal />
     <slot name="subheader" />
     {shouldShowHeader ? (
       <PageHeader

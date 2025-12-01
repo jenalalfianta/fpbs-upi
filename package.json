@@ -4,8 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "generate:slugs": "node src/scripts/generateslugmap.js",
-    "dev": "npm run generate:slugs && astro dev",
-    "build": "npm run generate:slugs && astro build",
+    "generate:search": "node src/scripts/generateSearchIndex.js",
+    "dev": "npm run generate:slugs && npm run generate:search && astro dev",
+    "build": "npm run generate:slugs && npm run generate:search && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

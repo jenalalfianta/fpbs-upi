@@ -1,0 +1,123 @@
+---
+const searchIndexUrl = '/search-index.json';
+---
+
+<div id="search-overlay" class="fixed inset-0 z-[10000] hidden">
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity"></div>
+  <div class="relative max-w-3xl w-full mx-auto mt-16 md:mt-24 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
+    <div class="flex items-center gap-3 px-4 py-2 border-b border-gray-200 dark:border-gray-800">
+      <div class="flex items-center gap-2 w-full rounded-full bg-white dark:bg-gray-900 px-3 py-1 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700">
+        <svg class="w-5 h-5 text-purple-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+        </svg>
+        <input id="search-input" type="text" placeholder="Cari..." class="w-full bg-transparent focus:outline-none text-sm md:text-base text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ring-0 focus:ring-0 border-none" />
+      </div>
+      <button id="search-close" class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-2 py-1">esc</button>
+    </div>
+    <div id="search-results" class="max-h-[70vh] overflow-y-auto px-4 py-3 space-y-4 text-sm md:text-base text-gray-800 dark:text-gray-100 bg-gradient-to-b from-purple-50/70 via-white to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-900">
+      <p class="text-gray-500 dark:text-gray-400 text-sm">Mulai ketik untuk melihat hasil...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const searchIndexUrl = '/search-index.json';
+  const overlay = document.getElementById('search-overlay');
+  const openers = document.querySelectorAll('.js-open-search');
+  const closeBtn = document.getElementById('search-close');
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  let indexData = null;
+  let loading = false;
+  const currentLang = (document.documentElement.lang || 'id').startsWith('en') ? 'en' : 'id';
+  if (input) {
+    input.placeholder = currentLang === 'en' ? 'Search...' : 'Cari...';
+  }
+
+  const openModal = () => {
+    overlay.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+    input?.focus();
+    if (!indexData && !loading) {
+      loading = true;
+      fetch(searchIndexUrl)
+        .then(res => res.json())
+        .then(data => {
+          indexData = (data || []).filter(item => item.lang === currentLang);
+        })
+        .catch(() => { results.innerHTML = '<p class="text-red-600 text-sm">Gagal memuat data pencarian.</p>'; })
+        .finally(() => { loading = false; });
+    }
+  };
+
+  const closeModal = () => {
+    overlay.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    input.value = '';
+    results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Mulai ketik untuk melihat hasil...</p>';
+  };
+
+  openers.forEach(btn => btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  }));
+  closeBtn?.addEventListener('click', closeModal);
+  overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay || e.target.classList.contains('absolute')) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) closeModal();
+  });
+
+  const renderResults = (items) => {
+    if (!items.length) {
+      results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Tidak ada hasil.</p>';
+      return;
+    }
+    const grouped = items.reduce((acc, item) => {
+      const key = item.type ?? 'Lainnya';
+      acc[key] = acc[key] || [];
+      acc[key].push(item);
+      return acc;
+    }, {});
+
+    results.innerHTML = Object.entries(grouped).map(([group, list]) => `
+      <div class="space-y-2">
+        <h4 class="text-xs md:text-sm font-semibold text-purple-700 dark:text-purple-200 uppercase tracking-wide">${group}</h4>
+        <div class="space-y-2">
+          ${list.map(it => `
+            <a href="${it.url}" class="block border border-purple-100/80 dark:border-purple-800/60 rounded-lg px-3 py-2 bg-white/95 dark:bg-gray-900 hover:border-purple-300 hover:bg-purple-50/80 dark:hover:bg-gray-800 dark:hover:border-purple-500 hover:shadow-sm transition-colors">
+              <p class="text-gray-800 dark:text-gray-100 font-normal leading-snug">${it.title}</p>
+              ${it.description ? `<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-2 font-normal">${it.description}</p>` : ''}
+            </a>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+  };
+
+  const normalize = (s) => (s || '').toLowerCase();
+
+  let debounceTimer;
+  input?.addEventListener('input', () => {
+    const query = normalize(input.value);
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      if (!indexData || !query || query.length < 2) {
+        results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Ketik minimal 2 karakter...</p>';
+        return;
+      }
+      const terms = query.split(/\s+/).filter(Boolean);
+      const filtered = indexData.filter(item => {
+        const hay = normalize(item.title + ' ' + (item.description || '') + ' ' + (item.type || ''));
+        return terms.every(t => hay.includes(t));
+      }).slice(0, 50);
+      renderResults(filtered);
+    }, 180);
+  });
+
+  // Pastikan klik hasil bisa navigasi (dan tutup modal).
+});
+</script>
