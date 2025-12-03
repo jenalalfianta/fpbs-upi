@@ -10,189 +10,28 @@ const berita = (await getCollection('berita'))
   .slice(0, 6);
 
 ---
-  <section class="bg-gray-50 dark:bg-gray-800 m-0 p-0">
-    <style>
-      .carousel-wrapper {
-        height: clamp(220px, 60vw, 760px);
-        padding: 0 !important;
-        margin: 0 !important;
-      }
-      @media (min-width: 768px) {
-        .carousel-wrapper {
-          height: clamp(420px, 55vw, 760px);
-        }
-      }
-      .carousel-slide {
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        transition: opacity 0.7s ease-in-out;
-        pointer-events: none;
-      }
-      .carousel-slide.active {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .carousel-wrapper img {
-        object-fit: contain;
-        object-position: top;
-        width: 100%;
-        height: 100%;
-      }
-      .carousel-wrapper:hover .carousel-arrow {
-        opacity: 1;
-      }
-      .carousel-arrow {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      .carousel-arrow span {
-        background-color: rgba(0, 0, 0, 0.35);
-      }
-      @media (max-width: 767px) {
-        .carousel-arrow {
-          opacity: 0;
-          pointer-events: none;
-        }
-      }
-    </style>
-
-    <div class="relative w-full carousel-wrapper overflow-hidden bg-gray-50 dark:bg-gray-800 m-0 p-0">
-      <div class="carousel-slide active">
-        <img src="/images/beranda/zi.webp" class="w-full h-full" alt="Slide ZI" />
-      </div>
-      <button type="button" class="carousel-arrow absolute top-0 left-0 z-20 flex items-center justify-center h-full px-4 group focus:outline-none" data-action="prev">
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </span>
-      </button>
-      <button type="button" class="carousel-arrow absolute top-0 right-0 z-20 flex items-center justify-center h-full px-4 group focus:outline-none" data-action="next">
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
-          </svg>
-        </span>
-      </button>
-
-      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20" data-dots></div>
+  <section class="relative bg-gray-900 text-white">
+    <div class="absolute inset-0">
+      <img src="/images/beranda/hero.webp" alt="FPBS UPI Hero" class="w-full h-full object-cover object-[60%_35%] md:object-[center_30%]" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#1f0f3d]/85 via-[#311a5c]/70 to-[#1f0f3d]/45"></div>
     </div>
-
-    <script>
-      (() => {
-        const root = document.currentScript?.previousElementSibling;
-        if (!root) return;
-
-        const slides = root.querySelectorAll('.carousel-slide');
-        const dotsContainer = root.querySelector('[data-dots]');
-        const btnPrev = root.querySelector('[data-action="prev"]');
-        const btnNext = root.querySelector('[data-action="next"]');
-        const intervalMs = 8000;
-        if (!slides.length || !dotsContainer) return;
-
-        let current = 0;
-        let timer;
-        let touchStartX = 0;
-        let isSwiping = false;
-
-        function renderDots() {
-          dotsContainer.innerHTML = '';
-          slides.forEach((_, i) => {
-            const dot = document.createElement('button');
-            dot.type = 'button';
-            dot.className = 'w-3 h-3 rounded-full ' + (i === 0 ? 'bg-white' : 'bg-gray-400/70');
-            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
-            dot.addEventListener('click', () => showSlide(i, true));
-            dotsContainer.appendChild(dot);
-          });
-        }
-
-        function updateDots() {
-          Array.from(dotsContainer.children).forEach((dot, i) => {
-            dot.classList.toggle('bg-white', i === current);
-            dot.classList.toggle('bg-gray-400/70', i !== current);
-          });
-        }
-
-        function showSlide(index, resetTimer = false) {
-          slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-          });
-          current = index;
-          updateDots();
-          if (resetTimer) restartAuto();
-        }
-
-        function nextSlide() {
-          showSlide((current + 1) % slides.length);
-        }
-
-        function prevSlide() {
-          showSlide((current - 1 + slides.length) % slides.length);
-        }
-
-        function startAuto() {
-          stopAuto();
-          timer = setInterval(nextSlide, intervalMs);
-        }
-
-        function stopAuto() {
-          if (timer) {
-            clearInterval(timer);
-            timer = null;
-          }
-        }
-
-        function restartAuto() {
-          stopAuto();
-          startAuto();
-        }
-
-        btnPrev?.addEventListener('click', () => {
-          prevSlide();
-          restartAuto();
-        });
-        btnNext?.addEventListener('click', () => {
-          nextSlide();
-          restartAuto();
-        });
-
-        root.addEventListener('mouseenter', stopAuto);
-        root.addEventListener('mouseleave', startAuto);
-
-        root.addEventListener('touchstart', (event) => {
-          if (!event.touches.length) return;
-          touchStartX = event.touches[0].clientX;
-          isSwiping = true;
-          stopAuto();
-        }, { passive: true });
-
-        root.addEventListener('touchmove', (event) => {
-          if (!isSwiping || !event.touches.length) return;
-          const deltaX = event.touches[0].clientX - touchStartX;
-          if (Math.abs(deltaX) > 40) {
-            isSwiping = false;
-            if (deltaX > 0) {
-              prevSlide();
-            } else {
-              nextSlide();
-            }
-            restartAuto();
-          }
-        }, { passive: true });
-
-        root.addEventListener('touchend', () => {
-          isSwiping = false;
-          startAuto();
-        });
-
-        renderDots();
-        updateDots();
-        showSlide(0);
-        startAuto();
-      })();
-    </script>
+    <div class="relative max-w-screen-xl mx-auto px-4 md:px-8 py-14 md:py-24 flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
+      <div class="w-full md:w-3/4 space-y-3 sm:space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/12 border border-white/20 text-[10px] sm:text-xs md:text-base font-semibold text-white uppercase tracking-wide">
+          Fakultas Pendidikan Bahasa dan Sastra · Universitas Pendidikan Indonesia
+        </div>
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-snug sm:leading-tight text-white drop-shadow-sm max-w-3xl sm:max-w-4xl">
+          Pusat unggulan pendidikan, penelitian, dan pengembangan bahasa, sastra, dan budaya berstandar nasional dan internasional.
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-purple-100/90 leading-relaxed max-w-2xl sm:max-w-3xl">
+          Membangun generasi kritis, kreatif, dan berdaya saing melalui pendidikan bermutu, riset inovatif, dan jejaring global.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 pt-3 flex-wrap">
+          <a href="/profil/program-studi/index.html" class="inline-flex items-center justify-center px-5 py-3 rounded-full bg-white text-purple-800 font-semibold shadow hover:shadow-lg transition-transform hover:-translate-y-0.5">Lihat Program Studi</a>
+          <a href="https://pmb.upi.edu/" class="inline-flex items-center justify-center px-5 py-3 rounded-full border border-red-200 bg-white/95 text-red-700 font-semibold shadow-sm hover:shadow transition-colors hover:bg-white" target="_blank" rel="noopener">Penerimaan Mahasiswa Baru</a>
+        </div>
+      </div>
+    </div>
   </section>
 
 <section class="bg-gray-50 dark:bg-gray-800 py-8 md:py-16 px-4 md:px-8">

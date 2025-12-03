@@ -24,19 +24,19 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 
 <div aria-hidden="true" class="invisible pointer-events-none">
   <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-700">
-    <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
+    <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-3 md:gap-6">
       <a href="/en/" class="flex items-center gap-3">
         <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
       </a>
-      <div class="flex items-center md:order-2 gap-3 md:gap-4">
-        <button type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-purple-200 text-purple-700 shadow-sm hover:bg-purple-50 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
+      <div class="flex items-center md:order-2 gap-2 md:gap-4">
+        <button type="button" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 text-purple-700 dark:text-purple-200 shadow-sm hover:bg-purple-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="7"></circle>
             <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
           </svg>
           <span class="text-sm font-semibold">Search</span>
         </button>
-        <div class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg">
+        <div class="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-gray-900 dark:text-white rounded-lg">
           <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" /> EN
         </div>
         <div class="text-gray-500 dark:text-gray-300 rounded-lg text-sm p-2"></div>
@@ -56,15 +56,15 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
   </nav>
 </div>
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
-  <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
+  <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-3 md:gap-6">
     
     <a href="/en/" class="flex items-center gap-3">
       <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
     </a>
 
     
-    <div class="flex items-center md:order-2 gap-3 md:gap-4">
-      <button type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-purple-200 text-purple-700 shadow-sm hover:bg-purple-50 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
+    <div class="flex items-center md:order-2 gap-2 md:gap-4">
+      <button type="button" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 text-purple-700 dark:text-purple-200 shadow-sm hover:bg-purple-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="7"></circle>
           <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
@@ -72,7 +72,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
         <span class="text-sm font-semibold">Search</span>
       </button>
       <button type="button" data-dropdown-toggle="language-dropdown-menu"
-        class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+        class="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
         {lang == 'en' ? (
           <>
             <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" />
@@ -138,7 +138,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
     </div>
     
     <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
-      <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col md:flex-row font-medium text-sm md:text-base p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-9 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
         <li><a href="/en/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Home</a></li>
 
