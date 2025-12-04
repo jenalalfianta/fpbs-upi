@@ -23,27 +23,28 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 ---
 
 <div aria-hidden="true" class="invisible pointer-events-none">
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-700">
+  <nav class="bg-white/90 backdrop-blur border-gray-200 dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] w-full border-b border-gray-200 dark:border-white/10">
     <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-3 md:gap-6">
       <a href="/en/" class="flex items-center gap-3">
         <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
       </a>
-      <div class="flex items-center md:order-2 gap-2 md:gap-4">
-        <button type="button" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 text-purple-700 dark:text-purple-200 shadow-sm hover:bg-purple-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
+      <div class="flex items-center md:order-2 gap-1 sm:gap-1.5 md:gap-2">
+        <button type="button" class="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-100 hover:from-white hover:to-gray-200 dark:hover:to-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-500 js-open-search text-xs sm:text-sm active:translate-y-[1px] transition border border-gray-200 dark:border-gray-600">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="7"></circle>
             <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
           </svg>
-          <span class="text-sm font-semibold">Search</span>
+          <span class="hidden sm:inline font-semibold">Search</span>
         </button>
-        <div class="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-gray-900 dark:text-white rounded-lg">
-          <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" /> EN
+        <div class="inline-flex items-center font-medium justify-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 text-xs sm:text-sm text-gray-700 dark:text-gray-100 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] transition border border-gray-300/90 dark:border-gray-600/90">
+          <img src="https://flagcdn.com/gb.svg" class="h-3.5 w-5 object-cover rounded-sm me-0 sm:me-1.5" alt="UK Flag" />
+          <span class="hidden sm:inline">EN</span>
         </div>
-        <div class="text-gray-500 dark:text-gray-300 rounded-lg text-sm p-2"></div>
-        <div class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"></div>
+        <div class="text-gray-500 dark:text-gray-300 rounded-xl text-xs sm:text-sm p-1.5 sm:p-2 h-9 sm:h-10 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] border border-gray-200/90 dark:border-gray-600/90"></div>
+        <div class="inline-flex items-center p-1.5 sm:p-2 w-9 h-9 sm:w-10 sm:h-10 justify-center text-xs sm:text-sm text-gray-500 rounded-xl md:hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] border border-gray-200/90 dark:border-gray-600/90"></div>
       </div>
       <div class="w-full hidden md:flex md:w-auto md:order-1">
-        <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 rounded-2xl md:rounded-none bg-gray-50 md:bg-transparent md:space-x-6 border border-gray-100 dark:border-gray-700 dark:bg-gray-800 md:border-0 md:shadow-none md:backdrop-blur-0 md:dark:bg-transparent md:dark:border-0">
           <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Home</span></li>
           <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Profile</span></li>
           <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">PPID</span></li>
@@ -55,7 +56,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
     </div>
   </nav>
 </div>
-<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
+<nav class="bg-white/90 backdrop-blur border-gray-200 dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-white/10">
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-3 md:gap-6">
     
     <a href="/en/" class="flex items-center gap-3">
@@ -63,20 +64,20 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
     </a>
 
     
-    <div class="flex items-center md:order-2 gap-2 md:gap-4">
-      <button type="button" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 text-purple-700 dark:text-purple-200 shadow-sm hover:bg-purple-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-300 js-open-search">
+    <div class="flex items-center md:order-2 gap-1 sm:gap-1.5 md:gap-2">
+      <button type="button" class="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-100 hover:from-white hover:to-gray-200 dark:hover:to-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-500 js-open-search text-xs sm:text-sm active:translate-y-[1px] transition border border-gray-300/90 dark:border-gray-600/90">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="7"></circle>
           <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
         </svg>
-        <span class="text-sm font-semibold">Search</span>
+        <span class="hidden sm:inline font-semibold">Search</span>
       </button>
       <button type="button" data-dropdown-toggle="language-dropdown-menu"
-        class="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+        class="inline-flex items-center font-medium justify-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 text-xs sm:text-sm text-gray-700 dark:text-gray-100 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 hover:from-white hover:to-gray-200 dark:hover:to-gray-600 dark:hover:text-white transition-colors active:translate-y-[1px] border border-gray-200 dark:border-gray-600">
         {lang == 'en' ? (
           <>
-            <img src="https://flagcdn.com/gb.svg" class="h-4 w-6 object-cover rounded-sm me-2" alt="UK Flag" />
-            EN
+            <img src="https://flagcdn.com/gb.svg" class="h-3.5 w-5 object-cover rounded-sm me-0 sm:me-1.5" alt="UK Flag" />
+            <span class="hidden sm:inline">EN</span>
           </>
         ) : (
           <>
@@ -86,7 +87,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
                 <path fill="#fff" d="M0 240h640v240H0z"/>
               </g>
             </svg>
-            ID
+            <span class="hidden sm:inline">ID</span>
           </>
         )}
       </button>
@@ -115,7 +116,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 
       
       <button id="theme-toggle" type="button"
-        class="text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2 transition-colors">
+        class="text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl text-xs sm:text-sm p-1.5 sm:p-2 h-9 sm:h-10 w-9 sm:w-10 flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] transition-colors border border-gray-200 dark:border-gray-600">
         <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364l-1.414-1.414M6.05 6.05L4.636 4.636
@@ -129,7 +130,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 
       
       <button data-collapse-toggle="navbar-language" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+        class="inline-flex items-center p-1.5 sm:p-2 w-9 h-9 sm:w-10 sm:h-10 justify-center text-xs sm:text-sm text-gray-500 rounded-xl md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] border border-gray-200/90 dark:border-gray-600/90">
         <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M1 1h15M1 7h15M1 13h15"/>
@@ -138,7 +139,7 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
     </div>
     
     <div class="w-full hidden md:flex md:w-auto md:order-1" id="navbar-language">
-      <ul class="flex flex-col md:flex-row font-medium text-sm md:text-base p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-9 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col md:flex-row font-medium text-sm md:text-base p-4 md:p-0 mt-4 md:mt-0 rounded-2xl md:rounded-none bg-gray-50 md:bg-transparent md:space-x-9 border border-gray-100 dark:border-gray-700 dark:bg-gray-800 md:border-0 md:shadow-none md:backdrop-blur-0 md:dark:bg-transparent md:dark:border-0">
 
         <li><a href="/en/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Home</a></li>
 

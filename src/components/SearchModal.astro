@@ -32,6 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let indexData = null;
   let loading = false;
   const currentLang = (document.documentElement.lang || 'id').startsWith('en') ? 'en' : 'id';
+  const copy = currentLang === 'en'
+    ? {
+        start: 'Start typing to see results...',
+        none: 'No results found.',
+        min: 'Type at least 2 characters...',
+        error: 'Failed to load search data.'
+      }
+    : {
+        start: 'Mulai ketik untuk melihat hasil...',
+        none: 'Tidak ada hasil.',
+        min: 'Ketik minimal 2 karakter...',
+        error: 'Gagal memuat data pencarian.'
+      };
   if (input) {
     input.placeholder = currentLang === 'en' ? 'Search...' : 'Cari...';
   }
@@ -40,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.classList.remove('hidden');
     document.body.classList.add('overflow-hidden');
     input?.focus();
+    results.innerHTML = `<p class="text-gray-500 dark:text-gray-400 text-sm">${copy.start}</p>`;
     if (!indexData && !loading) {
       loading = true;
       fetch(searchIndexUrl)
@@ -47,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
           indexData = (data || []).filter(item => item.lang === currentLang);
         })
-        .catch(() => { results.innerHTML = '<p class="text-red-600 text-sm">Gagal memuat data pencarian.</p>'; })
+        .catch(() => { results.innerHTML = `<p class="text-red-600 text-sm">${copy.error}</p>`; })
         .finally(() => { loading = false; });
     }
   };
@@ -56,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.classList.add('hidden');
     document.body.classList.remove('overflow-hidden');
     input.value = '';
-    results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Mulai ketik untuk melihat hasil...</p>';
+    results.innerHTML = `<p class="text-gray-500 dark:text-gray-400 text-sm">${copy.start}</p>`;
   };
 
   openers.forEach(btn => btn.addEventListener('click', (e) => {
@@ -73,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const renderResults = (items) => {
     if (!items.length) {
-      results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Tidak ada hasil.</p>';
+      results.innerHTML = `<p class="text-gray-500 dark:text-gray-400 text-sm">${copy.none}</p>`;
       return;
     }
     const grouped = items.reduce((acc, item) => {
@@ -106,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
       if (!indexData || !query || query.length < 2) {
-        results.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">Ketik minimal 2 karakter...</p>';
+        results.innerHTML = `<p class="text-gray-500 dark:text-gray-400 text-sm">${copy.min}</p>`;
         return;
       }
       const terms = query.split(/\s+/).filter(Boolean);

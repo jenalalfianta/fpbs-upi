@@ -10,17 +10,18 @@ const berita = (await getCollection('berita'))
   .slice(0, 6);
 
 ---
-  <section class="relative bg-gray-900 text-white">
+  <section class="relative text-white bg-[#1b1233] dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)]">
     <div class="absolute inset-0">
-      <img src="/images/beranda/hero.webp" alt="FPBS UPI Hero" class="w-full h-full object-cover object-[60%_35%] md:object-[center_30%]" />
-      <div class="absolute inset-0 bg-gradient-to-r from-[#1f0f3d]/85 via-[#311a5c]/70 to-[#1f0f3d]/45"></div>
+      <img src="/images/beranda/hero.webp" alt="FPBS UPI Hero" class="w-full h-full object-cover object-[30%_35%] md:object-[center_30%]" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#1f0f3d]/85 via-[#311a5c]/70 to-[#1f0f3d]/45 dark:from-[#0b132a]/90 dark:via-[#111a33]/70 dark:to-[#0b1020]/75"></div>
     </div>
     <div class="relative max-w-screen-xl mx-auto px-4 md:px-8 py-14 md:py-24 flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
       <div class="w-full md:w-3/4 space-y-3 sm:space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/12 border border-white/20 text-[10px] sm:text-xs md:text-base font-semibold text-white uppercase tracking-wide">
-          Fakultas Pendidikan Bahasa dan Sastra · Universitas Pendidikan Indonesia
+        <div class="flex flex-col items-start gap-0.5 sm:gap-1 md:gap-2 text-base sm:text-lg md:text-xl font-semibold text-white text-left leading-snug md:leading-tight tracking-wide md:tracking-[0.08em]">
+          <span>Fakultas Pendidikan Bahasa dan Sastra</span>
+          <span>Universitas Pendidikan Indonesia</span>
         </div>
-        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-snug sm:leading-tight text-white drop-shadow-sm max-w-3xl sm:max-w-4xl">
+        <h1 class="text-xl sm:text-3xl md:text-4xl font-extrabold leading-snug sm:leading-tight text-white drop-shadow-sm max-w-3xl sm:max-w-4xl">
           Pusat unggulan pendidikan, penelitian, dan pengembangan bahasa, sastra, dan budaya berstandar nasional dan internasional.
         </h1>
         <p class="text-sm sm:text-base md:text-lg text-purple-100/90 leading-relaxed max-w-2xl sm:max-w-3xl">
@@ -34,92 +35,142 @@ const berita = (await getCollection('berita'))
     </div>
   </section>
 
-<section class="bg-gray-50 dark:bg-gray-800 py-8 md:py-16 px-4 md:px-8">
-  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row md:items-center gap-12">
-    
-    <div class="w-full md:w-2/3 text-gray-800 dark:text-gray-100 h-full flex flex-col justify-center">
-      <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4 uppercase">
-        Sambutan Dekan
-      </h2>
-      <p class="text-justify text-base md:text-lg leading-relaxed mb-4">
-        Selamat datang di website Fakultas Pendidikan Bahasa dan Sastra, Universitas Pendidikan Indonesia. Kami berkomitmen untuk memberikan layanan pendidikan bahasa dan sastra yang memiliki peran penting dalam membantu mahasiswa mengembangkan kemampuan berpikir kritis, ekspresi diri, dan pemahaman yang lebih mendalam tentang bahasa dan sastra.
-      </p>
-    </div>
-    
-    <div class="w-full md:w-auto flex flex-col items-center text-center">
-      <img
-        src="/images/beranda/dekanfpbs.webp"
-        alt="Wawan Gunawan, M.Ed., Ph.D."
-        class="rounded-lg shadow-md object-cover w-full md:w-[340px]"
-      />
-      <p class="font-semibold mt-4 text-purple-700 dark:text-purple-400 text-base md:text-lg">
-        Wawan Gunawan, M.Ed., Ph.D.
-      </p>
+<section class="bg-[radial-gradient(120%_120%_at_10%_20%,#f5f7ff_0%,#f1e6ff_42%,#fff7ff_78%)] dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] py-10 md:py-18 px-4 md:px-8">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#fdfbff] via-[#f3e8ff] to-[#e9ddff] text-gray-900 dark:text-gray-100 shadow-lg md:shadow-xl dark:bg-[radial-gradient(130%_130%_at_20%_10%,#121a32_0%,#0e1426_50%,#0a0f1f_95%)] dark:border dark:border-white/5">
+      <div class="absolute -left-16 top-8 h-48 w-48 rounded-full bg-purple-300/30 blur-3xl"></div>
+      <div class="absolute right-0 bottom-0 h-64 w-64 bg-gradient-to-tr from-purple-400/25 to-indigo-300/25 clip-path-diag opacity-80"></div>
+
+      <div class="grid md:grid-cols-[auto_minmax(0,1fr)] md:grid-rows-[auto_auto] items-start md:items-center gap-8 md:gap-x-4 md:gap-y-8 lg:gap-x-5 xl:gap-x-6 px-6 py-10 sm:px-8 md:px-14 md:py-14 relative z-10">
+        <div class="space-y-5 order-1 md:order-2 md:col-start-2 md:row-start-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 dark:bg-purple-900/40 text-base font-semibold text-purple-800 dark:text-purple-200 uppercase tracking-wide border border-white/40 dark:border-gray-700/60">
+            Sambutan Dekan
+          </div>
+          <div class="relative p-4 sm:p-6 md:p-7 rounded-2xl bg-transparent dark:bg-transparent border-0 shadow-none backdrop-blur-0">
+            <span class="absolute -left-2 -top-6 text-7xl md:text-8xl text-purple-400/35 dark:text-purple-400/25 select-none" aria-hidden="true">"</span>
+            <span class="absolute -right-3 -bottom-10 text-7xl md:text-8xl text-purple-400/35 dark:text-purple-400/20 select-none" aria-hidden="true">"</span>
+            <p class="relative text-base md:text-lg leading-relaxed md:leading-[1.9] text-gray-900 dark:text-gray-100 text-justify">
+              Selamat datang di website Fakultas Pendidikan Bahasa dan Sastra, Universitas Pendidikan Indonesia. Kami berkomitmen untuk memberikan layanan pendidikan bahasa dan sastra yang memiliki peran penting dalam membantu mahasiswa mengembangkan kemampuan berpikir kritis, ekspresi diri, dan pemahaman yang lebih mendalam tentang bahasa dan sastra.
+            </p>
+            <div class="relative space-y-1 pt-4 text-left hidden md:block">
+              <p class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">Wawan Gunawan, M.Ed., Ph.D.</p>
+              <p class="text-sm md:text-base text-purple-700 dark:text-purple-200">Dekan FPBS UPI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-start order-2 md:order-1 md:row-span-2">
+          <div class="relative">
+            <div class="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-purple-400/30 blur-3xl"></div>
+            <div class="absolute -right-6 -bottom-6 h-24 w-24 rounded-full bg-indigo-400/25 blur-3xl"></div>
+            <img
+              src="/images/beranda/dekanfpbs.webp"
+              alt="Wawan Gunawan, M.Ed., Ph.D."
+              class="relative rounded-2xl w-full max-w-[400px] aspect-square md:aspect-auto md:w-[340px] md:h-[340px] object-cover object-[50%_30%] shadow-lg border border-white/60 dark:border-gray-800"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-1 pt-2 text-center md:hidden order-3">
+          <p class="text-lg font-semibold text-gray-900 dark:text-white">Wawan Gunawan, M.Ed., Ph.D.</p>
+          <p class="text-sm text-purple-700 dark:text-purple-200">Dekan FPBS UPI</p>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
 
   
   
-  <section class="bg-gray-50 dark:bg-gray-800 py-8 md:py-16 px-4 md:px-8 block md:hidden">
-    <div class="max-w-screen-xl mx-auto flex flex-col gap-6">
-      
-      <div class="text-gray-800 dark:text-gray-100">
-        <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4 uppercase">Tentang FPBS</h2>
-        <p class="text-justify text-base leading-relaxed">
-          Pada tahun 1963, FKIP dan Institut Pendidikan Guru (yang berada di bawah Departemen Pendidikan) digabungkan menjadi Institut Keguruan dan Ilmu Pendidikan (IKIP), dan Fakultas Keguruan Sastra dan Seni (FKSS) secara de facto merupakan salah satu fakultasnya. Namun, FKSS diakui secara resmi pada tahun 1964 melalui Instruksi Menteri Pendidikan Tinggi dan Ilmu Pengetahuan No. 128 tahun 1964 yang memiliki 4 (empat) jurusan dan 2 (dua) seksi.
-        </p>
-      </div>
-      
-      <div class="aspect-video rounded-lg overflow-hidden shadow-md">
-        <iframe 
-          class="w-full h-full"
-          src="https://www.youtube.com/embed/et3smxctl-U?si=1hg3xOV99Dcqnppl"
-          title="Tentang FPBS"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      
-      <div class="text-right">
-        <a href="/profil/tentang/index.html" class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="bg-gray-50 dark:bg-gray-800 py-8 md:py-16 px-4 md:px-8 hidden md:flex">
-    <div class="max-w-screen-xl mx-auto flex flex-row items-center gap-10">
-      
-      <div class="w-1/2 aspect-video rounded-lg overflow-hidden shadow-md">
-        <iframe 
-          class="w-full h-full"
-          src="https://www.youtube.com/embed/et3smxctl-U?si=1hg3xOV99Dcqnppl"
-          title="Tentang FPBS"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      
-      <div class="w-1/2 text-gray-800 dark:text-gray-100">
-        <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4 uppercase">Tentang FPBS</h2>
-        <p class="text-justify text-base md:text-lg leading-relaxed mb-6">
-          Pada tahun 1963, FKIP dan Institut Pendidikan Guru (yang berada di bawah Departemen Pendidikan) digabungkan menjadi Institut Keguruan dan Ilmu Pendidikan (IKIP), dan Fakultas Keguruan Sastra dan Seni (FKSS) secara de facto merupakan salah satu fakultasnya. Namun, FKSS diakui secara resmi pada tahun 1964 melalui Instruksi Menteri Pendidikan Tinggi dan Ilmu Pengetahuan No. 128 tahun 1964 yang memiliki 4 (empat) jurusan dan 2 (dua) seksi.
-        </p>
-        <a href="/profil/tentang/index.html" class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya »</a>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="bg-gray-50 dark:bg-gray-800 py-8 md:py-16 px-4 md:px-8">
+  <section class="bg-[radial-gradient(120%_120%_at_10%_20%,#f5f7ff_0%,#f1e6ff_42%,#fff7ff_78%)] dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] py-8 md:py-16 px-4 md:px-8 block md:hidden">
     <div class="max-w-screen-xl mx-auto">
-      <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-8 uppercase">Berita Terbaru</h2>
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div class="relative overflow-hidden rounded-3xl bg-white/85 dark:bg-[#0f1528]/80 border border-white/60 dark:border-white/10 shadow-lg md:shadow-xl">
+        <div class="absolute -left-10 -top-14 h-40 w-40 bg-gradient-to-br from-purple-200/60 to-indigo-200/50 blur-3xl"></div>
+        <div class="absolute right-6 bottom-0 h-32 w-32 bg-gradient-to-tr from-indigo-200/60 to-purple-200/60 blur-2xl"></div>
+
+        <div class="relative space-y-6 p-6">
+          <div class="inline-flex md:hidden items-center gap-2 px-3 py-1 rounded-full bg-purple-100/90 text-base font-semibold text-purple-800 uppercase tracking-wide border border-white/70">
+            Tentang FPBS
+          </div>
+          <div class="relative overflow-hidden rounded-2xl border border-white/70 dark:border-white/10 shadow-lg bg-white/90 dark:bg-[#0f172a]/85">
+            <div class="absolute -left-6 -top-6 h-20 w-20 bg-purple-200/60 blur-2xl"></div>
+            <iframe 
+              class="relative w-full aspect-video rounded-2xl"
+              src="https://www.youtube.com/embed/et3smxctl-U?si=1hg3xOV99Dcqnppl"
+              title="Tentang FPBS"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="space-y-3 text-gray-800 dark:text-gray-100">
+            <div class="hidden md:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 dark:bg-purple-900/40 text-base font-semibold text-purple-800 dark:text-purple-200 uppercase tracking-wide border border-white/70 dark:border-white/10">
+              Tentang FPBS
+            </div>
+            <p class="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-justify">
+              Pada tahun 1963, FKIP dan Institut Pendidikan Guru (yang berada di bawah Departemen Pendidikan) digabungkan menjadi Institut Keguruan dan Ilmu Pendidikan (IKIP), dan Fakultas Keguruan Sastra dan Seni (FKSS) secara de facto merupakan salah satu fakultasnya. Namun, FKSS diakui secara resmi pada tahun 1964 melalui Instruksi Menteri Pendidikan Tinggi dan Ilmu Pengetahuan No. 128 tahun 1964 yang memiliki 4 (empat) jurusan dan 2 (dua) seksi.
+            </p>
+            <div class="pt-2 text-right">
+              <a href="/profil/tentang/index.html" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-full shadow-sm transition-colors">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-[radial-gradient(120%_120%_at_10%_20%,#f5f7ff_0%,#f1e6ff_42%,#fff7ff_78%)] dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] py-8 md:py-16 px-4 md:px-8 hidden md:flex">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] items-center gap-12 lg:gap-16">
+      <div class="space-y-5 text-gray-800 dark:text-gray-100">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 dark:bg-purple-900/40 text-base font-semibold text-purple-800 dark:text-purple-200 uppercase tracking-wide border border-white/70 dark:border-white/10">
+          Tentang FPBS
+        </div>
+        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-200 text-justify">
+          Pada tahun 1963, FKIP dan Institut Pendidikan Guru (yang berada di bawah Departemen Pendidikan) digabungkan menjadi Institut Keguruan dan Ilmu Pendidikan (IKIP), dan Fakultas Keguruan Sastra dan Seni (FKSS) secara de facto merupakan salah satu fakultasnya. Namun, FKSS diakui secara resmi pada tahun 1964 melalui Instruksi Menteri Pendidikan Tinggi dan Ilmu Pengetahuan No. 128 tahun 1964 yang memiliki 4 (empat) jurusan dan 2 (dua) seksi.
+        </p>
+        <div class="pt-1">
+          <a href="/profil/tentang/index.html" class="inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-full shadow-sm transition-colors">
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-10 -top-10 h-44 w-44 bg-gradient-to-br from-purple-200/60 to-indigo-200/50 blur-3xl"></div>
+        <div class="absolute right-2 bottom-6 h-32 w-32 bg-gradient-to-tr from-indigo-200/60 to-purple-200/60 blur-2xl"></div>
+
+        <div class="relative overflow-hidden rounded-3xl bg-white dark:bg-[#0f172a]/85 shadow-lg md:shadow-xl border border-white/70 dark:border-white/10">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-100/40 to-indigo-100/30"></div>
+          <iframe 
+            class="relative w-full aspect-[5/4] rounded-3xl"
+            src="https://www.youtube.com/embed/et3smxctl-U?si=1hg3xOV99Dcqnppl"
+            title="Tentang FPBS"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-[radial-gradient(120%_120%_at_10%_20%,#f5f7ff_0%,#f1e6ff_42%,#fff7ff_78%)] dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] py-8 md:py-16 px-4 md:px-8">
+    <div class="max-w-screen-xl mx-auto space-y-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 dark:bg-purple-900/40 text-base font-semibold text-purple-800 dark:text-purple-200 uppercase tracking-wide border border-white/60 dark:border-white/10">
+          Berita Terbaru
+        </span>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {berita.map(item => {
           const url = fixHtml(`/berita/${slugify(item.data.title, { lower: true, strict: true })}`);
           const tampilTanggal = new Date(item.data.pubDate).toLocaleDateString('id-ID', {
@@ -129,32 +180,35 @@ const berita = (await getCollection('berita'))
           });
 
           return (
-            <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+            <article class="relative overflow-hidden rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 shadow-lg hover:shadow-xl transition duration-300 flex flex-col h-full">
               {item.data.image && (
                 <a href={url}>
-                  <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-56 object-cover" />
+                  <img src={item.data.image.url} alt={item.data.image.alt} class="w-full h-48 object-cover" />
                 </a>
               )}
-              <div class="px-5 pt-6 pb-8 flex flex-col flex-1">
-                <div class="flex justify-between items-center mb-4">
-                  <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-200">
+              <div class="px-5 pt-5 pb-6 flex flex-col flex-1 gap-3">
+                <div class="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
+                  <span class="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 text-xs md:text-sm font-semibold px-2.5 py-1 rounded-full">
                     {item.data.tags?.[0] ?? 'Berita'}
                   </span>
-                  <span class="text-sm text-gray-500 dark:text-gray-400">{tampilTanggal}</span>
+                  <span>{tampilTanggal}</span>
                 </div>
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-tight mb-4">
-                  <a href={url}>{item.data.title}</a>
+                <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white leading-snug">
+                  <a href={url} class="hover:text-purple-700 dark:hover:text-purple-300 transition-colors">{item.data.title}</a>
                 </h3>
                 <div class="mt-auto text-right">
-                  <a href={url} class="text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Selengkapnya →</a>
+                  <a href={url} class="inline-flex items-center gap-2 text-sm font-medium text-purple-700 dark:text-purple-300 hover:gap-3 transition-all">
+                    Selengkapnya
+                    <span aria-hidden="true">→</span>
+                  </a>
                 </div>
               </div>
             </article>
           );
         })}
       </div>
-      <div class="text-center mt-8">
-        <a href={fixHtml("/berita/page/1")} class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Lihat Semua Berita »</a>
+      <div class="text-center">
+        <a href="http://localhost:4321/berita/index.html" class="inline-block text-sm font-medium text-purple-700 dark:text-purple-400 hover:underline">Lihat Semua Berita »</a>
       </div>
     </div>
   </section>
