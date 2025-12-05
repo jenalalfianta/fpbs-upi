@@ -1,0 +1,232 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const slugId = 'page-documents';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/en/index.html' },
+  { label: 'Documents' },
+];
+---
+
+<Layout
+  pageHeading="Documents"
+  pageSubtitle="Faculty of Language and Literature Education"
+  breadcrumbItems={breadcrumbItems}
+  breadcrumbBackground="bg-[#f6f8ff] dark:bg-[#0b132a]"
+  pageHeadingOverlay="linear-gradient(90deg, rgba(31,15,61,0.85) 0%, rgba(49,26,92,0.70) 55%, rgba(31,15,61,0.45) 100%)"
+  pageHeadingAlign="left"
+>
+<section class="relative overflow-hidden w-full bg-[#f6f8ff] dark:bg-[#0b132a] pt-12 md:pt-14 pb-16 md:pb-20 px-4 md:px-6">
+  <div class="pointer-events-none absolute -left-16 top-8 h-56 w-56 rounded-full bg-purple-300/25 dark:bg-purple-500/20 blur-[90px]"></div>
+  <div class="pointer-events-none absolute -right-16 bottom-4 h-60 w-60 rounded-full bg-indigo-300/20 dark:bg-indigo-500/20 blur-[110px]"></div>
+  <div class="max-w-6xl mx-auto relative z-10 space-y-5 doc-gallery">
+
+    <div class="grid gap-3 md:grid-cols-3">
+      {[
+        { label: 'Academic Calendar', href: 'https://drive.google.com/file/d/1Umu-r7N01-LRc8bmBOAHSFBZXi-UyWF4/view?usp=sharing' },
+        { label: 'UPI Strategic Plan', href: 'https://drive.google.com/file/d/1SMjPrGic-UgJJllQy2M3mYNs2glkn5CA/view?usp=sharing' },
+        { label: "Dean's Performance Agreement", href: 'https://drive.google.com/file/d/1EBOB28XsgjBEC8eXGfP3MNfJcUB0alAL/view?usp=sharing' },
+        { label: 'Public Service Pledge Circular', href: 'https://drive.google.com/file/d/12UcAc6PXeFYYfbbjcNLLeIy57fCgJiP9/view?usp=sharing' },
+        { label: 'Building Safety Infographic', href: '/images/ppid/Infografis Keselamatan Gedung.webp', zoom: true, width: 764, height: 1080 },
+      ].map((item) => (
+        <a
+          href={item.href}
+          target={item.zoom ? undefined : "_blank"}
+          rel={item.zoom ? undefined : "noopener noreferrer"}
+          class={`flex items-center gap-3 p-3 rounded-xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-sm hover:shadow-md transition ${item.zoom ? 'zoomable' : ''}`}
+          {...(item.zoom ? { 'data-pswp-width': item.width, 'data-pswp-height': item.height } : {})}
+        >
+          <span class="w-9 h-9 rounded-lg bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white flex items-center justify-center text-xs font-semibold border border-purple-200/80 dark:border-white/20">↗</span>
+          <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{item.label}</span>
+        </a>
+      ))}
+    </div>
+
+    <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+      <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+        <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">Service Standards / SOP</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </summary>
+      <div class="px-4 md:px-6 pb-4 md:pb-5 space-y-4 text-sm md:text-base">
+        <div>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">Academic SOP</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1YR0YlkxEoY0pyZtYLrbZjzPujQFC5239/view?usp=sharing">SOP Akademik – Kontrak Kuliah</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">Facilities SOP</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1AgKlXbnr36W94ghh5v-EVfYC-M7d7f5c/view?usp=sharing">SOP Sarpras – Peminjaman Barang</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">HR SOP</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fm8Dqqlt3BVxMFesq8RqxXRGZ3IwZ4a2/view?usp=sharing">SOP Kepegawaian – Evaluasi Kinerja Pegawai</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">Finance SOP</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1L--bew68-f1695bbSirxZT57-RKm_jQ2/view?usp=sharing">SOP Keuangan – Usulan Pembayaran Uang Makan Pegawai</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/15Tkx0KMndxcUgJoPGeI_xmnmJnYZx2sD/view?usp=sharing">SOP Analisa Resiko dan Peluang</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">Student Affairs SOP</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1QAw2Qj8f25U5uJmFFYI11k3GaFjgo9Sn/view?usp=sharing">SOP Izin Kemahasiswaan</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1W1DXLY0DIRHnSLLsDm_KkqX5nTU9dQeB/view?usp=sharing">SOP Kontrak Kuliah Online</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1yyHuizFPZI7QOPGpJ26D7BwuMLfEV-w8/view?usp=sharing">SOP Perbaikan Kontrak Kuliah Online</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/14iShEhYQXkJI-dIQ_dczMjb_rJRfX9ws/view?usp=sharing">SOP Surat Pengantar Observasi Mahasiswa</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1bEgMPFlclZk7nE5DvPTumCxsHJT07ugN/view?usp=sharing">SOP Pengajuan Seminar Proposal</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1WQthBV_r-vewg5E2MLBXcZdaeih4RSPs/view?usp=sharing">SOP Pengajuan Pembimbing Skripsi, Tesis, dan Disertasi</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/12RHP97e-G64TBPrcm9vTbbDwcnU_vyWF/view?usp=sharing">SOP Pengajuan Penggantian Pembimbing</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1ycx6jIX_9Eyfcvj1OgzPGo64u7n7jQtK/view?usp=sharing">SOP Pengajuan Sidang S2 Tahap I</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1iFSt_hAC0BJFYd0BX879zFdONgf6YC1e/view?usp=sharing">SOP Pengajuan Sidang S2 Tahap II</a></li>
+            <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1OfaaqpjeAuVMrRymlk_lkSxhffVTzFyb/view?usp=sharing">SOP Permohonan Surat Keterangan Lulus</a></li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+      <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+        <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">Dean Circulars</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </summary>
+      <div class="px-4 md:px-6 pb-4 md:pb-5 text-sm md:text-base">
+        <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1_OKBbikg81HbVhIi08Hp4jm-4SrrMAKA/view?usp=sharing">Edaran Kompensasi Keterlambatan Pelayanan</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1GBUp64NFZWXvTTw995qLCvxK6TZDOZ7L/view?usp=sharing">Edaran Mengikuti Ceramah Subuh</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Bm0plEArqh3Mf_zLA614eK9UY2NEyCu8/view?usp=sharing">Edaran Penggunaan Tumbler atau Botol Minum</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+      <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+        <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">Dean Reports</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </summary>
+      <div class="px-4 md:px-6 pb-4 md:pb-5 text-sm md:text-base">
+        <ul class="list-disc ml-5 space-y-1 text-gray-700 dark:text-gray-300">
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SX2VdGqUhaLO5HOMDiE97v_u6KIxgmx5/view?usp=sharing">Laporan Kinerja Tahunan FPBS UPI - 2022</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1k0AAW56L5VoUSXOw0f4BnIaMm3o8TCfb/view?usp=sharing">Laporan Kinerja Tengah Tahun FPBS UPI – 2023</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1KKkSqBMszIEqKbyshN78-kgXF_mLbQ0D/view?usp=sharing">Laporan Kinerja Tahunan FPBS UPI – 2023</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1nUdzYlAA0XoqR6gfogP_jqkr2_jLEBbc/view?usp=sharing">Laporan Kinerja Tahunan FPBS UPI – 2024</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+      <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+        <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">Research & Community Service Data</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </summary>
+      <div class="px-4 md:px-6 pb-4 md:pb-5 text-sm md:text-base">
+        <ul class="list-disc ml-5 space-y-2 text-gray-700 dark:text-gray-300">
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_FWlU8N8tShzhtEktupratQd2By2nPrUPTUvlMs2Cks1ojec7BRLYC7NOPFi8bA/pubhtml">Data Penelitian dan PKM FPBS UPI Tahun 2023</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzqwnSRzAOBdi0eg2QzD2GfrV-FVr7XMoRdK83z3jD1wig3iJbbhUSXa9poXsEjg/pubhtml">Data Penelitian dan PKM FPBS UPI Tahun 2024</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSIg0P-2rpbIh4DhbC2F6SeG4D4Lr0KAiSxSXayj7_ofUkS6SDzQ_JL6idR7G-Czw/pubhtml">Data Penelitian dan PKM FPBS UPI Tahun 2025</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+      <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+        <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">Disaster Response & Mitigation SOP</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </summary>
+      <div class="px-4 md:px-6 pb-4 md:pb-5 text-sm md:text-base">
+        <ul class="list-disc ml-5 space-y-2 text-gray-700 dark:text-gray-300">
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vZjeT-qhEwhGQyYpTpfkCdV_vqOZlLSk/view?usp=sharing">SOP Penanggulangan dan Mitigasi Bencana Alam</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SoKVb6LepY-xQc3ghFTSv6vZIgzBjyEt/view?usp=sharing">SOP Penanggulangan dan Mitigasi Bencana Non-Alam</a></li>
+          <li><a class="hover:text-purple-700 dark:hover:text-purple-300 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Ujdb1Kswwf1WWMFAvFPwgRp9y1Phjabe/view?usp=sharing">SOP Penanggulangan dan Mitigasi Bencana Sosial</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="space-y-4">
+      {[
+        {
+          title: 'Study Program Accreditation',
+          items: [
+            { label: 'Pendidikan Bahasa dan Sastra Indonesia (S1)', href: '/program-studi/pendidikan-bahasa-dan-sastra-indonesia-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Indonesia (S2)', href: '/program-studi/pendidikan-bahasa-indonesia-s2/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Indonesia (S3)', href: '/program-studi/pendidikan-bahasa-indonesia-s3/akreditasi/index.html' },
+            { label: 'Bahasa dan Sastra Indonesia (S1)', href: '/program-studi/bahasa-dan-sastra-indonesia-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Sunda (S1)', href: '/program-studi/pendidikan-bahasa-sunda-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa dan Budaya Sunda (S2)', href: '/program-studi/pendidikan-bahasa-dan-budaya-sunda-s2/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Inggris (S1)', href: '/program-studi/pendidikan-bahasa-inggris-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Inggris (S2)', href: '/program-studi/pendidikan-bahasa-inggris-s2/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Inggris (S3)', href: '/program-studi/pendidikan-bahasa-inggris-s3/akreditasi/index.html' },
+            { label: 'Bahasa dan Sastra Inggris (S1)', href: '/program-studi/bahasa-dan-sastra-inggris-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Jerman (S1)', href: '/program-studi/pendidikan-bahasa-jerman-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Arab (S1)', href: '/program-studi/pendidikan-bahasa-arab-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Arab (S2)', href: '/program-studi/pendidikan-bahasa-arab-s2/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Jepang (S1)', href: '/program-studi/pendidikan-bahasa-jepang-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Jepang (S2)', href: '/program-studi/pendidikan-bahasa-jepang-s2/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Perancis (S1)', href: '/program-studi/pendidikan-bahasa-perancis-s1/akreditasi/index.html' },
+            { label: 'Pendidikan Bahasa Korea (S1)', href: '/program-studi/pendidikan-bahasa-korea-s1/akreditasi/index.html' },
+          ],
+        },
+      ].map((section) => (
+        <details class="group rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md open:shadow-lg transition overflow-hidden">
+          <summary class="cursor-pointer px-4 md:px-5 py-3 md:py-4 flex items-center justify-between gap-3">
+            <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{section.title}</span>
+            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white border border-purple-200/70 dark:border-white/25 transition group-open:rotate-90">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 3l6 5-6 5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-4 md:px-6 pb-4 md:pb-5 space-y-2">
+            {section.items.map((item) => (
+              <a href={item.href} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-white/5 text-gray-800 dark:text-gray-100 hover:bg-white dark:hover:bg-white/10 border border-gray-200/80 dark:border-white/15 transition">
+                <span class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 dark:bg-white/15 dark:text-white flex items-center justify-center text-xs font-semibold border border-purple-200/80 dark:border-white/20">↗</span>
+                <span class="text-sm md:text-base font-medium">{item.label}</span>
+              </a>
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css" />
+<script is:inline type="module">
+  import PhotoSwipeLightbox from '/vendor/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/vendor/photoswipe/photoswipe.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.doc-gallery',
+    children: 'a.zoomable',
+    pswpModule: () => Promise.resolve(PhotoSwipe)
+  });
+  lightbox.init();
+</script>
+</Layout>

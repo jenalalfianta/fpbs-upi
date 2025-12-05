@@ -10,7 +10,7 @@ function getSectionTitle(key, section) {
   return section?.title || (menu.find((item) => item.id === key)?.label) || key;
 }
 ---
-<section class="bg-white dark:bg-gray-900 pt-0 md:pt-0 pb-16 md:pb-20 px-4 md:px-6">
+<section class="bg-transparent pt-0 md:pt-0 pb-8 md:pb-10 px-0">
   <div class="max-w-6xl mx-auto space-y-12 prodi-content pt-2">
     {Object.entries(sections).map(([key, section]) => {
       // Suntikkan carousel untuk setiap section content (ID & EN)

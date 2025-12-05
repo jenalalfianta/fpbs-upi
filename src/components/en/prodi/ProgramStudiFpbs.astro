@@ -15,28 +15,29 @@ const programs = [
   { name: "Arabic Language Education", level: "Master", slug: "arabic-language-education-master", icon: "fa-solid fa-book-quran" },
   { name: "Japanese Language Education", level: "Bachelor", slug: "japanese-language-education-bachelor", icon: "fa-solid fa-torii-gate" },
   { name: "Japanese Language Education", level: "Master", slug: "japanese-language-education-master", icon: "fa-solid fa-torii-gate" },
-  { name: "French Language Education", level: "Bachelor", slug: "french-language-education-bachelor", icon: "fa-solid fa-wine-glass" },
+  { name: "French Language Education", level: "Bachelor", slug: "french-language-education-bachelor", icon: "fa-solid fa-archway" },
   { name: "Korean Language Education", level: "Bachelor", slug: "korean-language-education-bachelor", icon: "fa-solid fa-yin-yang" },
 ];
 ---
 
-<section class="bg-white dark:bg-gray-900 pt-10 md:pt-10 pb-25 md:pb-25 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-
-    <div class="text-left grid gap-4 md:grid-cols-[2fr_1fr] mb-8">
-      <div class="grid gap-3 md:grid-cols-2 bg-purple-50 dark:bg-gray-800 border border-purple-100 dark:border-gray-700 rounded-xl p-4 md:p-5">
+<section class="relative overflow-hidden w-full bg-[#f6f8ff] dark:bg-[#0b132a] pt-12 md:pt-14 pb-16 md:pb-20 px-4 md:px-6">
+  <div class="pointer-events-none absolute -left-16 top-10 h-56 w-56 rounded-full bg-purple-300/25 dark:bg-purple-500/20 blur-[90px]"></div>
+  <div class="pointer-events-none absolute -right-10 bottom-0 h-60 w-60 rounded-full bg-indigo-300/20 dark:bg-indigo-500/20 blur-[110px]"></div>
+  <div class="max-w-6xl mx-auto space-y-8 relative z-10">
+    <div class="grid gap-4 md:grid-cols-[2fr_1fr] items-stretch">
+      <div class="grid gap-3 md:grid-cols-2 bg-gradient-to-r from-[#f7f0ff] via-[#f1e9ff] to-[#eef2ff] dark:from-[#1a2338] dark:via-[#1a1f2f] dark:to-[#121826] border border-white/70 dark:border-white/15 rounded-2xl p-4 md:p-6 backdrop-blur-xl shadow-lg">
         <div class="flex flex-col gap-2">
           <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Program</label>
-          <select id="filter-level-en" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+          <select id="filter-level-id" class="w-full rounded-lg border border-gray-200 dark:border-white/15 bg-white/95 dark:bg-[#0f172a]/80 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-300 shadow-sm">
             <option value="">All Programs</option>
-            <option value="Bachelor">Bachelor (S1)</option>
-            <option value="Master">Master (S2)</option>
-            <option value="Doctorate">Doctorate (S3)</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+            <option value="Doctorate">Doctorate</option>
           </select>
         </div>
         <div class="flex flex-col gap-2">
-          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Language Field</label>
-          <select id="filter-lang-en" class="w-full rounded-lg border border-purple-100 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+          <label class="text-sm font-semibold text-purple-800 dark:text-purple-200">Filter: Language</label>
+          <select id="filter-lang-id" class="w-full rounded-lg border border-gray-200 dark:border-white/15 bg-white/95 dark:bg-[#0f172a]/80 text-sm text-gray-800 dark:text-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-300 shadow-sm">
             <option value="">All Fields</option>
             <option value="indonesian">Indonesian</option>
             <option value="sundanese">Sundanese</option>
@@ -49,18 +50,18 @@ const programs = [
           </select>
         </div>
       </div>
-      <div class="bg-gradient-to-r from-amber-50 via-red-50 to-gray-50 dark:from-amber-900/40 dark:via-red-900/30 dark:to-gray-900/60 border border-amber-200 dark:border-amber-700 rounded-xl shadow-sm p-4 flex flex-col gap-3 justify-center text-left">
-        <p class="text-sm font-semibold text-gray-900 dark:text-white">Penerimaan Mahasiswa Baru</p>
+      <div class="rounded-2xl p-5 flex flex-col gap-3 justify-center text-left bg-gradient-to-r from-amber-50 via-red-50 to-gray-50 dark:from-[#2b1623] dark:via-[#261327] dark:to-[#141826] border border-white/70 dark:border-white/15 backdrop-blur shadow-lg">
+        <p class="text-sm font-semibold text-gray-900 dark:text-white">New Student Admissions</p>
         <a href="https://pmb.upi.edu/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 rounded-md transition-colors shadow-sm">
           Visit PMB UPI →
         </a>
       </div>
     </div>
 
-    <div id="prodi-grid-en" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div id="prodi-grid-id" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {programs.map((prodi) => (
-        <div
-          class="group bg-white dark:bg-gray-800 shadow rounded-xl px-4 py-6 text-center hover:translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out"
+        <article
+          class="group relative overflow-hidden rounded-2xl bg-white/90 dark:bg-[#0f172a]/80 transition duration-300 flex flex-col gap-4 px-4 py-6 text-center border border-white/70 dark:border-white/15 backdrop-blur shadow-md hover:shadow-xl hover:-translate-y-1 hover:bg-white/95 dark:hover:bg-[#111b2f] hover:border-white/90 dark:hover:border-white/25"
           data-level={prodi.level}
           data-lang={prodi.slug.includes('indonesian') ? 'indonesian' :
             prodi.slug.includes('sundanese') ? 'sundanese' :
@@ -71,40 +72,42 @@ const programs = [
             prodi.slug.includes('french') ? 'french' :
             prodi.slug.includes('korean') ? 'korean' : 'other'}
         >
-          <div class="flex flex-col items-center gap-3 mb-4">
-            <i class={`${prodi.icon} text-purple-700 text-3xl transform group-hover:scale-110 transition duration-300`}></i>
+          <div class="flex flex-col items-center gap-3 mt-2">
+            <i class={`${prodi.icon} text-3xl transform group-hover:scale-110 transition duration-300 text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-fuchsia-500 to-indigo-500 dark:from-purple-300 dark:via-fuchsia-300 dark:to-indigo-300 drop-shadow-sm`}></i>
             <h3 class="text-base font-semibold text-gray-900 dark:text-white leading-snug">
               {prodi.name}
             </h3>
-            <span class="inline-block bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded">
+            <span class="inline-block bg-purple-100 text-purple-700 dark:bg-purple-900/60 dark:text-purple-200 text-xs font-semibold px-3 py-1 rounded-full border border-purple-200/80 dark:border-purple-700/80">
               {prodi.level}
             </span>
           </div>
-          <a href={`/en/study-programs/${prodi.slug}/profile/index.html`} class="text-sm font-medium text-purple-700 dark:text-purple-300 hover:underline">
-            Read more →
-          </a>
-        </div>
+          <div class="mt-auto">
+            <a href={`/en/study-programs/${prodi.slug}/profile/index.html`} class="inline-flex items-center gap-2 text-sm font-semibold text-purple-700 dark:text-purple-300 hover:gap-3 transition-all">
+              Read more
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
       ))}
     </div>
   </div>
 
   <script is:inline>
-    const levelSelectEn = document.querySelector('#filter-level-en');
-    const langSelectEn = document.querySelector('#filter-lang-en');
-    const cardsEn = document.querySelectorAll('#prodi-grid-en > div');
+    const levelSelect = document.querySelector('#filter-level-id');
+    const langSelect = document.querySelector('#filter-lang-id');
+    const cards = document.querySelectorAll('#prodi-grid-id > article');
 
-    function applyFilterEn() {
-      const level = levelSelectEn.value;
-      const lang = langSelectEn.value;
-      cardsEn.forEach(card => {
+    function applyFilter() {
+      const level = levelSelect.value;
+      const lang = langSelect.value;
+      cards.forEach(card => {
         const matchLevel = !level || card.dataset.level === level;
         const matchLang = !lang || card.dataset.lang === lang;
         card.classList.toggle('hidden', !(matchLevel && matchLang));
       });
     }
 
-    levelSelectEn?.addEventListener('change', applyFilterEn);
-    langSelectEn?.addEventListener('change', applyFilterEn);
+    levelSelect?.addEventListener('change', applyFilter);
+    langSelect?.addEventListener('change', applyFilter);
   </script>
 </section>
-

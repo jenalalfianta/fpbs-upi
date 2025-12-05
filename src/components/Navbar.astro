@@ -22,47 +22,14 @@ const fixHtml = (url) =>
 const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 ---
 
-<div aria-hidden="true" class="invisible pointer-events-none">
-  <nav class="bg-white/90 backdrop-blur border-gray-200 dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] dark:border-white/10 w-full border-b">
-    <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-3 md:gap-6">
-      
-      <a href="/" class="flex items-center gap-3">
-        <img src="/logofpbs.webp" class="h-8 w-auto md:h-12" alt="FPBS Logo" />
-      </a>
-
-      
-      <div class="flex items-center md:order-2 gap-1 sm:gap-1.5 md:gap-2">
-        <button type="button" class="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-100 hover:from-white hover:to-gray-200 dark:hover:to-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-500 js-open-search text-xs sm:text-sm active:translate-y-[1px] transition border border-gray-200 dark:border-gray-600">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-          </svg>
-          <span class="hidden sm:inline font-semibold">Cari</span>
-        </button>
-        <div class="inline-flex items-center font-medium justify-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 h-9 sm:h-10 text-xs sm:text-sm text-gray-700 dark:text-gray-100 rounded-xl bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] transition border border-gray-300/90 dark:border-gray-600/90">
-          <img src="https://flagcdn.com/id.svg" class="h-3.5 w-5 object-cover rounded-sm me-0 sm:me-1.5" alt="Indonesian Flag" />
-          <span class="hidden sm:inline">ID</span>
-        </div>
-        <div class="text-gray-500 dark:text-gray-300 rounded-xl text-xs sm:text-sm p-1.5 sm:p-2 h-9 sm:h-10 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] border border-gray-200/90 dark:border-gray-600/90"></div>
-        <div class="inline-flex items-center p-1.5 sm:p-2 w-9 h-9 sm:w-10 sm:h-10 justify-center text-xs sm:text-sm text-gray-500 rounded-xl md:hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 active:translate-y-[1px] border border-gray-200/90 dark:border-gray-600/90"></div>
-      </div>
-
-      
-      <div class="w-full hidden md:flex md:w-auto md:order-1">
-        <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 rounded-2xl md:rounded-none bg-gray-50 md:bg-transparent md:space-x-6 border border-gray-100 dark:border-gray-700 dark:bg-gray-800 md:border-0 md:shadow-none md:backdrop-blur-0 md:dark:bg-transparent md:dark:border-0">
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Beranda</span></li>
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Profil</span></li>
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">PPID</span></li>
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Zona Integritas</span></li>
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Riset & Publikasi</span></li>
-          <li><span class="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">Legalisasi Dokumen</span></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<nav class="bg-white/90 backdrop-blur border-gray-200 dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-white/10">
+<nav class="main-nav bg-white/90 backdrop-blur border-gray-200 dark:bg-[radial-gradient(140%_140%_at_20%_10%,#0b132a_0%,#0f1c3d_45%,#0a0f1f_95%)] w-full z-40 border-b border-gray-200 dark:border-white/10 transition-all duration-200">
+  <div class="secondary-row hidden md:flex h-10 items-center justify-end gap-3 px-4 md:px-[30px] text-sm font-medium text-gray-800 dark:text-gray-100 bg-gray-100/95 dark:bg-[#0a1224]/90 backdrop-blur border-b border-gray-200/90 dark:border-white/10">
+    <a href="/legalisasi/index.html" class="hover:text-purple-700 dark:hover:text-purple-200 transition-colors">Legalisasi Dokumen</a>
+    <span class="text-gray-300 dark:text-gray-500">|</span>
+    <a href="/dokumen/index.html" class="hover:text-purple-700 dark:hover:text-purple-200 transition-colors">Dokumen</a>
+    <span class="text-gray-300 dark:text-gray-500">|</span>
+    <a href="/jurnal/index.html" class="hover:text-purple-700 dark:hover:text-purple-200 transition-colors">Jurnal</a>
+  </div>
   <div class="w-full flex flex-wrap items-center justify-between px-4 py-2 md:px-[30px] md:py-4 gap-4 md:gap-6">
     
     <a href="/" class="flex items-center gap-3">
@@ -215,8 +182,61 @@ const switchLang = fixHtml(slugMap[cleanPath] ?? defaultLangSwitch);
 
         <li><a href="/zona-integritas/index.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Zona Integritas</a></li>
         <li><a href="https://lppm.upi.edu/" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Riset & Publikasi</a></li>
-        <li><a href="/legalisasi/index.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Legalisasi Dokumen</a></li>
+        <li class="md:hidden"><a href="/jurnal/index.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Jurnal</a></li>
+        <li class="md:hidden"><a href="/dokumen/index.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Dokumen</a></li>
+        <li class="md:hidden"><a href="/legalisasi/index.html" class="block py-2 px-3 md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 dark:text-white md:dark:hover:text-purple-500 transition-colors">Legalisasi Dokumen</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<script is:inline>
+  (() => {
+    const nav = document.querySelector('.main-nav');
+    const secondary = nav?.querySelector('.secondary-row');
+    const threshold = 120;
+    let fadeTimer;
+    let lastSticky = false;
+    const handleScroll = () => {
+      if (!nav) return;
+      const isSticky = window.scrollY > threshold;
+      if (isSticky !== lastSticky) {
+        nav.classList.toggle('is-sticky', isSticky);
+        nav.classList.add('fade-in');
+        clearTimeout(fadeTimer);
+        fadeTimer = setTimeout(() => nav.classList.remove('fade-in'), 260);
+        lastSticky = isSticky;
+      }
+      if (secondary) {
+        secondary.classList.toggle('md:hidden', isSticky);
+        secondary.classList.toggle('md:flex', !isSticky);
+      }
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  })();
+</script>
+<style is:global>
+  .main-nav {
+    position: relative;
+    width: 100%;
+    transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+    will-change: transform;
+  }
+  .main-nav.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  }
+  .main-nav:not(.is-sticky) {
+    transform: translateY(0);
+  }
+  .main-nav.fade-in {
+    animation: navFade 200ms ease;
+  }
+  @keyframes navFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>

@@ -45,11 +45,16 @@ export async function getStaticPaths() {
   breadcrumbItems={breadcrumbItems}
   pageHeadingOverlay="linear-gradient(90deg, rgba(31,15,61,0.85) 0%, rgba(49,26,92,0.70) 55%, rgba(31,15,61,0.45) 100%)"
   pageHeadingAlign="left"
+  breadcrumbBackground="bg-[#f6f8ff] dark:bg-[#0b132a]"
 >
-  <div class="mt-4 mb-4">
-    <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
+  <div class="bg-[#f6f8ff] dark:bg-[#0b132a]">
+    <div class="py-4 px-4 md:px-6">
+      <ProgramStudiMenu activeTab={activeTab} menuItems={menuItems} slug={slug} prodiId={prodiData.id} />
+    </div>
+    <div class="px-4 md:px-6 pb-6">
+      <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
+    </div>
   </div>
-  <ProgramStudiContent activeTab={activeTab} prodiData={prodiData} />
 </Layout>
 
 <!-- Script eksternal jika dibutuhkan -->

@@ -1,0 +1,178 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/en/index.html' },
+  { label: 'Journals' },
+];
+
+const journals = [
+  {
+    title: 'Journal of Language and Literature Education',
+    programLabel: 'Faculty of Language and Literature Education',
+    link: 'https://ejournal.upi.edu/index.php/BS_JPBSP',
+    image: '/images/jurnal/Jurnalpendidikanbahasadansastra.webp',
+    description:
+      'Publishes research in linguistics, literature, and language teaching and learning. Nationally accredited; issued twice a year (April & October).',
+    badges: ['2 issues per year', 'DOI prefix 10.17509', 'ISSN (P) 1412-0712', 'ISSN (E) 2527-8312', 'Publisher: UPI'],
+  },
+  {
+    title: 'DIMASATRA',
+    programLabel: 'Faculty of Language and Literature Education',
+    link: 'https://ejournal.upi.edu/index.php/dimasatra',
+    image: '/images/jurnal/Dimasatra.webp',
+    description:
+      'Community engagement journal in language, literature, and culture. First published in October 2020; focuses on literacy, local wisdom, tech transfer, and community empowerment.',
+    badges: ['ISSN (E) 2774-759X', 'Community engagement', 'Language, literature, culture'],
+  },
+  {
+    title: '@ARTIKULASI',
+    programLabel: 'Indonesian Language and Literature Education',
+    link: 'https://ejournal.upi.edu/index.php/JPBSI',
+    image: '/images/jurnal/Artikulasi.webp',
+    description:
+      'Publishes Indonesian language and literature education research since 2002. Issues in April & October with peer-reviewed scholarly articles.',
+    badges: ['2 issues per year', 'ISSN (P) 1412-4548', 'ISSN (E) 2776-5911'],
+  },
+  {
+    title: 'LOKABASA',
+    programLabel: 'Sundanese Language Education',
+    link: 'https://ejournal.upi.edu/index.php/lokabasa',
+    image: '/images/jurnal/Lokabasa.webp',
+    description:
+      'Covers regional language, literature, culture, and pedagogy. Published in April & October in collaboration with IKADBUDI.',
+    badges: ['ISSN (E) 2528-5904', 'ISSN (P) 2338-6193', 'Sundanese language & culture'],
+  },
+  {
+    title: 'IJTEFL',
+    programLabel: 'English Language Education',
+    link: 'https://ejournal.upi.edu/index.php/ijtefl',
+    image: '/images/jurnal/Tefl.webp',
+    description:
+      'Indonesian Journal of Teaching English as a Foreign Language; conceptual and research articles on ELT, teacher training, ESP/EAP, and applied linguistics. Biannual.',
+    badges: ['Biannual', 'ELT & Applied Linguistics', 'Teacher development'],
+  },
+  {
+    title: 'PASSAGE',
+    programLabel: 'English Language and Literature',
+    link: 'https://ejournal.upi.edu/index.php/psg',
+    image: '/images/jurnal/Passage.webp',
+    description:
+      'Addresses language, literature, culture, and media—highlighting Indonesia & Southeast Asia for global readership. Issues in April & November.',
+    badges: ['E-ISSN 2776-4680', '2 issues per year', 'Language & literature'],
+  },
+  {
+    title: 'ALLEMANIA',
+    programLabel: 'German Language Education',
+    link: 'https://ejournal.upi.edu/index.php/allemania',
+    image: '/images/jurnal/Allemania.webp',
+    description:
+      'Publishes research on German language education, linguistics, literature, translation, and culture. Issues in June & December with DAAD, Goethe-Institut, IGV partners.',
+    badges: ['p-ISSN 2088-7582', 'e-ISSN 3063-5381', 'June & December'],
+  },
+  {
+    title: 'JAPANEDU',
+    programLabel: 'Japanese Language Education',
+    link: 'https://ejournal.upi.edu/index.php/japanedu',
+    image: '/images/jurnal/Japanedu.webp',
+    description:
+      'Research on Japanese language education; issued June & December; indexed in DOAJ and SINTA (S3); partnered with ASPBJI and FDPPBJI.',
+    badges: ['e-ISSN 2528-5548', 'p-ISSN 2776-4478', '2 issues per year'],
+  },
+  {
+    title: 'AL SUNIYAT',
+    programLabel: 'Arabic Language Education',
+    link: 'https://ejournal.upi.edu/index.php/alsuniyat',
+    image: '/images/jurnal/Alsuniat.webp',
+    description:
+      'Publishes Arabic language, literature, and culture education research. SINTA 2 (2023); issues in April & October.',
+    badges: ['P-ISSN 2615-7241', 'E-ISSN 2721-480X', 'April & October'],
+  },
+  {
+    title: 'FRANCISOLA',
+    programLabel: 'French Language Education',
+    link: 'https://ejournal.upi.edu/index.php/FRANCISOLA',
+    image: '/images/jurnal/Francisola.webp',
+    description:
+      'Double-blind journal on French language & literature, issued June & December with APFI/FIPF partnership. Articles in French or English.',
+    badges: ['e-ISSN 2527-5100', 'p-ISSN 2527-5097', '2 issues per year'],
+  },
+  {
+    title: 'International Journal of Education (IJE)',
+    programLabel: 'Korean Language Education',
+    link: 'https://ejournal.upi.edu/index.php/ije',
+    image: '/images/jurnal/Ije.webp',
+    description:
+      'Open-access, double-blind journal on formal education (languages, STEM, vocational, religious). Managed by UPI with multinational contributors.',
+    badges: ['e-ISSN 2442-4730', 'p-ISSN 1978-1342', 'Open access'],
+  },
+  {
+    title: 'Journal of Korean Applied Linguistics (JOKAL)',
+    programLabel: 'Korean Language Education',
+    link: 'https://ejournal.upi.edu/index.php/JoKAL',
+    image: '/images/jurnal/Jokal.webp',
+    description:
+      'Publishes research on Korean teaching, linguistics, Korean studies, literature, and academic/specific purposes. Open access, peer-reviewed.',
+    badges: ['p-ISSN 2776-4494', 'e-ISSN 2776-4486', 'Applied Korean Linguistics'],
+  },
+];
+---
+
+<Layout
+  pageHeading="Journals"
+  pageSubtitle="Faculty of Language and Literature Education"
+  breadcrumbItems={breadcrumbItems}
+  breadcrumbBackground="bg-[#f6f8ff] dark:bg-[#0b132a]"
+  pageHeadingOverlay="linear-gradient(90deg, rgba(31,15,61,0.85) 0%, rgba(49,26,92,0.70) 55%, rgba(31,15,61,0.45) 100%)"
+  pageHeadingAlign="left"
+>
+  <section class="relative overflow-hidden w-full bg-[#f6f8ff] dark:bg-[#0b132a] pt-12 md:pt-14 pb-16 md:pb-20 px-4 md:px-6">
+    <div class="pointer-events-none absolute -left-16 top-8 h-56 w-56 rounded-full bg-purple-300/25 dark:bg-purple-500/20 blur-[90px]"></div>
+    <div class="pointer-events-none absolute -right-16 bottom-4 h-60 w-60 rounded-full bg-indigo-300/20 dark:bg-indigo-500/20 blur-[110px]"></div>
+    <div class="max-w-6xl mx-auto relative z-10 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <div class="space-y-2"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {journals.map((journal) => (
+          <article class="group relative overflow-hidden rounded-2xl bg-white/90 dark:bg-[#0f172a]/85 border border-white/70 dark:border-white/15 shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1 flex flex-col h-full">
+            <div class="w-full h-60 sm:h-72 md:h-80 overflow-hidden bg-gray-100 dark:bg-white/10">
+              <img src={journal.image} alt={`Cover ${journal.title}`} class="h-full w-full object-contain object-top transition duration-300 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="p-5 flex flex-col gap-3 flex-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700 dark:bg-white/20 dark:text-gray-900 border border-purple-200/70 dark:border-white/30">
+                  {journal.programLabel}
+                </span>
+              </div>
+
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white leading-snug">{journal.title}</h3>
+              <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{journal.description}</p>
+
+              <div class="flex flex-wrap gap-2">
+                {journal.badges.map((badge) => (
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold bg-white/90 text-gray-700 dark:bg-white/20 dark:text-gray-900 border border-gray-200/70 dark:border-white/30">
+                    {badge}
+                  </span>
+                ))}
+              </div>
+
+              <div class="flex items-center justify-end pt-1 mt-auto">
+                <a
+                  href={journal.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-purple-700 dark:text-purple-300 hover:gap-3 transition-all"
+                >
+                  Read more
+                  <span aria-hidden="true">-&gt;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

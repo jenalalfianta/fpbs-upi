@@ -4,42 +4,40 @@ const lang = prodiId?.startsWith('en/') ? 'en' : 'id';
 ---
 
 <div class="w-full flex justify-center">
-  <div class="bg-purple-50 dark:bg-gray-800 border border-purple-200 dark:border-purple-700 rounded-[999px] shadow px-3 py-3 md:px-4 md:py-4 inline-block w-full max-w-6xl">
+  <div class="bg-white/85 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-lg rounded-2xl shadow-lg px-3 py-3 md:px-4 md:py-4 inline-block w-full max-w-6xl">
     <div class="relative w-full flex justify-center">
       <button id="menu-scroll-left"
-        class="hidden absolute left-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition items-center justify-center">
+        class="hidden absolute left-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-[#0f172a]/90 border border-gray-200 dark:border-white/15 shadow hover:shadow-md transition items-center justify-center">
         <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
-      <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing px-2 max-w-full inline-block">
-        <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
-          {menuItems.map(item => (
-            item.external ? (
-              <a href={item.external} target="_blank"
-                class="px-3 py-2 bg-white/90 dark:bg-gray-900 text-purple-800 dark:text-purple-200 rounded-lg hover:text-purple-700 dark:hover:text-purple-300 hover:bg-white transition whitespace-nowrap shadow-sm">
+    <div id="menu-scroll" class="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing px-2 max-w-full inline-block">
+      <div class="flex flex-nowrap gap-2 text-xs md:text-sm w-max mx-auto md:justify-center select-none">
+        {menuItems.map(item => (
+          item.external
+            ? <a href={item.external} target="_blank"
+                class="px-3 py-2 bg-white/90 dark:bg-[#0f172a]/80 text-purple-800 dark:text-purple-200 rounded-lg hover:text-purple-700 dark:hover:text-purple-300 hover:bg-white transition whitespace-nowrap shadow-sm">
                 {item.label}
               </a>
-            ) : (
-              <a href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}    
-                class={`px-3 py-2 rounded-lg whitespace-nowrap transition shadow-sm ${
+            : <a
+                href={`/${lang === 'en' ? 'en/study-programs' : 'program-studi'}/${slug}/${item.id}/index.html`}
+                class={`px-3 py-2 rounded-lg whitespace-nowrap transition shadow ${
                   activeTab === item.id
-                    ? 'bg-purple-600 text-white dark:bg-purple-500 dark:text-white font-semibold'
-                    : 'bg-white/90 dark:bg-gray-900 text-purple-800 dark:text-purple-200 hover:text-purple-700 dark:hover:text-purple-300 hover:bg-white'
+                    ? 'bg-gradient-to-r from-purple-600 to-indigo-500 text-white dark:from-purple-500 dark:to-indigo-400 font-semibold shadow-md'
+                    : 'bg-white/80 dark:bg-[#0f172a]/70 text-purple-800 dark:text-purple-200 hover:text-purple-700 dark:hover:text-purple-200 hover:bg-white/100 dark:hover:bg-[#16213d]'
                 }`}>
                 {item.label}
               </a>
-            )
-          ))}
-        </div>
+        ))}
       </div>
-      <button id="menu-scroll-right"
-        class="hidden absolute right-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition items-center justify-center">
-        <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
     </div>
+    <button id="menu-scroll-right"
+      class="hidden absolute right-0 top-1/2 -translate-y-1/2 h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/90 dark:bg-[#0f172a]/90 border border-gray-200 dark:border-white/15 shadow hover:shadow-md transition items-center justify-center">
+      <svg class="w-4 h-4 md:w-5 md:h-5 text-gray-600 dark:text-gray-200 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 </div>
 
@@ -101,13 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
   btnRight?.addEventListener('click', () => {
     scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
   });
-
-  const updateOffset = () => {
-    const nav = document.querySelector('nav.fixed');
-    const navHeight = nav?.offsetHeight || 72;
-    document.documentElement.style.setProperty('--prodi-tab-offset', `${navHeight}px`);
-  };
-  updateOffset();
-  window.addEventListener('resize', updateOffset);
 });
 </script>
